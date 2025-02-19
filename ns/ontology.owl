@@ -1,0 +1,935 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://greeninfratwins.com/ns/grit#"
+     xml:base="https://greeninfratwins.com/ns/grit"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="https://schema.org/">
+    <owl:Ontology rdf:about="https://greeninfratwins.com/ns/grit#">
+        <terms:contributor rdf:nodeID="genid1"/>
+        <terms:contributor rdf:nodeID="genid3"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-08-01</terms:created>
+        <terms:creator rdf:nodeID="genid5"/>
+        <terms:description xml:lang="en">The GreenInfraTwins (GRIT) Ontology is used for establishing digital twins for the sustainability assessment of transportaion infrastructure in Germany, Austria, and Switzerland. The aim of the research project is to conceptualise and demonstrate sustainability-related decision support through the use of digital twins of engineering structures. To this end, digital twins of engineering structures are created, enriched with data and used to calculate key indicators for sustainability analyses. </terms:description>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:rights>Copyright 2024 by Chair of Computing in Engineering, Ruhr University Bochum</terms:rights>
+        <terms:source>https://www.greeninfratwins.com</terms:source>
+        <terms:title xml:lang="en">GreenInfraTwins (GRIT) Ontology</terms:title>
+        <vann:preferredNamespacePrefix>grit</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://greeninfratwins.com/ns/grit#"/>
+        <owl:versionInfo>1.0</owl:versionInfo>
+    </owl:Ontology>
+    <rdf:Description rdf:nodeID="genid1">
+        <rdf:type rdf:resource="https://schema.org/Person"/>
+        <schema:email rdf:resource="mailto:liu.liu-m6r@rub.de"/>
+        <schema:identifier rdf:resource="https://orcid.org/0000-0001-5907-7609"/>
+        <schema:memberOf rdf:nodeID="genid2"/>
+        <schema:name>Liu Liu</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid3">
+        <rdf:type rdf:resource="https://schema.org/Person"/>
+        <schema:email rdf:resource="mailto:simon.kosse@rub.de"/>
+        <schema:identifier rdf:resource="https://orcid.org/0000-0002-6391-784X"/>
+        <schema:memberOf rdf:nodeID="genid4"/>
+        <schema:name>Simon Kosse</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid5">
+        <rdf:type rdf:resource="https://schema.org/Person"/>
+        <schema:email rdf:resource="mailto:philipp.hagedorn-n6v@rub.de"/>
+        <schema:identifier rdf:resource="https://orcid.org/0000-0002-6249-243X"/>
+        <schema:memberOf rdf:nodeID="genid6"/>
+        <schema:name>Philipp Hagedorn</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid2">
+        <schema:identifier rdf:resource="https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/liu_liu.html.en"/>
+        <schema:name>Ruhr University Bochum</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid4">
+        <schema:identifier rdf:resource="https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/simon_kosse.html.en"/>
+        <schema:name>Ruhr University Bochum</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid6">
+        <schema:identifier rdf:resource="https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/philipp_hagedorn.html.en"/>
+        <schema:name>Ruhr University Bochum</schema:name>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- https://schema.org/email -->
+
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/email"/>
+    
+
+
+    <!-- https://schema.org/identifier -->
+
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/identifier"/>
+    
+
+
+    <!-- https://schema.org/memberOf -->
+
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/memberOf"/>
+    
+
+
+    <!-- https://schema.org/name -->
+
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#afterActivity -->
+
+
+    <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#afterActivity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#Activity"/>
+        <rdfs:range rdf:resource="https://greeninfratwins.com/ns/grit#Activity"/>
+        <rdfs:comment>Establishes a procedural order of activities.</rdfs:comment>
+        <rdfs:label>after activity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#connectedServices -->
+
+
+    <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#connectedServices">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#GreenInfraTwin"/>
+        <rdfs:comment>The services connected to a DT, e.g., ICDD container.</rdfs:comment>
+        <rdfs:label>connected services</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#frequencyPerYear -->
+
+
+    <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#frequencyPerYear">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#Measure"/>
+        <rdfs:comment>Displays the frequency of a measure per year.</rdfs:comment>
+        <rdfs:label>frequency per year</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#hasAsessment -->
+
+
+    <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#hasAsessment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#GreenInfraTwin"/>
+        <rdfs:range rdf:resource="https://greeninfratwins.com/ns/grit#Assessment"/>
+        <rdfs:comment>The connection beween the DT and the use case / asessment.</rdfs:comment>
+        <rdfs:label>has asessment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#hasExternalCalculationApplication -->
+
+
+    <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#hasExternalCalculationApplication">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#ComplexComputedValueIndicator"/>
+        <rdfs:comment>Indicates the external application in which the calculation of an indicator is performed.</rdfs:comment>
+        <rdfs:label>has external calculation application</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#hasExternalCalculationServiceUrl -->
+
+
+    <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#hasExternalCalculationServiceUrl">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator"/>
+        <rdfs:comment>The URL of a calculation service that can calculate the indicator based on the given formula and the respective variables.</rdfs:comment>
+        <rdfs:label>has calculation service</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#hasFormula -->
+
+
+    <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#hasFormula">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator"/>
+        <rdfs:comment>The calculation formular of a simple computed value indicator.</rdfs:comment>
+        <rdfs:label>has formula</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#hasIndicator -->
+
+
+    <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#hasIndicator">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet"/>
+        <rdfs:range rdf:resource="https://greeninfratwins.com/ns/grit#Indicator"/>
+        <rdfs:comment>The connection between an indicator set and the indicator. This relation may occur multiple times.</rdfs:comment>
+        <rdfs:label>has indicator</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#hasIndicatorSet -->
+
+
+    <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#hasIndicatorSet">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#Activity"/>
+        <rdfs:range rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet"/>
+        <rdfs:comment>Establishes the connection between the activity and the respective indicators.</rdfs:comment>
+        <rdfs:label>has indicator set</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#hasIndicatorType -->
+
+
+    <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#hasIndicatorType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#Indicator"/>
+        <rdfs:range rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <rdfs:comment>Provides the indicator type.</rdfs:comment>
+        <rdfs:label>has indicator type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#hasKey -->
+
+
+    <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#hasKey">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorVariable"/>
+        <owl:propertyDisjointWith rdf:resource="https://greeninfratwins.com/ns/grit#hasValue"/>
+        <rdfs:comment>The key of a variable exactly as it appears in the calculation formula, e.g. v (for volume).</rdfs:comment>
+        <rdfs:label>has key</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#hasMeasure -->
+
+
+    <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#hasMeasure">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#Assessment"/>
+        <rdfs:range rdf:resource="https://greeninfratwins.com/ns/grit#Measure"/>
+        <rdfs:comment>The measures that are part of one assessment / use case.</rdfs:comment>
+        <rdfs:label>has measure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#hasMeasureVariant -->
+
+
+    <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#hasMeasureVariant">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#Measure"/>
+        <rdfs:range rdf:resource="https://greeninfratwins.com/ns/grit#MeasureVariant"/>
+        <rdfs:comment>A measure variant can be used to compare multiple variants of the same measure during the assessment.</rdfs:comment>
+        <rdfs:label>has measure variant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#hasUnit -->
+
+
+    <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#hasUnit">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorVariable"/>
+        <rdfs:range rdf:resource="https://qudt.org/schema/qudt/Unit"/>
+        <rdfs:comment>The unit that a value refers to.</rdfs:comment>
+        <rdfs:label>has unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#hasValue -->
+
+
+    <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#hasValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorVariable"/>
+        <rdfs:comment>The value that should be computed by a calculation service for a given variable.</rdfs:comment>
+        <rdfs:label>has value</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#hasVariable -->
+
+
+    <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#hasVariable">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator"/>
+        <rdfs:range rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorVariable"/>
+        <rdfs:comment>The connection between the indicator ant the variables of an indicator.</rdfs:comment>
+        <rdfs:label>has variable</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#involvesActivities -->
+
+
+    <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#involvesActivities">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#Measure"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#MeasureVariant"/>
+        <rdfs:range rdf:resource="https://greeninfratwins.com/ns/grit#Activity"/>
+        <rdfs:comment>The activities that are performed within a measure or a measure variant.</rdfs:comment>
+        <rdfs:label>involves activities</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#isDefinedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#isDefinedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#Assessment"/>
+        <rdfs:range rdf:resource="https://greeninfratwins.com/ns/grit#SpecifiedUseCase"/>
+        <rdfs:label>has specified use case</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#mapsToLbdProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#mapsToLbdProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorVariable"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:comment>This property is used to map a variable of an indicator to a property present in the RDF dataset of the digital twin.</rdfs:comment>
+        <rdfs:label>maps to lbd property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#hasIcddContainerID -->
+
+
+    <owl:DatatypeProperty rdf:about="https://greeninfratwins.com/ns/grit#hasIcddContainerID">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#GreenInfraTwin"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:label>has icdd container ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#hasIcddProjectID -->
+
+
+    <owl:DatatypeProperty rdf:about="https://greeninfratwins.com/ns/grit#hasIcddProjectID">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#GreenInfraTwin"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:label>has icdd project ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Resource -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#decimal -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#decimal"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#int -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#int"/>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#Activity -->
+
+
+    <owl:Class rdf:about="https://greeninfratwins.com/ns/grit#Activity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#afterActivity"/>
+                <owl:someValuesFrom rdf:resource="https://greeninfratwins.com/ns/grit#Activity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasIndicatorSet"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The activity that is performed in a particularly sequence within a measure or measure variant.</rdfs:comment>
+        <rdfs:label>Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#Assessment -->
+
+
+    <owl:Class rdf:about="https://greeninfratwins.com/ns/grit#Assessment">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasMeasure"/>
+                <owl:someValuesFrom rdf:resource="https://greeninfratwins.com/ns/grit#Measure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#isDefinedBy"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://greeninfratwins.com/ns/grit#SpecifiedUseCase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The use case that is performed in a DT.</rdfs:comment>
+        <rdfs:label>Assessment defined by a specified Use Case</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#ComplexComputedValueIndicator -->
+
+
+    <owl:Class rdf:about="https://greeninfratwins.com/ns/grit#ComplexComputedValueIndicator">
+        <rdfs:subClassOf rdf:resource="https://greeninfratwins.com/ns/grit#ValueIndicator"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasVariable"/>
+                <owl:someValuesFrom rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorVariable"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasExternalCalculationApplication"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://greeninfratwins.com/ns/grit#ConstantValueIndicator"/>
+        <owl:disjointWith rdf:resource="https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator"/>
+        <rdfs:comment>An indicator that cannot be calculated by just a given formula but in expert software.</rdfs:comment>
+        <rdfs:label>Complex computed value indicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#ConstantValueIndicator -->
+
+
+    <owl:Class rdf:about="https://greeninfratwins.com/ns/grit#ConstantValueIndicator">
+        <rdfs:subClassOf rdf:resource="https://greeninfratwins.com/ns/grit#ValueIndicator"/>
+        <owl:disjointWith rdf:resource="https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator"/>
+        <rdfs:comment>An indicator that does not change over time.</rdfs:comment>
+        <rdfs:label>Constant value indicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#GreenInfraTwin -->
+
+
+    <owl:Class rdf:about="https://greeninfratwins.com/ns/grit#GreenInfraTwin">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasAsessment"/>
+                <owl:someValuesFrom rdf:resource="https://greeninfratwins.com/ns/grit#Assessment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#connectedServices"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasIcddContainerID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasIcddProjectID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The instance of a DT for sustainability asessment.</rdfs:comment>
+        <rdfs:label>GreenInfraTwin Demonstrator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#Indicator -->
+
+
+    <owl:Class rdf:about="https://greeninfratwins.com/ns/grit#Indicator">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasIndicatorType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The generic indicator class, can be subtyped regarding their caracteristics and their value calculation methods.</rdfs:comment>
+        <rdfs:label>Indicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#IndicatorSet -->
+
+
+    <owl:Class rdf:about="https://greeninfratwins.com/ns/grit#IndicatorSet">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasIndicator"/>
+                <owl:someValuesFrom rdf:resource="https://greeninfratwins.com/ns/grit#Indicator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A set of indicators that is referenced by a specific activity.</rdfs:comment>
+        <rdfs:label>Indicator set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#IndicatorType -->
+
+
+    <owl:Class rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>A type for identifying indicators that should be aggregated in the overall calculation, e.g. GWP.</rdfs:comment>
+        <rdfs:label>Indicator type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#IndicatorVariable -->
+
+
+    <owl:Class rdf:about="https://greeninfratwins.com/ns/grit#IndicatorVariable">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasKey"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://qudt.org/schema/qudt/Unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#mapsToLbdProperty"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The variable that is used to calculated for an indicator, consists of a key (the variable identified) and a value (the numerical value)</rdfs:comment>
+        <rdfs:label>Indicator variable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#Measure -->
+
+
+    <owl:Class rdf:about="https://greeninfratwins.com/ns/grit#Measure">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasMeasureVariant"/>
+                <owl:someValuesFrom rdf:resource="https://greeninfratwins.com/ns/grit#MeasureVariant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#involvesActivities"/>
+                <owl:someValuesFrom rdf:resource="https://greeninfratwins.com/ns/grit#Activity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#frequencyPerYear"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The definition of a measure.</rdfs:comment>
+        <rdfs:label>Measure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#MeasureIndicator -->
+
+
+    <owl:Class rdf:about="https://greeninfratwins.com/ns/grit#MeasureIndicator">
+        <rdfs:subClassOf rdf:resource="https://greeninfratwins.com/ns/grit#Indicator"/>
+        <owl:disjointWith rdf:resource="https://greeninfratwins.com/ns/grit#ReliabilityIndicator"/>
+        <owl:disjointWith rdf:resource="https://greeninfratwins.com/ns/grit#TechnicalQualityIndicator"/>
+        <rdfs:comment>An indicator used for being calculated in a measure for sustainability asessment.</rdfs:comment>
+        <rdfs:label>Measure indicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#MeasureVariant -->
+
+
+    <owl:Class rdf:about="https://greeninfratwins.com/ns/grit#MeasureVariant">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#involvesActivities"/>
+                <owl:someValuesFrom rdf:resource="https://greeninfratwins.com/ns/grit#Activity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An optional variant of the measure. A measure can either directly involve activities directly, or, if needed, can have multiple variants that each involve activities.</rdfs:comment>
+        <rdfs:label>Measure variant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#ReliabilityIndicator -->
+
+
+    <owl:Class rdf:about="https://greeninfratwins.com/ns/grit#ReliabilityIndicator">
+        <rdfs:subClassOf rdf:resource="https://greeninfratwins.com/ns/grit#Indicator"/>
+        <owl:disjointWith rdf:resource="https://greeninfratwins.com/ns/grit#TechnicalQualityIndicator"/>
+        <rdfs:comment>An indicator depicting the riliability of a measure.</rdfs:comment>
+        <rdfs:label>Reliability indicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator -->
+
+
+    <owl:Class rdf:about="https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator">
+        <rdfs:subClassOf rdf:resource="https://greeninfratwins.com/ns/grit#ValueIndicator"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasVariable"/>
+                <owl:someValuesFrom rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorVariable"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasExternalCalculationServiceUrl"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasFormula"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An indicator that can be computed by a service by providing a formular and variables.</rdfs:comment>
+        <rdfs:label>Simple computed value indicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#SpecifiedUseCase -->
+
+
+    <owl:Class rdf:about="https://greeninfratwins.com/ns/grit#SpecifiedUseCase">
+        <rdfs:label>Specified use case</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#TechnicalQualityIndicator -->
+
+
+    <owl:Class rdf:about="https://greeninfratwins.com/ns/grit#TechnicalQualityIndicator">
+        <rdfs:subClassOf rdf:resource="https://greeninfratwins.com/ns/grit#Indicator"/>
+        <rdfs:comment>An indicator for depicting the technical quality of a measure.</rdfs:comment>
+        <rdfs:label>Technical quality indicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#ValueIndicator -->
+
+
+    <owl:Class rdf:about="https://greeninfratwins.com/ns/grit#ValueIndicator">
+        <rdfs:subClassOf rdf:resource="https://greeninfratwins.com/ns/grit#Indicator"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://qudt.org/schema/qudt/Unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasValue"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A class for all value indicators and subclasses. Cannot be used for calculating. For constant values see &quot;git:ConstantValueIndicator&quot;.</rdfs:comment>
+        <rdfs:label>Value indicator</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://greeninfratwins.com/ns/grit#ConstantValueIndicator"/>
+    </owl:Class>
+    
+
+
+    <!-- https://qudt.org/schema/qudt/Unit -->
+
+
+    <owl:Class rdf:about="https://qudt.org/schema/qudt/Unit"/>
+    
+
+
+    <!-- https://schema.org/Person -->
+
+
+    <owl:Class rdf:about="https://schema.org/Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#Awf_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#Awf_1">
+        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#SpecifiedUseCase"/>
+        <rdfs:label>Awf 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#Awf_2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#Awf_2">
+        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#SpecifiedUseCase"/>
+        <rdfs:label>Awf 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#Awf_3 -->
+
+
+    <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#Awf_3">
+        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#SpecifiedUseCase"/>
+        <rdfs:label>Awf 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#Awf_4 -->
+
+
+    <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#Awf_4">
+        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#SpecifiedUseCase"/>
+        <rdfs:label>Awf 4</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

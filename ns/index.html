@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="resources/primer.css" media="screen"/>
+<link rel="stylesheet" href="resources/rec.css" media="screen"/>
+<link rel="stylesheet" href="resources/extra.css" media="screen"/>
+<link rel="stylesheet" href="resources/owl.css" media="screen"/>
+<link rel="stylesheet" href="resources/dark.css" media="(prefers-color-scheme: dark)"/>
+<link rel="stylesheet" href="resources/light.css" media="(prefers-color-scheme: light)"/>
+<link rel="stylesheet" href="resources/slider.css" media="screen"/>
+<meta name="color-scheme" content="dark light">
+<script type="module" src="resources/dark-mode-toggle.mjs"></script><div class="darkmode">
+	<dark-mode-toggle class="slider"></dark-mode-toggle>
+</div>
+ <title>GreenInfraTwins (GRIT) Ontology</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://greeninfratwins.com/ns/grit#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://greeninfratwins.com/ns/grit#","name":"GreenInfraTwins (GRIT) Ontology", "headline":"Document describing the ontology https://greeninfratwins.com/ns/grit#", "dateReleased":"2024-08-01", "dateModified":"2024-11-21", "version":"1.0", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Philipp Hagedorn"}], "contributor":[{"@type":"Person","name":"Liu Liu"},{"@type":"Person","name":"Simon Kosse"}]}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked.parse(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>GreenInfraTwins (GRIT) Ontology</h1>
+<img src="https://greeninfratwins.blogs.ruhr-uni-bochum.de/wp-content/uploads/2024/02/cropped-GreenInfraTwins_Logo_transparent-2048x512.png" width="50/">
+<h2>Release: 2024-08-01</h2>
+
+
+<dl>
+<dt>Modified on: 2024-11-21</dt>
+<dt>Latest version:</dt>
+<dd><a href="https://greeninfratwins.com/ns/grit#">https://greeninfratwins.com/ns/grit#</a></dd>
+<dt>Revision:</dt>
+<dd>1.0</dd>
+<dt>Authors:</dt>
+<dd>Philipp Hagedorn<a href="mailto:philipp.hagedorn-n6v@rub.de">&#9993;</a></dd>
+
+<dt>Contributors:</dt>
+<dd>Liu Liu<a href="mailto:liu.liu-m6r@rub.de">&#9993;</a></dd><dd>Simon Kosse<a href="mailto:simon.kosse@rub.de">&#9993;</a></dd>
+
+<dt>Source:</dt>
+<dd><a href="https://www.greeninfratwins.com">https://www.greeninfratwins.com</a></dd>
+
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/licenses/by/4.0/-blue.svg" alt="https://creativecommons.org/licenses/by/4.0/" /></a>
+</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+<!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
+<dd>Philipp Hagedorn. GreenInfraTwins (GRIT) Ontology. Revision: 1.0.</dd>
+</dl>
+
+<hr/>
+</div>
+<div class="status">
+<div>
+<span>Ontology Specification Draft</span>
+</div>
+</div><div id="toc"></div>  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">GreenInfraTwins (GRIT) Ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#Activity" title="https://greeninfratwins.com/ns/grit#Activity">Activity</a>
+   </li>
+   <li>
+      <a href="#Assessment" title="https://greeninfratwins.com/ns/grit#Assessment">Assessment defined by a specified Use Case</a>
+   </li>
+   <li>
+      <a href="#ComplexComputedValueIndicator"
+         title="https://greeninfratwins.com/ns/grit#ComplexComputedValueIndicator">Complex computed value indicator</a>
+   </li>
+   <li>
+      <a href="#ConstantValueIndicator"
+         title="https://greeninfratwins.com/ns/grit#ConstantValueIndicator">Constant value indicator</a>
+   </li>
+   <li>
+      <a href="#GreenInfraTwin"
+         title="https://greeninfratwins.com/ns/grit#GreenInfraTwin">GreenInfraTwin Demonstrator</a>
+   </li>
+   <li>
+      <a href="#Indicator" title="https://greeninfratwins.com/ns/grit#Indicator">Indicator</a>
+   </li>
+   <li>
+      <a href="#IndicatorSet" title="https://greeninfratwins.com/ns/grit#IndicatorSet">Indicator set</a>
+   </li>
+   <li>
+      <a href="#IndicatorType"
+         title="https://greeninfratwins.com/ns/grit#IndicatorType">Indicator type</a>
+   </li>
+   <li>
+      <a href="#IndicatorVariable"
+         title="https://greeninfratwins.com/ns/grit#IndicatorVariable">Indicator variable</a>
+   </li>
+   <li>
+      <a href="#Measure" title="https://greeninfratwins.com/ns/grit#Measure">Measure</a>
+   </li>
+   <li>
+      <a href="#MeasureIndicator"
+         title="https://greeninfratwins.com/ns/grit#MeasureIndicator">Measure indicator</a>
+   </li>
+   <li>
+      <a href="#MeasureVariant"
+         title="https://greeninfratwins.com/ns/grit#MeasureVariant">Measure variant</a>
+   </li>
+   <li>
+      <a href="#ReliabilityIndicator"
+         title="https://greeninfratwins.com/ns/grit#ReliabilityIndicator">Reliability indicator</a>
+   </li>
+   <li>
+      <a href="#SimpleComputedValueIndicator"
+         title="https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator">Simple computed value indicator</a>
+   </li>
+   <li>
+      <a href="#SpecifiedUseCase"
+         title="https://greeninfratwins.com/ns/grit#SpecifiedUseCase">Specified use case</a>
+   </li>
+   <li>
+      <a href="#TechnicalQualityIndicator"
+         title="https://greeninfratwins.com/ns/grit#TechnicalQualityIndicator">Technical quality indicator</a>
+   </li>
+   <li>
+      <a href="#ValueIndicator"
+         title="https://greeninfratwins.com/ns/grit#ValueIndicator">Value indicator</a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#afterActivity"
+         title="https://greeninfratwins.com/ns/grit#afterActivity">after activity</a>
+   </li>
+   <li>
+      <a href="#connectedServices"
+         title="https://greeninfratwins.com/ns/grit#connectedServices">connected services</a>
+   </li>
+   <li>
+      <a href="#frequencyPerYear"
+         title="https://greeninfratwins.com/ns/grit#frequencyPerYear">frequency per year</a>
+   </li>
+   <li>
+      <a href="#hasAsessment" title="https://greeninfratwins.com/ns/grit#hasAsessment">has asessment</a>
+   </li>
+   <li>
+      <a href="#hasExternalCalculationServiceUrl"
+         title="https://greeninfratwins.com/ns/grit#hasExternalCalculationServiceUrl">has calculation service</a>
+   </li>
+   <li>
+      <a href="#hasExternalCalculationApplication"
+         title="https://greeninfratwins.com/ns/grit#hasExternalCalculationApplication">has external calculation application</a>
+   </li>
+   <li>
+      <a href="#hasFormula" title="https://greeninfratwins.com/ns/grit#hasFormula">has formula</a>
+   </li>
+   <li>
+      <a href="#hasIndicator" title="https://greeninfratwins.com/ns/grit#hasIndicator">has indicator</a>
+   </li>
+   <li>
+      <a href="#hasIndicatorSet"
+         title="https://greeninfratwins.com/ns/grit#hasIndicatorSet">has indicator set</a>
+   </li>
+   <li>
+      <a href="#hasIndicatorType"
+         title="https://greeninfratwins.com/ns/grit#hasIndicatorType">has indicator type</a>
+   </li>
+   <li>
+      <a href="#hasKey" title="https://greeninfratwins.com/ns/grit#hasKey">has key</a>
+   </li>
+   <li>
+      <a href="#hasMeasure" title="https://greeninfratwins.com/ns/grit#hasMeasure">has measure</a>
+   </li>
+   <li>
+      <a href="#hasMeasureVariant"
+         title="https://greeninfratwins.com/ns/grit#hasMeasureVariant">has measure variant</a>
+   </li>
+   <li>
+      <a href="#isDefinedBy" title="https://greeninfratwins.com/ns/grit#isDefinedBy">has specified use case</a>
+   </li>
+   <li>
+      <a href="#hasUnit" title="https://greeninfratwins.com/ns/grit#hasUnit">has unit</a>
+   </li>
+   <li>
+      <a href="#hasValue" title="https://greeninfratwins.com/ns/grit#hasValue">has value</a>
+   </li>
+   <li>
+      <a href="#hasVariable" title="https://greeninfratwins.com/ns/grit#hasVariable">has variable</a>
+   </li>
+   <li>
+      <a href="#involvesActivities"
+         title="https://greeninfratwins.com/ns/grit#involvesActivities">involves activities</a>
+   </li>
+   <li>
+      <a href="#mapsToLbdProperty"
+         title="https://greeninfratwins.com/ns/grit#mapsToLbdProperty">maps to lbd property</a>
+   </li>
+</ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#hasIcddContainerID"
+         title="https://greeninfratwins.com/ns/grit#hasIcddContainerID">has icdd container ID</a>
+   </li>
+   <li>
+      <a href="#hasIcddProjectID"
+         title="https://greeninfratwins.com/ns/grit#hasIcddProjectID">has icdd project ID</a>
+   </li>
+</ul><h4>Named Individuals</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#Awf_1" title="https://greeninfratwins.com/ns/grit#Awf_1">Awf 1</a>
+   </li>
+   <li>
+      <a href="#Awf_2" title="https://greeninfratwins.com/ns/grit#Awf_2">Awf 2</a>
+   </li>
+   <li>
+      <a href="#Awf_3" title="https://greeninfratwins.com/ns/grit#Awf_3">Awf 3</a>
+   </li>
+   <li>
+      <a href="#Awf_4" title="https://greeninfratwins.com/ns/grit#Awf_4">Awf 4</a>
+   </li>
+</ul><iframe src="webvowl/index.html"></iframe> 
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">GreenInfraTwins (GRIT) Ontology: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+<span class="markdown">The GreenInfraTwins (GRIT) Ontology is used for establishing digital twins for the sustainability assessment of transportaion infrastructure in Germany, Austria, and Switzerland. The aim of the research project is to conceptualise and demonstrate sustainability-related decision support through the use of digital twins of engineering structures. To this end, digital twins of engineering structures are created, enriched with data and used to calculate key indicators for sustainability analyses. </span></div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for GreenInfraTwins (GRIT) Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by GreenInfraTwins (GRIT) Ontology.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#Activity" title="https://greeninfratwins.com/ns/grit#Activity">Activity</a></li>
+  <li><a href="#Assessment" title="https://greeninfratwins.com/ns/grit#Assessment">Assessment defined by a specified Use Case</a></li>
+  <li><a href="#ComplexComputedValueIndicator" title="https://greeninfratwins.com/ns/grit#ComplexComputedValueIndicator">Complex computed value indicator</a></li>
+  <li><a href="#ConstantValueIndicator" title="https://greeninfratwins.com/ns/grit#ConstantValueIndicator">Constant value indicator</a></li>
+  <li><a href="#GreenInfraTwin" title="https://greeninfratwins.com/ns/grit#GreenInfraTwin">GreenInfraTwin Demonstrator</a></li>
+  <li><a href="#Indicator" title="https://greeninfratwins.com/ns/grit#Indicator">Indicator</a></li>
+  <li><a href="#IndicatorSet" title="https://greeninfratwins.com/ns/grit#IndicatorSet">Indicator set</a></li>
+  <li><a href="#IndicatorType" title="https://greeninfratwins.com/ns/grit#IndicatorType">Indicator type</a></li>
+  <li><a href="#IndicatorVariable" title="https://greeninfratwins.com/ns/grit#IndicatorVariable">Indicator variable</a></li>
+  <li><a href="#Measure" title="https://greeninfratwins.com/ns/grit#Measure">Measure</a></li>
+  <li><a href="#MeasureIndicator" title="https://greeninfratwins.com/ns/grit#MeasureIndicator">Measure indicator</a></li>
+  <li><a href="#MeasureVariant" title="https://greeninfratwins.com/ns/grit#MeasureVariant">Measure variant</a></li>
+  <li><a href="#ReliabilityIndicator" title="https://greeninfratwins.com/ns/grit#ReliabilityIndicator">Reliability indicator</a></li>
+  <li><a href="#SimpleComputedValueIndicator" title="https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator">Simple computed value indicator</a></li>
+  <li><a href="#SpecifiedUseCase" title="https://greeninfratwins.com/ns/grit#SpecifiedUseCase">Specified use case</a></li>
+  <li><a href="#TechnicalQualityIndicator" title="https://greeninfratwins.com/ns/grit#TechnicalQualityIndicator">Technical quality indicator</a></li>
+  <li><a href="#ValueIndicator" title="https://greeninfratwins.com/ns/grit#ValueIndicator">Value indicator</a></li>
+ </ul>
+ <div class="entity" id="Activity">
+  <h3>Activity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#Activity</p>
+  <div class="comment">
+   <span class="markdown">The activity that is performed in a particularly sequence within a measure or measure variant.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#afterActivity" title="https://greeninfratwins.com/ns/grit#afterActivity">after activity</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasIndicatorSet" title="https://greeninfratwins.com/ns/grit#hasIndicatorSet">has indicator set</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#afterActivity" title="https://greeninfratwins.com/ns/grit#afterActivity">after activity</a> <sup class="type-op" title="object property">op</sup>, <a href="#involvesActivities" title="https://greeninfratwins.com/ns/grit#involvesActivities">involves activities</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Assessment">
+  <h3>Assessment defined by a specified Use Case<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#Assessment</p>
+  <div class="comment">
+   <span class="markdown">The use case that is performed in a DT.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasMeasure" title="https://greeninfratwins.com/ns/grit#hasMeasure">has measure</a> <sup class="type-op" title="object property">op</sup>, <a href="#isDefinedBy" title="https://greeninfratwins.com/ns/grit#isDefinedBy">has specified use case</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasAsessment" title="https://greeninfratwins.com/ns/grit#hasAsessment">has asessment</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ComplexComputedValueIndicator">
+  <h3>Complex computed value indicator<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#ComplexComputedValueIndicator</p>
+  <div class="comment">
+   <span class="markdown">An indicator that cannot be calculated by just a given formula but in expert software.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#ValueIndicator" title="https://greeninfratwins.com/ns/grit#ValueIndicator">Value indicator</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasExternalCalculationApplication" title="https://greeninfratwins.com/ns/grit#hasExternalCalculationApplication">has external calculation application</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#ConstantValueIndicator" title="https://greeninfratwins.com/ns/grit#ConstantValueIndicator">Constant value indicator</a> <sup class="type-c" title="class">c</sup>, <a href="#SimpleComputedValueIndicator" title="https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator">Simple computed value indicator</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ConstantValueIndicator">
+  <h3>Constant value indicator<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#ConstantValueIndicator</p>
+  <div class="comment">
+   <span class="markdown">An indicator that does not change over time.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#ValueIndicator" title="https://greeninfratwins.com/ns/grit#ValueIndicator">Value indicator</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#ComplexComputedValueIndicator" title="https://greeninfratwins.com/ns/grit#ComplexComputedValueIndicator">Complex computed value indicator</a> <sup class="type-c" title="class">c</sup>, <a href="#SimpleComputedValueIndicator" title="https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator">Simple computed value indicator</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="GreenInfraTwin">
+  <h3>GreenInfraTwin Demonstrator<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#GreenInfraTwin</p>
+  <div class="comment">
+   <span class="markdown">The instance of a DT for sustainability asessment.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#connectedServices" title="https://greeninfratwins.com/ns/grit#connectedServices">connected services</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasAsessment" title="https://greeninfratwins.com/ns/grit#hasAsessment">has asessment</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasIcddContainerID" title="https://greeninfratwins.com/ns/grit#hasIcddContainerID">has icdd container ID</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIcddProjectID" title="https://greeninfratwins.com/ns/grit#hasIcddProjectID">has icdd project ID</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Indicator">
+  <h3>Indicator<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#Indicator</p>
+  <div class="comment">
+   <span class="markdown">The generic indicator class, can be subtyped regarding their caracteristics and their value calculation methods.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#MeasureIndicator" title="https://greeninfratwins.com/ns/grit#MeasureIndicator">Measure indicator</a> <sup class="type-c" title="class">c</sup>, <a href="#ReliabilityIndicator" title="https://greeninfratwins.com/ns/grit#ReliabilityIndicator">Reliability indicator</a> <sup class="type-c" title="class">c</sup>, <a href="#TechnicalQualityIndicator" title="https://greeninfratwins.com/ns/grit#TechnicalQualityIndicator">Technical quality indicator</a> <sup class="type-c" title="class">c</sup>, <a href="#ValueIndicator" title="https://greeninfratwins.com/ns/grit#ValueIndicator">Value indicator</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasIndicatorType" title="https://greeninfratwins.com/ns/grit#hasIndicatorType">has indicator type</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasIndicator" title="https://greeninfratwins.com/ns/grit#hasIndicator">has indicator</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="IndicatorSet">
+  <h3>Indicator set<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#IndicatorSet</p>
+  <div class="comment">
+   <span class="markdown">A set of indicators that is referenced by a specific activity.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasIndicator" title="https://greeninfratwins.com/ns/grit#hasIndicator">has indicator</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasIndicatorSet" title="https://greeninfratwins.com/ns/grit#hasIndicatorSet">has indicator set</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="IndicatorType">
+  <h3>Indicator type<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#IndicatorType</p>
+  <div class="comment">
+   <span class="markdown">A type for identifying indicators that should be aggregated in the overall calculation, e.g. GWP.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasIndicatorType" title="https://greeninfratwins.com/ns/grit#hasIndicatorType">has indicator type</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="IndicatorVariable">
+  <h3>Indicator variable<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#IndicatorVariable</p>
+  <div class="comment">
+   <span class="markdown">The variable that is used to calculated for an indicator, consists of a key (the variable identified) and a value (the numerical value)</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasKey" title="https://greeninfratwins.com/ns/grit#hasKey">has key</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasUnit" title="https://greeninfratwins.com/ns/grit#hasUnit">has unit</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasValue" title="https://greeninfratwins.com/ns/grit#hasValue">has value</a> <sup class="type-op" title="object property">op</sup>, <a href="#mapsToLbdProperty" title="https://greeninfratwins.com/ns/grit#mapsToLbdProperty">maps to lbd property</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasVariable" title="https://greeninfratwins.com/ns/grit#hasVariable">has variable</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Measure">
+  <h3>Measure<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#Measure</p>
+  <div class="comment">
+   <span class="markdown">The definition of a measure.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#frequencyPerYear" title="https://greeninfratwins.com/ns/grit#frequencyPerYear">frequency per year</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasMeasureVariant" title="https://greeninfratwins.com/ns/grit#hasMeasureVariant">has measure variant</a> <sup class="type-op" title="object property">op</sup>, <a href="#involvesActivities" title="https://greeninfratwins.com/ns/grit#involvesActivities">involves activities</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasMeasure" title="https://greeninfratwins.com/ns/grit#hasMeasure">has measure</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="MeasureIndicator">
+  <h3>Measure indicator<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#MeasureIndicator</p>
+  <div class="comment">
+   <span class="markdown">An indicator used for being calculated in a measure for sustainability asessment.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Indicator" title="https://greeninfratwins.com/ns/grit#Indicator">Indicator</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#ReliabilityIndicator" title="https://greeninfratwins.com/ns/grit#ReliabilityIndicator">Reliability indicator</a> <sup class="type-c" title="class">c</sup>, <a href="#TechnicalQualityIndicator" title="https://greeninfratwins.com/ns/grit#TechnicalQualityIndicator">Technical quality indicator</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="MeasureVariant">
+  <h3>Measure variant<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#MeasureVariant</p>
+  <div class="comment">
+   <span class="markdown">An optional variant of the measure. A measure can either directly involve activities directly, or, if needed, can have multiple variants that each involve activities.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#involvesActivities" title="https://greeninfratwins.com/ns/grit#involvesActivities">involves activities</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasMeasureVariant" title="https://greeninfratwins.com/ns/grit#hasMeasureVariant">has measure variant</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ReliabilityIndicator">
+  <h3>Reliability indicator<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#ReliabilityIndicator</p>
+  <div class="comment">
+   <span class="markdown">An indicator depicting the riliability of a measure.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Indicator" title="https://greeninfratwins.com/ns/grit#Indicator">Indicator</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#MeasureIndicator" title="https://greeninfratwins.com/ns/grit#MeasureIndicator">Measure indicator</a> <sup class="type-c" title="class">c</sup>, <a href="#TechnicalQualityIndicator" title="https://greeninfratwins.com/ns/grit#TechnicalQualityIndicator">Technical quality indicator</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SimpleComputedValueIndicator">
+  <h3>Simple computed value indicator<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator</p>
+  <div class="comment">
+   <span class="markdown">An indicator that can be computed by a service by providing a formular and variables.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#ValueIndicator" title="https://greeninfratwins.com/ns/grit#ValueIndicator">Value indicator</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasExternalCalculationServiceUrl" title="https://greeninfratwins.com/ns/grit#hasExternalCalculationServiceUrl">has calculation service</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasFormula" title="https://greeninfratwins.com/ns/grit#hasFormula">has formula</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasVariable" title="https://greeninfratwins.com/ns/grit#hasVariable">has variable</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#ComplexComputedValueIndicator" title="https://greeninfratwins.com/ns/grit#ComplexComputedValueIndicator">Complex computed value indicator</a> <sup class="type-c" title="class">c</sup>, <a href="#ConstantValueIndicator" title="https://greeninfratwins.com/ns/grit#ConstantValueIndicator">Constant value indicator</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SpecifiedUseCase">
+  <h3>Specified use case<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#SpecifiedUseCase</p>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#isDefinedBy" title="https://greeninfratwins.com/ns/grit#isDefinedBy">has specified use case</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#Awf_1" title="https://greeninfratwins.com/ns/grit#Awf_1">Awf 1</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Awf_2" title="https://greeninfratwins.com/ns/grit#Awf_2">Awf 2</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Awf_3" title="https://greeninfratwins.com/ns/grit#Awf_3">Awf 3</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Awf_4" title="https://greeninfratwins.com/ns/grit#Awf_4">Awf 4</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="TechnicalQualityIndicator">
+  <h3>Technical quality indicator<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#TechnicalQualityIndicator</p>
+  <div class="comment">
+   <span class="markdown">An indicator for depicting the technical quality of a measure.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Indicator" title="https://greeninfratwins.com/ns/grit#Indicator">Indicator</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#MeasureIndicator" title="https://greeninfratwins.com/ns/grit#MeasureIndicator">Measure indicator</a> <sup class="type-c" title="class">c</sup>, <a href="#ReliabilityIndicator" title="https://greeninfratwins.com/ns/grit#ReliabilityIndicator">Reliability indicator</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ValueIndicator">
+  <h3>Value indicator<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#ValueIndicator</p>
+  <div class="comment">
+   <span class="markdown">A class for all value indicators and subclasses. Cannot be used for calculating. For constant values see "git:ConstantValueIndicator".</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Indicator" title="https://greeninfratwins.com/ns/grit#Indicator">Indicator</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#ComplexComputedValueIndicator" title="https://greeninfratwins.com/ns/grit#ComplexComputedValueIndicator">Complex computed value indicator</a> <sup class="type-c" title="class">c</sup>, <a href="#ConstantValueIndicator" title="https://greeninfratwins.com/ns/grit#ConstantValueIndicator">Constant value indicator</a> <sup class="type-c" title="class">c</sup>, <a href="#SimpleComputedValueIndicator" title="https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator">Simple computed value indicator</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#afterActivity" title="https://greeninfratwins.com/ns/grit#afterActivity">after activity</a></li>
+  <li><a href="#connectedServices" title="https://greeninfratwins.com/ns/grit#connectedServices">connected services</a></li>
+  <li><a href="#frequencyPerYear" title="https://greeninfratwins.com/ns/grit#frequencyPerYear">frequency per year</a></li>
+  <li><a href="#hasAsessment" title="https://greeninfratwins.com/ns/grit#hasAsessment">has asessment</a></li>
+  <li><a href="#hasExternalCalculationServiceUrl" title="https://greeninfratwins.com/ns/grit#hasExternalCalculationServiceUrl">has calculation service</a></li>
+  <li><a href="#hasExternalCalculationApplication" title="https://greeninfratwins.com/ns/grit#hasExternalCalculationApplication">has external calculation application</a></li>
+  <li><a href="#hasFormula" title="https://greeninfratwins.com/ns/grit#hasFormula">has formula</a></li>
+  <li><a href="#hasIndicator" title="https://greeninfratwins.com/ns/grit#hasIndicator">has indicator</a></li>
+  <li><a href="#hasIndicatorSet" title="https://greeninfratwins.com/ns/grit#hasIndicatorSet">has indicator set</a></li>
+  <li><a href="#hasIndicatorType" title="https://greeninfratwins.com/ns/grit#hasIndicatorType">has indicator type</a></li>
+  <li><a href="#hasKey" title="https://greeninfratwins.com/ns/grit#hasKey">has key</a></li>
+  <li><a href="#hasMeasure" title="https://greeninfratwins.com/ns/grit#hasMeasure">has measure</a></li>
+  <li><a href="#hasMeasureVariant" title="https://greeninfratwins.com/ns/grit#hasMeasureVariant">has measure variant</a></li>
+  <li><a href="#isDefinedBy" title="https://greeninfratwins.com/ns/grit#isDefinedBy">has specified use case</a></li>
+  <li><a href="#hasUnit" title="https://greeninfratwins.com/ns/grit#hasUnit">has unit</a></li>
+  <li><a href="#hasValue" title="https://greeninfratwins.com/ns/grit#hasValue">has value</a></li>
+  <li><a href="#hasVariable" title="https://greeninfratwins.com/ns/grit#hasVariable">has variable</a></li>
+  <li><a href="#involvesActivities" title="https://greeninfratwins.com/ns/grit#involvesActivities">involves activities</a></li>
+  <li><a href="#mapsToLbdProperty" title="https://greeninfratwins.com/ns/grit#mapsToLbdProperty">maps to lbd property</a></li>
+ </ul>
+ <div class="entity" id="afterActivity">
+  <h3>after activity<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#afterActivity</p>
+  <div class="comment">
+   <span class="markdown">Establishes a procedural order of activities.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Activity" title="https://greeninfratwins.com/ns/grit#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Activity" title="https://greeninfratwins.com/ns/grit#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="connectedServices">
+  <h3>connected services<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#connectedServices</p>
+  <div class="comment">
+   <span class="markdown">The services connected to a DT, e.g., ICDD container.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#GreenInfraTwin" title="https://greeninfratwins.com/ns/grit#GreenInfraTwin">GreenInfraTwin Demonstrator</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="frequencyPerYear">
+  <h3>frequency per year<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#frequencyPerYear</p>
+  <div class="comment">
+   <span class="markdown">Displays the frequency of a measure per year.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Measure" title="https://greeninfratwins.com/ns/grit#Measure">Measure</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasAsessment">
+  <h3>has asessment<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#hasAsessment</p>
+  <div class="comment">
+   <span class="markdown">The connection beween the DT and the use case / asessment.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#GreenInfraTwin" title="https://greeninfratwins.com/ns/grit#GreenInfraTwin">GreenInfraTwin Demonstrator</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Assessment" title="https://greeninfratwins.com/ns/grit#Assessment">Assessment defined by a specified Use Case</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasExternalCalculationServiceUrl">
+  <h3>has calculation service<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#hasExternalCalculationServiceUrl</p>
+  <div class="comment">
+   <span class="markdown">The URL of a calculation service that can calculate the indicator based on the given formula and the respective variables.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#SimpleComputedValueIndicator" title="https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator">Simple computed value indicator</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasExternalCalculationApplication">
+  <h3>has external calculation application<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#hasExternalCalculationApplication</p>
+  <div class="comment">
+   <span class="markdown">Indicates the external application in which the calculation of an indicator is performed.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ComplexComputedValueIndicator" title="https://greeninfratwins.com/ns/grit#ComplexComputedValueIndicator">Complex computed value indicator</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasFormula">
+  <h3>has formula<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#hasFormula</p>
+  <div class="comment">
+   <span class="markdown">The calculation formular of a simple computed value indicator.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#SimpleComputedValueIndicator" title="https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator">Simple computed value indicator</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasIndicator">
+  <h3>has indicator<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#hasIndicator</p>
+  <div class="comment">
+   <span class="markdown">The connection between an indicator set and the indicator. This relation may occur multiple times.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#IndicatorSet" title="https://greeninfratwins.com/ns/grit#IndicatorSet">Indicator set</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Indicator" title="https://greeninfratwins.com/ns/grit#Indicator">Indicator</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasIndicatorSet">
+  <h3>has indicator set<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#hasIndicatorSet</p>
+  <div class="comment">
+   <span class="markdown">Establishes the connection between the activity and the respective indicators.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Activity" title="https://greeninfratwins.com/ns/grit#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#IndicatorSet" title="https://greeninfratwins.com/ns/grit#IndicatorSet">Indicator set</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasIndicatorType">
+  <h3>has indicator type<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#hasIndicatorType</p>
+  <div class="comment">
+   <span class="markdown">Provides the indicator type.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Indicator" title="https://greeninfratwins.com/ns/grit#Indicator">Indicator</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#IndicatorType" title="https://greeninfratwins.com/ns/grit#IndicatorType">Indicator type</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasKey">
+  <h3>has key<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#hasKey</p>
+  <div class="comment">
+   <span class="markdown">The key of a variable exactly as it appears in the calculation formula, e.g. v (for volume).</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#IndicatorVariable" title="https://greeninfratwins.com/ns/grit#IndicatorVariable">Indicator variable</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasMeasure">
+  <h3>has measure<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#hasMeasure</p>
+  <div class="comment">
+   <span class="markdown">The measures that are part of one assessment / use case.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Assessment" title="https://greeninfratwins.com/ns/grit#Assessment">Assessment defined by a specified Use Case</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Measure" title="https://greeninfratwins.com/ns/grit#Measure">Measure</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasMeasureVariant">
+  <h3>has measure variant<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#hasMeasureVariant</p>
+  <div class="comment">
+   <span class="markdown">A measure variant can be used to compare multiple variants of the same measure during the assessment.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Measure" title="https://greeninfratwins.com/ns/grit#Measure">Measure</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#MeasureVariant" title="https://greeninfratwins.com/ns/grit#MeasureVariant">Measure variant</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isDefinedBy">
+  <h3>has specified use case<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#isDefinedBy</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Assessment" title="https://greeninfratwins.com/ns/grit#Assessment">Assessment defined by a specified Use Case</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#SpecifiedUseCase" title="https://greeninfratwins.com/ns/grit#SpecifiedUseCase">Specified use case</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasUnit">
+  <h3>has unit<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#hasUnit</p>
+  <div class="comment">
+   <span class="markdown">The unit that a value refers to.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#IndicatorVariable" title="https://greeninfratwins.com/ns/grit#IndicatorVariable">Indicator variable</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="https://qudt.org/schema/qudt/Unit" target="_blank" title="https://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasValue">
+  <h3>has value<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#hasValue</p>
+  <div class="comment">
+   <span class="markdown">The value that should be computed by a calculation service for a given variable.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#IndicatorVariable" title="https://greeninfratwins.com/ns/grit#IndicatorVariable">Indicator variable</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasVariable">
+  <h3>has variable<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#hasVariable</p>
+  <div class="comment">
+   <span class="markdown">The connection between the indicator ant the variables of an indicator.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#SimpleComputedValueIndicator" title="https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator">Simple computed value indicator</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#IndicatorVariable" title="https://greeninfratwins.com/ns/grit#IndicatorVariable">Indicator variable</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="involvesActivities">
+  <h3>involves activities<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#involvesActivities</p>
+  <div class="comment">
+   <span class="markdown">The activities that are performed within a measure or a measure variant.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Measure" title="https://greeninfratwins.com/ns/grit#Measure">Measure</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#MeasureVariant" title="https://greeninfratwins.com/ns/grit#MeasureVariant">Measure variant</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Activity" title="https://greeninfratwins.com/ns/grit#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="mapsToLbdProperty">
+  <h3>maps to lbd property<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#mapsToLbdProperty</p>
+  <div class="comment">
+   <span class="markdown">This property is used to map a variable of an indicator to a property present in the RDF dataset of the digital twin.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#IndicatorVariable" title="https://greeninfratwins.com/ns/grit#IndicatorVariable">Indicator variable</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2000/01/rdf-schema#Resource" target="_blank" title="http://www.w3.org/2000/01/rdf-schema#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#hasIcddContainerID" title="https://greeninfratwins.com/ns/grit#hasIcddContainerID">has icdd container ID</a></li>
+  <li><a href="#hasIcddProjectID" title="https://greeninfratwins.com/ns/grit#hasIcddProjectID">has icdd project ID</a></li>
+ </ul>
+ <div class="entity" id="hasIcddContainerID">
+  <h3>has icdd container ID<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#hasIcddContainerID</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#GreenInfraTwin" title="https://greeninfratwins.com/ns/grit#GreenInfraTwin">GreenInfraTwin Demonstrator</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#anyURI" target="_blank" title="http://www.w3.org/2001/XMLSchema#anyURI">any U R I</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasIcddProjectID">
+  <h3>has icdd project ID<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#hasIcddProjectID</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#GreenInfraTwin" title="https://greeninfratwins.com/ns/grit#GreenInfraTwin">GreenInfraTwin Demonstrator</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#anyURI" target="_blank" title="http://www.w3.org/2001/XMLSchema#anyURI">any U R I</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+ <h3 id="namedindividuals" class="list">Named Individuals</h3>
+ <ul class="hlist">
+  <li><a href="#Awf_1" title="https://greeninfratwins.com/ns/grit#Awf_1">Awf 1</a></li>
+  <li><a href="#Awf_2" title="https://greeninfratwins.com/ns/grit#Awf_2">Awf 2</a></li>
+  <li><a href="#Awf_3" title="https://greeninfratwins.com/ns/grit#Awf_3">Awf 3</a></li>
+  <li><a href="#Awf_4" title="https://greeninfratwins.com/ns/grit#Awf_4">Awf 4</a></li>
+ </ul>
+ <div class="entity" id="Awf_1">
+  <h3>Awf 1<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#Awf_1</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#SpecifiedUseCase" title="https://greeninfratwins.com/ns/grit#SpecifiedUseCase">Specified use case</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Awf_2">
+  <h3>Awf 2<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#Awf_2</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#SpecifiedUseCase" title="https://greeninfratwins.com/ns/grit#SpecifiedUseCase">Specified use case</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Awf_3">
+  <h3>Awf 3<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#Awf_3</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#SpecifiedUseCase" title="https://greeninfratwins.com/ns/grit#SpecifiedUseCase">Specified use case</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Awf_4">
+  <h3>Awf 4<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#Awf_4</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#SpecifiedUseCase" title="https://greeninfratwins.com/ns/grit#SpecifiedUseCase">Specified use case</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
+</div>
+</div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Add your references here. It is recommended to have them as a list.</span>
+
+</div>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+
+</div>
+</body>
+</html>

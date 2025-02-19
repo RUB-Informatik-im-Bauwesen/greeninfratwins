@@ -1,0 +1,594 @@
+@prefix : <https://greeninfratwins.com/ns/grit#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://greeninfratwins.com/ns/grit#> .
+
+<https://greeninfratwins.com/ns/grit#> rdf:type owl:Ontology ;
+                                        <http://purl.org/dc/terms/contributor> _:genid1 ,
+                                                                               _:genid3 ;
+                                        <http://purl.org/dc/terms/created> "2024-08-01"^^xsd:date ;
+                                        <http://purl.org/dc/terms/creator> _:genid5 ;
+                                        <http://purl.org/dc/terms/description> "The GreenInfraTwins (GRIT) Ontology is used for establishing digital twins for the sustainability assessment of transportaion infrastructure in Germany, Austria, and Switzerland. The aim of the research project is to conceptualise and demonstrate sustainability-related decision support through the use of digital twins of engineering structures. To this end, digital twins of engineering structures are created, enriched with data and used to calculate key indicators for sustainability analyses. "@en ;
+                                        <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                        <http://purl.org/dc/terms/rights> "Copyright 2024 by Chair of Computing in Engineering, Ruhr University Bochum" ;
+                                        <http://purl.org/dc/terms/source> "https://www.greeninfratwins.com" ;
+                                        <http://purl.org/dc/terms/title> "GreenInfraTwins (GRIT) Ontology"@en ;
+                                        <http://purl.org/vocab/vann/preferredNamespacePrefix> "grit" ;
+                                        <http://purl.org/vocab/vann/preferredNamespaceUri> <https://greeninfratwins.com/ns/grit#> ;
+                                        owl:versionInfo "1.0" .
+
+_:genid1 rdf:type <https://schema.org/Person> ;
+          <https://schema.org/email> <mailto:liu.liu-m6r@rub.de> ;
+          <https://schema.org/identifier> <https://orcid.org/0000-0001-5907-7609> ;
+          <https://schema.org/memberOf> _:genid2 ;
+          <https://schema.org/name> "Liu Liu" .
+
+_:genid3 rdf:type <https://schema.org/Person> ;
+          <https://schema.org/email> <mailto:simon.kosse@rub.de> ;
+          <https://schema.org/identifier> <https://orcid.org/0000-0002-6391-784X> ;
+          <https://schema.org/memberOf> _:genid4 ;
+          <https://schema.org/name> "Simon Kosse" .
+
+_:genid5 rdf:type <https://schema.org/Person> ;
+          <https://schema.org/email> <mailto:philipp.hagedorn-n6v@rub.de> ;
+          <https://schema.org/identifier> <https://orcid.org/0000-0002-6249-243X> ;
+          <https://schema.org/memberOf> _:genid6 ;
+          <https://schema.org/name> "Philipp Hagedorn" .
+
+_:genid2 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/liu_liu.html.en> ;
+          <https://schema.org/name> "Ruhr University Bochum" .
+
+_:genid4 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/simon_kosse.html.en> ;
+          <https://schema.org/name> "Ruhr University Bochum" .
+
+_:genid6 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/philipp_hagedorn.html.en> ;
+          <https://schema.org/name> "Ruhr University Bochum" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/email
+<https://schema.org/email> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/identifier
+<https://schema.org/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/memberOf
+<https://schema.org/memberOf> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/name
+<https://schema.org/name> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://greeninfratwins.com/ns/grit#afterActivity
+:afterActivity rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain :Activity ;
+               rdfs:range :Activity ;
+               rdfs:comment "Establishes a procedural order of activities." ;
+               rdfs:label "after activity" .
+
+
+###  https://greeninfratwins.com/ns/grit#connectedServices
+:connectedServices rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdfs:domain :GreenInfraTwin ;
+                   rdfs:comment "The services connected to a DT, e.g., ICDD container." ;
+                   rdfs:label "connected services" .
+
+
+###  https://greeninfratwins.com/ns/grit#frequencyPerYear
+:frequencyPerYear rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  rdfs:domain :Measure ;
+                  rdfs:comment "Displays the frequency of a measure per year." ;
+                  rdfs:label "frequency per year" .
+
+
+###  https://greeninfratwins.com/ns/grit#hasAsessment
+:hasAsessment rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain :GreenInfraTwin ;
+              rdfs:range :Assessment ;
+              rdfs:comment "The connection beween the DT and the use case / asessment." ;
+              rdfs:label "has asessment" .
+
+
+###  https://greeninfratwins.com/ns/grit#hasExternalCalculationApplication
+:hasExternalCalculationApplication rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf owl:topObjectProperty ;
+                                   rdfs:domain :ComplexComputedValueIndicator ;
+                                   rdfs:comment "Indicates the external application in which the calculation of an indicator is performed." ;
+                                   rdfs:label "has external calculation application" .
+
+
+###  https://greeninfratwins.com/ns/grit#hasExternalCalculationServiceUrl
+:hasExternalCalculationServiceUrl rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf owl:topObjectProperty ;
+                                  rdfs:domain :SimpleComputedValueIndicator ;
+                                  rdfs:comment "The URL of a calculation service that can calculate the indicator based on the given formula and the respective variables." ;
+                                  rdfs:label "has calculation service" .
+
+
+###  https://greeninfratwins.com/ns/grit#hasFormula
+:hasFormula rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :SimpleComputedValueIndicator ;
+            rdfs:comment "The calculation formular of a simple computed value indicator." ;
+            rdfs:label "has formula" .
+
+
+###  https://greeninfratwins.com/ns/grit#hasIndicator
+:hasIndicator rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain :IndicatorSet ;
+              rdfs:range :Indicator ;
+              rdfs:comment "The connection between an indicator set and the indicator. This relation may occur multiple times." ;
+              rdfs:label "has indicator" .
+
+
+###  https://greeninfratwins.com/ns/grit#hasIndicatorSet
+:hasIndicatorSet rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:domain :Activity ;
+                 rdfs:range :IndicatorSet ;
+                 rdfs:comment "Establishes the connection between the activity and the respective indicators." ;
+                 rdfs:label "has indicator set" .
+
+
+###  https://greeninfratwins.com/ns/grit#hasIndicatorType
+:hasIndicatorType rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  rdfs:domain :Indicator ;
+                  rdfs:range :IndicatorType ;
+                  rdfs:comment "Provides the indicator type." ;
+                  rdfs:label "has indicator type" .
+
+
+###  https://greeninfratwins.com/ns/grit#hasKey
+:hasKey rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf owl:topObjectProperty ;
+        rdfs:domain :IndicatorVariable ;
+        owl:propertyDisjointWith :hasValue ;
+        rdfs:comment "The key of a variable exactly as it appears in the calculation formula, e.g. v (for volume)." ;
+        rdfs:label "has key" .
+
+
+###  https://greeninfratwins.com/ns/grit#hasMeasure
+:hasMeasure rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :Assessment ;
+            rdfs:range :Measure ;
+            rdfs:comment "The measures that are part of one assessment / use case." ;
+            rdfs:label "has measure" .
+
+
+###  https://greeninfratwins.com/ns/grit#hasMeasureVariant
+:hasMeasureVariant rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdfs:domain :Measure ;
+                   rdfs:range :MeasureVariant ;
+                   rdfs:comment "A measure variant can be used to compare multiple variants of the same measure during the assessment." ;
+                   rdfs:label "has measure variant" .
+
+
+###  https://greeninfratwins.com/ns/grit#hasUnit
+:hasUnit rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain :IndicatorVariable ;
+         rdfs:range <https://qudt.org/schema/qudt/Unit> ;
+         rdfs:comment "The unit that a value refers to." ;
+         rdfs:label "has unit" .
+
+
+###  https://greeninfratwins.com/ns/grit#hasValue
+:hasValue rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain :IndicatorVariable ;
+          rdfs:comment "The value that should be computed by a calculation service for a given variable." ;
+          rdfs:label "has value" .
+
+
+###  https://greeninfratwins.com/ns/grit#hasVariable
+:hasVariable rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain :SimpleComputedValueIndicator ;
+             rdfs:range :IndicatorVariable ;
+             rdfs:comment "The connection between the indicator ant the variables of an indicator." ;
+             rdfs:label "has variable" .
+
+
+###  https://greeninfratwins.com/ns/grit#involvesActivities
+:involvesActivities rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty ;
+                    rdfs:domain :Measure ,
+                                :MeasureVariant ;
+                    rdfs:range :Activity ;
+                    rdfs:comment "The activities that are performed within a measure or a measure variant." ;
+                    rdfs:label "involves activities" .
+
+
+###  https://greeninfratwins.com/ns/grit#isDefinedBy
+:isDefinedBy rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain :Assessment ;
+             rdfs:range :SpecifiedUseCase ;
+             rdfs:label "has specified use case" .
+
+
+###  https://greeninfratwins.com/ns/grit#mapsToLbdProperty
+:mapsToLbdProperty rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdfs:domain :IndicatorVariable ;
+                   rdfs:range rdfs:Resource ;
+                   rdfs:comment "This property is used to map a variable of an indicator to a property present in the RDF dataset of the digital twin." ;
+                   rdfs:label "maps to lbd property" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://greeninfratwins.com/ns/grit#hasIcddContainerID
+:hasIcddContainerID rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf owl:topDataProperty ;
+                    rdfs:domain :GreenInfraTwin ;
+                    rdfs:range xsd:anyURI ;
+                    rdfs:label "has icdd container ID" .
+
+
+###  https://greeninfratwins.com/ns/grit#hasIcddProjectID
+:hasIcddProjectID rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain :GreenInfraTwin ;
+                  rdfs:range xsd:anyURI ;
+                  rdfs:label "has icdd project ID" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#Resource
+rdfs:Resource rdf:type owl:Class .
+
+
+###  http://www.w3.org/2001/XMLSchema#decimal
+xsd:decimal rdf:type owl:Class .
+
+
+###  http://www.w3.org/2001/XMLSchema#int
+xsd:int rdf:type owl:Class .
+
+
+###  https://greeninfratwins.com/ns/grit#Activity
+:Activity rdf:type owl:Class ;
+          rdfs:subClassOf owl:Thing ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :afterActivity ;
+                            owl:someValuesFrom :Activity
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasIndicatorSet ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :IndicatorSet
+                          ] ;
+          rdfs:comment "The activity that is performed in a particularly sequence within a measure or measure variant." ;
+          rdfs:label "Activity" .
+
+
+###  https://greeninfratwins.com/ns/grit#Assessment
+:Assessment rdf:type owl:Class ;
+            rdfs:subClassOf owl:Thing ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasMeasure ;
+                              owl:someValuesFrom :Measure
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :isDefinedBy ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass :SpecifiedUseCase
+                            ] ;
+            rdfs:comment "The use case that is performed in a DT." ;
+            rdfs:label "Assessment defined by a specified Use Case" .
+
+
+###  https://greeninfratwins.com/ns/grit#ComplexComputedValueIndicator
+:ComplexComputedValueIndicator rdf:type owl:Class ;
+                               rdfs:subClassOf :ValueIndicator ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasVariable ;
+                                                 owl:someValuesFrom :IndicatorVariable
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasExternalCalculationApplication ;
+                                                 owl:cardinality "1"^^xsd:nonNegativeInteger
+                                               ] ;
+                               owl:disjointWith :ConstantValueIndicator ,
+                                                :SimpleComputedValueIndicator ;
+                               rdfs:comment "An indicator that cannot be calculated by just a given formula but in expert software." ;
+                               rdfs:label "Complex computed value indicator" .
+
+
+###  https://greeninfratwins.com/ns/grit#ConstantValueIndicator
+:ConstantValueIndicator rdf:type owl:Class ;
+                        rdfs:subClassOf :ValueIndicator ;
+                        owl:disjointWith :SimpleComputedValueIndicator ;
+                        rdfs:comment "An indicator that does not change over time." ;
+                        rdfs:label "Constant value indicator" .
+
+
+###  https://greeninfratwins.com/ns/grit#GreenInfraTwin
+:GreenInfraTwin rdf:type owl:Class ;
+                rdfs:subClassOf owl:Thing ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasAsessment ;
+                                  owl:someValuesFrom :Assessment
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :connectedServices ;
+                                  owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasIcddContainerID ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:anyURI
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasIcddProjectID ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:anyURI
+                                ] ;
+                rdfs:comment "The instance of a DT for sustainability asessment." ;
+                rdfs:label "GreenInfraTwin Demonstrator" .
+
+
+###  https://greeninfratwins.com/ns/grit#Indicator
+:Indicator rdf:type owl:Class ;
+           rdfs:subClassOf owl:Thing ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasIndicatorType ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :IndicatorType
+                           ] ;
+           rdfs:comment "The generic indicator class, can be subtyped regarding their caracteristics and their value calculation methods." ;
+           rdfs:label "Indicator" .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorSet
+:IndicatorSet rdf:type owl:Class ;
+              rdfs:subClassOf owl:Thing ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasIndicator ;
+                                owl:someValuesFrom :Indicator
+                              ] ;
+              rdfs:comment "A set of indicators that is referenced by a specific activity." ;
+              rdfs:label "Indicator set" .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType
+:IndicatorType rdf:type owl:Class ;
+               rdfs:subClassOf owl:Thing ;
+               rdfs:comment "A type for identifying indicators that should be aggregated in the overall calculation, e.g. GWP." ;
+               rdfs:label "Indicator type" .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorVariable
+:IndicatorVariable rdf:type owl:Class ;
+                   rdfs:subClassOf owl:Thing ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasKey ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass xsd:string
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasUnit ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass <https://qudt.org/schema/qudt/Unit>
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasValue ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass xsd:decimal
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :mapsToLbdProperty ;
+                                     owl:cardinality "1"^^xsd:nonNegativeInteger
+                                   ] ;
+                   rdfs:comment "The variable that is used to calculated for an indicator, consists of a key (the variable identified) and a value (the numerical value)" ;
+                   rdfs:label "Indicator variable" .
+
+
+###  https://greeninfratwins.com/ns/grit#Measure
+:Measure rdf:type owl:Class ;
+         rdfs:subClassOf owl:Thing ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasMeasureVariant ;
+                           owl:someValuesFrom :MeasureVariant
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :involvesActivities ;
+                           owl:someValuesFrom :Activity
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :frequencyPerYear ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass xsd:int
+                         ] ;
+         rdfs:comment "The definition of a measure." ;
+         rdfs:label "Measure" .
+
+
+###  https://greeninfratwins.com/ns/grit#MeasureIndicator
+:MeasureIndicator rdf:type owl:Class ;
+                  rdfs:subClassOf :Indicator ;
+                  owl:disjointWith :ReliabilityIndicator ,
+                                   :TechnicalQualityIndicator ;
+                  rdfs:comment "An indicator used for being calculated in a measure for sustainability asessment." ;
+                  rdfs:label "Measure indicator" .
+
+
+###  https://greeninfratwins.com/ns/grit#MeasureVariant
+:MeasureVariant rdf:type owl:Class ;
+                rdfs:subClassOf owl:Thing ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :involvesActivities ;
+                                  owl:someValuesFrom :Activity
+                                ] ;
+                rdfs:comment "An optional variant of the measure. A measure can either directly involve activities directly, or, if needed, can have multiple variants that each involve activities." ;
+                rdfs:label "Measure variant" .
+
+
+###  https://greeninfratwins.com/ns/grit#ReliabilityIndicator
+:ReliabilityIndicator rdf:type owl:Class ;
+                      rdfs:subClassOf :Indicator ;
+                      owl:disjointWith :TechnicalQualityIndicator ;
+                      rdfs:comment "An indicator depicting the riliability of a measure." ;
+                      rdfs:label "Reliability indicator" .
+
+
+###  https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator
+:SimpleComputedValueIndicator rdf:type owl:Class ;
+                              rdfs:subClassOf :ValueIndicator ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :hasVariable ;
+                                                owl:someValuesFrom :IndicatorVariable
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :hasExternalCalculationServiceUrl ;
+                                                owl:cardinality "1"^^xsd:nonNegativeInteger
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :hasFormula ;
+                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onClass xsd:string
+                                              ] ;
+                              rdfs:comment "An indicator that can be computed by a service by providing a formular and variables." ;
+                              rdfs:label "Simple computed value indicator" .
+
+
+###  https://greeninfratwins.com/ns/grit#SpecifiedUseCase
+:SpecifiedUseCase rdf:type owl:Class ;
+                  rdfs:label "Specified use case" .
+
+
+###  https://greeninfratwins.com/ns/grit#TechnicalQualityIndicator
+:TechnicalQualityIndicator rdf:type owl:Class ;
+                           rdfs:subClassOf :Indicator ;
+                           rdfs:comment "An indicator for depicting the technical quality of a measure." ;
+                           rdfs:label "Technical quality indicator" .
+
+
+###  https://greeninfratwins.com/ns/grit#ValueIndicator
+:ValueIndicator rdf:type owl:Class ;
+                rdfs:subClassOf :Indicator ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasUnit ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass <https://qudt.org/schema/qudt/Unit>
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasValue ;
+                                  owl:cardinality "1"^^xsd:nonNegativeInteger
+                                ] ;
+                rdfs:comment "A class for all value indicators and subclasses. Cannot be used for calculating. For constant values see \"git:ConstantValueIndicator\"." ;
+                rdfs:label "Value indicator" ;
+                rdfs:seeAlso :ConstantValueIndicator .
+
+
+###  https://qudt.org/schema/qudt/Unit
+<https://qudt.org/schema/qudt/Unit> rdf:type owl:Class .
+
+
+###  https://schema.org/Person
+<https://schema.org/Person> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://greeninfratwins.com/ns/grit#Awf_1
+:Awf_1 rdf:type owl:NamedIndividual ,
+                :SpecifiedUseCase ;
+       rdfs:label "Awf 1" .
+
+
+###  https://greeninfratwins.com/ns/grit#Awf_2
+:Awf_2 rdf:type owl:NamedIndividual ,
+                :SpecifiedUseCase ;
+       rdfs:label "Awf 2" .
+
+
+###  https://greeninfratwins.com/ns/grit#Awf_3
+:Awf_3 rdf:type owl:NamedIndividual ,
+                :SpecifiedUseCase ;
+       rdfs:label "Awf 3" .
+
+
+###  https://greeninfratwins.com/ns/grit#Awf_4
+:Awf_4 rdf:type owl:NamedIndividual ,
+                :SpecifiedUseCase ;
+       rdfs:label "Awf 4" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
