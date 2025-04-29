@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://greeninfratwins.com/ns/grit#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://greeninfratwins.com/ns/grit#","name":"GreenInfraTwins (GRIT) Ontology", "headline":"Document describing the ontology https://greeninfratwins.com/ns/grit#", "dateReleased":"2024-08-01", "dateModified":"2025-04-29", "version":"0.3", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Philipp Hagedorn"}], "contributor":[{"@type":"Person","name":"Liu Liu"},{"@type":"Person","name":"Simon Kosse"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://greeninfratwins.com/ns/grit#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://greeninfratwins.com/ns/grit#","name":"GreenInfraTwins (GRIT) Ontology", "headline":"Document describing the ontology https://greeninfratwins.com/ns/grit#", "dateReleased":"2024-08-01", "dateModified":"2025-04-29", "version":"1.0", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Philipp Hagedorn"}], "contributor":[{"@type":"Person","name":"Liu Liu"},{"@type":"Person","name":"Simon Kosse"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -74,7 +74,7 @@ $(function(){
 <dt>Latest version:</dt>
 <dd><a href="https://greeninfratwins.com/ns/grit#">https://greeninfratwins.com/ns/grit#</a></dd>
 <dt>Revision:</dt>
-<dd>0.3</dd>
+<dd>1.0</dd>
 <dt>Authors:</dt>
 <dd>Philipp Hagedorn<a href="mailto:philipp.hagedorn-n6v@rub.de">&#9993;</a></dd>
 
@@ -87,7 +87,7 @@ $(function(){
 <dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/licenses/by/4.0/-blue.svg" alt="https://creativecommons.org/licenses/by/4.0/" /></a>
 </dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
 <!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
-<dd>Philipp Hagedorn. GreenInfraTwins (GRIT) Ontology. Revision: 0.3.</dd>
+<dd>Philipp Hagedorn. GreenInfraTwins (GRIT) Ontology. Revision: 1.0.</dd>
 </dl>
 
 <hr/>
@@ -282,6 +282,11 @@ This ontology has the following classes and properties.</span>
          title="https://greeninfratwins.com/ns/grit#hasIcddProjectID">has icdd project ID</a>
    </li>
    <li>
+      <a href="#hasIfcGuid" title="https://greeninfratwins.com/ns/grit#hasIfcGuid">
+         <span>has ifc guid</span>
+      </a>
+   </li>
+   <li>
       <a href="#hasIndicatorID"
          title="https://greeninfratwins.com/ns/grit#hasIndicatorID">
          <span>has Indicator I D</span>
@@ -347,7 +352,7 @@ This section provides details for each class and property defined by GreenInfraT
     is in domain of
    </dt>
    <dd>
-    <a href="#afterActivity" title="https://greeninfratwins.com/ns/grit#afterActivity">after activity</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasIndicatorSet" title="https://greeninfratwins.com/ns/grit#hasIndicatorSet">has indicator set</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#afterActivity" title="https://greeninfratwins.com/ns/grit#afterActivity">after activity</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasIfcGuid" title="https://greeninfratwins.com/ns/grit#hasIfcGuid">has ifc guid</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIndicatorSet" title="https://greeninfratwins.com/ns/grit#hasIndicatorSet">has indicator set</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
@@ -1281,6 +1286,7 @@ This section provides details for each class and property defined by GreenInfraT
  <ul class="hlist">
   <li><a href="#hasIcddContainerID" title="https://greeninfratwins.com/ns/grit#hasIcddContainerID">has icdd container ID</a></li>
   <li><a href="#hasIcddProjectID" title="https://greeninfratwins.com/ns/grit#hasIcddProjectID">has icdd project ID</a></li>
+  <li><a href="#hasIfcGuid" title="https://greeninfratwins.com/ns/grit#hasIfcGuid"> <span>has ifc guid</span> </a></li>
   <li><a href="#hasIndicatorID" title="https://greeninfratwins.com/ns/grit#hasIndicatorID"> <span>has Indicator I D</span> </a></li>
  </ul>
  <div class="entity" id="hasIcddContainerID">
@@ -1331,6 +1337,32 @@ This section provides details for each class and property defined by GreenInfraT
     </dt>
     <dd>
      <a href="http://www.w3.org/2001/XMLSchema#anyURI" target="_blank" title="http://www.w3.org/2001/XMLSchema#anyURI">any U R I</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasIfcGuid">
+  <h3>has ifc guid<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#hasIfcGuid</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Activity" title="https://greeninfratwins.com/ns/grit#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
     </dd>
    </dl>
   </div>

@@ -16,12 +16,13 @@
         <terms:creator rdf:nodeID="genid5"/>
         <terms:description xml:lang="en">The GreenInfraTwins (GRIT) Ontology is used for establishing digital twins for the sustainability assessment of transportaion infrastructure in Germany, Austria, and Switzerland. The aim of the research project is to conceptualise and demonstrate sustainability-related decision support through the use of digital twins of engineering structures. To this end, digital twins of engineering structures are created, enriched with data and used to calculate key indicators for sustainability analyses. </terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <terms:rights>Copyright 2025 by Chair of Computing in Engineering, Ruhr University Bochum</terms:rights>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-29</terms:modified>
+        <terms:rights>Copyright 2024 by Chair of Computing in Engineering, Ruhr University Bochum</terms:rights>
         <terms:source>https://www.greeninfratwins.com</terms:source>
         <terms:title xml:lang="en">GreenInfraTwins (GRIT) Ontology</terms:title>
         <vann:preferredNamespacePrefix>grit</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="https://greeninfratwins.com/ns/grit#"/>
-        <owl:versionInfo>0.3</owl:versionInfo>
+        <owl:versionInfo>1.0</owl:versionInfo>
     </owl:Ontology>
     <rdf:Description rdf:nodeID="genid1">
         <rdf:type rdf:resource="https://schema.org/Person"/>
@@ -103,6 +104,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
     
 
 
@@ -477,6 +485,17 @@
     
 
 
+    <!-- https://greeninfratwins.com/ns/grit#hasIfcGuid -->
+
+
+    <owl:DatatypeProperty rdf:about="https://greeninfratwins.com/ns/grit#hasIfcGuid">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://greeninfratwins.com/ns/grit#hasIndicatorID -->
 
 
@@ -530,6 +549,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#afterActivity"/>
                 <owl:someValuesFrom rdf:resource="https://greeninfratwins.com/ns/grit#Activity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasIfcGuid"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -937,6 +962,21 @@
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#SpecifiedUseCase"/>
         <rdfs:label>Awf 4</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="https://greeninfratwins.com/ns/grit#hasIfcGuid">
+        <rdfs:label>has ifc guid</rdfs:label>
+    </rdf:Description>
 </rdf:RDF>
 
 
