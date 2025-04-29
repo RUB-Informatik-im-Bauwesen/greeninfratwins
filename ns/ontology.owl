@@ -16,12 +16,12 @@
         <terms:creator rdf:nodeID="genid5"/>
         <terms:description xml:lang="en">The GreenInfraTwins (GRIT) Ontology is used for establishing digital twins for the sustainability assessment of transportaion infrastructure in Germany, Austria, and Switzerland. The aim of the research project is to conceptualise and demonstrate sustainability-related decision support through the use of digital twins of engineering structures. To this end, digital twins of engineering structures are created, enriched with data and used to calculate key indicators for sustainability analyses. </terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <terms:rights>Copyright 2024 by Chair of Computing in Engineering, Ruhr University Bochum</terms:rights>
+        <terms:rights>Copyright 2025 by Chair of Computing in Engineering, Ruhr University Bochum</terms:rights>
         <terms:source>https://www.greeninfratwins.com</terms:source>
         <terms:title xml:lang="en">GreenInfraTwins (GRIT) Ontology</terms:title>
         <vann:preferredNamespacePrefix>grit</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="https://greeninfratwins.com/ns/grit#"/>
-        <owl:versionInfo>1.0</owl:versionInfo>
+        <owl:versionInfo>0.3</owl:versionInfo>
     </owl:Ontology>
     <rdf:Description rdf:nodeID="genid1">
         <rdf:type rdf:resource="https://schema.org/Person"/>
@@ -477,6 +477,17 @@
     
 
 
+    <!-- https://greeninfratwins.com/ns/grit#hasIndicatorID -->
+
+
+    <owl:DatatypeProperty rdf:about="https://greeninfratwins.com/ns/grit#hasIndicatorID">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#Indicator"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -782,7 +793,7 @@
     <owl:Class rdf:about="https://greeninfratwins.com/ns/grit#ReliabilityIndicator">
         <rdfs:subClassOf rdf:resource="https://greeninfratwins.com/ns/grit#Indicator"/>
         <owl:disjointWith rdf:resource="https://greeninfratwins.com/ns/grit#TechnicalQualityIndicator"/>
-        <rdfs:comment>An indicator depicting the riliability of a measure.</rdfs:comment>
+        <rdfs:comment>An indicator depicting the reliability of a measure.</rdfs:comment>
         <rdfs:label>Reliability indicator</rdfs:label>
     </owl:Class>
     

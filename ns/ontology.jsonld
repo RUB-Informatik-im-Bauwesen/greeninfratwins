@@ -415,7 +415,7 @@
     "@id" : "https://creativecommons.org/licenses/by/4.0/"
   } ],
   "http://purl.org/dc/terms/rights" : [ {
-    "@value" : "Copyright 2024 by Chair of Computing in Engineering, Ruhr University Bochum"
+    "@value" : "Copyright 2025 by Chair of Computing in Engineering, Ruhr University Bochum"
   } ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "https://www.greeninfratwins.com"
@@ -431,7 +431,7 @@
     "@id" : "https://greeninfratwins.com/ns/grit#"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "1.0"
+    "@value" : "0.3"
   } ]
 }, {
   "@id" : "https://greeninfratwins.com/ns/grit#Activity",
@@ -670,7 +670,7 @@
   "@id" : "https://greeninfratwins.com/ns/grit#ReliabilityIndicator",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "An indicator depicting the riliability of a measure."
+    "@value" : "An indicator depicting the reliability of a measure."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Reliability indicator"
@@ -894,6 +894,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://greeninfratwins.com/ns/grit#hasIndicatorID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://greeninfratwins.com/ns/grit#Indicator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
   "@id" : "https://greeninfratwins.com/ns/grit#hasIndicatorSet",

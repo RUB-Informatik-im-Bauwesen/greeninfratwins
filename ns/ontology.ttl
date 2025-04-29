@@ -13,12 +13,12 @@
                                         <http://purl.org/dc/terms/creator> _:genid5 ;
                                         <http://purl.org/dc/terms/description> "The GreenInfraTwins (GRIT) Ontology is used for establishing digital twins for the sustainability assessment of transportaion infrastructure in Germany, Austria, and Switzerland. The aim of the research project is to conceptualise and demonstrate sustainability-related decision support through the use of digital twins of engineering structures. To this end, digital twins of engineering structures are created, enriched with data and used to calculate key indicators for sustainability analyses. "@en ;
                                         <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
-                                        <http://purl.org/dc/terms/rights> "Copyright 2024 by Chair of Computing in Engineering, Ruhr University Bochum" ;
+                                        <http://purl.org/dc/terms/rights> "Copyright 2025 by Chair of Computing in Engineering, Ruhr University Bochum" ;
                                         <http://purl.org/dc/terms/source> "https://www.greeninfratwins.com" ;
                                         <http://purl.org/dc/terms/title> "GreenInfraTwins (GRIT) Ontology"@en ;
                                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "grit" ;
                                         <http://purl.org/vocab/vann/preferredNamespaceUri> <https://greeninfratwins.com/ns/grit#> ;
-                                        owl:versionInfo "1.0" .
+                                        owl:versionInfo "0.3" .
 
 _:genid1 rdf:type <https://schema.org/Person> ;
           <https://schema.org/email> <mailto:liu.liu-m6r@rub.de> ;
@@ -304,6 +304,13 @@ xsd:date rdf:type rdfs:Datatype .
                   rdfs:label "has icdd project ID" .
 
 
+###  https://greeninfratwins.com/ns/grit#hasIndicatorID
+:hasIndicatorID rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :Indicator ;
+                rdfs:range xsd:string .
+
+
 #################################################################
 #    Classes
 #################################################################
@@ -502,7 +509,7 @@ xsd:int rdf:type owl:Class .
 :ReliabilityIndicator rdf:type owl:Class ;
                       rdfs:subClassOf :Indicator ;
                       owl:disjointWith :TechnicalQualityIndicator ;
-                      rdfs:comment "An indicator depicting the riliability of a measure." ;
+                      rdfs:comment "An indicator depicting the reliability of a measure." ;
                       rdfs:label "Reliability indicator" .
 
 

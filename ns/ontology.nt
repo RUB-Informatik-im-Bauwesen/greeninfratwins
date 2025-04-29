@@ -27,12 +27,12 @@ _:genid5 <https://schema.org/email> <mailto:philipp.hagedorn-n6v@rub.de> .
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
 <https://greeninfratwins.com/ns/grit#> <http://purl.org/dc/terms/description> "The GreenInfraTwins (GRIT) Ontology is used for establishing digital twins for the sustainability assessment of transportaion infrastructure in Germany, Austria, and Switzerland. The aim of the research project is to conceptualise and demonstrate sustainability-related decision support through the use of digital twins of engineering structures. To this end, digital twins of engineering structures are created, enriched with data and used to calculate key indicators for sustainability analyses. "@en .
 <https://greeninfratwins.com/ns/grit#> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://greeninfratwins.com/ns/grit#> <http://purl.org/dc/terms/rights> "Copyright 2024 by Chair of Computing in Engineering, Ruhr University Bochum" .
+<https://greeninfratwins.com/ns/grit#> <http://purl.org/dc/terms/rights> "Copyright 2025 by Chair of Computing in Engineering, Ruhr University Bochum" .
 <https://greeninfratwins.com/ns/grit#> <http://purl.org/dc/terms/source> "https://www.greeninfratwins.com" .
 <https://greeninfratwins.com/ns/grit#> <http://purl.org/dc/terms/title> "GreenInfraTwins (GRIT) Ontology"@en .
 <https://greeninfratwins.com/ns/grit#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "grit" .
 <https://greeninfratwins.com/ns/grit#> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://greeninfratwins.com/ns/grit#> .
-<https://greeninfratwins.com/ns/grit#> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+<https://greeninfratwins.com/ns/grit#> <http://www.w3.org/2002/07/owl#versionInfo> "0.3" .
 # 
 # 
 # #################################################################
@@ -276,6 +276,12 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/P
 <https://greeninfratwins.com/ns/grit#hasIcddProjectID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
 <https://greeninfratwins.com/ns/grit#hasIcddProjectID> <http://www.w3.org/2000/01/rdf-schema#label> "has icdd project ID" .
 # 
+# https://greeninfratwins.com/ns/grit#hasIndicatorID
+<https://greeninfratwins.com/ns/grit#hasIndicatorID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://greeninfratwins.com/ns/grit#hasIndicatorID> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://greeninfratwins.com/ns/grit#hasIndicatorID> <http://www.w3.org/2000/01/rdf-schema#domain> <https://greeninfratwins.com/ns/grit#Indicator> .
+<https://greeninfratwins.com/ns/grit#hasIndicatorID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
 # 
 # 
 # #################################################################
@@ -464,7 +470,7 @@ _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://greeninfratwins.com/ns/grit#ReliabilityIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://greeninfratwins.com/ns/grit#ReliabilityIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://greeninfratwins.com/ns/grit#Indicator> .
 <https://greeninfratwins.com/ns/grit#ReliabilityIndicator> <http://www.w3.org/2002/07/owl#disjointWith> <https://greeninfratwins.com/ns/grit#TechnicalQualityIndicator> .
-<https://greeninfratwins.com/ns/grit#ReliabilityIndicator> <http://www.w3.org/2000/01/rdf-schema#comment> "An indicator depicting the riliability of a measure." .
+<https://greeninfratwins.com/ns/grit#ReliabilityIndicator> <http://www.w3.org/2000/01/rdf-schema#comment> "An indicator depicting the reliability of a measure." .
 <https://greeninfratwins.com/ns/grit#ReliabilityIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "Reliability indicator" .
 # 
 # https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator
