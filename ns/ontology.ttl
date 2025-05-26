@@ -96,6 +96,10 @@ _:genid6 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/
 <http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
 
 
+###  https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators
+:belongsToPredefinedSetOfIndicators rdf:type owl:AnnotationProperty .
+
+
 ###  https://schema.org/email
 <https://schema.org/email> rdf:type owl:AnnotationProperty .
 
@@ -289,6 +293,14 @@ xsd:date rdf:type rdfs:Datatype .
                    rdfs:label "maps to lbd property" .
 
 
+###  https://greeninfratwins.com/ns/grit#grit:belongsToPredefinedSetOfIndicators
+:grit:belongsToPredefinedSetOfIndicators rdf:type owl:ObjectProperty ;
+                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                         rdfs:domain :IndicatorType ;
+                                         rdfs:range :IndicatorSet ;
+                                         rdfs:label "belongs to predefined set of indicators" .
+
+
 #################################################################
 #    Data properties
 #################################################################
@@ -455,10 +467,6 @@ xsd:int rdf:type owl:Class .
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty :hasIndicator ;
                                 owl:someValuesFrom :Indicator
-                              ] ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty :hasIndicatorID ;
-                                owl:cardinality "1"^^xsd:nonNegativeInteger
                               ] ;
               rdfs:comment "A set of indicators that is referenced by a specific activity." ;
               rdfs:label "Indicator set" .
@@ -466,7 +474,12 @@ xsd:int rdf:type owl:Class .
 
 ###  https://greeninfratwins.com/ns/grit#IndicatorType
 :IndicatorType rdf:type owl:Class ;
-               rdfs:subClassOf owl:Thing ;
+               rdfs:subClassOf owl:Thing ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasIndicatorID ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:string
+                               ] ;
                rdfs:comment "A type for identifying indicators that should be aggregated in the overall calculation, e.g. GWP." ;
                rdfs:label "Indicator type" .
 
@@ -628,6 +641,416 @@ xsd:int rdf:type owl:Class .
 :Awf_4 rdf:type owl:NamedIndividual ,
                 :SpecifiedUseCase ;
        rdfs:label "Awf 4" .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Availability
+:IndicatorSet_Predefined_Availability rdf:type owl:NamedIndividual ,
+                                               :IndicatorSet ;
+                                      rdfs:label "Verfügbarkeit" .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_BuildingRelatedLifecycleCosts
+:IndicatorSet_Predefined_BuildingRelatedLifecycleCosts rdf:type owl:NamedIndividual ,
+                                                                :IndicatorSet ;
+                                                       rdfs:label "Bauwerksbezogene Lebenszykluskosten" .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources
+:IndicatorSet_Predefined_CircularEconomyResources rdf:type owl:NamedIndividual ,
+                                                           :IndicatorSet ;
+                                                  rdfs:label "Kreislaufwirtschaft / Ressourcen" .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality
+:IndicatorSet_Predefined_EcologicalQuality rdf:type owl:NamedIndividual ,
+                                                    :IndicatorSet ;
+                                           rdfs:label "Ökologische Qualität" .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality
+:IndicatorSet_Predefined_EconomicQuality rdf:type owl:NamedIndividual ,
+                                                  :IndicatorSet ;
+                                         rdfs:label "Ökonomische Qualität" .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects
+:IndicatorSet_Predefined_EnvironmentalEffects rdf:type owl:NamedIndividual ,
+                                                       :IndicatorSet ;
+                                              rdfs:label "Externe Umwelteffekte" .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_ExternalCosts
+:IndicatorSet_Predefined_ExternalCosts rdf:type owl:NamedIndividual ,
+                                                :IndicatorSet ;
+                                       rdfs:label "Externe Kosten (monetarisierte externe Effekte)" .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection
+:IndicatorSet_Predefined_HumanProtection rdf:type owl:NamedIndividual ,
+                                                  :IndicatorSet ;
+                                         rdfs:label "Schutzgut Mensch" .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LandUse
+:IndicatorSet_Predefined_LandUse rdf:type owl:NamedIndividual ,
+                                          :IndicatorSet ;
+                                 rdfs:label "Flächeninanspruchnahme" .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment
+:IndicatorSet_Predefined_LifecycleAsessment rdf:type owl:NamedIndividual ,
+                                                     :IndicatorSet ;
+                                            rdfs:label "Ökobilanz" .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LocalEnvironmentalRisks
+:IndicatorSet_Predefined_LocalEnvironmentalRisks rdf:type owl:NamedIndividual ,
+                                                          :IndicatorSet ;
+                                                 rdfs:label "Risiken für die lokale Umwelt" .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Reliability
+:IndicatorSet_Predefined_Reliability rdf:type owl:NamedIndividual ,
+                                              :IndicatorSet ;
+                                     rdfs:label "Zuverlässigkeit" .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Safety
+:IndicatorSet_Predefined_Safety rdf:type owl:NamedIndividual ,
+                                         :IndicatorSet ;
+                                rdfs:label "Nutzersicherheit" .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality
+:IndicatorSet_Predefined_SocioCulturalQuality rdf:type owl:NamedIndividual ,
+                                                       :IndicatorSet ;
+                                              rdfs:label "Sozio-kulturelle und funktionale Qualität" .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_TechnicalQuality
+:IndicatorSet_Predefined_TechnicalQuality rdf:type owl:NamedIndividual ,
+                                                   :IndicatorSet ;
+                                          rdfs:label "Technische Qualität" .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_1_1_1
+:IndicatorType_1_1_1 rdf:type owl:NamedIndividual ,
+                              :IndicatorType ;
+                     :hasIndicatorID "1.1.1" ;
+                     rdfs:comment "Indikator für Definition von Materialität eines Bauwerks in Masse-Prozent" ;
+                     rdfs:label "Materialitaet des Bauwerks" ;
+                     :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_CircularEconomyResources ,
+                                                         :IndicatorSet_Predefined_EcologicalQuality .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_1_1_2
+:IndicatorType_1_1_2 rdf:type owl:NamedIndividual ,
+                              :IndicatorType ;
+                     :hasIndicatorID "1.1.2" ;
+                     rdfs:comment "Indikator für Definition von monetärer Materialwert in EUR" ;
+                     rdfs:label "Monetärer Materialwert" ;
+                     :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_CircularEconomyResources ,
+                                                         :IndicatorSet_Predefined_EcologicalQuality .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_1_1_3
+:IndicatorType_1_1_3 rdf:type owl:NamedIndividual ,
+                              :IndicatorType ;
+                     :hasIndicatorID "1.1.3" ;
+                     rdfs:comment "Indikator für Definition von Schad- und Risikostoffe in kg" ;
+                     rdfs:label "Schad- und Risikostoffe" ;
+                     :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_CircularEconomyResources ,
+                                                         :IndicatorSet_Predefined_EcologicalQuality .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_1_1_4
+:IndicatorType_1_1_4 rdf:type owl:NamedIndividual ,
+                              :IndicatorType ;
+                     :hasIndicatorID "1.1.4" ;
+                     rdfs:comment "Indikator für Definition von Demontagefaehigkeit mit qualitative Bewertungsergebnis" ;
+                     rdfs:label "Demontagefähigkeit" ;
+                     :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_CircularEconomyResources ,
+                                                         :IndicatorSet_Predefined_EcologicalQuality .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_1_1_5
+:IndicatorType_1_1_5 rdf:type owl:NamedIndividual ,
+                              :IndicatorType ;
+                     :hasIndicatorID "1.1.5" ;
+                     rdfs:comment "Indikator für Definition von Materialverwertung zur potentialen Kreislauffaehigkeit in Massen-Prozent" ;
+                     rdfs:label "Materlaverwertung - Potentiale Kreislauffähigkeit" ;
+                     :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_CircularEconomyResources ,
+                                                         :IndicatorSet_Predefined_EcologicalQuality .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_1_2_1
+:IndicatorType_1_2_1 rdf:type owl:NamedIndividual ,
+                              :IndicatorType ;
+                     :hasIndicatorID "1.2.1" ;
+                     rdfs:comment "Indikator für Definition Fläche des ökologisch gestörten Lebensraums durch Lärmbeeinträchtigung der Fauna in m2" ;
+                     rdfs:label "Fläche des ökologisch gestörten Lebensraums durch Lärmbeeinträchtigung der Fauna" ;
+                     :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_EcologicalQuality ,
+                                                         :IndicatorSet_Predefined_LocalEnvironmentalRisks .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1
+:IndicatorType_1_3_1 rdf:type owl:NamedIndividual ,
+                              :IndicatorType ;
+                     :hasIndicatorID "1.3.1" ;
+                     rdfs:comment "Indikator für Definition von Flächeninanspruchnahme Bauwerk (dauerhaft) und Bauprozesse (vorübergehend) in gewichtete m2" ;
+                     rdfs:label "Flächeninanspruchnahme Bauwerk (dauerhaft) und Bauprozesse (vorübergehend)" ;
+                     :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_EcologicalQuality ,
+                                                         :IndicatorSet_Predefined_LandUse .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_1
+:IndicatorType_1_3_1_1 rdf:type owl:NamedIndividual ,
+                                :IndicatorType ;
+                       :hasIndicatorID "1.3.1.1" ;
+                       rdfs:comment "Indikator für Definition von Flächeninanspruchnahme Bauwerk (dauerhaft)  in gewichtete m2" ;
+                       rdfs:label "Flächeninanspruchnahme Bauwerk (dauerhaft)" ;
+                       :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_EcologicalQuality ,
+                                                           :IndicatorSet_Predefined_LandUse .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_2
+:IndicatorType_1_3_1_2 rdf:type owl:NamedIndividual ,
+                                :IndicatorType ;
+                       :hasIndicatorID "1.3.1.2" ;
+                       rdfs:comment "Indikator für Definition von Flächeninanspruchnahme Bauprozesse (vorübergehend) in gewichtete m2" ;
+                       rdfs:label "Flächeninanspruchnahme Bauprozesse (vorübergehend)" ;
+                       :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_EcologicalQuality ,
+                                                           :IndicatorSet_Predefined_LandUse .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1
+:IndicatorType_1_4_1 rdf:type owl:NamedIndividual ,
+                              :IndicatorType ;
+                     :hasIndicatorID "1.4.1" ;
+                     rdfs:comment "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen in Masse" ;
+                     rdfs:label "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen (CO2, NOx, PM2.5, PM5, PM10)" ;
+                     :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_EcologicalQuality ,
+                                                         :IndicatorSet_Predefined_EnvironmentalEffects .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_1
+:IndicatorType_1_4_1_1 rdf:type owl:NamedIndividual ,
+                                :IndicatorType ;
+                       :hasIndicatorID "1.4.1.1" ;
+                       rdfs:comment "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen in Masse" ;
+                       rdfs:label "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen (CO2)" ;
+                       :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_EcologicalQuality ,
+                                                           :IndicatorSet_Predefined_EnvironmentalEffects .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_2
+:IndicatorType_1_4_1_2 rdf:type owl:NamedIndividual ,
+                                :IndicatorType ;
+                       :hasIndicatorID "1.4.1.2" ;
+                       rdfs:comment "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen in Masse" ;
+                       rdfs:label "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen (NOx)" ;
+                       :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_EcologicalQuality ,
+                                                           :IndicatorSet_Predefined_EnvironmentalEffects .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_3
+:IndicatorType_1_4_1_3 rdf:type owl:NamedIndividual ,
+                                :IndicatorType ;
+                       :hasIndicatorID "1.4.1.3" ;
+                       rdfs:comment "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen in Masse" ;
+                       rdfs:label "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen (PM2.5)" ;
+                       :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_EcologicalQuality ,
+                                                           :IndicatorSet_Predefined_EnvironmentalEffects .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_4
+:IndicatorType_1_4_1_4 rdf:type owl:NamedIndividual ,
+                                :IndicatorType ;
+                       :hasIndicatorID "1.4.1.4" ;
+                       rdfs:comment "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen in Masse" ;
+                       rdfs:label "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen (PM5)" ;
+                       :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_EcologicalQuality ,
+                                                           :IndicatorSet_Predefined_EnvironmentalEffects .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_5
+:IndicatorType_1_4_1_5 rdf:type owl:NamedIndividual ,
+                                :IndicatorType ;
+                       :hasIndicatorID "1.4.1.5" ;
+                       rdfs:comment "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen in Masse" ;
+                       rdfs:label "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen (PM10)" ;
+                       :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_EcologicalQuality ,
+                                                           :IndicatorSet_Predefined_EnvironmentalEffects .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_1_5_1
+:IndicatorType_1_5_1 rdf:type owl:NamedIndividual ,
+                              :IndicatorType ;
+                     :hasIndicatorID "1.5.1" ;
+                     rdfs:comment "Indikator für Definition von Globales Erwärmungspotential (GWP) in kg CO2-Äquiv." ;
+                     rdfs:label "Globales Erwärmungspotential (GWP)" ;
+                     :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_EcologicalQuality ,
+                                                         :IndicatorSet_Predefined_LifecycleAsessment .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_1_5_2
+:IndicatorType_1_5_2 rdf:type owl:NamedIndividual ,
+                              :IndicatorType ;
+                     :hasIndicatorID "1.5.2" ;
+                     rdfs:comment "Indikator für Definition von Eutrophierungspotential (EP) in kg PO43-Äquiv." ;
+                     rdfs:label "Eutrophierungspotential (EP)" ;
+                     :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_EcologicalQuality ,
+                                                         :IndicatorSet_Predefined_LifecycleAsessment .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_1_5_3
+:IndicatorType_1_5_3 rdf:type owl:NamedIndividual ,
+                              :IndicatorType ;
+                     :hasIndicatorID "1.5.3" ;
+                     rdfs:comment "Indikator für Definition von Eutrophierungspotential (EP) in kg PO43-Äquiv." ;
+                     rdfs:label "Eutrophierungspotential (EP)" ;
+                     :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_EcologicalQuality ,
+                                                         :IndicatorSet_Predefined_LifecycleAsessment .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_1_5_4
+:IndicatorType_1_5_4 rdf:type owl:NamedIndividual ,
+                              :IndicatorType ;
+                     :hasIndicatorID "1.5.4" ;
+                     rdfs:comment "Indikator für Definition von Versauerungspotential (AP) in kg SO2-Äquiv." ;
+                     rdfs:label "Versauerungspotential (AP)" ;
+                     :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_EcologicalQuality ,
+                                                         :IndicatorSet_Predefined_LifecycleAsessment .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_1_5_5
+:IndicatorType_1_5_5 rdf:type owl:NamedIndividual ,
+                              :IndicatorType ;
+                     :hasIndicatorID "1.5.5" ;
+                     rdfs:comment "Indikator für Definition von Ozonbildungspotential (POCP) in kg C2H4-Äquiv." ;
+                     rdfs:label "Ozonbildungspotential (POCP)" ;
+                     :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_EcologicalQuality ,
+                                                         :IndicatorSet_Predefined_LifecycleAsessment .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_1_5_6
+:IndicatorType_1_5_6 rdf:type owl:NamedIndividual ,
+                              :IndicatorType ;
+                     :hasIndicatorID "1.5.6" ;
+                     rdfs:comment "Indikator für Definition von Kumulierter Energieaufwand (KEA) in MJ" ;
+                     rdfs:label "Kumulierter Energieaufwand (KEA)" ;
+                     :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_EcologicalQuality ,
+                                                         :IndicatorSet_Predefined_LifecycleAsessment .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1
+:IndicatorType_2_1_1 rdf:type owl:NamedIndividual ,
+                              :IndicatorType ;
+                     :hasIndicatorID "2.1.1" ;
+                     rdfs:comment "Indikator für Definition von Materialkosten, prozessbezogene Kosten (Planungs-, Baukosten, Kosten Nutzungsphase etc.) in EUR" ;
+                     rdfs:label "Materialkosten, prozessbezogene Kosten (Planungs-, Baukosten, Kosten Nutzungsphase etc.)" ;
+                     :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_BuildingRelatedLifecycleCosts ,
+                                                         :IndicatorSet_Predefined_EconomicQuality .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1_1
+:IndicatorType_2_1_1_1 rdf:type owl:NamedIndividual ,
+                                :IndicatorType ;
+                       :hasIndicatorID "2.1.1.1" ;
+                       rdfs:comment "Indikator für Definition von Materialkosten - Teilkosten von Material-, prozessbezogene Kosten (Planungs-, Baukosten, Kosten Nutzungsphase etc.) in EUR" ;
+                       rdfs:label "Materialkosten" ;
+                       :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_BuildingRelatedLifecycleCosts ,
+                                                           :IndicatorSet_Predefined_EconomicQuality .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1_2
+:IndicatorType_2_1_1_2 rdf:type owl:NamedIndividual ,
+                                :IndicatorType ;
+                       :hasIndicatorID "2.1.1.2" ;
+                       rdfs:comment "Indikator für Definition von Prozessbezogenekosten, Teilkosten von Material-, prozessbezogene Kosten (Planungs-, Baukosten, Kosten Nutzungsphase etc.) in EUR" ;
+                       rdfs:label "Prozessbezogene Kosten (Planungs-, Baukosten, Kosten Nutzungsphase etc.)" ;
+                       :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_BuildingRelatedLifecycleCosts ,
+                                                           :IndicatorSet_Predefined_EconomicQuality .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_2_2_1
+:IndicatorType_2_2_1 rdf:type owl:NamedIndividual ,
+                              :IndicatorType ;
+                     :hasIndicatorID "2.2.1" ;
+                     rdfs:comment "Indikator für Definition von Kosten aufgrund von Zeitverlusten, Umleitungen und erhöhten Fahrzeugbetriebskosten in EUR" ;
+                     rdfs:label "Kosten aufgrund von Zeitverlusten, Umleitungen und erhöhten Fahrzeugbetriebskosten " ;
+                     :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_EconomicQuality ,
+                                                         :IndicatorSet_Predefined_ExternalCosts .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1
+:IndicatorType_3_1_1 rdf:type owl:NamedIndividual ,
+                              :IndicatorType ;
+                     :hasIndicatorID "3.1.1" ;
+                     rdfs:comment "Indikator für Definition von Lärmbeeinträchtigung von Menschen (Laermpegel / Anzahl vom Lärm betroffene Personen)" ;
+                     rdfs:label "Lärmbeeinträchtigung von Menschen (Lärmpegel / Anzahl vom Lärm betroffene Personen)" ;
+                     :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_HumanProtection ,
+                                                         :IndicatorSet_Predefined_SocioCulturalQuality .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1_1
+:IndicatorType_3_1_1_1 rdf:type owl:NamedIndividual ,
+                                :IndicatorType ;
+                       :hasIndicatorID "3.1.1.1" ;
+                       rdfs:comment "Indikator für Definition von Lärmbeeinträchtigung von Menschen (Lärmpegel / Anzahl vom Lärm betroffene Personen) in db/pax" ;
+                       rdfs:label "Lärmbeeinträchtigung von Menschen (Lärmpegel / Anzahl vom Lärm betroffene Personen)" ;
+                       :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_HumanProtection ,
+                                                           :IndicatorSet_Predefined_SocioCulturalQuality .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1_2
+:IndicatorType_3_1_1_2 rdf:type owl:NamedIndividual ,
+                                :IndicatorType ;
+                       :hasIndicatorID "3.1.1.2" ;
+                       rdfs:comment "Indikator für Definition von Lärmbeeinträchtigung von Menschen (Anzahl vom Lärm betroffene Personen) in Konzentration Schadstoffe" ;
+                       rdfs:label "Lärmbeeinträchtigung von Menschen (Anzahl vom Lärm betroffene Personen)" ;
+                       :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_HumanProtection ,
+                                                           :IndicatorSet_Predefined_SocioCulturalQuality .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_3_1_3
+:IndicatorType_3_1_3 rdf:type owl:NamedIndividual ,
+                              :IndicatorType ;
+                     :hasIndicatorID "3.1.3" ;
+                     rdfs:comment "Indikator für Definition von Arbeitssicherheit (Anzahl an Unfällen / Unfallrate im Baustellenbereich) in pax / -" ;
+                     rdfs:label "Arbeitssicherheit (Anzahl an Unfällen / Unfallrate im Baustellenbereich) in pax / -" ;
+                     :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_HumanProtection ,
+                                                         :IndicatorSet_Predefined_SocioCulturalQuality .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_3_2_1
+:IndicatorType_3_2_1 rdf:type owl:NamedIndividual ,
+                              :IndicatorType ;
+                     :hasIndicatorID "3.2.1" ;
+                     rdfs:comment "Indikator für Definition von Reduktion der zeitbezogenen Kapazität (Zeitverluste der Reisezeit; Veränderung Zuverlässigkeit der Reisezeit) in %" ;
+                     rdfs:label "Reduktion der zeitbezogenen Kapazität (Zeitverluste der Reisezeit; Veränderung Zuverlässigkeit der Reisezeit)" ;
+                     :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_Availability ,
+                                                         :IndicatorSet_Predefined_SocioCulturalQuality .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_4_1_1
+:IndicatorType_4_1_1 rdf:type owl:NamedIndividual ,
+                              :IndicatorType ;
+                     :hasIndicatorID "4.1.1" ;
+                     rdfs:comment "Indikator für Definition von Zuverlässigkeitsindex (β-Wert)" ;
+                     rdfs:label "Zuverlässigkeitsindex (β-Wert)" ;
+                     :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_Reliability ,
+                                                         :IndicatorSet_Predefined_TechnicalQuality .
+
+
+###  https://greeninfratwins.com/ns/grit#IndicatorType_4_2_1
+:IndicatorType_4_2_1 rdf:type owl:NamedIndividual ,
+                              :IndicatorType ;
+                     :hasIndicatorID "4.2.1" ;
+                     rdfs:comment "Indikator für Definition von Anzahl an Unfällen/Unfallrate im Normalbetrieb (bezogen auf den Zustand)" ;
+                     rdfs:label "Anzahl an Unfällen/Unfallrate im Normalbetrieb (bezogen auf den Zustand)" ;
+                     :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_Safety ,
+                                                         :IndicatorSet_Predefined_TechnicalQuality .
 
 
 #################################################################
