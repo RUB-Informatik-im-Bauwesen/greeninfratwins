@@ -301,6 +301,14 @@ xsd:date rdf:type rdfs:Datatype .
                     rdfs:label "has icdd container ID" .
 
 
+###  https://greeninfratwins.com/ns/grit#hasIcddModelID
+:hasIcddModelID rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :Activity ;
+                rdfs:range xsd:string ;
+                rdfs:label "has icdd model id" .
+
+
 ###  https://greeninfratwins.com/ns/grit#hasIcddProjectID
 :hasIcddProjectID rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf owl:topDataProperty ;
@@ -319,7 +327,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://greeninfratwins.com/ns/grit#hasIndicatorID
 :hasIndicatorID rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf owl:topDataProperty ;
-                rdfs:domain :Indicator ;
+                rdfs:domain :IndicatorType ;
                 rdfs:range xsd:string .
 
 
@@ -354,6 +362,10 @@ xsd:int rdf:type owl:Class .
                             owl:onProperty :hasIndicatorSet ;
                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                             owl:onClass :IndicatorSet
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasIcddModelID ;
+                            owl:cardinality "1"^^xsd:nonNegativeInteger
                           ] ;
           rdfs:comment "The activity that is performed in a particularly sequence within a measure or measure variant." ;
           rdfs:label "Activity" .
@@ -443,6 +455,10 @@ xsd:int rdf:type owl:Class .
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty :hasIndicator ;
                                 owl:someValuesFrom :Indicator
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasIndicatorID ;
+                                owl:cardinality "1"^^xsd:nonNegativeInteger
                               ] ;
               rdfs:comment "A set of indicators that is referenced by a specific activity." ;
               rdfs:label "Indicator set" .

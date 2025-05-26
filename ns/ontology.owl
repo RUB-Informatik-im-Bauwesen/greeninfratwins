@@ -473,6 +473,18 @@
     
 
 
+    <!-- https://greeninfratwins.com/ns/grit#hasIcddModelID -->
+
+
+    <owl:DatatypeProperty rdf:about="https://greeninfratwins.com/ns/grit#hasIcddModelID">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has icdd model id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://greeninfratwins.com/ns/grit#hasIcddProjectID -->
 
 
@@ -501,7 +513,7 @@
 
     <owl:DatatypeProperty rdf:about="https://greeninfratwins.com/ns/grit#hasIndicatorID">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#Indicator"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -562,6 +574,12 @@
                 <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasIndicatorSet"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasIcddModelID"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>The activity that is performed in a particularly sequence within a measure or measure variant.</rdfs:comment>
@@ -695,6 +713,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasIndicator"/>
                 <owl:someValuesFrom rdf:resource="https://greeninfratwins.com/ns/grit#Indicator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasIndicatorID"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>A set of indicators that is referenced by a specific activity.</rdfs:comment>

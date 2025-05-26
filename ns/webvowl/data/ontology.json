@@ -28,12 +28,12 @@
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "_:genid2147483649",
+        "value" : "_:genid2147483648",
         "type" : "label"
       }, {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "_:genid2147483648",
+        "value" : "_:genid2147483649",
         "type" : "label"
       } ],
       "created" : [ {
@@ -42,16 +42,16 @@
         "value" : "2024-08-01",
         "type" : "label"
       } ],
-      "preferredNamespacePrefix" : [ {
-        "identifier" : "preferredNamespacePrefix",
-        "language" : "undefined",
-        "value" : "grit",
-        "type" : "label"
-      } ],
       "rights" : [ {
         "identifier" : "rights",
         "language" : "undefined",
         "value" : "Copyright 2024 by Chair of Computing in Engineering, Ruhr University Bochum",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "grit",
         "type" : "label"
       } ],
       "modified" : [ {
@@ -60,11 +60,11 @@
         "value" : "2025-04-29",
         "type" : "label"
       } ],
-      "preferredNamespaceUri" : [ {
-        "identifier" : "preferredNamespaceUri",
+      "source" : [ {
+        "identifier" : "source",
         "language" : "undefined",
-        "value" : "https://greeninfratwins.com/ns/grit#",
-        "type" : "iri"
+        "value" : "https://www.greeninfratwins.com",
+        "type" : "label"
       } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
@@ -72,11 +72,11 @@
         "value" : "1.0",
         "type" : "label"
       } ],
-      "source" : [ {
-        "identifier" : "source",
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
-        "value" : "https://www.greeninfratwins.com",
-        "type" : "label"
+        "value" : "https://greeninfratwins.com/ns/grit#",
+        "type" : "iri"
       } ],
       "title" : [ {
         "identifier" : "title",
@@ -94,7 +94,7 @@
     "id" : "13",
     "type" : "owl:Class"
   }, {
-    "id" : "16",
+    "id" : "14",
     "type" : "owl:Class"
   }, {
     "id" : "11",
@@ -103,6 +103,12 @@
     "id" : "8",
     "type" : "owl:Class"
   }, {
+    "id" : "17",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "35",
+    "type" : "owl:Thing"
+  }, {
     "id" : "36",
     "type" : "owl:Thing"
   }, {
@@ -110,27 +116,24 @@
     "type" : "owl:Thing"
   }, {
     "id" : "38",
-    "type" : "rdfs:Literal"
+    "type" : "owl:Thing"
   }, {
     "id" : "39",
     "type" : "owl:Thing"
   }, {
-    "id" : "19",
-    "type" : "owl:Thing"
+    "id" : "42",
+    "type" : "rdfs:Datatype"
   }, {
     "id" : "43",
     "type" : "owl:Thing"
   }, {
-    "id" : "44",
+    "id" : "18",
     "type" : "owl:Thing"
   }, {
-    "id" : "45",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "47",
+    "id" : "46",
     "type" : "owl:Class"
   }, {
-    "id" : "18",
+    "id" : "5",
     "type" : "owl:Class"
   }, {
     "id" : "48",
@@ -139,31 +142,31 @@
     "id" : "49",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "42",
+    "id" : "50",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "15",
+    "id" : "16",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "46",
+    "id" : "44",
     "type" : "owl:Class"
   }, {
     "id" : "12",
     "type" : "owl:Class"
   }, {
-    "id" : "59",
+    "id" : "60",
     "type" : "owl:Class"
   }, {
-    "id" : "66",
+    "id" : "67",
     "type" : "owl:Class"
   }, {
     "id" : "2",
     "type" : "owl:Class"
   }, {
-    "id" : "58",
+    "id" : "59",
     "type" : "owl:Class"
   }, {
-    "id" : "51",
+    "id" : "52",
     "type" : "owl:Class"
   }, {
     "id" : "75",
@@ -172,22 +175,25 @@
     "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "56",
+    "id" : "57",
     "type" : "owl:Class"
   }, {
-    "id" : "77",
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
     "type" : "owl:Class"
   }, {
     "id" : "41",
     "type" : "owl:Class"
   }, {
-    "id" : "68",
+    "id" : "74",
     "type" : "owl:Class"
   }, {
     "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "5",
+    "id" : "45",
     "type" : "owl:Class"
   }, {
     "id" : "70",
@@ -226,7 +232,7 @@
       "IRI-based" : "Unit"
     },
     "attributes" : [ "external" ],
-    "id" : "16"
+    "id" : "14"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#GreenInfraTwin",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
@@ -245,6 +251,20 @@
     "attributes" : [ "union", "anonymous" ],
     "id" : "8"
   }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "35",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
     "id" : "36",
@@ -259,11 +279,11 @@
       "undefined" : "Thing"
     }
   }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
     "id" : "38",
     "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
+      "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
@@ -273,12 +293,9 @@
       "undefined" : "Thing"
     }
   }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "19",
-    "label" : {
-      "undefined" : "Thing"
-    }
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "42"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
@@ -289,14 +306,7 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "44",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "45",
+    "id" : "18",
     "label" : {
       "undefined" : "Thing"
     }
@@ -311,8 +321,8 @@
     "comment" : {
       "undefined" : "An indicator depicting the reliability of a measure."
     },
-    "id" : "47",
-    "superClasses" : [ "41" ]
+    "id" : "46",
+    "superClasses" : [ "47" ]
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
@@ -324,33 +334,27 @@
     "comment" : {
       "undefined" : "An indicator that can be computed by a service by providing a formular and variables."
     },
-    "id" : "18",
+    "id" : "5",
     "superClasses" : [ "6" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "48",
-    "label" : {
-      "IRI-based" : "string"
-    }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "49",
+    "id" : "48",
     "label" : {
       "IRI-based" : "anyURI"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "42",
-    "label" : {
-      "IRI-based" : "string"
-    }
+    "id" : "49"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "50"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "15",
+    "id" : "16",
     "label" : {
       "IRI-based" : "anyURI"
     }
@@ -365,7 +369,7 @@
     "comment" : {
       "undefined" : "The variable that is used to calculated for an indicator, consists of a key (the variable identified) and a value (the numerical value)"
     },
-    "id" : "46"
+    "id" : "44"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#Assessment",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
@@ -415,7 +419,7 @@
         "undefined" : "Awf 3"
       }
     } ],
-    "id" : "59"
+    "id" : "60"
   }, {
     "iri" : "https://schema.org/Person",
     "baseIri" : "https://schema.org",
@@ -424,7 +428,7 @@
       "IRI-based" : "Person"
     },
     "attributes" : [ "external" ],
-    "id" : "66"
+    "id" : "67"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#MeasureVariant",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
@@ -448,7 +452,7 @@
     "comment" : {
       "undefined" : "A set of indicators that is referenced by a specific activity."
     },
-    "id" : "58"
+    "id" : "59"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#TechnicalQualityIndicator",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
@@ -460,8 +464,8 @@
     "comment" : {
       "undefined" : "An indicator for depicting the technical quality of a measure."
     },
-    "id" : "51",
-    "superClasses" : [ "41" ]
+    "id" : "52",
+    "superClasses" : [ "47" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -487,12 +491,12 @@
       "IRI-based" : "ValueIndicator",
       "undefined" : "Value indicator"
     },
-    "subClasses" : [ "18", "5", "13" ],
+    "subClasses" : [ "5", "45", "13" ],
     "comment" : {
       "undefined" : "A class for all value indicators and subclasses. Cannot be used for calculating. For constant values see \"git:ConstantValueIndicator\"."
     },
     "id" : "6",
-    "superClasses" : [ "41" ]
+    "superClasses" : [ "47" ]
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#MeasureIndicator",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
@@ -504,8 +508,8 @@
     "comment" : {
       "undefined" : "An indicator used for being calculated in a measure for sustainability asessment."
     },
-    "id" : "56",
-    "superClasses" : [ "41" ]
+    "id" : "57",
+    "superClasses" : [ "47" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#int",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -514,7 +518,7 @@
       "IRI-based" : "int"
     },
     "attributes" : [ "external" ],
-    "id" : "77"
+    "id" : "78"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#Indicator",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
@@ -523,11 +527,11 @@
       "IRI-based" : "Indicator",
       "undefined" : "Indicator"
     },
-    "subClasses" : [ "6", "51", "47", "56" ],
+    "subClasses" : [ "6", "52", "46", "57" ],
     "comment" : {
       "undefined" : "The generic indicator class, can be subtyped regarding their caracteristics and their value calculation methods."
     },
-    "id" : "41"
+    "id" : "47"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#IndicatorType",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
@@ -539,7 +543,16 @@
     "comment" : {
       "undefined" : "A type for identifying indicators that should be aggregated in the overall calculation, e.g. GWP."
     },
-    "id" : "68"
+    "id" : "41"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "attributes" : [ "external" ],
+    "id" : "74"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#Measure",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
@@ -563,7 +576,7 @@
     "comment" : {
       "undefined" : "An indicator that cannot be calculated by just a given formula but in expert software."
     },
-    "id" : "5",
+    "id" : "45",
     "superClasses" : [ "6" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Resource",
@@ -588,11 +601,8 @@
     "id" : "10",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "14",
+    "id" : "15",
     "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "17",
-    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "3",
     "type" : "owl:objectProperty"
@@ -600,23 +610,20 @@
     "id" : "40",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "20",
+    "id" : "19",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "22",
+    "id" : "21",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "30",
+    "id" : "28",
     "type" : "owl:objectProperty"
   }, {
     "id" : "29",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "50",
+    "id" : "51",
     "type" : "owl:disjointWith"
-  }, {
-    "id" : "52",
-    "type" : "owl:someValuesFrom"
   }, {
     "id" : "53",
     "type" : "owl:someValuesFrom"
@@ -625,22 +632,22 @@
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "55",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "56",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "57",
+    "id" : "58",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "21",
+    "id" : "20",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "24",
+    "id" : "22",
     "type" : "owl:objectProperty"
   }, {
     "id" : "23",
     "type" : "owl:objectProperty"
-  }, {
-    "id" : "60",
-    "type" : "owl:someValuesFrom"
   }, {
     "id" : "61",
     "type" : "owl:someValuesFrom"
@@ -648,62 +655,65 @@
     "id" : "62",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "26",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "63",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "64",
     "type" : "owl:disjointWith"
   }, {
     "id" : "65",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "66",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "67",
+    "id" : "68",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "31",
+    "id" : "30",
     "type" : "owl:objectProperty"
   }, {
     "id" : "69",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "32",
+    "id" : "31",
     "type" : "owl:objectProperty"
   }, {
     "id" : "71",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "73",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "33",
+    "id" : "32",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "74",
+    "id" : "72",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "73",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "34",
+    "id" : "33",
     "type" : "owl:objectProperty"
   }, {
     "id" : "76",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "25",
+    "id" : "77",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "24",
     "type" : "owl:objectProperty"
   }, {
     "id" : "27",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "28",
+    "id" : "26",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "78",
-    "type" : "owl:datatypeProperty"
-  }, {
     "id" : "79",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "80",
     "type" : "rdfs:SubClassOf"
@@ -711,13 +721,19 @@
     "id" : "81",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "35",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "82",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
     "type" : "rdfs:SubClassOf"
   } ],
   "propertyAttribute" : [ {
@@ -773,7 +789,7 @@
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#hasIcddContainerID",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
-    "range" : "15",
+    "range" : "16",
     "label" : {
       "IRI-based" : "hasIcddContainerID",
       "undefined" : "has icdd container ID"
@@ -781,21 +797,16 @@
     "cardinality" : "1",
     "domain" : "11",
     "attributes" : [ "datatype" ],
-    "id" : "14"
-  }, {
-    "range" : "6",
-    "domain" : "18",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "17"
+    "id" : "15"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
     "baseIri" : "http://www.w3.org/2002/07/owl",
-    "range" : "19",
+    "range" : "18",
     "label" : {
       "IRI-based" : "topObjectProperty"
     },
-    "domain" : "19",
-    "subproperty" : [ "0", "20", "21", "22", "23", "7", "24", "10", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35" ],
+    "domain" : "18",
+    "subproperty" : [ "0", "19", "20", "21", "22", "7", "23", "10", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34" ],
     "attributes" : [ "object", "external" ],
     "id" : "3"
   }, {
@@ -805,55 +816,41 @@
     "label" : {
       "IRI-based" : "hasIndicatorID"
     },
+    "cardinality" : "1",
     "domain" : "41",
     "attributes" : [ "datatype" ],
     "id" : "40"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#hasVariable",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
-    "range" : "46",
+    "range" : "44",
     "label" : {
       "IRI-based" : "hasVariable",
       "undefined" : "has variable"
     },
     "superproperty" : [ "3" ],
-    "domain" : "18",
+    "domain" : "5",
     "comment" : {
       "undefined" : "The connection between the indicator ant the variables of an indicator."
     },
     "attributes" : [ "object" ],
-    "id" : "20"
+    "id" : "19"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#hasExternalCalculationApplication",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
-    "range" : "44",
+    "range" : "36",
     "label" : {
       "IRI-based" : "hasExternalCalculationApplication",
       "undefined" : "has external calculation application"
     },
     "superproperty" : [ "3" ],
     "cardinality" : "1",
-    "domain" : "5",
+    "domain" : "45",
     "comment" : {
       "undefined" : "Indicates the external application in which the calculation of an indicator is performed."
     },
     "attributes" : [ "object" ],
-    "id" : "22"
-  }, {
-    "iri" : "https://greeninfratwins.com/ns/grit#hasFormula",
-    "baseIri" : "https://greeninfratwins.com/ns/grit",
-    "range" : "36",
-    "label" : {
-      "IRI-based" : "hasFormula",
-      "undefined" : "has formula"
-    },
-    "superproperty" : [ "3" ],
-    "domain" : "18",
-    "comment" : {
-      "undefined" : "The calculation formular of a simple computed value indicator."
-    },
-    "attributes" : [ "object" ],
-    "id" : "30"
+    "id" : "21"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#afterActivity",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
@@ -868,12 +865,27 @@
       "undefined" : "Establishes a procedural order of activities."
     },
     "attributes" : [ "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "https://greeninfratwins.com/ns/grit#hasFormula",
+    "baseIri" : "https://greeninfratwins.com/ns/grit",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "hasFormula",
+      "undefined" : "has formula"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "The calculation formular of a simple computed value indicator."
+    },
+    "attributes" : [ "object" ],
     "id" : "29"
   }, {
-    "range" : "51",
-    "domain" : "47",
+    "range" : "52",
+    "domain" : "46",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "50"
+    "id" : "51"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#involvesActivities",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
@@ -887,52 +899,52 @@
     "comment" : {
       "undefined" : "The activities that are performed within a measure or a measure variant."
     },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "52"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "53"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#hasVariable",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
-    "range" : "46",
+    "range" : "44",
     "label" : {
       "IRI-based" : "hasVariable",
       "undefined" : "has variable"
     },
     "superproperty" : [ "3" ],
-    "domain" : "18",
+    "domain" : "5",
     "comment" : {
       "undefined" : "The connection between the indicator ant the variables of an indicator."
     },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "53"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "54"
   }, {
-    "iri" : "https://greeninfratwins.com/ns/grit#hasMeasureVariant",
+    "iri" : "https://greeninfratwins.com/ns/grit#involvesActivities",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
-    "range" : "2",
+    "range" : "9",
     "label" : {
-      "IRI-based" : "hasMeasureVariant",
-      "undefined" : "has measure variant"
+      "IRI-based" : "involvesActivities",
+      "undefined" : "involves activities"
     },
     "superproperty" : [ "3" ],
     "domain" : "1",
     "comment" : {
-      "undefined" : "A measure variant can be used to compare multiple variants of the same measure during the assessment."
+      "undefined" : "The activities that are performed within a measure or a measure variant."
     },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "54"
-  }, {
-    "range" : "47",
-    "domain" : "56",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "55"
   }, {
-    "range" : "51",
-    "domain" : "56",
+    "range" : "46",
+    "domain" : "57",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "57"
+    "id" : "56"
+  }, {
+    "range" : "52",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "58"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#hasIndicatorSet",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
-    "range" : "58",
+    "range" : "59",
     "label" : {
       "IRI-based" : "hasIndicatorSet",
       "undefined" : "has indicator set"
@@ -943,32 +955,32 @@
       "undefined" : "Establishes the connection between the activity and the respective indicators."
     },
     "attributes" : [ "object" ],
-    "id" : "21"
+    "id" : "20"
+  }, {
+    "iri" : "https://greeninfratwins.com/ns/grit#hasIndicator",
+    "baseIri" : "https://greeninfratwins.com/ns/grit",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "hasIndicator",
+      "undefined" : "has indicator"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "59",
+    "comment" : {
+      "undefined" : "The connection between an indicator set and the indicator. This relation may occur multiple times."
+    },
+    "attributes" : [ "object" ],
+    "id" : "22"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#isDefinedBy",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
-    "range" : "59",
+    "range" : "60",
     "label" : {
       "IRI-based" : "isDefinedBy",
       "undefined" : "has specified use case"
     },
     "superproperty" : [ "3" ],
     "domain" : "12",
-    "attributes" : [ "object" ],
-    "id" : "24"
-  }, {
-    "iri" : "https://greeninfratwins.com/ns/grit#hasIndicator",
-    "baseIri" : "https://greeninfratwins.com/ns/grit",
-    "range" : "41",
-    "label" : {
-      "IRI-based" : "hasIndicator",
-      "undefined" : "has indicator"
-    },
-    "superproperty" : [ "3" ],
-    "domain" : "58",
-    "comment" : {
-      "undefined" : "The connection between an indicator set and the indicator. This relation may occur multiple times."
-    },
     "attributes" : [ "object" ],
     "id" : "23"
   }, {
@@ -984,32 +996,32 @@
     "comment" : {
       "undefined" : "The measures that are part of one assessment / use case."
     },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "60"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "61"
+  }, {
+    "range" : "5",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "62"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#hasVariable",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
-    "range" : "46",
+    "range" : "44",
     "label" : {
       "IRI-based" : "hasVariable",
       "undefined" : "has variable"
     },
     "superproperty" : [ "3" ],
-    "domain" : "5",
+    "domain" : "45",
     "comment" : {
       "undefined" : "The connection between the indicator ant the variables of an indicator."
     },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "61"
-  }, {
-    "range" : "18",
-    "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "62"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "63"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#connectedServices",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
-    "range" : "43",
+    "range" : "39",
     "label" : {
       "IRI-based" : "connectedServices",
       "undefined" : "connected services"
@@ -1020,17 +1032,17 @@
       "undefined" : "The services connected to a DT, e.g., ICDD container."
     },
     "attributes" : [ "object" ],
-    "id" : "26"
+    "id" : "25"
   }, {
     "range" : "13",
-    "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "63"
-  }, {
-    "range" : "18",
-    "domain" : "13",
+    "domain" : "45",
     "attributes" : [ "object", "anonymous" ],
     "id" : "64"
+  }, {
+    "range" : "5",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "65"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#hasAsessment",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
@@ -1044,52 +1056,52 @@
     "comment" : {
       "undefined" : "The connection beween the DT and the use case / asessment."
     },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "65"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "66"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#hasIndicator",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
-    "range" : "41",
+    "range" : "47",
     "label" : {
       "IRI-based" : "hasIndicator",
       "undefined" : "has indicator"
     },
     "superproperty" : [ "3" ],
-    "domain" : "58",
+    "domain" : "59",
     "comment" : {
       "undefined" : "The connection between an indicator set and the indicator. This relation may occur multiple times."
     },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "67"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "68"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#hasIndicatorType",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
-    "range" : "68",
+    "range" : "41",
     "label" : {
       "IRI-based" : "hasIndicatorType",
       "undefined" : "has indicator type"
     },
     "superproperty" : [ "3" ],
-    "domain" : "41",
+    "domain" : "47",
     "comment" : {
       "undefined" : "Provides the indicator type."
     },
     "attributes" : [ "object" ],
-    "id" : "31"
+    "id" : "30"
   }, {
-    "iri" : "https://greeninfratwins.com/ns/grit#involvesActivities",
+    "iri" : "https://greeninfratwins.com/ns/grit#hasMeasureVariant",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
-    "range" : "9",
+    "range" : "2",
     "label" : {
-      "IRI-based" : "involvesActivities",
-      "undefined" : "involves activities"
+      "IRI-based" : "hasMeasureVariant",
+      "undefined" : "has measure variant"
     },
     "superproperty" : [ "3" ],
     "domain" : "1",
     "comment" : {
-      "undefined" : "The activities that are performed within a measure or a measure variant."
+      "undefined" : "A measure variant can be used to compare multiple variants of the same measure during the assessment."
     },
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "69"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#mapsToLbdProperty",
@@ -1101,50 +1113,12 @@
     },
     "superproperty" : [ "3" ],
     "cardinality" : "1",
-    "domain" : "46",
+    "domain" : "44",
     "comment" : {
       "undefined" : "This property is used to map a variable of an indicator to a property present in the RDF dataset of the digital twin."
     },
     "attributes" : [ "object" ],
-    "id" : "32"
-  }, {
-    "iri" : "https://greeninfratwins.com/ns/grit#hasIfcGuid",
-    "baseIri" : "https://greeninfratwins.com/ns/grit",
-    "range" : "72",
-    "label" : {
-      "IRI-based" : "hasIfcGuid",
-      "undefined" : "has ifc guid"
-    },
-    "domain" : "9",
-    "attributes" : [ "someValues", "object", "datatype" ],
-    "id" : "71"
-  }, {
-    "iri" : "https://greeninfratwins.com/ns/grit#hasIcddProjectID",
-    "baseIri" : "https://greeninfratwins.com/ns/grit",
-    "range" : "49",
-    "label" : {
-      "IRI-based" : "hasIcddProjectID",
-      "undefined" : "has icdd project ID"
-    },
-    "cardinality" : "1",
-    "domain" : "11",
-    "attributes" : [ "datatype" ],
-    "id" : "73"
-  }, {
-    "iri" : "https://greeninfratwins.com/ns/grit#hasUnit",
-    "baseIri" : "https://greeninfratwins.com/ns/grit",
-    "range" : "16",
-    "label" : {
-      "IRI-based" : "hasUnit",
-      "undefined" : "has unit"
-    },
-    "superproperty" : [ "3" ],
-    "domain" : "46",
-    "comment" : {
-      "undefined" : "The unit that a value refers to."
-    },
-    "attributes" : [ "object" ],
-    "id" : "33"
+    "id" : "31"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#afterActivity",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
@@ -1158,12 +1132,50 @@
     "comment" : {
       "undefined" : "Establishes a procedural order of activities."
     },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "74"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "71"
+  }, {
+    "iri" : "https://greeninfratwins.com/ns/grit#hasUnit",
+    "baseIri" : "https://greeninfratwins.com/ns/grit",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasUnit",
+      "undefined" : "has unit"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "44",
+    "comment" : {
+      "undefined" : "The unit that a value refers to."
+    },
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://greeninfratwins.com/ns/grit#hasIcddProjectID",
+    "baseIri" : "https://greeninfratwins.com/ns/grit",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "hasIcddProjectID",
+      "undefined" : "has icdd project ID"
+    },
+    "cardinality" : "1",
+    "domain" : "11",
+    "attributes" : [ "datatype" ],
+    "id" : "72"
+  }, {
+    "iri" : "https://greeninfratwins.com/ns/grit#hasIfcGuid",
+    "baseIri" : "https://greeninfratwins.com/ns/grit",
+    "range" : "74",
+    "label" : {
+      "IRI-based" : "hasIfcGuid",
+      "undefined" : "has ifc guid"
+    },
+    "domain" : "9",
+    "attributes" : [ "object", "someValues", "datatype" ],
+    "id" : "73"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#frequencyPerYear",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
-    "range" : "45",
+    "range" : "43",
     "label" : {
       "IRI-based" : "frequencyPerYear",
       "undefined" : "frequency per year"
@@ -1174,33 +1186,61 @@
       "undefined" : "Displays the frequency of a measure per year."
     },
     "attributes" : [ "object" ],
-    "id" : "34"
+    "id" : "33"
+  }, {
+    "iri" : "https://greeninfratwins.com/ns/grit#hasIcddModelID",
+    "baseIri" : "https://greeninfratwins.com/ns/grit",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "hasIcddModelID",
+      "undefined" : "has icdd model id"
+    },
+    "cardinality" : "1",
+    "domain" : "9",
+    "attributes" : [ "datatype" ],
+    "id" : "76"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#hasIfcGuid",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
-    "range" : "48",
+    "range" : "50",
     "label" : {
       "IRI-based" : "hasIfcGuid",
       "undefined" : "has ifc guid"
     },
     "domain" : "9",
     "attributes" : [ "datatype" ],
-    "id" : "76"
+    "id" : "77"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#hasKey",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
-    "range" : "37",
+    "range" : "35",
     "label" : {
       "IRI-based" : "hasKey",
       "undefined" : "has key"
     },
     "superproperty" : [ "3" ],
-    "domain" : "46",
+    "domain" : "44",
     "comment" : {
       "undefined" : "The key of a variable exactly as it appears in the calculation formula, e.g. v (for volume)."
     },
     "attributes" : [ "object" ],
-    "id" : "25"
+    "id" : "24"
+  }, {
+    "iri" : "https://greeninfratwins.com/ns/grit#hasValue",
+    "baseIri" : "https://greeninfratwins.com/ns/grit",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "hasValue",
+      "undefined" : "has value"
+    },
+    "superproperty" : [ "3" ],
+    "cardinality" : "1",
+    "domain" : "44",
+    "comment" : {
+      "undefined" : "The value that should be computed by a calculation service for a given variable."
+    },
+    "attributes" : [ "object" ],
+    "id" : "27"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#hasMeasure",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
@@ -1215,73 +1255,62 @@
       "undefined" : "The measures that are part of one assessment / use case."
     },
     "attributes" : [ "object" ],
-    "id" : "27"
-  }, {
-    "iri" : "https://greeninfratwins.com/ns/grit#hasValue",
-    "baseIri" : "https://greeninfratwins.com/ns/grit",
-    "range" : "37",
-    "label" : {
-      "IRI-based" : "hasValue",
-      "undefined" : "has value"
-    },
-    "superproperty" : [ "3" ],
-    "cardinality" : "1",
-    "domain" : "46",
-    "comment" : {
-      "undefined" : "The value that should be computed by a calculation service for a given variable."
-    },
-    "attributes" : [ "object" ],
-    "id" : "28"
+    "id" : "26"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
     "baseIri" : "http://www.w3.org/2002/07/owl",
-    "range" : "38",
+    "range" : "17",
     "label" : {
       "IRI-based" : "topDataProperty"
     },
-    "domain" : "39",
+    "domain" : "37",
     "attributes" : [ "datatype", "external" ],
-    "id" : "78"
-  }, {
-    "range" : "41",
-    "domain" : "56",
-    "attributes" : [ "object", "anonymous" ],
     "id" : "79"
   }, {
-    "range" : "41",
-    "domain" : "6",
+    "range" : "47",
+    "domain" : "57",
     "attributes" : [ "object", "anonymous" ],
     "id" : "80"
+  }, {
+    "range" : "47",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "81"
   }, {
     "range" : "6",
     "domain" : "13",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "81"
+    "id" : "82"
+  }, {
+    "range" : "6",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "83"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#hasExternalCalculationServiceUrl",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
-    "range" : "36",
+    "range" : "38",
     "label" : {
       "IRI-based" : "hasExternalCalculationServiceUrl",
       "undefined" : "has calculation service"
     },
     "superproperty" : [ "3" ],
     "cardinality" : "1",
-    "domain" : "18",
+    "domain" : "5",
     "comment" : {
       "undefined" : "The URL of a calculation service that can calculate the indicator based on the given formula and the respective variables."
     },
     "attributes" : [ "object" ],
-    "id" : "35"
+    "id" : "34"
   }, {
-    "range" : "41",
-    "domain" : "47",
+    "range" : "47",
+    "domain" : "52",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "82"
+    "id" : "84"
   }, {
-    "range" : "41",
-    "domain" : "51",
+    "range" : "47",
+    "domain" : "6",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "83"
+    "id" : "85"
   } ]
 }

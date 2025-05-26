@@ -99,35 +99,7 @@ $(function(){
 </div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
 This is a placeholder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
 </div>
-<div id="toc"></div> 
-
-<!--INTRODUCTION SECTION-->
-    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
-<div id="namespacedeclarations">
-<h3 id="ns" class="list">Namespace declarations</h3>
-<div id="ns" align="center">
-<table>
-<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
-<tbody>
-<tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/terms/&gt;</td></tr>
-<tr><td><b>grit</b></td><td>&lt;https://greeninfratwins.com/ns/grit#&gt;</td></tr>
-<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl#&gt;</td></tr>
-<tr><td><b>p1</b></td><td>&lt;https://qudt.org/schema/qudt/&gt;</td></tr>
-<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</td></tr>
-<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</td></tr>
-<tr><td><b>schema</b></td><td>&lt;https://schema.org/&gt;</td></tr>
-<tr><td><b>vann</b></td><td>&lt;http://purl.org/vocab/vann/&gt;</td></tr>
-<tr><td><b>vs</b></td><td>&lt;http://www.w3.org/2003/06/sw-vocab-status/ns#&gt;</td></tr>
-<tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace&gt;</td></tr>
-<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema#&gt;</td></tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-  
+<div id="toc"></div>  
 
 <!--OVERVIEW SECTION-->
     <div id="overview"><h2 id="overv" class="list">GreenInfraTwins (GRIT) Ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -278,6 +250,10 @@ This ontology has the following classes and properties.</span>
          title="https://greeninfratwins.com/ns/grit#hasIcddContainerID">has icdd container ID</a>
    </li>
    <li>
+      <a href="#hasIcddModelID"
+         title="https://greeninfratwins.com/ns/grit#hasIcddModelID">has icdd model id</a>
+   </li>
+   <li>
       <a href="#hasIcddProjectID"
          title="https://greeninfratwins.com/ns/grit#hasIcddProjectID">has icdd project ID</a>
    </li>
@@ -352,7 +328,7 @@ This section provides details for each class and property defined by GreenInfraT
     is in domain of
    </dt>
    <dd>
-    <a href="#afterActivity" title="https://greeninfratwins.com/ns/grit#afterActivity">after activity</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasIfcGuid" title="https://greeninfratwins.com/ns/grit#hasIfcGuid">has ifc guid</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIndicatorSet" title="https://greeninfratwins.com/ns/grit#hasIndicatorSet">has indicator set</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#afterActivity" title="https://greeninfratwins.com/ns/grit#afterActivity">after activity</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasIcddModelID" title="https://greeninfratwins.com/ns/grit#hasIcddModelID">has icdd model id</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIfcGuid" title="https://greeninfratwins.com/ns/grit#hasIfcGuid">has ifc guid</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIndicatorSet" title="https://greeninfratwins.com/ns/grit#hasIndicatorSet">has indicator set</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
@@ -481,7 +457,7 @@ This section provides details for each class and property defined by GreenInfraT
     is in domain of
    </dt>
    <dd>
-    <a href="#hasIndicatorID" title="https://greeninfratwins.com/ns/grit#hasIndicatorID">has Indicator I D</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIndicatorType" title="https://greeninfratwins.com/ns/grit#hasIndicatorType">has indicator type</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#hasIndicatorType" title="https://greeninfratwins.com/ns/grit#hasIndicatorType">has indicator type</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
@@ -530,6 +506,12 @@ This section provides details for each class and property defined by GreenInfraT
    </dt>
    <dd>
     <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasIndicatorID" title="https://greeninfratwins.com/ns/grit#hasIndicatorID">has Indicator I D</a> <sup class="type-dp" title="data property">dp</sup>
    </dd>
    <dt>
     is in range of
@@ -1285,6 +1267,7 @@ This section provides details for each class and property defined by GreenInfraT
  <h3 id="dataproperties-headline" class="list">Data Properties</h3>
  <ul class="hlist">
   <li><a href="#hasIcddContainerID" title="https://greeninfratwins.com/ns/grit#hasIcddContainerID">has icdd container ID</a></li>
+  <li><a href="#hasIcddModelID" title="https://greeninfratwins.com/ns/grit#hasIcddModelID">has icdd model id</a></li>
   <li><a href="#hasIcddProjectID" title="https://greeninfratwins.com/ns/grit#hasIcddProjectID">has icdd project ID</a></li>
   <li><a href="#hasIfcGuid" title="https://greeninfratwins.com/ns/grit#hasIfcGuid"> <span>has ifc guid</span> </a></li>
   <li><a href="#hasIndicatorID" title="https://greeninfratwins.com/ns/grit#hasIndicatorID"> <span>has Indicator I D</span> </a></li>
@@ -1311,6 +1294,32 @@ This section provides details for each class and property defined by GreenInfraT
     </dt>
     <dd>
      <a href="http://www.w3.org/2001/XMLSchema#anyURI" target="_blank" title="http://www.w3.org/2001/XMLSchema#anyURI">any U R I</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasIcddModelID">
+  <h3>has icdd model id<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#hasIcddModelID</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Activity" title="https://greeninfratwins.com/ns/grit#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
     </dd>
    </dl>
   </div>
@@ -1382,7 +1391,7 @@ This section provides details for each class and property defined by GreenInfraT
      has domain
     </dt>
     <dd>
-     <a href="#Indicator" title="https://greeninfratwins.com/ns/grit#Indicator">Indicator</a> <sup class="type-c" title="class">c</sup>
+     <a href="#IndicatorType" title="https://greeninfratwins.com/ns/grit#IndicatorType">Indicator type</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
