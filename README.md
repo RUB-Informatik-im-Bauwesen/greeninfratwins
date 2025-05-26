@@ -3,6 +3,11 @@ Ziel des Forschungsprojektes ist es, eine nachhaltigkeitsbezogene Entscheidungsu
 
 Das Projekt ist gefördert durch die österreichische Forschungsförderungsgesellschaft (FFG) im Rahmen der DACH-Verkehrsinfrastrukturforschung des Bundesministeriums für Digitales und Verkehr (DE), des Bundesministeriums für Klimaschutz, Umwelt, Energie, Mobilität, Innovation & Technologie (AT) und des Bundesamts für Strassen ASTRA (CH).
 
+## Resourcen
+
+* [GrIT Ontologie](/ns)
+* [LOIN Definitionen für AwFs](/loin)
+
 ## Partner
 
 #### Ruhr-Universität Bochum – Lehrstuhl für Informatik im Bauwesen – Deutschland
