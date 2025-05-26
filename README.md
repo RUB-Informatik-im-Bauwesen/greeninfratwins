@@ -5,8 +5,8 @@ Das Projekt ist gefördert durch die österreichische Forschungsförderungsgesel
 
 ## Resourcen
 
-* [GrIT Ontologie](/ns)
-* [LOIN Definitionen für AwFs](/loin)
+* [GrIT Ontologie](/greeninfratwins/ns/)
+* [LOIN Definitionen für AwFs](/greeninfratwins/ns/)
 
 ## Partner
 
