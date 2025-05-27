@@ -787,7 +787,7 @@
     "@value" : "Indikator für Definition von Materialität eines Bauwerks in Masse-Prozent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Materialitaet des Bauwerks"
+    "@value" : "Materialität des Bauwerks"
   } ],
   "https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators" : [ {
     "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources"
@@ -907,7 +907,7 @@
     "@value" : "Indikator für Definition von Flächeninanspruchnahme Bauwerk (dauerhaft) und Bauprozesse (vorübergehend) in gewichtete m2"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Flächeninanspruchnahme Bauwerk (dauerhaft) und Bauprozesse (vorübergehend)"
+    "@value" : "Flächeninanspruchnahme (gesamt)"
   } ],
   "https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators" : [ {
     "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"
@@ -964,10 +964,10 @@
     "@id" : "https://greeninfratwins.com/ns/grit#IndicatorType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen in Masse"
+    "@value" : "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen (CO2, NOx, PM2.5, PM5, PM10)"
+    "@value" : "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (gesamt)"
   } ],
   "https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators" : [ {
     "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"
@@ -984,10 +984,10 @@
     "@id" : "https://greeninfratwins.com/ns/grit#IndicatorType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen in Masse"
+    "@value" : "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen (CO2)"
+    "@value" : "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (CO2)"
   } ],
   "https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators" : [ {
     "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"
@@ -1004,10 +1004,10 @@
     "@id" : "https://greeninfratwins.com/ns/grit#IndicatorType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen in Masse"
+    "@value" : "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen (NOx)"
+    "@value" : "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (NOx)"
   } ],
   "https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators" : [ {
     "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"
@@ -1024,10 +1024,10 @@
     "@id" : "https://greeninfratwins.com/ns/grit#IndicatorType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen in Masse"
+    "@value" : "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen (PM2.5)"
+    "@value" : "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM2.5)"
   } ],
   "https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators" : [ {
     "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"
@@ -1044,10 +1044,10 @@
     "@id" : "https://greeninfratwins.com/ns/grit#IndicatorType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen in Masse"
+    "@value" : "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen (PM5)"
+    "@value" : "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM5)"
   } ],
   "https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators" : [ {
     "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"
@@ -1064,10 +1064,10 @@
     "@id" : "https://greeninfratwins.com/ns/grit#IndicatorType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen in Masse"
+    "@value" : "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen (PM10)"
+    "@value" : "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM10)"
   } ],
   "https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators" : [ {
     "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"
@@ -1124,10 +1124,10 @@
     "@id" : "https://greeninfratwins.com/ns/grit#IndicatorType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Indikator für Definition von Eutrophierungspotential (EP) in kg PO43-Äquiv."
+    "@value" : "Indikator für Definition von Ozonschichtabbaupotential (ODP) in kg R11-Äquiv."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Eutrophierungspotential (EP)"
+    "@value" : "Ozonschichtabbaupotential (ODP)"
   } ],
   "https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators" : [ {
     "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"
@@ -1207,7 +1207,7 @@
     "@value" : "Indikator für Definition von Materialkosten, prozessbezogene Kosten (Planungs-, Baukosten, Kosten Nutzungsphase etc.) in EUR"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Materialkosten, prozessbezogene Kosten (Planungs-, Baukosten, Kosten Nutzungsphase etc.)"
+    "@value" : "Bauwerksbezogene Kosten"
   } ],
   "https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators" : [ {
     "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_BuildingRelatedLifecycleCosts"
@@ -1287,7 +1287,7 @@
     "@value" : "Indikator für Definition von Lärmbeeinträchtigung von Menschen (Laermpegel / Anzahl vom Lärm betroffene Personen)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Lärmbeeinträchtigung von Menschen (Lärmpegel / Anzahl vom Lärm betroffene Personen)"
+    "@value" : "Lärmbeeinträchtigung von Menschen (gesamt)"
   } ],
   "https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators" : [ {
     "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection"
@@ -1347,7 +1347,7 @@
     "@value" : "Indikator für Definition von Arbeitssicherheit (Anzahl an Unfällen / Unfallrate im Baustellenbereich) in pax / -"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Arbeitssicherheit (Anzahl an Unfällen / Unfallrate im Baustellenbereich) in pax / -"
+    "@value" : "Arbeitssicherheit (Anzahl an Unfällen / Unfallrate im Baustellenbereich)"
   } ],
   "https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators" : [ {
     "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection"

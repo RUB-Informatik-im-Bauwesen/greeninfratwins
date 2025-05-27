@@ -1167,7 +1167,7 @@
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
         <hasIndicatorID>1.1.1</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Materialität eines Bauwerks in Masse-Prozent</rdfs:comment>
-        <rdfs:label>Materialitaet des Bauwerks</rdfs:label>
+        <rdfs:label>Materialität des Bauwerks</rdfs:label>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources"/>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
     </owl:NamedIndividual>
@@ -1251,7 +1251,7 @@
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
         <hasIndicatorID>1.3.1</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Flächeninanspruchnahme Bauwerk (dauerhaft) und Bauprozesse (vorübergehend) in gewichtete m2</rdfs:comment>
-        <rdfs:label>Flächeninanspruchnahme Bauwerk (dauerhaft) und Bauprozesse (vorübergehend)</rdfs:label>
+        <rdfs:label>Flächeninanspruchnahme (gesamt)</rdfs:label>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LandUse"/>
     </owl:NamedIndividual>
@@ -1292,8 +1292,8 @@
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
         <hasIndicatorID>1.4.1</hasIndicatorID>
-        <rdfs:comment>Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen in Masse</rdfs:comment>
-        <rdfs:label>Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen (CO2, NOx, PM2.5, PM5, PM10)</rdfs:label>
+        <rdfs:comment>Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse</rdfs:comment>
+        <rdfs:label>Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (gesamt)</rdfs:label>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects"/>
     </owl:NamedIndividual>
@@ -1306,8 +1306,8 @@
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_1">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
         <hasIndicatorID>1.4.1.1</hasIndicatorID>
-        <rdfs:comment>Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen in Masse</rdfs:comment>
-        <rdfs:label>Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen (CO2)</rdfs:label>
+        <rdfs:comment>Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse</rdfs:comment>
+        <rdfs:label>Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (CO2)</rdfs:label>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects"/>
     </owl:NamedIndividual>
@@ -1320,8 +1320,8 @@
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_2">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
         <hasIndicatorID>1.4.1.2</hasIndicatorID>
-        <rdfs:comment>Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen in Masse</rdfs:comment>
-        <rdfs:label>Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen (NOx)</rdfs:label>
+        <rdfs:comment>Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse</rdfs:comment>
+        <rdfs:label>Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (NOx)</rdfs:label>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects"/>
     </owl:NamedIndividual>
@@ -1334,8 +1334,8 @@
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_3">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
         <hasIndicatorID>1.4.1.3</hasIndicatorID>
-        <rdfs:comment>Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen in Masse</rdfs:comment>
-        <rdfs:label>Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen (PM2.5)</rdfs:label>
+        <rdfs:comment>Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse</rdfs:comment>
+        <rdfs:label>Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM2.5)</rdfs:label>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects"/>
     </owl:NamedIndividual>
@@ -1348,8 +1348,8 @@
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_4">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
         <hasIndicatorID>1.4.1.4</hasIndicatorID>
-        <rdfs:comment>Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen in Masse</rdfs:comment>
-        <rdfs:label>Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen (PM5)</rdfs:label>
+        <rdfs:comment>Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse</rdfs:comment>
+        <rdfs:label>Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM5)</rdfs:label>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects"/>
     </owl:NamedIndividual>
@@ -1362,8 +1362,8 @@
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_5">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
         <hasIndicatorID>1.4.1.5</hasIndicatorID>
-        <rdfs:comment>Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen in Masse</rdfs:comment>
-        <rdfs:label>Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen (PM10)</rdfs:label>
+        <rdfs:comment>Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse</rdfs:comment>
+        <rdfs:label>Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM10)</rdfs:label>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects"/>
     </owl:NamedIndividual>
@@ -1404,8 +1404,8 @@
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_5_3">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
         <hasIndicatorID>1.5.3</hasIndicatorID>
-        <rdfs:comment>Indikator für Definition von Eutrophierungspotential (EP) in kg PO43-Äquiv.</rdfs:comment>
-        <rdfs:label>Eutrophierungspotential (EP)</rdfs:label>
+        <rdfs:comment>Indikator für Definition von Ozonschichtabbaupotential (ODP) in kg R11-Äquiv.</rdfs:comment>
+        <rdfs:label>Ozonschichtabbaupotential (ODP)</rdfs:label>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment"/>
     </owl:NamedIndividual>
@@ -1461,7 +1461,7 @@
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
         <hasIndicatorID>2.1.1</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Materialkosten, prozessbezogene Kosten (Planungs-, Baukosten, Kosten Nutzungsphase etc.) in EUR</rdfs:comment>
-        <rdfs:label>Materialkosten, prozessbezogene Kosten (Planungs-, Baukosten, Kosten Nutzungsphase etc.)</rdfs:label>
+        <rdfs:label>Bauwerksbezogene Kosten</rdfs:label>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_BuildingRelatedLifecycleCosts"/>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality"/>
     </owl:NamedIndividual>
@@ -1517,7 +1517,7 @@
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
         <hasIndicatorID>3.1.1</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Lärmbeeinträchtigung von Menschen (Laermpegel / Anzahl vom Lärm betroffene Personen)</rdfs:comment>
-        <rdfs:label>Lärmbeeinträchtigung von Menschen (Lärmpegel / Anzahl vom Lärm betroffene Personen)</rdfs:label>
+        <rdfs:label>Lärmbeeinträchtigung von Menschen (gesamt)</rdfs:label>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection"/>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality"/>
     </owl:NamedIndividual>
@@ -1559,7 +1559,7 @@
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
         <hasIndicatorID>3.1.3</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Arbeitssicherheit (Anzahl an Unfällen / Unfallrate im Baustellenbereich) in pax / -</rdfs:comment>
-        <rdfs:label>Arbeitssicherheit (Anzahl an Unfällen / Unfallrate im Baustellenbereich) in pax / -</rdfs:label>
+        <rdfs:label>Arbeitssicherheit (Anzahl an Unfällen / Unfallrate im Baustellenbereich)</rdfs:label>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection"/>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality"/>
     </owl:NamedIndividual>

@@ -28,12 +28,12 @@
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "_:genid2147483649",
+        "value" : "_:genid2147483648",
         "type" : "label"
       }, {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "_:genid2147483648",
+        "value" : "_:genid2147483649",
         "type" : "label"
       } ],
       "created" : [ {
@@ -42,16 +42,16 @@
         "value" : "2024-08-01",
         "type" : "label"
       } ],
-      "preferredNamespacePrefix" : [ {
-        "identifier" : "preferredNamespacePrefix",
-        "language" : "undefined",
-        "value" : "grit",
-        "type" : "label"
-      } ],
       "rights" : [ {
         "identifier" : "rights",
         "language" : "undefined",
         "value" : "Copyright 2024 by Chair of Computing in Engineering, Ruhr University Bochum",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "grit",
         "type" : "label"
       } ],
       "modified" : [ {
@@ -94,7 +94,7 @@
     "id" : "13",
     "type" : "owl:Class"
   }, {
-    "id" : "14",
+    "id" : "16",
     "type" : "owl:Class"
   }, {
     "id" : "11",
@@ -145,7 +145,7 @@
     "id" : "52",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "16",
+    "id" : "15",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "45",
@@ -229,7 +229,7 @@
       "IRI-based" : "Unit"
     },
     "attributes" : [ "external" ],
-    "id" : "14"
+    "id" : "16"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#GreenInfraTwin",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
@@ -360,7 +360,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "16",
+    "id" : "15",
     "label" : {
       "IRI-based" : "anyURI"
     }
@@ -498,11 +498,11 @@
         "undefined" : "Externe Umwelteffekte"
       }
     }, {
-      "iri" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources",
+      "iri" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment",
       "baseIri" : "https://greeninfratwins.com/ns/grit",
       "labels" : {
-        "IRI-based" : "IndicatorSet_Predefined_CircularEconomyResources",
-        "undefined" : "Kreislaufwirtschaft / Ressourcen"
+        "IRI-based" : "IndicatorSet_Predefined_LifecycleAsessment",
+        "undefined" : "Ökobilanz"
       }
     }, {
       "iri" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection",
@@ -512,18 +512,11 @@
         "undefined" : "Schutzgut Mensch"
       }
     }, {
-      "iri" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment",
+      "iri" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources",
       "baseIri" : "https://greeninfratwins.com/ns/grit",
       "labels" : {
-        "IRI-based" : "IndicatorSet_Predefined_LifecycleAsessment",
-        "undefined" : "Ökobilanz"
-      }
-    }, {
-      "iri" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Availability",
-      "baseIri" : "https://greeninfratwins.com/ns/grit",
-      "labels" : {
-        "IRI-based" : "IndicatorSet_Predefined_Availability",
-        "undefined" : "Verfügbarkeit"
+        "IRI-based" : "IndicatorSet_Predefined_CircularEconomyResources",
+        "undefined" : "Kreislaufwirtschaft / Ressourcen"
       }
     }, {
       "iri" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_TechnicalQuality",
@@ -533,6 +526,13 @@
         "undefined" : "Technische Qualität"
       }
     }, {
+      "iri" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Availability",
+      "baseIri" : "https://greeninfratwins.com/ns/grit",
+      "labels" : {
+        "IRI-based" : "IndicatorSet_Predefined_Availability",
+        "undefined" : "Verfügbarkeit"
+      }
+    }, {
       "iri" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality",
       "baseIri" : "https://greeninfratwins.com/ns/grit",
       "labels" : {
@@ -540,18 +540,18 @@
         "undefined" : "Ökonomische Qualität"
       }
     }, {
-      "iri" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality",
-      "baseIri" : "https://greeninfratwins.com/ns/grit",
-      "labels" : {
-        "IRI-based" : "IndicatorSet_Predefined_SocioCulturalQuality",
-        "undefined" : "Sozio-kulturelle und funktionale Qualität"
-      }
-    }, {
       "iri" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LandUse",
       "baseIri" : "https://greeninfratwins.com/ns/grit",
       "labels" : {
         "IRI-based" : "IndicatorSet_Predefined_LandUse",
         "undefined" : "Flächeninanspruchnahme"
+      }
+    }, {
+      "iri" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality",
+      "baseIri" : "https://greeninfratwins.com/ns/grit",
+      "labels" : {
+        "IRI-based" : "IndicatorSet_Predefined_SocioCulturalQuality",
+        "undefined" : "Sozio-kulturelle und funktionale Qualität"
       }
     }, {
       "iri" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_BuildingRelatedLifecycleCosts",
@@ -659,12 +659,12 @@
         "belongsToPredefinedSetOfIndicators" : [ {
           "identifier" : "belongsToPredefinedSetOfIndicators",
           "language" : "undefined",
-          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_BuildingRelatedLifecycleCosts",
+          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality",
           "type" : "iri"
         }, {
           "identifier" : "belongsToPredefinedSetOfIndicators",
           "language" : "undefined",
-          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality",
+          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_BuildingRelatedLifecycleCosts",
           "type" : "iri"
         } ]
       },
@@ -673,7 +673,7 @@
       },
       "labels" : {
         "IRI-based" : "IndicatorType_2_1_1",
-        "undefined" : "Materialkosten, prozessbezogene Kosten (Planungs-, Baukosten, Kosten Nutzungsphase etc.)"
+        "undefined" : "Bauwerksbezogene Kosten"
       }
     }, {
       "iri" : "https://greeninfratwins.com/ns/grit#IndicatorType_2_2_1",
@@ -719,7 +719,7 @@
       },
       "labels" : {
         "IRI-based" : "IndicatorType_1_1_1",
-        "undefined" : "Materialitaet des Bauwerks"
+        "undefined" : "Materialität des Bauwerks"
       }
     }, {
       "iri" : "https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1_2",
@@ -751,12 +751,12 @@
         "belongsToPredefinedSetOfIndicators" : [ {
           "identifier" : "belongsToPredefinedSetOfIndicators",
           "language" : "undefined",
-          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality",
+          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection",
           "type" : "iri"
         }, {
           "identifier" : "belongsToPredefinedSetOfIndicators",
           "language" : "undefined",
-          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection",
+          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality",
           "type" : "iri"
         } ]
       },
@@ -791,41 +791,18 @@
         "undefined" : "Kumulierter Energieaufwand (KEA)"
       }
     }, {
-      "iri" : "https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_1",
-      "baseIri" : "https://greeninfratwins.com/ns/grit",
-      "annotations" : {
-        "belongsToPredefinedSetOfIndicators" : [ {
-          "identifier" : "belongsToPredefinedSetOfIndicators",
-          "language" : "undefined",
-          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LandUse",
-          "type" : "iri"
-        }, {
-          "identifier" : "belongsToPredefinedSetOfIndicators",
-          "language" : "undefined",
-          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality",
-          "type" : "iri"
-        } ]
-      },
-      "comment" : {
-        "undefined" : "Indikator für Definition von Flächeninanspruchnahme Bauwerk (dauerhaft)  in gewichtete m2"
-      },
-      "labels" : {
-        "IRI-based" : "IndicatorType_1_3_1_1",
-        "undefined" : "Flächeninanspruchnahme Bauwerk (dauerhaft)"
-      }
-    }, {
       "iri" : "https://greeninfratwins.com/ns/grit#IndicatorType_1_2_1",
       "baseIri" : "https://greeninfratwins.com/ns/grit",
       "annotations" : {
         "belongsToPredefinedSetOfIndicators" : [ {
           "identifier" : "belongsToPredefinedSetOfIndicators",
           "language" : "undefined",
-          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality",
+          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LocalEnvironmentalRisks",
           "type" : "iri"
         }, {
           "identifier" : "belongsToPredefinedSetOfIndicators",
           "language" : "undefined",
-          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LocalEnvironmentalRisks",
+          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality",
           "type" : "iri"
         } ]
       },
@@ -860,27 +837,27 @@
         "undefined" : "Monetärer Materialwert"
       }
     }, {
-      "iri" : "https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1",
+      "iri" : "https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_1",
       "baseIri" : "https://greeninfratwins.com/ns/grit",
       "annotations" : {
         "belongsToPredefinedSetOfIndicators" : [ {
           "identifier" : "belongsToPredefinedSetOfIndicators",
           "language" : "undefined",
-          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality",
+          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LandUse",
           "type" : "iri"
         }, {
           "identifier" : "belongsToPredefinedSetOfIndicators",
           "language" : "undefined",
-          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LandUse",
+          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality",
           "type" : "iri"
         } ]
       },
       "comment" : {
-        "undefined" : "Indikator für Definition von Flächeninanspruchnahme Bauwerk (dauerhaft) und Bauprozesse (vorübergehend) in gewichtete m2"
+        "undefined" : "Indikator für Definition von Flächeninanspruchnahme Bauwerk (dauerhaft)  in gewichtete m2"
       },
       "labels" : {
-        "IRI-based" : "IndicatorType_1_3_1",
-        "undefined" : "Flächeninanspruchnahme Bauwerk (dauerhaft) und Bauprozesse (vorübergehend)"
+        "IRI-based" : "IndicatorType_1_3_1_1",
+        "undefined" : "Flächeninanspruchnahme Bauwerk (dauerhaft)"
       }
     }, {
       "iri" : "https://greeninfratwins.com/ns/grit#IndicatorType_1_1_3",
@@ -906,6 +883,52 @@
         "undefined" : "Schad- und Risikostoffe"
       }
     }, {
+      "iri" : "https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1",
+      "baseIri" : "https://greeninfratwins.com/ns/grit",
+      "annotations" : {
+        "belongsToPredefinedSetOfIndicators" : [ {
+          "identifier" : "belongsToPredefinedSetOfIndicators",
+          "language" : "undefined",
+          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LandUse",
+          "type" : "iri"
+        }, {
+          "identifier" : "belongsToPredefinedSetOfIndicators",
+          "language" : "undefined",
+          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "Indikator für Definition von Flächeninanspruchnahme Bauwerk (dauerhaft) und Bauprozesse (vorübergehend) in gewichtete m2"
+      },
+      "labels" : {
+        "IRI-based" : "IndicatorType_1_3_1",
+        "undefined" : "Flächeninanspruchnahme (gesamt)"
+      }
+    }, {
+      "iri" : "https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1",
+      "baseIri" : "https://greeninfratwins.com/ns/grit",
+      "annotations" : {
+        "belongsToPredefinedSetOfIndicators" : [ {
+          "identifier" : "belongsToPredefinedSetOfIndicators",
+          "language" : "undefined",
+          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects",
+          "type" : "iri"
+        }, {
+          "identifier" : "belongsToPredefinedSetOfIndicators",
+          "language" : "undefined",
+          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse"
+      },
+      "labels" : {
+        "IRI-based" : "IndicatorType_1_4_1",
+        "undefined" : "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (gesamt)"
+      }
+    }, {
       "iri" : "https://greeninfratwins.com/ns/grit#IndicatorType_1_1_4",
       "baseIri" : "https://greeninfratwins.com/ns/grit",
       "annotations" : {
@@ -927,29 +950,6 @@
       "labels" : {
         "IRI-based" : "IndicatorType_1_1_4",
         "undefined" : "Demontagefähigkeit"
-      }
-    }, {
-      "iri" : "https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1",
-      "baseIri" : "https://greeninfratwins.com/ns/grit",
-      "annotations" : {
-        "belongsToPredefinedSetOfIndicators" : [ {
-          "identifier" : "belongsToPredefinedSetOfIndicators",
-          "language" : "undefined",
-          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects",
-          "type" : "iri"
-        }, {
-          "identifier" : "belongsToPredefinedSetOfIndicators",
-          "language" : "undefined",
-          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality",
-          "type" : "iri"
-        } ]
-      },
-      "comment" : {
-        "undefined" : "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen in Masse"
-      },
-      "labels" : {
-        "IRI-based" : "IndicatorType_1_4_1",
-        "undefined" : "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen (CO2, NOx, PM2.5, PM5, PM10)"
       }
     }, {
       "iri" : "https://greeninfratwins.com/ns/grit#IndicatorType_1_1_5",
@@ -981,12 +981,12 @@
         "belongsToPredefinedSetOfIndicators" : [ {
           "identifier" : "belongsToPredefinedSetOfIndicators",
           "language" : "undefined",
-          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment",
+          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality",
           "type" : "iri"
         }, {
           "identifier" : "belongsToPredefinedSetOfIndicators",
           "language" : "undefined",
-          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality",
+          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment",
           "type" : "iri"
         } ]
       },
@@ -1037,11 +1037,11 @@
         } ]
       },
       "comment" : {
-        "undefined" : "Indikator für Definition von Eutrophierungspotential (EP) in kg PO43-Äquiv."
+        "undefined" : "Indikator für Definition von Ozonschichtabbaupotential (ODP) in kg R11-Äquiv."
       },
       "labels" : {
         "IRI-based" : "IndicatorType_1_5_3",
-        "undefined" : "Eutrophierungspotential (EP)"
+        "undefined" : "Ozonschichtabbaupotential (ODP)"
       }
     }, {
       "iri" : "https://greeninfratwins.com/ns/grit#IndicatorType_1_5_4",
@@ -1119,12 +1119,12 @@
         "belongsToPredefinedSetOfIndicators" : [ {
           "identifier" : "belongsToPredefinedSetOfIndicators",
           "language" : "undefined",
-          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Reliability",
+          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_TechnicalQuality",
           "type" : "iri"
         }, {
           "identifier" : "belongsToPredefinedSetOfIndicators",
           "language" : "undefined",
-          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_TechnicalQuality",
+          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Reliability",
           "type" : "iri"
         } ]
       },
@@ -1134,6 +1134,29 @@
       "labels" : {
         "IRI-based" : "IndicatorType_4_1_1",
         "undefined" : "Zuverlässigkeitsindex (?-Wert)"
+      }
+    }, {
+      "iri" : "https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_5",
+      "baseIri" : "https://greeninfratwins.com/ns/grit",
+      "annotations" : {
+        "belongsToPredefinedSetOfIndicators" : [ {
+          "identifier" : "belongsToPredefinedSetOfIndicators",
+          "language" : "undefined",
+          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects",
+          "type" : "iri"
+        }, {
+          "identifier" : "belongsToPredefinedSetOfIndicators",
+          "language" : "undefined",
+          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse"
+      },
+      "labels" : {
+        "IRI-based" : "IndicatorType_1_4_1_5",
+        "undefined" : "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM10)"
       }
     }, {
       "iri" : "https://greeninfratwins.com/ns/grit#IndicatorType_4_2_1",
@@ -1159,41 +1182,18 @@
         "undefined" : "Anzahl an Unfällen/Unfallrate im Normalbetrieb (bezogen auf den Zustand)"
       }
     }, {
-      "iri" : "https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_5",
-      "baseIri" : "https://greeninfratwins.com/ns/grit",
-      "annotations" : {
-        "belongsToPredefinedSetOfIndicators" : [ {
-          "identifier" : "belongsToPredefinedSetOfIndicators",
-          "language" : "undefined",
-          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality",
-          "type" : "iri"
-        }, {
-          "identifier" : "belongsToPredefinedSetOfIndicators",
-          "language" : "undefined",
-          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects",
-          "type" : "iri"
-        } ]
-      },
-      "comment" : {
-        "undefined" : "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen in Masse"
-      },
-      "labels" : {
-        "IRI-based" : "IndicatorType_1_4_1_5",
-        "undefined" : "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen (PM10)"
-      }
-    }, {
       "iri" : "https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1_2",
       "baseIri" : "https://greeninfratwins.com/ns/grit",
       "annotations" : {
         "belongsToPredefinedSetOfIndicators" : [ {
           "identifier" : "belongsToPredefinedSetOfIndicators",
           "language" : "undefined",
-          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_BuildingRelatedLifecycleCosts",
+          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality",
           "type" : "iri"
         }, {
           "identifier" : "belongsToPredefinedSetOfIndicators",
           "language" : "undefined",
-          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality",
+          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_BuildingRelatedLifecycleCosts",
           "type" : "iri"
         } ]
       },
@@ -1234,21 +1234,21 @@
         "belongsToPredefinedSetOfIndicators" : [ {
           "identifier" : "belongsToPredefinedSetOfIndicators",
           "language" : "undefined",
-          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality",
+          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects",
           "type" : "iri"
         }, {
           "identifier" : "belongsToPredefinedSetOfIndicators",
           "language" : "undefined",
-          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects",
+          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality",
           "type" : "iri"
         } ]
       },
       "comment" : {
-        "undefined" : "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen in Masse"
+        "undefined" : "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse"
       },
       "labels" : {
         "IRI-based" : "IndicatorType_1_4_1_2",
-        "undefined" : "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen (NOx)"
+        "undefined" : "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (NOx)"
       }
     }, {
       "iri" : "https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_1",
@@ -1267,11 +1267,11 @@
         } ]
       },
       "comment" : {
-        "undefined" : "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen in Masse"
+        "undefined" : "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse"
       },
       "labels" : {
         "IRI-based" : "IndicatorType_1_4_1_1",
-        "undefined" : "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen (CO2)"
+        "undefined" : "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (CO2)"
       }
     }, {
       "iri" : "https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_4",
@@ -1280,21 +1280,21 @@
         "belongsToPredefinedSetOfIndicators" : [ {
           "identifier" : "belongsToPredefinedSetOfIndicators",
           "language" : "undefined",
-          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality",
+          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects",
           "type" : "iri"
         }, {
           "identifier" : "belongsToPredefinedSetOfIndicators",
           "language" : "undefined",
-          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects",
+          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality",
           "type" : "iri"
         } ]
       },
       "comment" : {
-        "undefined" : "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen in Masse"
+        "undefined" : "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse"
       },
       "labels" : {
         "IRI-based" : "IndicatorType_1_4_1_4",
-        "undefined" : "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen (PM5)"
+        "undefined" : "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM5)"
       }
     }, {
       "iri" : "https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_3",
@@ -1303,21 +1303,21 @@
         "belongsToPredefinedSetOfIndicators" : [ {
           "identifier" : "belongsToPredefinedSetOfIndicators",
           "language" : "undefined",
-          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality",
+          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects",
           "type" : "iri"
         }, {
           "identifier" : "belongsToPredefinedSetOfIndicators",
           "language" : "undefined",
-          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects",
+          "value" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality",
           "type" : "iri"
         } ]
       },
       "comment" : {
-        "undefined" : "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen in Masse"
+        "undefined" : "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse"
       },
       "labels" : {
         "IRI-based" : "IndicatorType_1_4_1_3",
-        "undefined" : "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen (PM2.5)"
+        "undefined" : "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM2.5)"
       }
     }, {
       "iri" : "https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1",
@@ -1340,7 +1340,7 @@
       },
       "labels" : {
         "IRI-based" : "IndicatorType_3_1_1",
-        "undefined" : "Lärmbeeinträchtigung von Menschen (Lärmpegel / Anzahl vom Lärm betroffene Personen)"
+        "undefined" : "Lärmbeeinträchtigung von Menschen (gesamt)"
       }
     }, {
       "iri" : "https://greeninfratwins.com/ns/grit#IndicatorType_3_2_1",
@@ -1386,7 +1386,7 @@
       },
       "labels" : {
         "IRI-based" : "IndicatorType_3_1_3",
-        "undefined" : "Arbeitssicherheit (Anzahl an Unfällen / Unfallrate im Baustellenbereich) in pax / -"
+        "undefined" : "Arbeitssicherheit (Anzahl an Unfällen / Unfallrate im Baustellenbereich)"
       }
     } ],
     "comment" : {
@@ -1441,7 +1441,7 @@
     "id" : "10",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "15",
+    "id" : "14",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "3",
@@ -1486,10 +1486,10 @@
     "id" : "20",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "22",
+    "id" : "23",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "23",
+    "id" : "22",
     "type" : "owl:objectProperty"
   }, {
     "id" : "62",
@@ -1528,11 +1528,11 @@
     "id" : "72",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "33",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "74",
     "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "75",
     "type" : "owl:someValuesFrom"
@@ -1549,10 +1549,10 @@
     "id" : "24",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "27",
+    "id" : "28",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "28",
+    "id" : "27",
     "type" : "owl:objectProperty"
   }, {
     "id" : "80",
@@ -1597,7 +1597,7 @@
   }, {
     "range" : "6",
     "domain" : "5",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "4"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#involvesActivities",
@@ -1632,7 +1632,7 @@
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#hasIcddContainerID",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
-    "range" : "16",
+    "range" : "15",
     "label" : {
       "IRI-based" : "hasIcddContainerID",
       "undefined" : "has icdd container ID"
@@ -1640,7 +1640,7 @@
     "cardinality" : "1",
     "domain" : "11",
     "attributes" : [ "datatype" ],
-    "id" : "15"
+    "id" : "14"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
     "baseIri" : "http://www.w3.org/2002/07/owl",
@@ -1739,7 +1739,7 @@
   }, {
     "range" : "54",
     "domain" : "47",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "53"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#involvesActivities",
@@ -1754,7 +1754,7 @@
     "comment" : {
       "undefined" : "The activities that are performed within a measure or a measure variant."
     },
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "55"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#hasVariable",
@@ -1769,32 +1769,32 @@
     "comment" : {
       "undefined" : "The connection between the indicator ant the variables of an indicator."
     },
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "56"
   }, {
-    "iri" : "https://greeninfratwins.com/ns/grit#involvesActivities",
+    "iri" : "https://greeninfratwins.com/ns/grit#hasMeasureVariant",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
-    "range" : "9",
+    "range" : "2",
     "label" : {
-      "IRI-based" : "involvesActivities",
-      "undefined" : "involves activities"
+      "IRI-based" : "hasMeasureVariant",
+      "undefined" : "has measure variant"
     },
     "superproperty" : [ "3" ],
     "domain" : "1",
     "comment" : {
-      "undefined" : "The activities that are performed within a measure or a measure variant."
+      "undefined" : "A measure variant can be used to compare multiple variants of the same measure during the assessment."
     },
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "57"
-  }, {
-    "range" : "47",
-    "domain" : "59",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "58"
   }, {
     "range" : "54",
     "domain" : "59",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "58"
+  }, {
+    "range" : "47",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "60"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#hasIndicatorSet",
@@ -1812,6 +1812,18 @@
     "attributes" : [ "object" ],
     "id" : "20"
   }, {
+    "iri" : "https://greeninfratwins.com/ns/grit#isDefinedBy",
+    "baseIri" : "https://greeninfratwins.com/ns/grit",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "isDefinedBy",
+      "undefined" : "has specified use case"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "12",
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
     "iri" : "https://greeninfratwins.com/ns/grit#hasIndicator",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
     "range" : "48",
@@ -1827,18 +1839,6 @@
     "attributes" : [ "object" ],
     "id" : "22"
   }, {
-    "iri" : "https://greeninfratwins.com/ns/grit#isDefinedBy",
-    "baseIri" : "https://greeninfratwins.com/ns/grit",
-    "range" : "61",
-    "label" : {
-      "IRI-based" : "isDefinedBy",
-      "undefined" : "has specified use case"
-    },
-    "superproperty" : [ "3" ],
-    "domain" : "12",
-    "attributes" : [ "object" ],
-    "id" : "23"
-  }, {
     "iri" : "https://greeninfratwins.com/ns/grit#hasMeasure",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
     "range" : "1",
@@ -1851,12 +1851,12 @@
     "comment" : {
       "undefined" : "The measures that are part of one assessment / use case."
     },
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "62"
   }, {
-    "range" : "13",
+    "range" : "5",
     "domain" : "46",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "63"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#hasVariable",
@@ -1871,7 +1871,7 @@
     "comment" : {
       "undefined" : "The connection between the indicator ant the variables of an indicator."
     },
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "64"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#connectedServices",
@@ -1889,14 +1889,14 @@
     "attributes" : [ "object" ],
     "id" : "26"
   }, {
-    "range" : "5",
+    "range" : "13",
     "domain" : "46",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "65"
   }, {
     "range" : "5",
     "domain" : "13",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "66"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#hasAsessment",
@@ -1911,7 +1911,7 @@
     "comment" : {
       "undefined" : "The connection beween the DT and the use case / asessment."
     },
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "67"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#hasIndicator",
@@ -1926,7 +1926,7 @@
     "comment" : {
       "undefined" : "The connection between an indicator set and the indicator. This relation may occur multiple times."
     },
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "69"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#hasIndicatorType",
@@ -1944,19 +1944,19 @@
     "attributes" : [ "object" ],
     "id" : "31"
   }, {
-    "iri" : "https://greeninfratwins.com/ns/grit#hasMeasureVariant",
+    "iri" : "https://greeninfratwins.com/ns/grit#involvesActivities",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
-    "range" : "2",
+    "range" : "9",
     "label" : {
-      "IRI-based" : "hasMeasureVariant",
-      "undefined" : "has measure variant"
+      "IRI-based" : "involvesActivities",
+      "undefined" : "involves activities"
     },
     "superproperty" : [ "3" ],
     "domain" : "1",
     "comment" : {
-      "undefined" : "A measure variant can be used to compare multiple variants of the same measure during the assessment."
+      "undefined" : "The activities that are performed within a measure or a measure variant."
     },
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "70"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#mapsToLbdProperty",
@@ -1983,23 +1983,8 @@
       "undefined" : "has ifc guid"
     },
     "domain" : "9",
-    "attributes" : [ "someValues", "datatype", "object" ],
+    "attributes" : [ "object", "datatype", "someValues" ],
     "id" : "72"
-  }, {
-    "iri" : "https://greeninfratwins.com/ns/grit#hasUnit",
-    "baseIri" : "https://greeninfratwins.com/ns/grit",
-    "range" : "14",
-    "label" : {
-      "IRI-based" : "hasUnit",
-      "undefined" : "has unit"
-    },
-    "superproperty" : [ "3" ],
-    "domain" : "45",
-    "comment" : {
-      "undefined" : "The unit that a value refers to."
-    },
-    "attributes" : [ "object" ],
-    "id" : "33"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#hasIcddProjectID",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
@@ -2013,6 +1998,21 @@
     "attributes" : [ "datatype" ],
     "id" : "74"
   }, {
+    "iri" : "https://greeninfratwins.com/ns/grit#hasUnit",
+    "baseIri" : "https://greeninfratwins.com/ns/grit",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasUnit",
+      "undefined" : "has unit"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "45",
+    "comment" : {
+      "undefined" : "The unit that a value refers to."
+    },
+    "attributes" : [ "object" ],
+    "id" : "33"
+  }, {
     "iri" : "https://greeninfratwins.com/ns/grit#afterActivity",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
     "range" : "9",
@@ -2025,7 +2025,7 @@
     "comment" : {
       "undefined" : "Establishes a procedural order of activities."
     },
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "75"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#frequencyPerYear",
@@ -2081,21 +2081,6 @@
     "attributes" : [ "object" ],
     "id" : "24"
   }, {
-    "iri" : "https://greeninfratwins.com/ns/grit#hasMeasure",
-    "baseIri" : "https://greeninfratwins.com/ns/grit",
-    "range" : "1",
-    "label" : {
-      "IRI-based" : "hasMeasure",
-      "undefined" : "has measure"
-    },
-    "superproperty" : [ "3" ],
-    "domain" : "12",
-    "comment" : {
-      "undefined" : "The measures that are part of one assessment / use case."
-    },
-    "attributes" : [ "object" ],
-    "id" : "27"
-  }, {
     "iri" : "https://greeninfratwins.com/ns/grit#hasValue",
     "baseIri" : "https://greeninfratwins.com/ns/grit",
     "range" : "36",
@@ -2112,6 +2097,21 @@
     "attributes" : [ "object" ],
     "id" : "28"
   }, {
+    "iri" : "https://greeninfratwins.com/ns/grit#hasMeasure",
+    "baseIri" : "https://greeninfratwins.com/ns/grit",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasMeasure",
+      "undefined" : "has measure"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "The measures that are part of one assessment / use case."
+    },
+    "attributes" : [ "object" ],
+    "id" : "27"
+  }, {
     "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
     "baseIri" : "http://www.w3.org/2002/07/owl",
     "range" : "17",
@@ -2119,27 +2119,27 @@
       "IRI-based" : "topDataProperty"
     },
     "domain" : "38",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "80"
   }, {
     "range" : "48",
     "domain" : "59",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "81"
   }, {
     "range" : "48",
     "domain" : "47",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "82"
   }, {
     "range" : "6",
     "domain" : "13",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "83"
   }, {
     "range" : "6",
     "domain" : "46",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "84"
   }, {
     "iri" : "https://greeninfratwins.com/ns/grit#hasExternalCalculationServiceUrl",
@@ -2160,12 +2160,12 @@
   }, {
     "range" : "48",
     "domain" : "54",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "85"
   }, {
     "range" : "48",
     "domain" : "6",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "86"
   } ]
 }

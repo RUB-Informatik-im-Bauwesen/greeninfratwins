@@ -738,7 +738,7 @@ xsd:int rdf:type owl:Class .
                               :IndicatorType ;
                      :hasIndicatorID "1.1.1" ;
                      rdfs:comment "Indikator für Definition von Materialität eines Bauwerks in Masse-Prozent" ;
-                     rdfs:label "Materialitaet des Bauwerks" ;
+                     rdfs:label "Materialität des Bauwerks" ;
                      :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_CircularEconomyResources ,
                                                          :IndicatorSet_Predefined_EcologicalQuality .
 
@@ -798,7 +798,7 @@ xsd:int rdf:type owl:Class .
                               :IndicatorType ;
                      :hasIndicatorID "1.3.1" ;
                      rdfs:comment "Indikator für Definition von Flächeninanspruchnahme Bauwerk (dauerhaft) und Bauprozesse (vorübergehend) in gewichtete m2" ;
-                     rdfs:label "Flächeninanspruchnahme Bauwerk (dauerhaft) und Bauprozesse (vorübergehend)" ;
+                     rdfs:label "Flächeninanspruchnahme (gesamt)" ;
                      :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_EcologicalQuality ,
                                                          :IndicatorSet_Predefined_LandUse .
 
@@ -827,8 +827,8 @@ xsd:int rdf:type owl:Class .
 :IndicatorType_1_4_1 rdf:type owl:NamedIndividual ,
                               :IndicatorType ;
                      :hasIndicatorID "1.4.1" ;
-                     rdfs:comment "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen in Masse" ;
-                     rdfs:label "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen (CO2, NOx, PM2.5, PM5, PM10)" ;
+                     rdfs:comment "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse" ;
+                     rdfs:label "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (gesamt)" ;
                      :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_EcologicalQuality ,
                                                          :IndicatorSet_Predefined_EnvironmentalEffects .
 
@@ -837,8 +837,8 @@ xsd:int rdf:type owl:Class .
 :IndicatorType_1_4_1_1 rdf:type owl:NamedIndividual ,
                                 :IndicatorType ;
                        :hasIndicatorID "1.4.1.1" ;
-                       rdfs:comment "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen in Masse" ;
-                       rdfs:label "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen (CO2)" ;
+                       rdfs:comment "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse" ;
+                       rdfs:label "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (CO2)" ;
                        :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_EcologicalQuality ,
                                                            :IndicatorSet_Predefined_EnvironmentalEffects .
 
@@ -847,8 +847,8 @@ xsd:int rdf:type owl:Class .
 :IndicatorType_1_4_1_2 rdf:type owl:NamedIndividual ,
                                 :IndicatorType ;
                        :hasIndicatorID "1.4.1.2" ;
-                       rdfs:comment "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen in Masse" ;
-                       rdfs:label "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen (NOx)" ;
+                       rdfs:comment "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse" ;
+                       rdfs:label "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (NOx)" ;
                        :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_EcologicalQuality ,
                                                            :IndicatorSet_Predefined_EnvironmentalEffects .
 
@@ -857,8 +857,8 @@ xsd:int rdf:type owl:Class .
 :IndicatorType_1_4_1_3 rdf:type owl:NamedIndividual ,
                                 :IndicatorType ;
                        :hasIndicatorID "1.4.1.3" ;
-                       rdfs:comment "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen in Masse" ;
-                       rdfs:label "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen (PM2.5)" ;
+                       rdfs:comment "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse" ;
+                       rdfs:label "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM2.5)" ;
                        :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_EcologicalQuality ,
                                                            :IndicatorSet_Predefined_EnvironmentalEffects .
 
@@ -867,8 +867,8 @@ xsd:int rdf:type owl:Class .
 :IndicatorType_1_4_1_4 rdf:type owl:NamedIndividual ,
                                 :IndicatorType ;
                        :hasIndicatorID "1.4.1.4" ;
-                       rdfs:comment "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen in Masse" ;
-                       rdfs:label "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen (PM5)" ;
+                       rdfs:comment "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse" ;
+                       rdfs:label "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM5)" ;
                        :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_EcologicalQuality ,
                                                            :IndicatorSet_Predefined_EnvironmentalEffects .
 
@@ -877,8 +877,8 @@ xsd:int rdf:type owl:Class .
 :IndicatorType_1_4_1_5 rdf:type owl:NamedIndividual ,
                                 :IndicatorType ;
                        :hasIndicatorID "1.4.1.5" ;
-                       rdfs:comment "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen in Masse" ;
-                       rdfs:label "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrs-beeinträchtigungen (PM10)" ;
+                       rdfs:comment "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse" ;
+                       rdfs:label "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM10)" ;
                        :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_EcologicalQuality ,
                                                            :IndicatorSet_Predefined_EnvironmentalEffects .
 
@@ -907,8 +907,8 @@ xsd:int rdf:type owl:Class .
 :IndicatorType_1_5_3 rdf:type owl:NamedIndividual ,
                               :IndicatorType ;
                      :hasIndicatorID "1.5.3" ;
-                     rdfs:comment "Indikator für Definition von Eutrophierungspotential (EP) in kg PO43-Äquiv." ;
-                     rdfs:label "Eutrophierungspotential (EP)" ;
+                     rdfs:comment "Indikator für Definition von Ozonschichtabbaupotential (ODP) in kg R11-Äquiv." ;
+                     rdfs:label "Ozonschichtabbaupotential (ODP)" ;
                      :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_EcologicalQuality ,
                                                          :IndicatorSet_Predefined_LifecycleAsessment .
 
@@ -948,7 +948,7 @@ xsd:int rdf:type owl:Class .
                               :IndicatorType ;
                      :hasIndicatorID "2.1.1" ;
                      rdfs:comment "Indikator für Definition von Materialkosten, prozessbezogene Kosten (Planungs-, Baukosten, Kosten Nutzungsphase etc.) in EUR" ;
-                     rdfs:label "Materialkosten, prozessbezogene Kosten (Planungs-, Baukosten, Kosten Nutzungsphase etc.)" ;
+                     rdfs:label "Bauwerksbezogene Kosten" ;
                      :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_BuildingRelatedLifecycleCosts ,
                                                          :IndicatorSet_Predefined_EconomicQuality .
 
@@ -988,7 +988,7 @@ xsd:int rdf:type owl:Class .
                               :IndicatorType ;
                      :hasIndicatorID "3.1.1" ;
                      rdfs:comment "Indikator für Definition von Lärmbeeinträchtigung von Menschen (Laermpegel / Anzahl vom Lärm betroffene Personen)" ;
-                     rdfs:label "Lärmbeeinträchtigung von Menschen (Lärmpegel / Anzahl vom Lärm betroffene Personen)" ;
+                     rdfs:label "Lärmbeeinträchtigung von Menschen (gesamt)" ;
                      :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_HumanProtection ,
                                                          :IndicatorSet_Predefined_SocioCulturalQuality .
 
@@ -1018,7 +1018,7 @@ xsd:int rdf:type owl:Class .
                               :IndicatorType ;
                      :hasIndicatorID "3.1.3" ;
                      rdfs:comment "Indikator für Definition von Arbeitssicherheit (Anzahl an Unfällen / Unfallrate im Baustellenbereich) in pax / -" ;
-                     rdfs:label "Arbeitssicherheit (Anzahl an Unfällen / Unfallrate im Baustellenbereich) in pax / -" ;
+                     rdfs:label "Arbeitssicherheit (Anzahl an Unfällen / Unfallrate im Baustellenbereich)" ;
                      :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_HumanProtection ,
                                                          :IndicatorSet_Predefined_SocioCulturalQuality .
 
