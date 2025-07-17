@@ -76,8 +76,8 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/P
 # http://purl.org/vocab/vann/preferredNamespaceUri
 <http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators
-<https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# http://www.w3.org/2002/07/owl#qualifiedCardinality
+<http://www.w3.org/2002/07/owl#qualifiedCardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # https://schema.org/email
 <https://schema.org/email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -120,19 +120,19 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/P
 <https://greeninfratwins.com/ns/grit#afterActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes a procedural order of activities." .
 <https://greeninfratwins.com/ns/grit#afterActivity> <http://www.w3.org/2000/01/rdf-schema#label> "after activity" .
 # 
+# https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators
+<https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <http://www.w3.org/2000/01/rdf-schema#domain> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <http://www.w3.org/2000/01/rdf-schema#range> <https://greeninfratwins.com/ns/grit#IndicatorSet> .
+<https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <http://www.w3.org/2000/01/rdf-schema#label> "belongs to predefined set of indicators" .
+# 
 # https://greeninfratwins.com/ns/grit#connectedServices
 <https://greeninfratwins.com/ns/grit#connectedServices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://greeninfratwins.com/ns/grit#connectedServices> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <https://greeninfratwins.com/ns/grit#connectedServices> <http://www.w3.org/2000/01/rdf-schema#domain> <https://greeninfratwins.com/ns/grit#GreenInfraTwin> .
 <https://greeninfratwins.com/ns/grit#connectedServices> <http://www.w3.org/2000/01/rdf-schema#comment> "The services connected to a DT, e.g., ICDD container." .
 <https://greeninfratwins.com/ns/grit#connectedServices> <http://www.w3.org/2000/01/rdf-schema#label> "connected services" .
-# 
-# https://greeninfratwins.com/ns/grit#frequencyPerYear
-<https://greeninfratwins.com/ns/grit#frequencyPerYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://greeninfratwins.com/ns/grit#frequencyPerYear> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://greeninfratwins.com/ns/grit#frequencyPerYear> <http://www.w3.org/2000/01/rdf-schema#domain> <https://greeninfratwins.com/ns/grit#Measure> .
-<https://greeninfratwins.com/ns/grit#frequencyPerYear> <http://www.w3.org/2000/01/rdf-schema#comment> "Displays the frequency of a measure per year." .
-<https://greeninfratwins.com/ns/grit#frequencyPerYear> <http://www.w3.org/2000/01/rdf-schema#label> "frequency per year" .
 # 
 # https://greeninfratwins.com/ns/grit#hasAsessment
 <https://greeninfratwins.com/ns/grit#hasAsessment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -155,13 +155,6 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/P
 <https://greeninfratwins.com/ns/grit#hasExternalCalculationServiceUrl> <http://www.w3.org/2000/01/rdf-schema#domain> <https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator> .
 <https://greeninfratwins.com/ns/grit#hasExternalCalculationServiceUrl> <http://www.w3.org/2000/01/rdf-schema#comment> "The URL of a calculation service that can calculate the indicator based on the given formula and the respective variables." .
 <https://greeninfratwins.com/ns/grit#hasExternalCalculationServiceUrl> <http://www.w3.org/2000/01/rdf-schema#label> "has calculation service" .
-# 
-# https://greeninfratwins.com/ns/grit#hasFormula
-<https://greeninfratwins.com/ns/grit#hasFormula> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://greeninfratwins.com/ns/grit#hasFormula> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://greeninfratwins.com/ns/grit#hasFormula> <http://www.w3.org/2000/01/rdf-schema#domain> <https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator> .
-<https://greeninfratwins.com/ns/grit#hasFormula> <http://www.w3.org/2000/01/rdf-schema#comment> "The calculation formular of a simple computed value indicator." .
-<https://greeninfratwins.com/ns/grit#hasFormula> <http://www.w3.org/2000/01/rdf-schema#label> "has formula" .
 # 
 # https://greeninfratwins.com/ns/grit#hasIndicator
 <https://greeninfratwins.com/ns/grit#hasIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -187,14 +180,6 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/P
 <https://greeninfratwins.com/ns/grit#hasIndicatorType> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides the indicator type." .
 <https://greeninfratwins.com/ns/grit#hasIndicatorType> <http://www.w3.org/2000/01/rdf-schema#label> "has indicator type" .
 # 
-# https://greeninfratwins.com/ns/grit#hasKey
-<https://greeninfratwins.com/ns/grit#hasKey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://greeninfratwins.com/ns/grit#hasKey> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://greeninfratwins.com/ns/grit#hasKey> <http://www.w3.org/2000/01/rdf-schema#domain> <https://greeninfratwins.com/ns/grit#IndicatorVariable> .
-<https://greeninfratwins.com/ns/grit#hasKey> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <https://greeninfratwins.com/ns/grit#hasValue> .
-<https://greeninfratwins.com/ns/grit#hasKey> <http://www.w3.org/2000/01/rdf-schema#comment> "The key of a variable exactly as it appears in the calculation formula, e.g. v (for volume)." .
-<https://greeninfratwins.com/ns/grit#hasKey> <http://www.w3.org/2000/01/rdf-schema#label> "has key" .
-# 
 # https://greeninfratwins.com/ns/grit#hasMeasure
 <https://greeninfratwins.com/ns/grit#hasMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://greeninfratwins.com/ns/grit#hasMeasure> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
@@ -211,6 +196,14 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/P
 <https://greeninfratwins.com/ns/grit#hasMeasureVariant> <http://www.w3.org/2000/01/rdf-schema#comment> "A measure variant can be used to compare multiple variants of the same measure during the assessment." .
 <https://greeninfratwins.com/ns/grit#hasMeasureVariant> <http://www.w3.org/2000/01/rdf-schema#label> "has measure variant" .
 # 
+# https://greeninfratwins.com/ns/grit#hasPredefinedIndicatorSet
+<https://greeninfratwins.com/ns/grit#hasPredefinedIndicatorSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://greeninfratwins.com/ns/grit#hasPredefinedIndicatorSet> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://greeninfratwins.com/ns/grit#hasPredefinedIndicatorSet> <http://www.w3.org/2000/01/rdf-schema#domain> <https://greeninfratwins.com/ns/grit#IndicatorSet> .
+<https://greeninfratwins.com/ns/grit#hasPredefinedIndicatorSet> <http://www.w3.org/2000/01/rdf-schema#range> <https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet> .
+<https://greeninfratwins.com/ns/grit#hasPredefinedIndicatorSet> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes the connection between the indicator set and the the predefined indicator set." .
+<https://greeninfratwins.com/ns/grit#hasPredefinedIndicatorSet> <http://www.w3.org/2000/01/rdf-schema#label> "has indicator set" .
+# 
 # https://greeninfratwins.com/ns/grit#hasUnit
 <https://greeninfratwins.com/ns/grit#hasUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://greeninfratwins.com/ns/grit#hasUnit> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
@@ -219,13 +212,6 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/P
 <https://qudt.org/schema/qudt/Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://greeninfratwins.com/ns/grit#hasUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "The unit that a value refers to." .
 <https://greeninfratwins.com/ns/grit#hasUnit> <http://www.w3.org/2000/01/rdf-schema#label> "has unit" .
-# 
-# https://greeninfratwins.com/ns/grit#hasValue
-<https://greeninfratwins.com/ns/grit#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://greeninfratwins.com/ns/grit#hasValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://greeninfratwins.com/ns/grit#hasValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://greeninfratwins.com/ns/grit#IndicatorVariable> .
-<https://greeninfratwins.com/ns/grit#hasValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The value that should be computed by a calculation service for a given variable." .
-<https://greeninfratwins.com/ns/grit#hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "has value" .
 # 
 # https://greeninfratwins.com/ns/grit#hasVariable
 <https://greeninfratwins.com/ns/grit#hasVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -260,13 +246,6 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/P
 <https://greeninfratwins.com/ns/grit#mapsToLbdProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to map a variable of an indicator to a property present in the RDF dataset of the digital twin." .
 <https://greeninfratwins.com/ns/grit#mapsToLbdProperty> <http://www.w3.org/2000/01/rdf-schema#label> "maps to lbd property" .
 # 
-# https://greeninfratwins.com/ns/grit#grit:belongsToPredefinedSetOfIndicators
-<https://greeninfratwins.com/ns/grit#grit:belongsToPredefinedSetOfIndicators> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://greeninfratwins.com/ns/grit#grit:belongsToPredefinedSetOfIndicators> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://greeninfratwins.com/ns/grit#grit:belongsToPredefinedSetOfIndicators> <http://www.w3.org/2000/01/rdf-schema#domain> <https://greeninfratwins.com/ns/grit#IndicatorType> .
-<https://greeninfratwins.com/ns/grit#grit:belongsToPredefinedSetOfIndicators> <http://www.w3.org/2000/01/rdf-schema#range> <https://greeninfratwins.com/ns/grit#IndicatorSet> .
-<https://greeninfratwins.com/ns/grit#grit:belongsToPredefinedSetOfIndicators> <http://www.w3.org/2000/01/rdf-schema#label> "belongs to predefined set of indicators" .
-# 
 # 
 # 
 # #################################################################
@@ -275,6 +254,27 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/P
 # #
 # #################################################################
 # 
+# 
+# https://greeninfratwins.com/ns/grit#frequencyPerYear
+<https://greeninfratwins.com/ns/grit#frequencyPerYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://greeninfratwins.com/ns/grit#frequencyPerYear> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://greeninfratwins.com/ns/grit#frequencyPerYear> <http://www.w3.org/2000/01/rdf-schema#domain> <https://greeninfratwins.com/ns/grit#Measure> .
+<https://greeninfratwins.com/ns/grit#frequencyPerYear> <http://www.w3.org/2000/01/rdf-schema#comment> "Displays the frequency of a measure per year." .
+<https://greeninfratwins.com/ns/grit#frequencyPerYear> <http://www.w3.org/2000/01/rdf-schema#label> "frequency per year" .
+# 
+# https://greeninfratwins.com/ns/grit#hasCountryCode
+<https://greeninfratwins.com/ns/grit#hasCountryCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://greeninfratwins.com/ns/grit#hasCountryCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://greeninfratwins.com/ns/grit#hasCountryCode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://greeninfratwins.com/ns/grit#GreenInfraTwin> .
+<https://greeninfratwins.com/ns/grit#hasCountryCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://greeninfratwins.com/ns/grit#hasCountryCode> <http://www.w3.org/2000/01/rdf-schema#label> "has country code" .
+# 
+# https://greeninfratwins.com/ns/grit#hasFormula
+<https://greeninfratwins.com/ns/grit#hasFormula> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://greeninfratwins.com/ns/grit#hasFormula> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://greeninfratwins.com/ns/grit#hasFormula> <http://www.w3.org/2000/01/rdf-schema#domain> <https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator> .
+<https://greeninfratwins.com/ns/grit#hasFormula> <http://www.w3.org/2000/01/rdf-schema#comment> "The calculation formula of a simple computed value indicator." .
+<https://greeninfratwins.com/ns/grit#hasFormula> <http://www.w3.org/2000/01/rdf-schema#label> "has formula" .
 # 
 # https://greeninfratwins.com/ns/grit#hasIcddContainerID
 <https://greeninfratwins.com/ns/grit#hasIcddContainerID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -309,6 +309,29 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/P
 <https://greeninfratwins.com/ns/grit#hasIndicatorID> <http://www.w3.org/2000/01/rdf-schema#domain> <https://greeninfratwins.com/ns/grit#IndicatorType> .
 <https://greeninfratwins.com/ns/grit#hasIndicatorID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 # 
+# https://greeninfratwins.com/ns/grit#hasIndicatorResult
+<https://greeninfratwins.com/ns/grit#hasIndicatorResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://greeninfratwins.com/ns/grit#hasIndicatorResult> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://greeninfratwins.com/ns/grit#hasIndicatorResult> <http://www.w3.org/2000/01/rdf-schema#domain> <https://greeninfratwins.com/ns/grit#ValueIndicator> .
+<https://greeninfratwins.com/ns/grit#hasIndicatorResult> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <https://greeninfratwins.com/ns/grit#hasValue> .
+<https://greeninfratwins.com/ns/grit#hasIndicatorResult> <http://www.w3.org/2000/01/rdf-schema#comment> "The calculated or retrieved result of an indicator." .
+<https://greeninfratwins.com/ns/grit#hasIndicatorResult> <http://www.w3.org/2000/01/rdf-schema#label> "has indicator result" .
+# 
+# https://greeninfratwins.com/ns/grit#hasKey
+<https://greeninfratwins.com/ns/grit#hasKey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://greeninfratwins.com/ns/grit#hasKey> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://greeninfratwins.com/ns/grit#hasKey> <http://www.w3.org/2000/01/rdf-schema#domain> <https://greeninfratwins.com/ns/grit#IndicatorVariable> .
+<https://greeninfratwins.com/ns/grit#hasKey> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <https://greeninfratwins.com/ns/grit#hasValue> .
+<https://greeninfratwins.com/ns/grit#hasKey> <http://www.w3.org/2000/01/rdf-schema#comment> "The key of a variable exactly as it appears in the calculation formula, e.g. v (for volume)." .
+<https://greeninfratwins.com/ns/grit#hasKey> <http://www.w3.org/2000/01/rdf-schema#label> "has key" .
+# 
+# https://greeninfratwins.com/ns/grit#hasValue
+<https://greeninfratwins.com/ns/grit#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://greeninfratwins.com/ns/grit#hasValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://greeninfratwins.com/ns/grit#hasValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://greeninfratwins.com/ns/grit#IndicatorVariable> .
+<https://greeninfratwins.com/ns/grit#hasValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The value that should be computed by a calculation service for a given variable." .
+<https://greeninfratwins.com/ns/grit#hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "has value" .
+# 
 # 
 # 
 # #################################################################
@@ -318,13 +341,19 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/P
 # #################################################################
 # 
 # 
+# http://org.semanticweb.owlapi/error#Error1
+<http://org.semanticweb.owlapi/error#Error1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://org.semanticweb.owlapi/error#Error2
+<http://org.semanticweb.owlapi/error#Error2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://org.semanticweb.owlapi/error#Error3
+<http://org.semanticweb.owlapi/error#Error3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://org.semanticweb.owlapi/error#Error4
+<http://org.semanticweb.owlapi/error#Error4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # http://www.w3.org/2000/01/rdf-schema#Resource
-# 
-# http://www.w3.org/2001/XMLSchema#decimal
-<http://www.w3.org/2001/XMLSchema#decimal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://www.w3.org/2001/XMLSchema#int
-<http://www.w3.org/2001/XMLSchema#int> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://greeninfratwins.com/ns/grit#Activity
 <https://greeninfratwins.com/ns/grit#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -401,67 +430,69 @@ _:genid16 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org
 _:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#connectedServices> .
 _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://greeninfratwins.com/ns/grit#GreenInfraTwin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
-_:genid17 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#anyURI> .
+_:genid17 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
 _:genid17 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIcddContainerID> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasCountryCode> .
 _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://greeninfratwins.com/ns/grit#GreenInfraTwin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
 _:genid18 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#anyURI> .
 _:genid18 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIcddProjectID> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIcddContainerID> .
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://greeninfratwins.com/ns/grit#GreenInfraTwin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#anyURI> .
+_:genid19 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIcddProjectID> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://greeninfratwins.com/ns/grit#GreenInfraTwin> <http://www.w3.org/2000/01/rdf-schema#comment> "The instance of a DT for sustainability asessment." .
 <https://greeninfratwins.com/ns/grit#GreenInfraTwin> <http://www.w3.org/2000/01/rdf-schema#label> "GreenInfraTwin Demonstrator" .
 # 
 # https://greeninfratwins.com/ns/grit#Indicator
 <https://greeninfratwins.com/ns/grit#Indicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://greeninfratwins.com/ns/grit#Indicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
-<https://greeninfratwins.com/ns/grit#Indicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
-_:genid19 <http://www.w3.org/2002/07/owl#onClass> <https://greeninfratwins.com/ns/grit#IndicatorType> .
-_:genid19 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIndicatorType> .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://greeninfratwins.com/ns/grit#Indicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#onClass> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+_:genid20 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIndicatorType> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://greeninfratwins.com/ns/grit#Indicator> <http://www.w3.org/2000/01/rdf-schema#comment> "The generic indicator class, can be subtyped regarding their caracteristics and their value calculation methods." .
 <https://greeninfratwins.com/ns/grit#Indicator> <http://www.w3.org/2000/01/rdf-schema#label> "Indicator" .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorSet
 <https://greeninfratwins.com/ns/grit#IndicatorSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://greeninfratwins.com/ns/grit#IndicatorSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
-<https://greeninfratwins.com/ns/grit#IndicatorSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
-_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://greeninfratwins.com/ns/grit#Indicator> .
-_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIndicator> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://greeninfratwins.com/ns/grit#IndicatorSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://greeninfratwins.com/ns/grit#Indicator> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIndicator> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://greeninfratwins.com/ns/grit#IndicatorSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#onClass> <https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet> .
+_:genid22 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasPredefinedIndicatorSet> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://greeninfratwins.com/ns/grit#IndicatorSet> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of indicators that is referenced by a specific activity." .
 <https://greeninfratwins.com/ns/grit#IndicatorSet> <http://www.w3.org/2000/01/rdf-schema#label> "Indicator set" .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType
 <https://greeninfratwins.com/ns/grit#IndicatorType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://greeninfratwins.com/ns/grit#IndicatorType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
-<https://greeninfratwins.com/ns/grit#IndicatorType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
-_:genid21 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid21 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIndicatorID> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://greeninfratwins.com/ns/grit#IndicatorType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid23 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIndicatorID> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://greeninfratwins.com/ns/grit#IndicatorType> <http://www.w3.org/2000/01/rdf-schema#comment> "A type for identifying indicators that should be aggregated in the overall calculation, e.g. GWP." .
 <https://greeninfratwins.com/ns/grit#IndicatorType> <http://www.w3.org/2000/01/rdf-schema#label> "Indicator type" .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorVariable
 <https://greeninfratwins.com/ns/grit#IndicatorVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://greeninfratwins.com/ns/grit#IndicatorVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error2> .
+<https://greeninfratwins.com/ns/grit#IndicatorVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error3> .
 <https://greeninfratwins.com/ns/grit#IndicatorVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
-<https://greeninfratwins.com/ns/grit#IndicatorVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
-_:genid22 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid22 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasKey> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://greeninfratwins.com/ns/grit#IndicatorVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
-_:genid23 <http://www.w3.org/2002/07/owl#onClass> <https://qudt.org/schema/qudt/Unit> .
-_:genid23 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasUnit> .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://greeninfratwins.com/ns/grit#IndicatorVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
-_:genid24 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid24 <http://www.w3.org/2002/07/owl#onClass> <https://qudt.org/schema/qudt/Unit> .
 _:genid24 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasValue> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasUnit> .
 _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://greeninfratwins.com/ns/grit#IndicatorVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
 _:genid25 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
@@ -472,6 +503,7 @@ _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://greeninfratwins.com/ns/grit#Measure
 <https://greeninfratwins.com/ns/grit#Measure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://greeninfratwins.com/ns/grit#Measure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error4> .
 <https://greeninfratwins.com/ns/grit#Measure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 <https://greeninfratwins.com/ns/grit#Measure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
 _:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://greeninfratwins.com/ns/grit#MeasureVariant> .
@@ -481,11 +513,6 @@ _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://greeninfratwins.com/ns/grit#Activity> .
 _:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#involvesActivities> .
 _:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://greeninfratwins.com/ns/grit#Measure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
-_:genid28 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2001/XMLSchema#int> .
-_:genid28 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#frequencyPerYear> .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://greeninfratwins.com/ns/grit#Measure> <http://www.w3.org/2000/01/rdf-schema#comment> "The definition of a measure." .
 <https://greeninfratwins.com/ns/grit#Measure> <http://www.w3.org/2000/01/rdf-schema#label> "Measure" .
 # 
@@ -500,12 +527,17 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://greeninfratwins.com/ns/grit#MeasureVariant
 <https://greeninfratwins.com/ns/grit#MeasureVariant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://greeninfratwins.com/ns/grit#MeasureVariant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
-<https://greeninfratwins.com/ns/grit#MeasureVariant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
-_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://greeninfratwins.com/ns/grit#Activity> .
-_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#involvesActivities> .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://greeninfratwins.com/ns/grit#MeasureVariant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://greeninfratwins.com/ns/grit#Activity> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#involvesActivities> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://greeninfratwins.com/ns/grit#MeasureVariant> <http://www.w3.org/2000/01/rdf-schema#comment> "An optional variant of the measure. A measure can either directly involve activities directly, or, if needed, can have multiple variants that each involve activities." .
 <https://greeninfratwins.com/ns/grit#MeasureVariant> <http://www.w3.org/2000/01/rdf-schema#label> "Measure variant" .
+# 
+# https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet
+<https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://greeninfratwins.com/ns/grit#IndicatorSet> .
+<https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet> <http://www.w3.org/2000/01/rdf-schema#label> "Predefined indicator set" .
 # 
 # https://greeninfratwins.com/ns/grit#ReliabilityIndicator
 <https://greeninfratwins.com/ns/grit#ReliabilityIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -516,19 +548,24 @@ _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator
 <https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error1> .
 <https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://greeninfratwins.com/ns/grit#ValueIndicator> .
+<https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://greeninfratwins.com/ns/grit#IndicatorVariable> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasVariable> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
-_:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://greeninfratwins.com/ns/grit#IndicatorVariable> .
-_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasVariable> .
+_:genid30 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasExternalCalculationServiceUrl> .
 _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
-_:genid31 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasExternalCalculationServiceUrl> .
+_:genid31 <http://www.w3.org/2002/07/owl#onClass> <https://qudt.org/schema/qudt/Unit> .
+_:genid31 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasUnit> .
 _:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
-_:genid32 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid32 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasFormula> .
+_:genid32 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIndicatorResult> .
 _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator> <http://www.w3.org/2000/01/rdf-schema#comment> "An indicator that can be computed by a service by providing a formular and variables." .
 <https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "Simple computed value indicator" .
@@ -553,7 +590,7 @@ _:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.co
 _:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://greeninfratwins.com/ns/grit#ValueIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
 _:genid34 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasValue> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIndicatorResult> .
 _:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://greeninfratwins.com/ns/grit#ValueIndicator> <http://www.w3.org/2000/01/rdf-schema#comment> "A class for all value indicators and subclasses. Cannot be used for calculating. For constant values see \"git:ConstantValueIndicator\"." .
 <https://greeninfratwins.com/ns/grit#ValueIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "Value indicator" .
@@ -594,367 +631,371 @@ _:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Availability
 <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Availability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Availability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorSet> .
+<https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Availability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet> .
 <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Availability> <http://www.w3.org/2000/01/rdf-schema#label> "Verfügbarkeit" .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_BuildingRelatedLifecycleCosts
 <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_BuildingRelatedLifecycleCosts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_BuildingRelatedLifecycleCosts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorSet> .
+<https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_BuildingRelatedLifecycleCosts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet> .
 <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_BuildingRelatedLifecycleCosts> <http://www.w3.org/2000/01/rdf-schema#label> "Bauwerksbezogene Lebenszykluskosten" .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources
 <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorSet> .
+<https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet> .
 <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources> <http://www.w3.org/2000/01/rdf-schema#label> "Kreislaufwirtschaft / Ressourcen" .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality
 <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorSet> .
+<https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet> .
 <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> <http://www.w3.org/2000/01/rdf-schema#label> "Ökologische Qualität" .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality
 <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorSet> .
+<https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet> .
 <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality> <http://www.w3.org/2000/01/rdf-schema#label> "Ökonomische Qualität" .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects
 <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorSet> .
+<https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet> .
 <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects> <http://www.w3.org/2000/01/rdf-schema#label> "Externe Umwelteffekte" .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_ExternalCosts
 <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_ExternalCosts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_ExternalCosts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorSet> .
+<https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_ExternalCosts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet> .
 <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_ExternalCosts> <http://www.w3.org/2000/01/rdf-schema#label> "Externe Kosten (monetarisierte externe Effekte)" .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection
 <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorSet> .
+<https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet> .
 <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection> <http://www.w3.org/2000/01/rdf-schema#label> "Schutzgut Mensch" .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LandUse
 <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LandUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LandUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorSet> .
+<https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LandUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet> .
 <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LandUse> <http://www.w3.org/2000/01/rdf-schema#label> "Flächeninanspruchnahme" .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment
 <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorSet> .
+<https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet> .
 <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment> <http://www.w3.org/2000/01/rdf-schema#label> "Ökobilanz" .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LocalEnvironmentalRisks
 <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LocalEnvironmentalRisks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LocalEnvironmentalRisks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorSet> .
+<https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LocalEnvironmentalRisks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet> .
 <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LocalEnvironmentalRisks> <http://www.w3.org/2000/01/rdf-schema#label> "Risiken für die lokale Umwelt" .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Reliability
 <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Reliability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Reliability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorSet> .
+<https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Reliability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet> .
 <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Reliability> <http://www.w3.org/2000/01/rdf-schema#label> "Zuverlässigkeit" .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Safety
 <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Safety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Safety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorSet> .
+<https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Safety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet> .
 <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Safety> <http://www.w3.org/2000/01/rdf-schema#label> "Nutzersicherheit" .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality
 <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorSet> .
+<https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet> .
 <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality> <http://www.w3.org/2000/01/rdf-schema#label> "Sozio-kulturelle und funktionale Qualität" .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_TechnicalQuality
 <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_TechnicalQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_TechnicalQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorSet> .
+<https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_TechnicalQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet> .
 <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_TechnicalQuality> <http://www.w3.org/2000/01/rdf-schema#label> "Technische Qualität" .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_1_1_1
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_1_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_1_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_1_1> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "1.1.1" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_1_1> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Materialität eines Bauwerks in Masse-Prozent" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_1_1> <http://www.w3.org/2000/01/rdf-schema#label> "Materialität des Bauwerks" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_1_1_2
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_1_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_1_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_1_2> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_1_2> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_1_2> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "1.1.2" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_1_2> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von monetärer Materialwert in EUR" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_1_2> <http://www.w3.org/2000/01/rdf-schema#label> "Monetärer Materialwert" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_1_2> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_1_2> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_1_1_3
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_1_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_1_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_1_3> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_1_3> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_1_3> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "1.1.3" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_1_3> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Schad- und Risikostoffe in kg" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_1_3> <http://www.w3.org/2000/01/rdf-schema#label> "Schad- und Risikostoffe" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_1_3> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_1_3> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_1_1_4
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_1_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_1_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_1_4> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_1_4> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_1_4> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "1.1.4" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_1_4> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Demontagefaehigkeit mit qualitative Bewertungsergebnis" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_1_4> <http://www.w3.org/2000/01/rdf-schema#label> "Demontagefähigkeit" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_1_4> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_1_4> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_1_1_5
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_1_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_1_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_1_5> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_1_5> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_1_5> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "1.1.5" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_1_5> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Materialverwertung zur potentialen Kreislauffaehigkeit in Massen-Prozent" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_1_5> <http://www.w3.org/2000/01/rdf-schema#label> "Materlaverwertung - Potentiale Kreislauffähigkeit" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_1_5> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_1_5> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_1_2_1
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_2_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_2_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_2_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_2_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LocalEnvironmentalRisks> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_2_1> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "1.2.1" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_2_1> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition Fläche des ökologisch gestörten Lebensraums durch Lärmbeeinträchtigung der Fauna in m2" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_2_1> <http://www.w3.org/2000/01/rdf-schema#label> "Fläche des ökologisch gestörten Lebensraums durch Lärmbeeinträchtigung der Fauna" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_2_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_2_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LocalEnvironmentalRisks> .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LandUse> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "1.3.1" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Flächeninanspruchnahme Bauwerk (dauerhaft) und Bauprozesse (vorübergehend) in gewichtete m2" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1> <http://www.w3.org/2000/01/rdf-schema#label> "Flächeninanspruchnahme (gesamt)" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LandUse> .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_1
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LandUse> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_1> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "1.3.1.1" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_1> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Flächeninanspruchnahme Bauwerk (dauerhaft)  in gewichtete m2" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_1> <http://www.w3.org/2000/01/rdf-schema#label> "Flächeninanspruchnahme Bauwerk (dauerhaft)" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LandUse> .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_2
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_2> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_2> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LandUse> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_2> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "1.3.1.2" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_2> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Flächeninanspruchnahme Bauprozesse (vorübergehend) in gewichtete m2" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_2> <http://www.w3.org/2000/01/rdf-schema#label> "Flächeninanspruchnahme Bauprozesse (vorübergehend)" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_2> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_2> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LandUse> .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "1.4.1" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1> <http://www.w3.org/2000/01/rdf-schema#label> "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (gesamt)" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects> .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_1
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_1> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "1.4.1.1" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_1> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_1> <http://www.w3.org/2000/01/rdf-schema#label> "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (CO2)" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects> .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_2
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_2> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_2> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_2> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "1.4.1.2" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_2> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_2> <http://www.w3.org/2000/01/rdf-schema#label> "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (NOx)" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_2> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_2> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects> .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_3
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_3> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_3> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_3> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "1.4.1.3" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_3> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_3> <http://www.w3.org/2000/01/rdf-schema#label> "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM2.5)" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_3> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_3> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects> .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_4
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_4> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_4> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_4> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "1.4.1.4" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_4> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_4> <http://www.w3.org/2000/01/rdf-schema#label> "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM5)" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_4> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_4> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects> .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_5
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_5> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_5> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_5> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "1.4.1.5" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_5> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_5> <http://www.w3.org/2000/01/rdf-schema#label> "Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM10)" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_5> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_5> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects> .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_1_5_1
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_5_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_5_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_5_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_5_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_5_1> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "1.5.1" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_5_1> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Globales Erwärmungspotential (GWP) in kg CO2-Äquiv." .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_5_1> <http://www.w3.org/2000/01/rdf-schema#label> "Globales Erwärmungspotential (GWP)" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_5_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_5_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment> .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_1_5_2
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_5_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_5_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_5_2> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_5_2> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_5_2> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "1.5.2" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_5_2> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Eutrophierungspotential (EP) in kg PO43-Äquiv." .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_5_2> <http://www.w3.org/2000/01/rdf-schema#label> "Eutrophierungspotential (EP)" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_5_2> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_5_2> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment> .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_1_5_3
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_5_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_5_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_5_3> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_5_3> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_5_3> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "1.5.3" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_5_3> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Ozonschichtabbaupotential (ODP) in kg R11-Äquiv." .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_5_3> <http://www.w3.org/2000/01/rdf-schema#label> "Ozonschichtabbaupotential (ODP)" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_5_3> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_5_3> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment> .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_1_5_4
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_5_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_5_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_5_4> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_5_4> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_5_4> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "1.5.4" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_5_4> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Versauerungspotential (AP) in kg SO2-Äquiv." .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_5_4> <http://www.w3.org/2000/01/rdf-schema#label> "Versauerungspotential (AP)" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_5_4> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_5_4> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment> .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_1_5_5
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_5_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_5_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_5_5> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_5_5> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_5_5> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "1.5.5" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_5_5> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Ozonbildungspotential (POCP) in kg C2H4-Äquiv." .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_5_5> <http://www.w3.org/2000/01/rdf-schema#label> "Ozonbildungspotential (POCP)" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_5_5> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_5_5> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment> .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_1_5_6
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_5_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_5_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_5_6> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_5_6> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_5_6> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "1.5.6" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_5_6> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Kumulierter Energieaufwand (KEA) in MJ" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_5_6> <http://www.w3.org/2000/01/rdf-schema#label> "Kumulierter Energieaufwand (KEA)" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_5_6> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_5_6> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment> .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1
 <https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_BuildingRelatedLifecycleCosts> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "2.1.1" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Materialkosten, prozessbezogene Kosten (Planungs-, Baukosten, Kosten Nutzungsphase etc.) in EUR" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1> <http://www.w3.org/2000/01/rdf-schema#label> "Bauwerksbezogene Kosten" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_BuildingRelatedLifecycleCosts> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality> .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1_1
 <https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_BuildingRelatedLifecycleCosts> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1_1> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "2.1.1.1" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1_1> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Materialkosten - Teilkosten von Material-, prozessbezogene Kosten (Planungs-, Baukosten, Kosten Nutzungsphase etc.) in EUR" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1_1> <http://www.w3.org/2000/01/rdf-schema#label> "Materialkosten" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_BuildingRelatedLifecycleCosts> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality> .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1_2
 <https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1_2> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_BuildingRelatedLifecycleCosts> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1_2> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1_2> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "2.1.1.2" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1_2> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Prozessbezogenekosten, Teilkosten von Material-, prozessbezogene Kosten (Planungs-, Baukosten, Kosten Nutzungsphase etc.) in EUR" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1_2> <http://www.w3.org/2000/01/rdf-schema#label> "Prozessbezogene Kosten (Planungs-, Baukosten, Kosten Nutzungsphase etc.)" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1_2> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_BuildingRelatedLifecycleCosts> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1_2> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality> .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_2_2_1
 <https://greeninfratwins.com/ns/grit#IndicatorType_2_2_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_2_2_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_2_2_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_2_2_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_ExternalCosts> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_2_2_1> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "2.2.1" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_2_2_1> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Kosten aufgrund von Zeitverlusten, Umleitungen und erhöhten Fahrzeugbetriebskosten in EUR" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_2_2_1> <http://www.w3.org/2000/01/rdf-schema#label> "Kosten aufgrund von Zeitverlusten, Umleitungen und erhöhten Fahrzeugbetriebskosten " .
-<https://greeninfratwins.com/ns/grit#IndicatorType_2_2_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_2_2_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_ExternalCosts> .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1
 <https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "3.1.1" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Lärmbeeinträchtigung von Menschen (Laermpegel / Anzahl vom Lärm betroffene Personen)" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1> <http://www.w3.org/2000/01/rdf-schema#label> "Lärmbeeinträchtigung von Menschen (gesamt)" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality> .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1_1
 <https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1_1> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "3.1.1.1" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1_1> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Lärmbeeinträchtigung von Menschen (Lärmpegel / Anzahl vom Lärm betroffene Personen) in db/pax" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1_1> <http://www.w3.org/2000/01/rdf-schema#label> "Lärmbeeinträchtigung von Menschen (Lärmpegel / Anzahl vom Lärm betroffene Personen)" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality> .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1_2
 <https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1_2> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1_2> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1_2> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "3.1.1.2" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1_2> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Lärmbeeinträchtigung von Menschen (Anzahl vom Lärm betroffene Personen) in Konzentration Schadstoffe" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1_2> <http://www.w3.org/2000/01/rdf-schema#label> "Lärmbeeinträchtigung von Menschen (Anzahl vom Lärm betroffene Personen)" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1_2> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1_2> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality> .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_3_1_3
 <https://greeninfratwins.com/ns/grit#IndicatorType_3_1_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_3_1_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_3_1_3> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_3_1_3> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_3_1_3> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "3.1.3" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_3_1_3> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Arbeitssicherheit (Anzahl an Unfällen / Unfallrate im Baustellenbereich) in pax / -" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_3_1_3> <http://www.w3.org/2000/01/rdf-schema#label> "Arbeitssicherheit (Anzahl an Unfällen / Unfallrate im Baustellenbereich)" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_3_1_3> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_3_1_3> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality> .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_3_2_1
 <https://greeninfratwins.com/ns/grit#IndicatorType_3_2_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_3_2_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_3_2_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Availability> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_3_2_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_3_2_1> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "3.2.1" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_3_2_1> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Reduktion der zeitbezogenen Kapazität (Zeitverluste der Reisezeit; Veränderung Zuverlässigkeit der Reisezeit) in %" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_3_2_1> <http://www.w3.org/2000/01/rdf-schema#label> "Reduktion der zeitbezogenen Kapazität (Zeitverluste der Reisezeit; Veränderung Zuverlässigkeit der Reisezeit)" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_3_2_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Availability> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_3_2_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality> .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_4_1_1
 <https://greeninfratwins.com/ns/grit#IndicatorType_4_1_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_4_1_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_4_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Reliability> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_4_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_TechnicalQuality> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_4_1_1> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "4.1.1" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_4_1_1> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Zuverlässigkeitsindex (β-Wert)" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_4_1_1> <http://www.w3.org/2000/01/rdf-schema#label> "Zuverlässigkeitsindex (β-Wert)" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_4_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Reliability> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_4_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_TechnicalQuality> .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_4_2_1
 <https://greeninfratwins.com/ns/grit#IndicatorType_4_2_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_4_2_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_4_2_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Safety> .
+<https://greeninfratwins.com/ns/grit#IndicatorType_4_2_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_TechnicalQuality> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_4_2_1> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "4.2.1" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_4_2_1> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Anzahl an Unfällen/Unfallrate im Normalbetrieb (bezogen auf den Zustand)" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_4_2_1> <http://www.w3.org/2000/01/rdf-schema#label> "Anzahl an Unfällen/Unfallrate im Normalbetrieb (bezogen auf den Zustand)" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_4_2_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Safety> .
-<https://greeninfratwins.com/ns/grit#IndicatorType_4_2_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_TechnicalQuality> .
 # 
+_:genid35 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid36 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid37 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid38 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 # 
 # 
 # #################################################################

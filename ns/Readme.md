@@ -57,6 +57,7 @@ Markdown documentation created by [pyLODE](http://github.com/rdflib/pyLODE) 2.4
 [Measure](#Measure),
 [Measure indicator](#Measureindicator),
 [Measure variant](#Measurevariant),
+[Predefined indicator set](#Predefinedindicatorset),
 [Reliability indicator](#Reliabilityindicator),
 [Simple computed value indicator](#Simplecomputedvalueindicator),
 [Specified use case](#Specifiedusecase),
@@ -68,8 +69,8 @@ Property | Value
 IRI | `https://greeninfratwins.com/ns/grit#Activity`
 Description | <p>The activity that is performed in a particularly sequence within a measure or measure variant.</p>
 Super-classes |[owl:Thing](http://www.w3.org/2002/07/owl#Thing) (c)<br />
-Restrictions |[grit:hasIcddModelID](https://greeninfratwins.com/ns/grit#hasIcddModelID) (dp) **exactly** 1<br />[grit:hasIndicatorSet](https://greeninfratwins.com/ns/grit#hasIndicatorSet) (op) **exactly** 1 [grit:IndicatorSet](https://greeninfratwins.com/ns/grit#IndicatorSet) (c)<br />[grit:hasIfcGuid](https://greeninfratwins.com/ns/grit#hasIfcGuid) (dp) **some** [xsd:string](http://www.w3.org/2001/XMLSchema#string) (c)<br />[grit:afterActivity](https://greeninfratwins.com/ns/grit#afterActivity) (op) **some** [grit:Activity](https://greeninfratwins.com/ns/grit#Activity) (c)<br />
-In domain of |[grit:hasIndicatorSet](https://greeninfratwins.com/ns/grit#hasIndicatorSet) (op)<br />[grit:hasIcddModelID](https://greeninfratwins.com/ns/grit#hasIcddModelID) (dp)<br />[grit:hasIfcGuid](https://greeninfratwins.com/ns/grit#hasIfcGuid) (dp)<br />[grit:afterActivity](https://greeninfratwins.com/ns/grit#afterActivity) (op)<br />
+Restrictions |[grit:hasIcddModelID](https://greeninfratwins.com/ns/grit#hasIcddModelID) (dp) **exactly** 1<br />[grit:hasIfcGuid](https://greeninfratwins.com/ns/grit#hasIfcGuid) (dp) **some** [xsd:string](http://www.w3.org/2001/XMLSchema#string) (c)<br />[grit:afterActivity](https://greeninfratwins.com/ns/grit#afterActivity) (op) **some** [grit:Activity](https://greeninfratwins.com/ns/grit#Activity) (c)<br />[grit:hasIndicatorSet](https://greeninfratwins.com/ns/grit#hasIndicatorSet) (op) **exactly** 1 [grit:IndicatorSet](https://greeninfratwins.com/ns/grit#IndicatorSet) (c)<br />
+In domain of |[grit:hasIcddModelID](https://greeninfratwins.com/ns/grit#hasIcddModelID) (dp)<br />[grit:hasIfcGuid](https://greeninfratwins.com/ns/grit#hasIfcGuid) (dp)<br />[grit:afterActivity](https://greeninfratwins.com/ns/grit#afterActivity) (op)<br />[grit:hasIndicatorSet](https://greeninfratwins.com/ns/grit#hasIndicatorSet) (op)<br />
 In range of |[grit:involvesActivities](https://greeninfratwins.com/ns/grit#involvesActivities) (op)<br />[grit:afterActivity](https://greeninfratwins.com/ns/grit#afterActivity) (op)<br />
 ### Assessment defined by a specified Use Case
 Property | Value
@@ -86,7 +87,7 @@ Property | Value
 IRI | `https://greeninfratwins.com/ns/grit#ComplexComputedValueIndicator`
 Description | <p>An indicator that cannot be calculated by just a given formula but in expert software.</p>
 Super-classes |[grit:ValueIndicator](https://greeninfratwins.com/ns/grit#ValueIndicator) (c)<br />
-Restrictions |[grit:hasVariable](https://greeninfratwins.com/ns/grit#hasVariable) (op) **some** [grit:IndicatorVariable](https://greeninfratwins.com/ns/grit#IndicatorVariable) (c)<br />[grit:hasExternalCalculationApplication](https://greeninfratwins.com/ns/grit#hasExternalCalculationApplication) (op) **exactly** 1<br />
+Restrictions |[grit:hasExternalCalculationApplication](https://greeninfratwins.com/ns/grit#hasExternalCalculationApplication) (op) **exactly** 1<br />[grit:hasVariable](https://greeninfratwins.com/ns/grit#hasVariable) (op) **some** [grit:IndicatorVariable](https://greeninfratwins.com/ns/grit#IndicatorVariable) (c)<br />
 In domain of |[grit:hasExternalCalculationApplication](https://greeninfratwins.com/ns/grit#hasExternalCalculationApplication) (op)<br />
 ### Constant value indicator
 Property | Value
@@ -100,8 +101,8 @@ Property | Value
 IRI | `https://greeninfratwins.com/ns/grit#GreenInfraTwin`
 Description | <p>The instance of a DT for sustainability asessment.</p>
 Super-classes |[owl:Thing](http://www.w3.org/2002/07/owl#Thing) (c)<br />
-Restrictions |[grit:connectedServices](https://greeninfratwins.com/ns/grit#connectedServices) (op) **min** 0<br />[grit:hasAsessment](https://greeninfratwins.com/ns/grit#hasAsessment) (op) **some** [grit:Assessment](https://greeninfratwins.com/ns/grit#Assessment) (c)<br />[grit:hasIcddContainerID](https://greeninfratwins.com/ns/grit#hasIcddContainerID) (dp) **exactly** 1<br />[grit:hasIcddProjectID](https://greeninfratwins.com/ns/grit#hasIcddProjectID) (dp) **exactly** 1<br />
-In domain of |[grit:hasIcddProjectID](https://greeninfratwins.com/ns/grit#hasIcddProjectID) (dp)<br />[grit:connectedServices](https://greeninfratwins.com/ns/grit#connectedServices) (op)<br />[grit:hasIcddContainerID](https://greeninfratwins.com/ns/grit#hasIcddContainerID) (dp)<br />[grit:hasAsessment](https://greeninfratwins.com/ns/grit#hasAsessment) (op)<br />
+Restrictions |[grit:connectedServices](https://greeninfratwins.com/ns/grit#connectedServices) (op) **min** 0<br />[grit:hasAsessment](https://greeninfratwins.com/ns/grit#hasAsessment) (op) **some** [grit:Assessment](https://greeninfratwins.com/ns/grit#Assessment) (c)<br />[grit:hasCountryCode](https://greeninfratwins.com/ns/grit#hasCountryCode) (dp) **exactly** 1<br />[grit:hasIcddProjectID](https://greeninfratwins.com/ns/grit#hasIcddProjectID) (dp) **exactly** 1<br />[grit:hasIcddContainerID](https://greeninfratwins.com/ns/grit#hasIcddContainerID) (dp) **exactly** 1<br />
+In domain of |[grit:hasIcddProjectID](https://greeninfratwins.com/ns/grit#hasIcddProjectID) (dp)<br />[grit:connectedServices](https://greeninfratwins.com/ns/grit#connectedServices) (op)<br />[grit:hasIcddContainerID](https://greeninfratwins.com/ns/grit#hasIcddContainerID) (dp)<br />[grit:hasAsessment](https://greeninfratwins.com/ns/grit#hasAsessment) (op)<br />[grit:hasCountryCode](https://greeninfratwins.com/ns/grit#hasCountryCode) (dp)<br />
 ### Indicator
 Property | Value
 --- | ---
@@ -109,7 +110,7 @@ IRI | `https://greeninfratwins.com/ns/grit#Indicator`
 Description | <p>The generic indicator class, can be subtyped regarding their caracteristics and their value calculation methods.</p>
 Super-classes |[owl:Thing](http://www.w3.org/2002/07/owl#Thing) (c)<br />
 Restrictions |[grit:hasIndicatorType](https://greeninfratwins.com/ns/grit#hasIndicatorType) (op) **exactly** 1 [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType) (c)<br />
-Sub-classes |[grit:ValueIndicator](https://greeninfratwins.com/ns/grit#ValueIndicator) (c)<br />[grit:ReliabilityIndicator](https://greeninfratwins.com/ns/grit#ReliabilityIndicator) (c)<br />[grit:MeasureIndicator](https://greeninfratwins.com/ns/grit#MeasureIndicator) (c)<br />[grit:TechnicalQualityIndicator](https://greeninfratwins.com/ns/grit#TechnicalQualityIndicator) (c)<br />
+Sub-classes |[grit:ValueIndicator](https://greeninfratwins.com/ns/grit#ValueIndicator) (c)<br />[grit:TechnicalQualityIndicator](https://greeninfratwins.com/ns/grit#TechnicalQualityIndicator) (c)<br />[grit:ReliabilityIndicator](https://greeninfratwins.com/ns/grit#ReliabilityIndicator) (c)<br />[grit:MeasureIndicator](https://greeninfratwins.com/ns/grit#MeasureIndicator) (c)<br />
 In domain of |[grit:hasIndicatorType](https://greeninfratwins.com/ns/grit#hasIndicatorType) (op)<br />
 In range of |[grit:hasIndicator](https://greeninfratwins.com/ns/grit#hasIndicator) (op)<br />
 ### Indicator set
@@ -118,9 +119,10 @@ Property | Value
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet`
 Description | <p>A set of indicators that is referenced by a specific activity.</p>
 Super-classes |[owl:Thing](http://www.w3.org/2002/07/owl#Thing) (c)<br />
-Restrictions |[grit:hasIndicator](https://greeninfratwins.com/ns/grit#hasIndicator) (op) **some** [grit:Indicator](https://greeninfratwins.com/ns/grit#Indicator) (c)<br />
-In domain of |[grit:hasIndicator](https://greeninfratwins.com/ns/grit#hasIndicator) (op)<br />
-In range of |[grit:hasIndicatorSet](https://greeninfratwins.com/ns/grit#hasIndicatorSet) (op)<br />[grit:grit:belongsToPredefinedSetOfIndicators](https://greeninfratwins.com/ns/grit#grit:belongsToPredefinedSetOfIndicators) (op)<br />
+Restrictions |[grit:hasPredefinedIndicatorSet](https://greeninfratwins.com/ns/grit#hasPredefinedIndicatorSet) (op) **exactly** 1 [grit:PredefinedIndicatorSet](https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet) (c)<br />[grit:hasIndicator](https://greeninfratwins.com/ns/grit#hasIndicator) (op) **some** [grit:Indicator](https://greeninfratwins.com/ns/grit#Indicator) (c)<br />
+Sub-classes |[grit:PredefinedIndicatorSet](https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet) (c)<br />
+In domain of |[grit:hasPredefinedIndicatorSet](https://greeninfratwins.com/ns/grit#hasPredefinedIndicatorSet) (op)<br />[grit:hasIndicator](https://greeninfratwins.com/ns/grit#hasIndicator) (op)<br />
+In range of |[grit:hasIndicatorSet](https://greeninfratwins.com/ns/grit#hasIndicatorSet) (op)<br />[grit:belongsToPredefinedSetOfIndicators](https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators) (op)<br />
 ### Indicator type
 Property | Value
 --- | ---
@@ -128,7 +130,7 @@ IRI | `https://greeninfratwins.com/ns/grit#IndicatorType`
 Description | <p>A type for identifying indicators that should be aggregated in the overall calculation, e.g. GWP.</p>
 Super-classes |[owl:Thing](http://www.w3.org/2002/07/owl#Thing) (c)<br />
 Restrictions |[grit:hasIndicatorID](https://greeninfratwins.com/ns/grit#hasIndicatorID) (dp) **exactly** 1<br />
-In domain of |[grit:grit:belongsToPredefinedSetOfIndicators](https://greeninfratwins.com/ns/grit#grit:belongsToPredefinedSetOfIndicators) (op)<br />[grit:hasIndicatorID](https://greeninfratwins.com/ns/grit#hasIndicatorID) (dp)<br />
+In domain of |[grit:hasIndicatorID](https://greeninfratwins.com/ns/grit#hasIndicatorID) (dp)<br />[grit:belongsToPredefinedSetOfIndicators](https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators) (op)<br />
 In range of |[grit:hasIndicatorType](https://greeninfratwins.com/ns/grit#hasIndicatorType) (op)<br />
 ### Indicator variable
 Property | Value
@@ -136,8 +138,8 @@ Property | Value
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorVariable`
 Description | <p>The variable that is used to calculated for an indicator, consists of a key (the variable identified) and a value (the numerical value)</p>
 Super-classes |[owl:Thing](http://www.w3.org/2002/07/owl#Thing) (c)<br />
-Restrictions |[grit:mapsToLbdProperty](https://greeninfratwins.com/ns/grit#mapsToLbdProperty) (op) **exactly** 1<br />[grit:hasValue](https://greeninfratwins.com/ns/grit#hasValue) (op) **exactly** 1 [xsd:decimal](http://www.w3.org/2001/XMLSchema#decimal) (c)<br />[grit:hasUnit](https://greeninfratwins.com/ns/grit#hasUnit) (op) **exactly** 1 [p1:Unit](https://qudt.org/schema/qudt/Unit) (c)<br />[grit:hasKey](https://greeninfratwins.com/ns/grit#hasKey) (op) **exactly** 1 [xsd:string](http://www.w3.org/2001/XMLSchema#string) (c)<br />
-In domain of |[grit:hasValue](https://greeninfratwins.com/ns/grit#hasValue) (op)<br />[grit:mapsToLbdProperty](https://greeninfratwins.com/ns/grit#mapsToLbdProperty) (op)<br />[grit:hasUnit](https://greeninfratwins.com/ns/grit#hasUnit) (op)<br />[grit:hasKey](https://greeninfratwins.com/ns/grit#hasKey) (op)<br />
+Restrictions |[grit:hasValue](https://greeninfratwins.com/ns/grit#hasValue) (dp) **exactly** 1 [xsd:decimal](http://www.w3.org/2001/XMLSchema#decimal) (c)<br />[grit:hasUnit](https://greeninfratwins.com/ns/grit#hasUnit) (op) **exactly** 1 [p1:Unit](https://qudt.org/schema/qudt/Unit) (c)<br />[grit:hasKey](https://greeninfratwins.com/ns/grit#hasKey) (dp) **exactly** 1 [xsd:string](http://www.w3.org/2001/XMLSchema#string) (c)<br />[grit:mapsToLbdProperty](https://greeninfratwins.com/ns/grit#mapsToLbdProperty) (op) **exactly** 1<br />
+In domain of |[grit:hasKey](https://greeninfratwins.com/ns/grit#hasKey) (dp)<br />[grit:hasValue](https://greeninfratwins.com/ns/grit#hasValue) (dp)<br />[grit:hasUnit](https://greeninfratwins.com/ns/grit#hasUnit) (op)<br />[grit:mapsToLbdProperty](https://greeninfratwins.com/ns/grit#mapsToLbdProperty) (op)<br />
 In range of |[grit:hasVariable](https://greeninfratwins.com/ns/grit#hasVariable) (op)<br />
 ### Measure
 Property | Value
@@ -145,8 +147,8 @@ Property | Value
 IRI | `https://greeninfratwins.com/ns/grit#Measure`
 Description | <p>The definition of a measure.</p>
 Super-classes |[owl:Thing](http://www.w3.org/2002/07/owl#Thing) (c)<br />
-Restrictions |[grit:involvesActivities](https://greeninfratwins.com/ns/grit#involvesActivities) (op) **some** [grit:Activity](https://greeninfratwins.com/ns/grit#Activity) (c)<br />[grit:frequencyPerYear](https://greeninfratwins.com/ns/grit#frequencyPerYear) (op) **exactly** 1 [xsd:int](http://www.w3.org/2001/XMLSchema#int) (c)<br />[grit:hasMeasureVariant](https://greeninfratwins.com/ns/grit#hasMeasureVariant) (op) **some** [grit:MeasureVariant](https://greeninfratwins.com/ns/grit#MeasureVariant) (c)<br />
-In domain of |[grit:hasMeasureVariant](https://greeninfratwins.com/ns/grit#hasMeasureVariant) (op)<br />[grit:involvesActivities](https://greeninfratwins.com/ns/grit#involvesActivities) (op)<br />[grit:frequencyPerYear](https://greeninfratwins.com/ns/grit#frequencyPerYear) (op)<br />
+Restrictions |[grit:involvesActivities](https://greeninfratwins.com/ns/grit#involvesActivities) (op) **some** [grit:Activity](https://greeninfratwins.com/ns/grit#Activity) (c)<br />[grit:frequencyPerYear](https://greeninfratwins.com/ns/grit#frequencyPerYear) (dp) **exactly** 1 [xsd:int](http://www.w3.org/2001/XMLSchema#int) (c)<br />[grit:hasMeasureVariant](https://greeninfratwins.com/ns/grit#hasMeasureVariant) (op) **some** [grit:MeasureVariant](https://greeninfratwins.com/ns/grit#MeasureVariant) (c)<br />
+In domain of |[grit:frequencyPerYear](https://greeninfratwins.com/ns/grit#frequencyPerYear) (dp)<br />[grit:hasMeasureVariant](https://greeninfratwins.com/ns/grit#hasMeasureVariant) (op)<br />[grit:involvesActivities](https://greeninfratwins.com/ns/grit#involvesActivities) (op)<br />
 In range of |[grit:hasMeasure](https://greeninfratwins.com/ns/grit#hasMeasure) (op)<br />
 ### Measure indicator
 Property | Value
@@ -163,6 +165,12 @@ Super-classes |[owl:Thing](http://www.w3.org/2002/07/owl#Thing) (c)<br />
 Restrictions |[grit:involvesActivities](https://greeninfratwins.com/ns/grit#involvesActivities) (op) **some** [grit:Activity](https://greeninfratwins.com/ns/grit#Activity) (c)<br />
 In domain of |[grit:involvesActivities](https://greeninfratwins.com/ns/grit#involvesActivities) (op)<br />
 In range of |[grit:hasMeasureVariant](https://greeninfratwins.com/ns/grit#hasMeasureVariant) (op)<br />
+### Predefined indicator set
+Property | Value
+--- | ---
+IRI | `https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet`
+Super-classes |[grit:IndicatorSet](https://greeninfratwins.com/ns/grit#IndicatorSet) (c)<br />
+In range of |[grit:hasPredefinedIndicatorSet](https://greeninfratwins.com/ns/grit#hasPredefinedIndicatorSet) (op)<br />
 ### Reliability indicator
 Property | Value
 --- | ---
@@ -175,8 +183,8 @@ Property | Value
 IRI | `https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator`
 Description | <p>An indicator that can be computed by a service by providing a formular and variables.</p>
 Super-classes |[grit:ValueIndicator](https://greeninfratwins.com/ns/grit#ValueIndicator) (c)<br />
-Restrictions |[grit:hasExternalCalculationServiceUrl](https://greeninfratwins.com/ns/grit#hasExternalCalculationServiceUrl) (op) **exactly** 1<br />[grit:hasVariable](https://greeninfratwins.com/ns/grit#hasVariable) (op) **some** [grit:IndicatorVariable](https://greeninfratwins.com/ns/grit#IndicatorVariable) (c)<br />[grit:hasFormula](https://greeninfratwins.com/ns/grit#hasFormula) (op) **exactly** 1 [xsd:string](http://www.w3.org/2001/XMLSchema#string) (c)<br />
-In domain of |[grit:hasFormula](https://greeninfratwins.com/ns/grit#hasFormula) (op)<br />[grit:hasVariable](https://greeninfratwins.com/ns/grit#hasVariable) (op)<br />[grit:hasExternalCalculationServiceUrl](https://greeninfratwins.com/ns/grit#hasExternalCalculationServiceUrl) (op)<br />
+Restrictions |[grit:hasVariable](https://greeninfratwins.com/ns/grit#hasVariable) (op) **some** [grit:IndicatorVariable](https://greeninfratwins.com/ns/grit#IndicatorVariable) (c)<br />[grit:hasFormula](https://greeninfratwins.com/ns/grit#hasFormula) (dp) **exactly** 1 [xsd:string](http://www.w3.org/2001/XMLSchema#string) (c)<br />[grit:hasIndicatorResult](https://greeninfratwins.com/ns/grit#hasIndicatorResult) (dp) **exactly** 1<br />[grit:hasUnit](https://greeninfratwins.com/ns/grit#hasUnit) (op) **exactly** 1 [p1:Unit](https://qudt.org/schema/qudt/Unit) (c)<br />[grit:hasExternalCalculationServiceUrl](https://greeninfratwins.com/ns/grit#hasExternalCalculationServiceUrl) (op) **exactly** 1<br />
+In domain of |[grit:hasFormula](https://greeninfratwins.com/ns/grit#hasFormula) (dp)<br />[grit:hasExternalCalculationServiceUrl](https://greeninfratwins.com/ns/grit#hasExternalCalculationServiceUrl) (op)<br />[grit:hasVariable](https://greeninfratwins.com/ns/grit#hasVariable) (op)<br />
 ### Specified use case
 Property | Value
 --- | ---
@@ -194,26 +202,24 @@ Property | Value
 IRI | `https://greeninfratwins.com/ns/grit#ValueIndicator`
 Description | <p>A class for all value indicators and subclasses. Cannot be used for calculating. For constant values see "git:ConstantValueIndicator".</p>
 Super-classes |[grit:Indicator](https://greeninfratwins.com/ns/grit#Indicator) (c)<br />
-Restrictions |[grit:hasUnit](https://greeninfratwins.com/ns/grit#hasUnit) (op) **exactly** 1 [p1:Unit](https://qudt.org/schema/qudt/Unit) (c)<br />[grit:hasValue](https://greeninfratwins.com/ns/grit#hasValue) (op) **exactly** 1<br />
-Sub-classes |[grit:ComplexComputedValueIndicator](https://greeninfratwins.com/ns/grit#ComplexComputedValueIndicator) (c)<br />[grit:SimpleComputedValueIndicator](https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator) (c)<br />[grit:ConstantValueIndicator](https://greeninfratwins.com/ns/grit#ConstantValueIndicator) (c)<br />
+Restrictions |[grit:hasIndicatorResult](https://greeninfratwins.com/ns/grit#hasIndicatorResult) (dp) **exactly** 1<br />[grit:hasUnit](https://greeninfratwins.com/ns/grit#hasUnit) (op) **exactly** 1 [p1:Unit](https://qudt.org/schema/qudt/Unit) (c)<br />
+Sub-classes |[grit:ConstantValueIndicator](https://greeninfratwins.com/ns/grit#ConstantValueIndicator) (c)<br />[grit:ComplexComputedValueIndicator](https://greeninfratwins.com/ns/grit#ComplexComputedValueIndicator) (c)<br />[grit:SimpleComputedValueIndicator](https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator) (c)<br />
+In domain of |[grit:hasIndicatorResult](https://greeninfratwins.com/ns/grit#hasIndicatorResult) (dp)<br />
 
 ## Object Properties
 [after activity](#afteractivity),
-[connected services](#connectedservices),
-[frequency per year](#frequencyperyear),
 [belongs to predefined set of indicators](#belongstopredefinedsetofindicators),
+[connected services](#connectedservices),
 [has asessment](#hasasessment),
 [has external calculation application](#hasexternalcalculationapplication),
 [has calculation service](#hascalculationservice),
-[has formula](#hasformula),
 [has indicator](#hasindicator),
 [has indicator set](#hasindicatorset),
 [has indicator type](#hasindicatortype),
-[has key](#haskey),
 [has measure](#hasmeasure),
 [has measure variant](#hasmeasurevariant),
+[has indicator set](#hasPredefinedIndicatorSet),
 [has unit](#hasunit),
-[has value](#hasvalue),
 [has variable](#hasvariable),
 [involves activities](#involvesactivities),
 [has specified use case](#hasspecifiedusecase),
@@ -227,6 +233,14 @@ Description | Establishes a procedural order of activities.
 Super-properties |[owl:topObjectProperty](http://www.w3.org/2002/07/owl#topObjectProperty)<br />
 Domain(s) |[grit:Activity](https://greeninfratwins.com/ns/grit#Activity) (c)<br />
 Range(s) |[grit:Activity](https://greeninfratwins.com/ns/grit#Activity) (c)<br />
+[](belongstopredefinedsetofindicators)
+### belongs to predefined set of indicators
+Property | Value
+--- | ---
+IRI | `https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators`
+Super-properties |[owl:topObjectProperty](http://www.w3.org/2002/07/owl#topObjectProperty)<br />
+Domain(s) |[grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType) (c)<br />
+Range(s) |[grit:IndicatorSet](https://greeninfratwins.com/ns/grit#IndicatorSet) (c)<br />
 [](connectedservices)
 ### connected services
 Property | Value
@@ -235,22 +249,6 @@ IRI | `https://greeninfratwins.com/ns/grit#connectedServices`
 Description | The services connected to a DT, e.g., ICDD container.
 Super-properties |[owl:topObjectProperty](http://www.w3.org/2002/07/owl#topObjectProperty)<br />
 Domain(s) |[grit:GreenInfraTwin](https://greeninfratwins.com/ns/grit#GreenInfraTwin) (c)<br />
-[](frequencyperyear)
-### frequency per year
-Property | Value
---- | ---
-IRI | `https://greeninfratwins.com/ns/grit#frequencyPerYear`
-Description | Displays the frequency of a measure per year.
-Super-properties |[owl:topObjectProperty](http://www.w3.org/2002/07/owl#topObjectProperty)<br />
-Domain(s) |[grit:Measure](https://greeninfratwins.com/ns/grit#Measure) (c)<br />
-[](belongstopredefinedsetofindicators)
-### belongs to predefined set of indicators
-Property | Value
---- | ---
-IRI | `https://greeninfratwins.com/ns/grit#grit:belongsToPredefinedSetOfIndicators`
-Super-properties |[owl:topObjectProperty](http://www.w3.org/2002/07/owl#topObjectProperty)<br />
-Domain(s) |[grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType) (c)<br />
-Range(s) |[grit:IndicatorSet](https://greeninfratwins.com/ns/grit#IndicatorSet) (c)<br />
 [](hasasessment)
 ### has asessment
 Property | Value
@@ -274,14 +272,6 @@ Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#hasExternalCalculationServiceUrl`
 Description | The URL of a calculation service that can calculate the indicator based on the given formula and the respective variables.
-Super-properties |[owl:topObjectProperty](http://www.w3.org/2002/07/owl#topObjectProperty)<br />
-Domain(s) |[grit:SimpleComputedValueIndicator](https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator) (c)<br />
-[](hasformula)
-### has formula
-Property | Value
---- | ---
-IRI | `https://greeninfratwins.com/ns/grit#hasFormula`
-Description | The calculation formular of a simple computed value indicator.
 Super-properties |[owl:topObjectProperty](http://www.w3.org/2002/07/owl#topObjectProperty)<br />
 Domain(s) |[grit:SimpleComputedValueIndicator](https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator) (c)<br />
 [](hasindicator)
@@ -311,14 +301,6 @@ Description | Provides the indicator type.
 Super-properties |[owl:topObjectProperty](http://www.w3.org/2002/07/owl#topObjectProperty)<br />
 Domain(s) |[grit:Indicator](https://greeninfratwins.com/ns/grit#Indicator) (c)<br />
 Range(s) |[grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType) (c)<br />
-[](haskey)
-### has key
-Property | Value
---- | ---
-IRI | `https://greeninfratwins.com/ns/grit#hasKey`
-Description | The key of a variable exactly as it appears in the calculation formula, e.g. v (for volume).
-Super-properties |[owl:topObjectProperty](http://www.w3.org/2002/07/owl#topObjectProperty)<br />
-Domain(s) |[grit:IndicatorVariable](https://greeninfratwins.com/ns/grit#IndicatorVariable) (c)<br />
 [](hasmeasure)
 ### has measure
 Property | Value
@@ -337,6 +319,15 @@ Description | A measure variant can be used to compare multiple variants of the 
 Super-properties |[owl:topObjectProperty](http://www.w3.org/2002/07/owl#topObjectProperty)<br />
 Domain(s) |[grit:Measure](https://greeninfratwins.com/ns/grit#Measure) (c)<br />
 Range(s) |[grit:MeasureVariant](https://greeninfratwins.com/ns/grit#MeasureVariant) (c)<br />
+[](hasPredefinedIndicatorSet)
+### has indicator set
+Property | Value
+--- | ---
+IRI | `https://greeninfratwins.com/ns/grit#hasPredefinedIndicatorSet`
+Description | Establishes the connection between the indicator set and the the predefined indicator set.
+Super-properties |[owl:topObjectProperty](http://www.w3.org/2002/07/owl#topObjectProperty)<br />
+Domain(s) |[grit:IndicatorSet](https://greeninfratwins.com/ns/grit#IndicatorSet) (c)<br />
+Range(s) |[grit:PredefinedIndicatorSet](https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet) (c)<br />
 [](hasunit)
 ### has unit
 Property | Value
@@ -346,14 +337,6 @@ Description | The unit that a value refers to.
 Super-properties |[owl:topObjectProperty](http://www.w3.org/2002/07/owl#topObjectProperty)<br />
 Domain(s) |[grit:IndicatorVariable](https://greeninfratwins.com/ns/grit#IndicatorVariable) (c)<br />
 Range(s) |[p1:Unit](https://qudt.org/schema/qudt/Unit) (c)<br />
-[](hasvalue)
-### has value
-Property | Value
---- | ---
-IRI | `https://greeninfratwins.com/ns/grit#hasValue`
-Description | The value that should be computed by a calculation service for a given variable.
-Super-properties |[owl:topObjectProperty](http://www.w3.org/2002/07/owl#topObjectProperty)<br />
-Domain(s) |[grit:IndicatorVariable](https://greeninfratwins.com/ns/grit#IndicatorVariable) (c)<br />
 [](hasvariable)
 ### has variable
 Property | Value
@@ -391,11 +374,41 @@ Domain(s) |[grit:IndicatorVariable](https://greeninfratwins.com/ns/grit#Indicato
 Range(s) |[rdfs:Resource](http://www.w3.org/2000/01/rdf-schema#Resource) (c)<br />
 
 ## Datatype Properties
+[frequency per year](#frequencyperyear),
+[has country code](#hascountrycode),
+[has formula](#hasformula),
 [has icdd container ID](#hasicddcontainerID),
 [has icdd model id](#hasicddmodelid),
 [has icdd project ID](#hasicddprojectID),
 [has ifc guid](#hasifcguid),
 [hasIndicatorID](#hasIndicatorID),
+[has indicator result](#hasindicatorresult),
+[has key](#haskey),
+[has value](#hasvalue),
+[](frequencyperyear)
+### frequency per year
+Property | Value
+--- | ---
+IRI | `https://greeninfratwins.com/ns/grit#frequencyPerYear`
+Description | Displays the frequency of a measure per year.
+Super-properties |[owl:topDataProperty](http://www.w3.org/2002/07/owl#topDataProperty)<br />
+Domain(s) |[grit:Measure](https://greeninfratwins.com/ns/grit#Measure) (c)<br />
+[](hascountrycode)
+### has country code
+Property | Value
+--- | ---
+IRI | `https://greeninfratwins.com/ns/grit#hasCountryCode`
+Super-properties |[owl:topDataProperty](http://www.w3.org/2002/07/owl#topDataProperty)<br />
+Domain(s) |[grit:GreenInfraTwin](https://greeninfratwins.com/ns/grit#GreenInfraTwin) (c)<br />
+Range(s) |[xsd:string](http://www.w3.org/2001/XMLSchema#string) (c)<br />
+[](hasformula)
+### has formula
+Property | Value
+--- | ---
+IRI | `https://greeninfratwins.com/ns/grit#hasFormula`
+Description | The calculation formula of a simple computed value indicator.
+Super-properties |[owl:topDataProperty](http://www.w3.org/2002/07/owl#topDataProperty)<br />
+Domain(s) |[grit:SimpleComputedValueIndicator](https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator) (c)<br />
 [](hasicddcontainerID)
 ### has icdd container ID
 Property | Value
@@ -436,24 +449,43 @@ IRI | `https://greeninfratwins.com/ns/grit#hasIndicatorID`
 Super-properties |[owl:topDataProperty](http://www.w3.org/2002/07/owl#topDataProperty)<br />
 Domain(s) |[grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType) (c)<br />
 Range(s) |[xsd:string](http://www.w3.org/2001/XMLSchema#string) (c)<br />
+[](hasindicatorresult)
+### has indicator result
+Property | Value
+--- | ---
+IRI | `https://greeninfratwins.com/ns/grit#hasIndicatorResult`
+Description | The calculated or retrieved result of an indicator.
+Super-properties |[owl:topDataProperty](http://www.w3.org/2002/07/owl#topDataProperty)<br />
+Domain(s) |[grit:ValueIndicator](https://greeninfratwins.com/ns/grit#ValueIndicator) (c)<br />
+[](haskey)
+### has key
+Property | Value
+--- | ---
+IRI | `https://greeninfratwins.com/ns/grit#hasKey`
+Description | The key of a variable exactly as it appears in the calculation formula, e.g. v (for volume).
+Super-properties |[owl:topDataProperty](http://www.w3.org/2002/07/owl#topDataProperty)<br />
+Domain(s) |[grit:IndicatorVariable](https://greeninfratwins.com/ns/grit#IndicatorVariable) (c)<br />
+[](hasvalue)
+### has value
+Property | Value
+--- | ---
+IRI | `https://greeninfratwins.com/ns/grit#hasValue`
+Description | The value that should be computed by a calculation service for a given variable.
+Super-properties |[owl:topDataProperty](http://www.w3.org/2002/07/owl#topDataProperty)<br />
+Domain(s) |[grit:IndicatorVariable](https://greeninfratwins.com/ns/grit#IndicatorVariable) (c)<br />
 
 ## Named Individuals
 [Anzahl an Unfällen/Unfallrate im Normalbetrieb (bezogen auf den Zustand)](#AnzahlanUnfllen/UnfallrateimNormalbetrieb(bezogenaufdenZustand)),
 [Arbeitssicherheit (Anzahl an Unfällen / Unfallrate im Baustellenbereich)](#Arbeitssicherheit(AnzahlanUnfllen/UnfallrateimBaustellenbereich)),
 [Bauwerksbezogene Kosten](#BauwerksbezogeneKosten),
-[Bauwerksbezogene Lebenszykluskosten](#BauwerksbezogeneLebenszykluskosten),
 [Demontagefähigkeit](#Demontagefhigkeit),
 [Eutrophierungspotential (EP)](#Eutrophierungspotential(EP)),
-[Externe Kosten (monetarisierte externe Effekte)](#ExterneKosten(monetarisierteexterneEffekte)),
-[Externe Umwelteffekte](#ExterneUmwelteffekte),
 [Fläche des ökologisch gestörten Lebensraums durch Lärmbeeinträchtigung der Fauna](#FlchedeskologischgestrtenLebensraumsdurchLrmbeeintrchtigungderFauna),
-[Flächeninanspruchnahme](#Flcheninanspruchnahme),
 [Flächeninanspruchnahme (gesamt)](#Flcheninanspruchnahme(gesamt)),
 [Flächeninanspruchnahme Bauprozesse (vorübergehend)](#FlcheninanspruchnahmeBauprozesse(vorbergehend)),
 [Flächeninanspruchnahme Bauwerk (dauerhaft)](#FlcheninanspruchnahmeBauwerk(dauerhaft)),
 [Globales Erwärmungspotential (GWP)](#GlobalesErwrmungspotential(GWP)),
 [Kosten aufgrund von Zeitverlusten, Umleitungen und erhöhten Fahrzeugbetriebskosten ](#KostenaufgrundvonZeitverlusten,UmleitungenunderhhtenFahrzeugbetriebskosten),
-[Kreislaufwirtschaft / Ressourcen](#Kreislaufwirtschaft/Ressourcen),
 [Kumulierter Energieaufwand (KEA)](#KumulierterEnergieaufwand(KEA)),
 [Lärmbeeinträchtigung von Menschen (Anzahl vom Lärm betroffene Personen)](#LrmbeeintrchtigungvonMenschen(AnzahlvomLrmbetroffenePersonen)),
 [Lärmbeeinträchtigung von Menschen (Lärmpegel / Anzahl vom Lärm betroffene Personen)](#LrmbeeintrchtigungvonMenschen(Lrmpegel/AnzahlvomLrmbetroffenePersonen)),
@@ -462,17 +494,11 @@ Range(s) |[xsd:string](http://www.w3.org/2001/XMLSchema#string) (c)<br />
 [Materialkosten](#Materialkosten),
 [Materlaverwertung - Potentiale Kreislauffähigkeit](#Materlaverwertung-PotentialeKreislauffhigkeit),
 [Monetärer Materialwert](#MonetrerMaterialwert),
-[Nutzersicherheit](#Nutzersicherheit),
 [Ozonbildungspotential (POCP)](#Ozonbildungspotential(POCP)),
 [Ozonschichtabbaupotential (ODP)](#Ozonschichtabbaupotential(ODP)),
 [Prozessbezogene Kosten (Planungs-, Baukosten, Kosten Nutzungsphase etc.)](#ProzessbezogeneKosten(Planungs-,Baukosten,KostenNutzungsphaseetc.)),
 [Reduktion der zeitbezogenen Kapazität (Zeitverluste der Reisezeit; Veränderung Zuverlässigkeit der Reisezeit)](#ReduktionderzeitbezogenenKapazitt(ZeitverlustederReisezeit;VernderungZuverlssigkeitderReisezeit)),
-[Risiken für die lokale Umwelt](#RisikenfrdielokaleUmwelt),
 [Schad- und Risikostoffe](#Schad-undRisikostoffe),
-[Schutzgut Mensch](#SchutzgutMensch),
-[Sozio-kulturelle und funktionale Qualität](#Sozio-kulturelleundfunktionaleQualitt),
-[Technische Qualität](#TechnischeQualitt),
-[Verfügbarkeit](#Verfgbarkeit),
 [Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (CO2)](#VerkehrsbedingteEmissioneninfolgebetrieblicherundbaubedingterVerkehrsbeeintrchtigungen(CO2)),
 [Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (NOx)](#VerkehrsbedingteEmissioneninfolgebetrieblicherundbaubedingterVerkehrsbeeintrchtigungen(NOx)),
 [Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM10)](#VerkehrsbedingteEmissioneninfolgebetrieblicherundbaubedingterVerkehrsbeeintrchtigungen(PM10)),
@@ -480,101 +506,7 @@ Range(s) |[xsd:string](http://www.w3.org/2001/XMLSchema#string) (c)<br />
 [Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM5)](#VerkehrsbedingteEmissioneninfolgebetrieblicherundbaubedingterVerkehrsbeeintrchtigungen(PM5)),
 [Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (gesamt)](#VerkehrsbedingteEmissioneninfolgebetrieblicherundbaubedingterVerkehrsbeeintrchtigungen(gesamt)),
 [Versauerungspotential (AP)](#Versauerungspotential(AP)),
-[Zuverlässigkeit](#Zuverlssigkeit),
 [Zuverlässigkeitsindex (beta-Wert)](#Zuverlssigkeitsindex(beta-Wert)),
-[Ökobilanz](#kobilanz),
-[Ökologische Qualität](#kologischeQualitt),
-[Ökonomische Qualität](#konomischeQualitt),
-### Verfügbarkeit <sup>c</sup>
-Property | Value
---- | ---
-IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Availability`
-* **Contributor(s)**
-  * [grit:IndicatorSet](https://greeninfratwins.com/ns/grit#IndicatorSet)
-### Bauwerksbezogene Lebenszykluskosten <sup>c</sup>
-Property | Value
---- | ---
-IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_BuildingRelatedLifecycleCosts`
-* **Contributor(s)**
-  * [grit:IndicatorSet](https://greeninfratwins.com/ns/grit#IndicatorSet)
-### Kreislaufwirtschaft / Ressourcen <sup>c</sup>
-Property | Value
---- | ---
-IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources`
-* **Contributor(s)**
-  * [grit:IndicatorSet](https://greeninfratwins.com/ns/grit#IndicatorSet)
-### Ökologische Qualität <sup>c</sup>
-Property | Value
---- | ---
-IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality`
-* **Contributor(s)**
-  * [grit:IndicatorSet](https://greeninfratwins.com/ns/grit#IndicatorSet)
-### Ökonomische Qualität <sup>c</sup>
-Property | Value
---- | ---
-IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality`
-* **Contributor(s)**
-  * [grit:IndicatorSet](https://greeninfratwins.com/ns/grit#IndicatorSet)
-### Externe Umwelteffekte <sup>c</sup>
-Property | Value
---- | ---
-IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects`
-* **Contributor(s)**
-  * [grit:IndicatorSet](https://greeninfratwins.com/ns/grit#IndicatorSet)
-### Externe Kosten (monetarisierte externe Effekte) <sup>c</sup>
-Property | Value
---- | ---
-IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_ExternalCosts`
-* **Contributor(s)**
-  * [grit:IndicatorSet](https://greeninfratwins.com/ns/grit#IndicatorSet)
-### Schutzgut Mensch <sup>c</sup>
-Property | Value
---- | ---
-IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection`
-* **Contributor(s)**
-  * [grit:IndicatorSet](https://greeninfratwins.com/ns/grit#IndicatorSet)
-### Flächeninanspruchnahme <sup>c</sup>
-Property | Value
---- | ---
-IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LandUse`
-* **Contributor(s)**
-  * [grit:IndicatorSet](https://greeninfratwins.com/ns/grit#IndicatorSet)
-### Ökobilanz <sup>c</sup>
-Property | Value
---- | ---
-IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment`
-* **Contributor(s)**
-  * [grit:IndicatorSet](https://greeninfratwins.com/ns/grit#IndicatorSet)
-### Risiken für die lokale Umwelt <sup>c</sup>
-Property | Value
---- | ---
-IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LocalEnvironmentalRisks`
-* **Contributor(s)**
-  * [grit:IndicatorSet](https://greeninfratwins.com/ns/grit#IndicatorSet)
-### Zuverlässigkeit <sup>c</sup>
-Property | Value
---- | ---
-IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Reliability`
-* **Contributor(s)**
-  * [grit:IndicatorSet](https://greeninfratwins.com/ns/grit#IndicatorSet)
-### Nutzersicherheit <sup>c</sup>
-Property | Value
---- | ---
-IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Safety`
-* **Contributor(s)**
-  * [grit:IndicatorSet](https://greeninfratwins.com/ns/grit#IndicatorSet)
-### Sozio-kulturelle und funktionale Qualität <sup>c</sup>
-Property | Value
---- | ---
-IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality`
-* **Contributor(s)**
-  * [grit:IndicatorSet](https://greeninfratwins.com/ns/grit#IndicatorSet)
-### Technische Qualität <sup>c</sup>
-Property | Value
---- | ---
-IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_TechnicalQuality`
-* **Contributor(s)**
-  * [grit:IndicatorSet](https://greeninfratwins.com/ns/grit#IndicatorSet)
 ### Materialität des Bauwerks <sup>c</sup>
 Property | Value
 --- | ---

@@ -150,10 +150,10 @@
     
 
 
-    <!-- https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators -->
+    <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
 
 
-    <owl:AnnotationProperty rdf:about="https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
     
 
 
@@ -229,6 +229,18 @@
     
 
 
+    <!-- https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators -->
+
+
+    <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <rdfs:range rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet"/>
+        <rdfs:label>belongs to predefined set of indicators</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://greeninfratwins.com/ns/grit#connectedServices -->
 
 
@@ -237,18 +249,6 @@
         <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#GreenInfraTwin"/>
         <rdfs:comment>The services connected to a DT, e.g., ICDD container.</rdfs:comment>
         <rdfs:label>connected services</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://greeninfratwins.com/ns/grit#frequencyPerYear -->
-
-
-    <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#frequencyPerYear">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#Measure"/>
-        <rdfs:comment>Displays the frequency of a measure per year.</rdfs:comment>
-        <rdfs:label>frequency per year</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -286,18 +286,6 @@
         <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator"/>
         <rdfs:comment>The URL of a calculation service that can calculate the indicator based on the given formula and the respective variables.</rdfs:comment>
         <rdfs:label>has calculation service</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://greeninfratwins.com/ns/grit#hasFormula -->
-
-
-    <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#hasFormula">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator"/>
-        <rdfs:comment>The calculation formular of a simple computed value indicator.</rdfs:comment>
-        <rdfs:label>has formula</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -341,19 +329,6 @@
     
 
 
-    <!-- https://greeninfratwins.com/ns/grit#hasKey -->
-
-
-    <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#hasKey">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorVariable"/>
-        <owl:propertyDisjointWith rdf:resource="https://greeninfratwins.com/ns/grit#hasValue"/>
-        <rdfs:comment>The key of a variable exactly as it appears in the calculation formula, e.g. v (for volume).</rdfs:comment>
-        <rdfs:label>has key</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://greeninfratwins.com/ns/grit#hasMeasure -->
 
 
@@ -380,6 +355,19 @@
     
 
 
+    <!-- https://greeninfratwins.com/ns/grit#hasPredefinedIndicatorSet -->
+
+
+    <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#hasPredefinedIndicatorSet">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet"/>
+        <rdfs:range rdf:resource="https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet"/>
+        <rdfs:comment>Establishes the connection between the indicator set and the the predefined indicator set.</rdfs:comment>
+        <rdfs:label>has indicator set</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://greeninfratwins.com/ns/grit#hasUnit -->
 
 
@@ -389,18 +377,6 @@
         <rdfs:range rdf:resource="https://qudt.org/schema/qudt/Unit"/>
         <rdfs:comment>The unit that a value refers to.</rdfs:comment>
         <rdfs:label>has unit</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://greeninfratwins.com/ns/grit#hasValue -->
-
-
-    <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#hasValue">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorVariable"/>
-        <rdfs:comment>The value that should be computed by a calculation service for a given variable.</rdfs:comment>
-        <rdfs:label>has value</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -457,18 +433,6 @@
     
 
 
-    <!-- https://greeninfratwins.com/ns/grit#grit:belongsToPredefinedSetOfIndicators -->
-
-
-    <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#grit:belongsToPredefinedSetOfIndicators">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
-        <rdfs:range rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet"/>
-        <rdfs:label>belongs to predefined set of indicators</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -478,6 +442,42 @@
      -->
 
 
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#frequencyPerYear -->
+
+
+    <owl:DatatypeProperty rdf:about="https://greeninfratwins.com/ns/grit#frequencyPerYear">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#Measure"/>
+        <rdfs:comment>Displays the frequency of a measure per year.</rdfs:comment>
+        <rdfs:label>frequency per year</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#hasCountryCode -->
+
+
+    <owl:DatatypeProperty rdf:about="https://greeninfratwins.com/ns/grit#hasCountryCode">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#GreenInfraTwin"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has country code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#hasFormula -->
+
+
+    <owl:DatatypeProperty rdf:about="https://greeninfratwins.com/ns/grit#hasFormula">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator"/>
+        <rdfs:comment>The calculation formula of a simple computed value indicator.</rdfs:comment>
+        <rdfs:label>has formula</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -539,6 +539,44 @@
     
 
 
+    <!-- https://greeninfratwins.com/ns/grit#hasIndicatorResult -->
+
+
+    <owl:DatatypeProperty rdf:about="https://greeninfratwins.com/ns/grit#hasIndicatorResult">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#ValueIndicator"/>
+        <owl:propertyDisjointWith rdf:resource="https://greeninfratwins.com/ns/grit#hasValue"/>
+        <rdfs:comment>The calculated or retrieved result of an indicator.</rdfs:comment>
+        <rdfs:label>has indicator result</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#hasKey -->
+
+
+    <owl:DatatypeProperty rdf:about="https://greeninfratwins.com/ns/grit#hasKey">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorVariable"/>
+        <owl:propertyDisjointWith rdf:resource="https://greeninfratwins.com/ns/grit#hasValue"/>
+        <rdfs:comment>The key of a variable exactly as it appears in the calculation formula, e.g. v (for volume).</rdfs:comment>
+        <rdfs:label>has key</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#hasValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://greeninfratwins.com/ns/grit#hasValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorVariable"/>
+        <rdfs:comment>The value that should be computed by a calculation service for a given variable.</rdfs:comment>
+        <rdfs:label>has value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -551,24 +589,38 @@
     
 
 
+    <!-- http://org.semanticweb.owlapi/error#Error1 -->
+
+
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error1"/>
+    
+
+
+    <!-- http://org.semanticweb.owlapi/error#Error2 -->
+
+
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error2"/>
+    
+
+
+    <!-- http://org.semanticweb.owlapi/error#Error3 -->
+
+
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error3"/>
+    
+
+
+    <!-- http://org.semanticweb.owlapi/error#Error4 -->
+
+
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error4"/>
+    
+
+
     <!-- http://www.w3.org/2000/01/rdf-schema#Resource -->
 
 
     <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#decimal -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#decimal"/>
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#int -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#int"/>
     
 
 
@@ -688,6 +740,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasCountryCode"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasIcddContainerID"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
@@ -735,6 +794,13 @@
                 <owl:someValuesFrom rdf:resource="https://greeninfratwins.com/ns/grit#Indicator"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasPredefinedIndicatorSet"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>A set of indicators that is referenced by a specific activity.</rdfs:comment>
         <rdfs:label>Indicator set</rdfs:label>
     </owl:Class>
@@ -763,26 +829,14 @@
 
 
     <owl:Class rdf:about="https://greeninfratwins.com/ns/grit#IndicatorVariable">
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error2"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error3"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasKey"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasUnit"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="https://qudt.org/schema/qudt/Unit"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasValue"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -801,6 +855,7 @@
 
 
     <owl:Class rdf:about="https://greeninfratwins.com/ns/grit#Measure">
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error4"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -812,13 +867,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#involvesActivities"/>
                 <owl:someValuesFrom rdf:resource="https://greeninfratwins.com/ns/grit#Activity"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#frequencyPerYear"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>The definition of a measure.</rdfs:comment>
@@ -857,6 +905,16 @@
     
 
 
+    <!-- https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet -->
+
+
+    <owl:Class rdf:about="https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet">
+        <rdfs:subClassOf rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet"/>
+        <rdfs:label>Predefined indicator set</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://greeninfratwins.com/ns/grit#ReliabilityIndicator -->
 
 
@@ -873,6 +931,7 @@
 
 
     <owl:Class rdf:about="https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator">
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error1"/>
         <rdfs:subClassOf rdf:resource="https://greeninfratwins.com/ns/grit#ValueIndicator"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -888,9 +947,15 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasFormula"/>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasUnit"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                <owl:onClass rdf:resource="https://qudt.org/schema/qudt/Unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasIndicatorResult"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>An indicator that can be computed by a service by providing a formular and variables.</rdfs:comment>
@@ -933,7 +998,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasValue"/>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasIndicatorResult"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1014,7 +1079,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Availability">
-        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet"/>
+        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet"/>
         <rdfs:label>Verfügbarkeit</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1024,7 +1089,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_BuildingRelatedLifecycleCosts">
-        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet"/>
+        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet"/>
         <rdfs:label>Bauwerksbezogene Lebenszykluskosten</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1034,7 +1099,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources">
-        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet"/>
+        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet"/>
         <rdfs:label>Kreislaufwirtschaft / Ressourcen</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1044,7 +1109,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality">
-        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet"/>
+        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet"/>
         <rdfs:label>Ökologische Qualität</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1054,7 +1119,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality">
-        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet"/>
+        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet"/>
         <rdfs:label>Ökonomische Qualität</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1064,7 +1129,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects">
-        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet"/>
+        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet"/>
         <rdfs:label>Externe Umwelteffekte</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1074,7 +1139,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_ExternalCosts">
-        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet"/>
+        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet"/>
         <rdfs:label>Externe Kosten (monetarisierte externe Effekte)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1084,7 +1149,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection">
-        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet"/>
+        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet"/>
         <rdfs:label>Schutzgut Mensch</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1094,7 +1159,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LandUse">
-        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet"/>
+        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet"/>
         <rdfs:label>Flächeninanspruchnahme</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1104,7 +1169,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment">
-        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet"/>
+        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet"/>
         <rdfs:label>Ökobilanz</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1114,7 +1179,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LocalEnvironmentalRisks">
-        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet"/>
+        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet"/>
         <rdfs:label>Risiken für die lokale Umwelt</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1124,7 +1189,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Reliability">
-        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet"/>
+        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet"/>
         <rdfs:label>Zuverlässigkeit</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1134,7 +1199,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Safety">
-        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet"/>
+        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet"/>
         <rdfs:label>Nutzersicherheit</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1144,7 +1209,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality">
-        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet"/>
+        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet"/>
         <rdfs:label>Sozio-kulturelle und funktionale Qualität</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1154,7 +1219,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_TechnicalQuality">
-        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet"/>
+        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet"/>
         <rdfs:label>Technische Qualität</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1165,11 +1230,11 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_1_1">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
         <hasIndicatorID>1.1.1</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Materialität eines Bauwerks in Masse-Prozent</rdfs:comment>
         <rdfs:label>Materialität des Bauwerks</rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
     </owl:NamedIndividual>
     
 
@@ -1179,11 +1244,11 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_1_2">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
         <hasIndicatorID>1.1.2</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von monetärer Materialwert in EUR</rdfs:comment>
         <rdfs:label>Monetärer Materialwert</rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
     </owl:NamedIndividual>
     
 
@@ -1193,11 +1258,11 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_1_3">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
         <hasIndicatorID>1.1.3</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Schad- und Risikostoffe in kg</rdfs:comment>
         <rdfs:label>Schad- und Risikostoffe</rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
     </owl:NamedIndividual>
     
 
@@ -1207,11 +1272,11 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_1_4">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
         <hasIndicatorID>1.1.4</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Demontagefaehigkeit mit qualitative Bewertungsergebnis</rdfs:comment>
         <rdfs:label>Demontagefähigkeit</rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
     </owl:NamedIndividual>
     
 
@@ -1221,11 +1286,11 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_1_5">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
         <hasIndicatorID>1.1.5</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Materialverwertung zur potentialen Kreislauffaehigkeit in Massen-Prozent</rdfs:comment>
         <rdfs:label>Materlaverwertung - Potentiale Kreislauffähigkeit</rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
     </owl:NamedIndividual>
     
 
@@ -1235,11 +1300,11 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_2_1">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LocalEnvironmentalRisks"/>
         <hasIndicatorID>1.2.1</hasIndicatorID>
         <rdfs:comment>Indikator für Definition Fläche des ökologisch gestörten Lebensraums durch Lärmbeeinträchtigung der Fauna in m2</rdfs:comment>
         <rdfs:label>Fläche des ökologisch gestörten Lebensraums durch Lärmbeeinträchtigung der Fauna</rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LocalEnvironmentalRisks"/>
     </owl:NamedIndividual>
     
 
@@ -1249,11 +1314,11 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LandUse"/>
         <hasIndicatorID>1.3.1</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Flächeninanspruchnahme Bauwerk (dauerhaft) und Bauprozesse (vorübergehend) in gewichtete m2</rdfs:comment>
         <rdfs:label>Flächeninanspruchnahme (gesamt)</rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LandUse"/>
     </owl:NamedIndividual>
     
 
@@ -1263,11 +1328,11 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_1">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LandUse"/>
         <hasIndicatorID>1.3.1.1</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Flächeninanspruchnahme Bauwerk (dauerhaft)  in gewichtete m2</rdfs:comment>
         <rdfs:label>Flächeninanspruchnahme Bauwerk (dauerhaft)</rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LandUse"/>
     </owl:NamedIndividual>
     
 
@@ -1277,11 +1342,11 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_2">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LandUse"/>
         <hasIndicatorID>1.3.1.2</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Flächeninanspruchnahme Bauprozesse (vorübergehend) in gewichtete m2</rdfs:comment>
         <rdfs:label>Flächeninanspruchnahme Bauprozesse (vorübergehend)</rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LandUse"/>
     </owl:NamedIndividual>
     
 
@@ -1291,11 +1356,11 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects"/>
         <hasIndicatorID>1.4.1</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse</rdfs:comment>
         <rdfs:label>Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (gesamt)</rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects"/>
     </owl:NamedIndividual>
     
 
@@ -1305,11 +1370,11 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_1">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects"/>
         <hasIndicatorID>1.4.1.1</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse</rdfs:comment>
         <rdfs:label>Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (CO2)</rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects"/>
     </owl:NamedIndividual>
     
 
@@ -1319,11 +1384,11 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_2">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects"/>
         <hasIndicatorID>1.4.1.2</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse</rdfs:comment>
         <rdfs:label>Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (NOx)</rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects"/>
     </owl:NamedIndividual>
     
 
@@ -1333,11 +1398,11 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_3">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects"/>
         <hasIndicatorID>1.4.1.3</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse</rdfs:comment>
         <rdfs:label>Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM2.5)</rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects"/>
     </owl:NamedIndividual>
     
 
@@ -1347,11 +1412,11 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_4">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects"/>
         <hasIndicatorID>1.4.1.4</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse</rdfs:comment>
         <rdfs:label>Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM5)</rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects"/>
     </owl:NamedIndividual>
     
 
@@ -1361,11 +1426,11 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_5">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects"/>
         <hasIndicatorID>1.4.1.5</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse</rdfs:comment>
         <rdfs:label>Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM10)</rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects"/>
     </owl:NamedIndividual>
     
 
@@ -1375,11 +1440,11 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_5_1">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment"/>
         <hasIndicatorID>1.5.1</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Globales Erwärmungspotential (GWP) in kg CO2-Äquiv.</rdfs:comment>
         <rdfs:label>Globales Erwärmungspotential (GWP)</rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment"/>
     </owl:NamedIndividual>
     
 
@@ -1389,11 +1454,11 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_5_2">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment"/>
         <hasIndicatorID>1.5.2</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Eutrophierungspotential (EP) in kg PO43-Äquiv.</rdfs:comment>
         <rdfs:label>Eutrophierungspotential (EP)</rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment"/>
     </owl:NamedIndividual>
     
 
@@ -1403,11 +1468,11 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_5_3">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment"/>
         <hasIndicatorID>1.5.3</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Ozonschichtabbaupotential (ODP) in kg R11-Äquiv.</rdfs:comment>
         <rdfs:label>Ozonschichtabbaupotential (ODP)</rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment"/>
     </owl:NamedIndividual>
     
 
@@ -1417,11 +1482,11 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_5_4">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment"/>
         <hasIndicatorID>1.5.4</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Versauerungspotential (AP) in kg SO2-Äquiv.</rdfs:comment>
         <rdfs:label>Versauerungspotential (AP)</rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment"/>
     </owl:NamedIndividual>
     
 
@@ -1431,11 +1496,11 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_5_5">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment"/>
         <hasIndicatorID>1.5.5</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Ozonbildungspotential (POCP) in kg C2H4-Äquiv.</rdfs:comment>
         <rdfs:label>Ozonbildungspotential (POCP)</rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment"/>
     </owl:NamedIndividual>
     
 
@@ -1445,11 +1510,11 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_5_6">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment"/>
         <hasIndicatorID>1.5.6</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Kumulierter Energieaufwand (KEA) in MJ</rdfs:comment>
         <rdfs:label>Kumulierter Energieaufwand (KEA)</rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment"/>
     </owl:NamedIndividual>
     
 
@@ -1459,11 +1524,11 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_BuildingRelatedLifecycleCosts"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality"/>
         <hasIndicatorID>2.1.1</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Materialkosten, prozessbezogene Kosten (Planungs-, Baukosten, Kosten Nutzungsphase etc.) in EUR</rdfs:comment>
         <rdfs:label>Bauwerksbezogene Kosten</rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_BuildingRelatedLifecycleCosts"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality"/>
     </owl:NamedIndividual>
     
 
@@ -1473,11 +1538,11 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1_1">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_BuildingRelatedLifecycleCosts"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality"/>
         <hasIndicatorID>2.1.1.1</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Materialkosten - Teilkosten von Material-, prozessbezogene Kosten (Planungs-, Baukosten, Kosten Nutzungsphase etc.) in EUR</rdfs:comment>
         <rdfs:label>Materialkosten</rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_BuildingRelatedLifecycleCosts"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality"/>
     </owl:NamedIndividual>
     
 
@@ -1487,11 +1552,11 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1_2">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_BuildingRelatedLifecycleCosts"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality"/>
         <hasIndicatorID>2.1.1.2</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Prozessbezogenekosten, Teilkosten von Material-, prozessbezogene Kosten (Planungs-, Baukosten, Kosten Nutzungsphase etc.) in EUR</rdfs:comment>
         <rdfs:label>Prozessbezogene Kosten (Planungs-, Baukosten, Kosten Nutzungsphase etc.)</rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_BuildingRelatedLifecycleCosts"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality"/>
     </owl:NamedIndividual>
     
 
@@ -1501,11 +1566,11 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_2_2_1">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_ExternalCosts"/>
         <hasIndicatorID>2.2.1</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Kosten aufgrund von Zeitverlusten, Umleitungen und erhöhten Fahrzeugbetriebskosten in EUR</rdfs:comment>
         <rdfs:label>Kosten aufgrund von Zeitverlusten, Umleitungen und erhöhten Fahrzeugbetriebskosten </rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_ExternalCosts"/>
     </owl:NamedIndividual>
     
 
@@ -1515,11 +1580,11 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality"/>
         <hasIndicatorID>3.1.1</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Lärmbeeinträchtigung von Menschen (Laermpegel / Anzahl vom Lärm betroffene Personen)</rdfs:comment>
         <rdfs:label>Lärmbeeinträchtigung von Menschen (gesamt)</rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality"/>
     </owl:NamedIndividual>
     
 
@@ -1529,11 +1594,11 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1_1">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality"/>
         <hasIndicatorID>3.1.1.1</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Lärmbeeinträchtigung von Menschen (Lärmpegel / Anzahl vom Lärm betroffene Personen) in db/pax</rdfs:comment>
         <rdfs:label>Lärmbeeinträchtigung von Menschen (Lärmpegel / Anzahl vom Lärm betroffene Personen)</rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality"/>
     </owl:NamedIndividual>
     
 
@@ -1543,11 +1608,11 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1_2">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality"/>
         <hasIndicatorID>3.1.1.2</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Lärmbeeinträchtigung von Menschen (Anzahl vom Lärm betroffene Personen) in Konzentration Schadstoffe</rdfs:comment>
         <rdfs:label>Lärmbeeinträchtigung von Menschen (Anzahl vom Lärm betroffene Personen)</rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality"/>
     </owl:NamedIndividual>
     
 
@@ -1557,11 +1622,11 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_3_1_3">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality"/>
         <hasIndicatorID>3.1.3</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Arbeitssicherheit (Anzahl an Unfällen / Unfallrate im Baustellenbereich) in pax / -</rdfs:comment>
         <rdfs:label>Arbeitssicherheit (Anzahl an Unfällen / Unfallrate im Baustellenbereich)</rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality"/>
     </owl:NamedIndividual>
     
 
@@ -1571,11 +1636,11 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_3_2_1">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Availability"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality"/>
         <hasIndicatorID>3.2.1</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Reduktion der zeitbezogenen Kapazität (Zeitverluste der Reisezeit; Veränderung Zuverlässigkeit der Reisezeit) in %</rdfs:comment>
         <rdfs:label>Reduktion der zeitbezogenen Kapazität (Zeitverluste der Reisezeit; Veränderung Zuverlässigkeit der Reisezeit)</rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Availability"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality"/>
     </owl:NamedIndividual>
     
 
@@ -1585,11 +1650,11 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_4_1_1">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Reliability"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_TechnicalQuality"/>
         <hasIndicatorID>4.1.1</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Zuverlässigkeitsindex (β-Wert)</rdfs:comment>
         <rdfs:label>Zuverlässigkeitsindex (β-Wert)</rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Reliability"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_TechnicalQuality"/>
     </owl:NamedIndividual>
     
 
@@ -1599,12 +1664,24 @@
 
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_4_2_1">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Safety"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_TechnicalQuality"/>
         <hasIndicatorID>4.2.1</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Anzahl an Unfällen/Unfallrate im Normalbetrieb (bezogen auf den Zustand)</rdfs:comment>
         <rdfs:label>Anzahl an Unfällen/Unfallrate im Normalbetrieb (bezogen auf den Zustand)</rdfs:label>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Safety"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_TechnicalQuality"/>
     </owl:NamedIndividual>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
     
 
 
