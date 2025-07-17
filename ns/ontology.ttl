@@ -333,7 +333,8 @@ xsd:date rdf:type rdfs:Datatype .
 :hasIfcGuid rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf owl:topDataProperty ;
             rdfs:domain :Activity ;
-            rdfs:range xsd:string .
+            rdfs:range xsd:string ;
+            rdfs:label "has ifc guid" .
 
 
 ###  https://greeninfratwins.com/ns/grit#hasIndicatorID
@@ -346,7 +347,8 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://greeninfratwins.com/ns/grit#hasIndicatorResult
 :hasIndicatorResult rdf:type owl:DatatypeProperty ;
                     rdfs:subPropertyOf owl:topDataProperty ;
-                    rdfs:domain :ValueIndicator ;
+                    rdfs:domain :SimpleComputedValueIndicator ,
+                                :ValueIndicator ;
                     owl:propertyDisjointWith :hasValue ;
                     rdfs:comment "The calculated or retrieved result of an indicator." ;
                     rdfs:label "has indicator result" .
@@ -373,22 +375,6 @@ xsd:date rdf:type rdfs:Datatype .
 #    Classes
 #################################################################
 
-###  http://org.semanticweb.owlapi/error#Error1
-<http://org.semanticweb.owlapi/error#Error1> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error2
-<http://org.semanticweb.owlapi/error#Error2> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error3
-<http://org.semanticweb.owlapi/error#Error3> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error4
-<http://org.semanticweb.owlapi/error#Error4> rdf:type owl:Class .
-
-
 ###  http://www.w3.org/2000/01/rdf-schema#Resource
 rdfs:Resource rdf:type owl:Class .
 
@@ -401,13 +387,13 @@ rdfs:Resource rdf:type owl:Class .
                             owl:someValuesFrom :Activity
                           ] ,
                           [ rdf:type owl:Restriction ;
-                            owl:onProperty :hasIfcGuid ;
-                            owl:someValuesFrom xsd:string
-                          ] ,
-                          [ rdf:type owl:Restriction ;
                             owl:onProperty :hasIndicatorSet ;
                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                             owl:onClass :IndicatorSet
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasIfcGuid ;
+                            owl:someValuesFrom xsd:string
                           ] ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty :hasIcddModelID ;
@@ -470,6 +456,23 @@ rdfs:Resource rdf:type owl:Class .
                                   owl:minCardinality "0"^^xsd:nonNegativeInteger
                                 ] ,
                                 [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasAsessment ;
+                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :Assessment
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasCountryCode ;
+                                  owl:someValuesFrom xsd:string
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasIcddContainerID ;
+                                  owl:someValuesFrom xsd:string
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasIcddProjectID ;
+                                  owl:someValuesFrom xsd:string
+                                ] ,
+                                [ rdf:type owl:Restriction ;
                                   owl:onProperty :hasCountryCode ;
                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                   owl:onDataRange xsd:string
@@ -530,9 +533,7 @@ rdfs:Resource rdf:type owl:Class .
 
 ###  https://greeninfratwins.com/ns/grit#IndicatorVariable
 :IndicatorVariable rdf:type owl:Class ;
-                   rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error2> ,
-                                   <http://org.semanticweb.owlapi/error#Error3> ,
-                                   owl:Thing ,
+                   rdfs:subClassOf owl:Thing ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty :hasUnit ;
                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
@@ -541,6 +542,16 @@ rdfs:Resource rdf:type owl:Class .
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty :mapsToLbdProperty ;
                                      owl:cardinality "1"^^xsd:nonNegativeInteger
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasKey ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onDataRange xsd:string
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasValue ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onDataRange xsd:string
                                    ] ;
                    rdfs:comment "The variable that is used to calculated for an indicator, consists of a key (the variable identified) and a value (the numerical value)" ;
                    rdfs:label "Indicator variable" .
@@ -548,8 +559,7 @@ rdfs:Resource rdf:type owl:Class .
 
 ###  https://greeninfratwins.com/ns/grit#Measure
 :Measure rdf:type owl:Class ;
-         rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error4> ,
-                         owl:Thing ,
+         rdfs:subClassOf owl:Thing ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasMeasureVariant ;
                            owl:someValuesFrom :MeasureVariant
@@ -598,8 +608,7 @@ rdfs:Resource rdf:type owl:Class .
 
 ###  https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator
 :SimpleComputedValueIndicator rdf:type owl:Class ;
-                              rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error1> ,
-                                              :ValueIndicator ,
+                              rdfs:subClassOf :ValueIndicator ,
                                               [ rdf:type owl:Restriction ;
                                                 owl:onProperty :hasVariable ;
                                                 owl:someValuesFrom :IndicatorVariable
@@ -1107,12 +1116,5 @@ rdfs:Resource rdf:type owl:Class .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
-
-#################################################################
-#    Annotations
-#################################################################
-
-:hasIfcGuid rdfs:label "has ifc guid" .
-
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

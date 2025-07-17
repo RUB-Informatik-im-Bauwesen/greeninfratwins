@@ -524,6 +524,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#Activity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has ifc guid</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -544,6 +545,7 @@
 
     <owl:DatatypeProperty rdf:about="https://greeninfratwins.com/ns/grit#hasIndicatorResult">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator"/>
         <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#ValueIndicator"/>
         <owl:propertyDisjointWith rdf:resource="https://greeninfratwins.com/ns/grit#hasValue"/>
         <rdfs:comment>The calculated or retrieved result of an indicator.</rdfs:comment>
@@ -589,34 +591,6 @@
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error1 -->
-
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error1"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error2 -->
-
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error2"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error3 -->
-
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error3"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error4 -->
-
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error4"/>
-    
-
-
     <!-- http://www.w3.org/2000/01/rdf-schema#Resource -->
 
 
@@ -637,15 +611,15 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasIfcGuid"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasIndicatorSet"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasIndicatorSet"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet"/>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasIfcGuid"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -740,6 +714,31 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasAsessment"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://greeninfratwins.com/ns/grit#Assessment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasCountryCode"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasIcddContainerID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasIcddProjectID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasCountryCode"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -829,8 +828,6 @@
 
 
     <owl:Class rdf:about="https://greeninfratwins.com/ns/grit#IndicatorVariable">
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error2"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error3"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -845,6 +842,20 @@
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasKey"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>The variable that is used to calculated for an indicator, consists of a key (the variable identified) and a value (the numerical value)</rdfs:comment>
         <rdfs:label>Indicator variable</rdfs:label>
     </owl:Class>
@@ -855,7 +866,6 @@
 
 
     <owl:Class rdf:about="https://greeninfratwins.com/ns/grit#Measure">
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error4"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -931,7 +941,6 @@
 
 
     <owl:Class rdf:about="https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator">
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error1"/>
         <rdfs:subClassOf rdf:resource="https://greeninfratwins.com/ns/grit#ValueIndicator"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1681,21 +1690,6 @@
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-    <rdf:Description rdf:about="https://greeninfratwins.com/ns/grit#hasIfcGuid">
-        <rdfs:label>has ifc guid</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 

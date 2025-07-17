@@ -7,7 +7,6 @@ _:genid2 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/
 _:genid1 <https://schema.org/identifier> <https://orcid.org/0000-0001-5907-7609> .
 _:genid1 <https://schema.org/email> <mailto:liu.liu-m6r@rub.de> .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
-<https://schema.org/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://greeninfratwins.com/ns/grit#> <http://purl.org/dc/terms/contributor> _:genid3 .
 _:genid3 <https://schema.org/name> "Simon Kosse" .
 _:genid3 <https://schema.org/memberOf> _:genid4 .
@@ -209,7 +208,6 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/P
 <https://greeninfratwins.com/ns/grit#hasUnit> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <https://greeninfratwins.com/ns/grit#hasUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://greeninfratwins.com/ns/grit#IndicatorVariable> .
 <https://greeninfratwins.com/ns/grit#hasUnit> <http://www.w3.org/2000/01/rdf-schema#range> <https://qudt.org/schema/qudt/Unit> .
-<https://qudt.org/schema/qudt/Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://greeninfratwins.com/ns/grit#hasUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "The unit that a value refers to." .
 <https://greeninfratwins.com/ns/grit#hasUnit> <http://www.w3.org/2000/01/rdf-schema#label> "has unit" .
 # 
@@ -242,7 +240,6 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/P
 <https://greeninfratwins.com/ns/grit#mapsToLbdProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <https://greeninfratwins.com/ns/grit#mapsToLbdProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://greeninfratwins.com/ns/grit#IndicatorVariable> .
 <https://greeninfratwins.com/ns/grit#mapsToLbdProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
-<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://greeninfratwins.com/ns/grit#mapsToLbdProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to map a variable of an indicator to a property present in the RDF dataset of the digital twin." .
 <https://greeninfratwins.com/ns/grit#mapsToLbdProperty> <http://www.w3.org/2000/01/rdf-schema#label> "maps to lbd property" .
 # 
@@ -302,6 +299,7 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/P
 <https://greeninfratwins.com/ns/grit#hasIfcGuid> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <https://greeninfratwins.com/ns/grit#hasIfcGuid> <http://www.w3.org/2000/01/rdf-schema#domain> <https://greeninfratwins.com/ns/grit#Activity> .
 <https://greeninfratwins.com/ns/grit#hasIfcGuid> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://greeninfratwins.com/ns/grit#hasIfcGuid> <http://www.w3.org/2000/01/rdf-schema#label> "has ifc guid" .
 # 
 # https://greeninfratwins.com/ns/grit#hasIndicatorID
 <https://greeninfratwins.com/ns/grit#hasIndicatorID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -312,6 +310,7 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/P
 # https://greeninfratwins.com/ns/grit#hasIndicatorResult
 <https://greeninfratwins.com/ns/grit#hasIndicatorResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://greeninfratwins.com/ns/grit#hasIndicatorResult> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://greeninfratwins.com/ns/grit#hasIndicatorResult> <http://www.w3.org/2000/01/rdf-schema#domain> <https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator> .
 <https://greeninfratwins.com/ns/grit#hasIndicatorResult> <http://www.w3.org/2000/01/rdf-schema#domain> <https://greeninfratwins.com/ns/grit#ValueIndicator> .
 <https://greeninfratwins.com/ns/grit#hasIndicatorResult> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <https://greeninfratwins.com/ns/grit#hasValue> .
 <https://greeninfratwins.com/ns/grit#hasIndicatorResult> <http://www.w3.org/2000/01/rdf-schema#comment> "The calculated or retrieved result of an indicator." .
@@ -341,19 +340,8 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/P
 # #################################################################
 # 
 # 
-# http://org.semanticweb.owlapi/error#Error1
-<http://org.semanticweb.owlapi/error#Error1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://org.semanticweb.owlapi/error#Error2
-<http://org.semanticweb.owlapi/error#Error2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://org.semanticweb.owlapi/error#Error3
-<http://org.semanticweb.owlapi/error#Error3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://org.semanticweb.owlapi/error#Error4
-<http://org.semanticweb.owlapi/error#Error4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
 # http://www.w3.org/2000/01/rdf-schema#Resource
+<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://greeninfratwins.com/ns/grit#Activity
 <https://greeninfratwins.com/ns/grit#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -363,15 +351,13 @@ _:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://greeninfratwins
 _:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#afterActivity> .
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://greeninfratwins.com/ns/grit#Activity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
-_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.w3.org/2001/XMLSchema#string> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIfcGuid> .
-<https://greeninfratwins.com/ns/grit#hasIfcGuid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:genid8 <http://www.w3.org/2002/07/owl#onClass> <https://greeninfratwins.com/ns/grit#IndicatorSet> .
+_:genid8 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIndicatorSet> .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://greeninfratwins.com/ns/grit#Activity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
-_:genid9 <http://www.w3.org/2002/07/owl#onClass> <https://greeninfratwins.com/ns/grit#IndicatorSet> .
-_:genid9 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIndicatorSet> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIfcGuid> .
 _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://greeninfratwins.com/ns/grit#Activity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
 _:genid10 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
@@ -430,89 +416,113 @@ _:genid16 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org
 _:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#connectedServices> .
 _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://greeninfratwins.com/ns/grit#GreenInfraTwin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
-_:genid17 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid17 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasCountryCode> .
+_:genid17 <http://www.w3.org/2002/07/owl#onClass> <https://greeninfratwins.com/ns/grit#Assessment> .
+_:genid17 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasAsessment> .
 _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://greeninfratwins.com/ns/grit#GreenInfraTwin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
-_:genid18 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#anyURI> .
-_:genid18 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIcddContainerID> .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasCountryCode> .
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://greeninfratwins.com/ns/grit#GreenInfraTwin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
-_:genid19 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#anyURI> .
-_:genid19 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIcddProjectID> .
+_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIcddContainerID> .
 _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://greeninfratwins.com/ns/grit#GreenInfraTwin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIcddProjectID> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://greeninfratwins.com/ns/grit#GreenInfraTwin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid21 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasCountryCode> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://greeninfratwins.com/ns/grit#GreenInfraTwin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#anyURI> .
+_:genid22 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIcddContainerID> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://greeninfratwins.com/ns/grit#GreenInfraTwin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#anyURI> .
+_:genid23 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIcddProjectID> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://greeninfratwins.com/ns/grit#GreenInfraTwin> <http://www.w3.org/2000/01/rdf-schema#comment> "The instance of a DT for sustainability asessment." .
 <https://greeninfratwins.com/ns/grit#GreenInfraTwin> <http://www.w3.org/2000/01/rdf-schema#label> "GreenInfraTwin Demonstrator" .
 # 
 # https://greeninfratwins.com/ns/grit#Indicator
 <https://greeninfratwins.com/ns/grit#Indicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://greeninfratwins.com/ns/grit#Indicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
-<https://greeninfratwins.com/ns/grit#Indicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
-_:genid20 <http://www.w3.org/2002/07/owl#onClass> <https://greeninfratwins.com/ns/grit#IndicatorType> .
-_:genid20 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIndicatorType> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://greeninfratwins.com/ns/grit#Indicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#onClass> <https://greeninfratwins.com/ns/grit#IndicatorType> .
+_:genid24 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIndicatorType> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://greeninfratwins.com/ns/grit#Indicator> <http://www.w3.org/2000/01/rdf-schema#comment> "The generic indicator class, can be subtyped regarding their caracteristics and their value calculation methods." .
 <https://greeninfratwins.com/ns/grit#Indicator> <http://www.w3.org/2000/01/rdf-schema#label> "Indicator" .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorSet
 <https://greeninfratwins.com/ns/grit#IndicatorSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://greeninfratwins.com/ns/grit#IndicatorSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
-<https://greeninfratwins.com/ns/grit#IndicatorSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
-_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://greeninfratwins.com/ns/grit#Indicator> .
-_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIndicator> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://greeninfratwins.com/ns/grit#IndicatorSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
-_:genid22 <http://www.w3.org/2002/07/owl#onClass> <https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet> .
-_:genid22 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasPredefinedIndicatorSet> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://greeninfratwins.com/ns/grit#IndicatorSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://greeninfratwins.com/ns/grit#Indicator> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIndicator> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://greeninfratwins.com/ns/grit#IndicatorSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#onClass> <https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet> .
+_:genid26 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasPredefinedIndicatorSet> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://greeninfratwins.com/ns/grit#IndicatorSet> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of indicators that is referenced by a specific activity." .
 <https://greeninfratwins.com/ns/grit#IndicatorSet> <http://www.w3.org/2000/01/rdf-schema#label> "Indicator set" .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType
 <https://greeninfratwins.com/ns/grit#IndicatorType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://greeninfratwins.com/ns/grit#IndicatorType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
-<https://greeninfratwins.com/ns/grit#IndicatorType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
-_:genid23 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid23 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIndicatorID> .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://greeninfratwins.com/ns/grit#IndicatorType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid27 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIndicatorID> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://greeninfratwins.com/ns/grit#IndicatorType> <http://www.w3.org/2000/01/rdf-schema#comment> "A type for identifying indicators that should be aggregated in the overall calculation, e.g. GWP." .
 <https://greeninfratwins.com/ns/grit#IndicatorType> <http://www.w3.org/2000/01/rdf-schema#label> "Indicator type" .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorVariable
 <https://greeninfratwins.com/ns/grit#IndicatorVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://greeninfratwins.com/ns/grit#IndicatorVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error2> .
-<https://greeninfratwins.com/ns/grit#IndicatorVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error3> .
 <https://greeninfratwins.com/ns/grit#IndicatorVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
-<https://greeninfratwins.com/ns/grit#IndicatorVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
-_:genid24 <http://www.w3.org/2002/07/owl#onClass> <https://qudt.org/schema/qudt/Unit> .
-_:genid24 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasUnit> .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://greeninfratwins.com/ns/grit#IndicatorVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
-_:genid25 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#mapsToLbdProperty> .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://greeninfratwins.com/ns/grit#IndicatorVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/2002/07/owl#onClass> <https://qudt.org/schema/qudt/Unit> .
+_:genid28 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasUnit> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://greeninfratwins.com/ns/grit#IndicatorVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#mapsToLbdProperty> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://greeninfratwins.com/ns/grit#IndicatorVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid30 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasKey> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://greeninfratwins.com/ns/grit#IndicatorVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid31 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasValue> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://greeninfratwins.com/ns/grit#IndicatorVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "The variable that is used to calculated for an indicator, consists of a key (the variable identified) and a value (the numerical value)" .
 <https://greeninfratwins.com/ns/grit#IndicatorVariable> <http://www.w3.org/2000/01/rdf-schema#label> "Indicator variable" .
 # 
 # https://greeninfratwins.com/ns/grit#Measure
 <https://greeninfratwins.com/ns/grit#Measure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://greeninfratwins.com/ns/grit#Measure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error4> .
 <https://greeninfratwins.com/ns/grit#Measure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
-<https://greeninfratwins.com/ns/grit#Measure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
-_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://greeninfratwins.com/ns/grit#MeasureVariant> .
-_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasMeasureVariant> .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://greeninfratwins.com/ns/grit#Measure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
-_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://greeninfratwins.com/ns/grit#Activity> .
-_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#involvesActivities> .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://greeninfratwins.com/ns/grit#Measure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://greeninfratwins.com/ns/grit#MeasureVariant> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasMeasureVariant> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://greeninfratwins.com/ns/grit#Measure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://greeninfratwins.com/ns/grit#Activity> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#involvesActivities> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://greeninfratwins.com/ns/grit#Measure> <http://www.w3.org/2000/01/rdf-schema#comment> "The definition of a measure." .
 <https://greeninfratwins.com/ns/grit#Measure> <http://www.w3.org/2000/01/rdf-schema#label> "Measure" .
 # 
@@ -527,10 +537,10 @@ _:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://greeninfratwins.com/ns/grit#MeasureVariant
 <https://greeninfratwins.com/ns/grit#MeasureVariant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://greeninfratwins.com/ns/grit#MeasureVariant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
-<https://greeninfratwins.com/ns/grit#MeasureVariant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
-_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://greeninfratwins.com/ns/grit#Activity> .
-_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#involvesActivities> .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://greeninfratwins.com/ns/grit#MeasureVariant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://greeninfratwins.com/ns/grit#Activity> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#involvesActivities> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://greeninfratwins.com/ns/grit#MeasureVariant> <http://www.w3.org/2000/01/rdf-schema#comment> "An optional variant of the measure. A measure can either directly involve activities directly, or, if needed, can have multiple variants that each involve activities." .
 <https://greeninfratwins.com/ns/grit#MeasureVariant> <http://www.w3.org/2000/01/rdf-schema#label> "Measure variant" .
 # 
@@ -548,25 +558,24 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator
 <https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error1> .
 <https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://greeninfratwins.com/ns/grit#ValueIndicator> .
-<https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
-_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://greeninfratwins.com/ns/grit#IndicatorVariable> .
-_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasVariable> .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
-_:genid30 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasExternalCalculationServiceUrl> .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
-_:genid31 <http://www.w3.org/2002/07/owl#onClass> <https://qudt.org/schema/qudt/Unit> .
-_:genid31 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasUnit> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
-_:genid32 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIndicatorResult> .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://greeninfratwins.com/ns/grit#IndicatorVariable> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasVariable> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasExternalCalculationServiceUrl> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#onClass> <https://qudt.org/schema/qudt/Unit> .
+_:genid37 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasUnit> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIndicatorResult> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator> <http://www.w3.org/2000/01/rdf-schema#comment> "An indicator that can be computed by a service by providing a formular and variables." .
 <https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "Simple computed value indicator" .
 # 
@@ -583,22 +592,24 @@ _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://greeninfratwins.com/ns/grit#ValueIndicator
 <https://greeninfratwins.com/ns/grit#ValueIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://greeninfratwins.com/ns/grit#ValueIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://greeninfratwins.com/ns/grit#Indicator> .
-<https://greeninfratwins.com/ns/grit#ValueIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
-_:genid33 <http://www.w3.org/2002/07/owl#onClass> <https://qudt.org/schema/qudt/Unit> .
-_:genid33 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasUnit> .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://greeninfratwins.com/ns/grit#ValueIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
-_:genid34 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIndicatorResult> .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://greeninfratwins.com/ns/grit#ValueIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/2002/07/owl#onClass> <https://qudt.org/schema/qudt/Unit> .
+_:genid39 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasUnit> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://greeninfratwins.com/ns/grit#ValueIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <https://greeninfratwins.com/ns/grit#hasIndicatorResult> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://greeninfratwins.com/ns/grit#ValueIndicator> <http://www.w3.org/2000/01/rdf-schema#comment> "A class for all value indicators and subclasses. Cannot be used for calculating. For constant values see \"git:ConstantValueIndicator\"." .
 <https://greeninfratwins.com/ns/grit#ValueIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "Value indicator" .
 <https://greeninfratwins.com/ns/grit#ValueIndicator> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://greeninfratwins.com/ns/grit#ConstantValueIndicator> .
 # 
 # https://qudt.org/schema/qudt/Unit
+<https://qudt.org/schema/qudt/Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://schema.org/Person
+<https://schema.org/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # 
 # 
@@ -992,19 +1003,8 @@ _:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://greeninfratwins.com/ns/grit#IndicatorType_4_2_1> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Anzahl an Unfällen/Unfallrate im Normalbetrieb (bezogen auf den Zustand)" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_4_2_1> <http://www.w3.org/2000/01/rdf-schema#label> "Anzahl an Unfällen/Unfallrate im Normalbetrieb (bezogen auf den Zustand)" .
 # 
-_:genid35 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid36 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid37 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid38 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-# 
-# 
-# #################################################################
-# #
-# #    Annotations
-# #
-# #################################################################
-# 
-# 
-<https://greeninfratwins.com/ns/grit#hasIfcGuid> <http://www.w3.org/2000/01/rdf-schema#label> "has ifc guid" .
-# 
+_:genid41 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid42 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid43 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid44 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
