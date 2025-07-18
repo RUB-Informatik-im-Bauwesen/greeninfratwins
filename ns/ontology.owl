@@ -241,6 +241,18 @@
     
 
 
+    <!-- https://greeninfratwins.com/ns/grit#calculatesForAsset -->
+
+
+    <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#calculatesForAsset">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#ValueIndicator"/>
+        <rdfs:range rdf:resource="https://greeninfratwins.com/ns/grit#AssetUtilization"/>
+        <rdfs:label>calculates for asset</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://greeninfratwins.com/ns/grit#connectedServices -->
 
 
@@ -262,6 +274,30 @@
         <rdfs:range rdf:resource="https://greeninfratwins.com/ns/grit#Assessment"/>
         <rdfs:comment>The connection beween the DT and the use case / asessment.</rdfs:comment>
         <rdfs:label>has asessment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#hasAsset -->
+
+
+    <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#hasAsset">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#AssetUtilization"/>
+        <rdfs:range rdf:resource="https://greeninfratwins.com/ns/grit#Asset"/>
+        <rdfs:label>has asset</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#hasAssetUtilization -->
+
+
+    <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#hasAssetUtilization">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#Activity"/>
+        <rdfs:range rdf:resource="https://greeninfratwins.com/ns/grit#AssetUtilization"/>
+        <rdfs:label>has asset utilization</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -374,7 +410,6 @@
     <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#hasUnit">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorVariable"/>
-        <rdfs:range rdf:resource="https://qudt.org/schema/qudt/Unit"/>
         <rdfs:comment>The unit that a value refers to.</rdfs:comment>
         <rdfs:label>has unit</rdfs:label>
     </owl:ObjectProperty>
@@ -442,6 +477,19 @@
      -->
 
 
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#executedAtDate -->
+
+
+    <owl:DatatypeProperty rdf:about="https://greeninfratwins.com/ns/grit#executedAtDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>The date at which an activity is executed.</rdfs:comment>
+        <rdfs:label>executed at date</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -579,6 +627,18 @@
     
 
 
+    <!-- https://greeninfratwins.com/ns/grit#operationTimeInHours -->
+
+
+    <owl:DatatypeProperty rdf:about="https://greeninfratwins.com/ns/grit#operationTimeInHours">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#AssetUtilization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>operation time in hours</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -588,6 +648,13 @@
      -->
 
 
+    
+
+
+    <!-- http://qudt.org/schema/qudt/Unit -->
+
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/Unit"/>
     
 
 
@@ -611,9 +678,21 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasAssetUtilization"/>
+                <owl:someValuesFrom rdf:resource="https://greeninfratwins.com/ns/grit#AssetUtilization"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasIndicatorSet"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#executedAtDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -654,6 +733,42 @@
         </rdfs:subClassOf>
         <rdfs:comment>The use case that is performed in a DT.</rdfs:comment>
         <rdfs:label>Assessment defined by a specified Use Case</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#Asset -->
+
+
+    <owl:Class rdf:about="https://greeninfratwins.com/ns/grit#Asset">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Models an asset that can be used for a measure and provides properties to define indicators per hour operating time.</rdfs:comment>
+        <rdfs:label>Asset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://greeninfratwins.com/ns/grit#AssetUtilization -->
+
+
+    <owl:Class rdf:about="https://greeninfratwins.com/ns/grit#AssetUtilization">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasAsset"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://greeninfratwins.com/ns/grit#Asset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#operationTimeInHours"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Provides information about the utilization of a particular asset for an activity.</rdfs:comment>
+        <rdfs:label>Asset utilization</rdfs:label>
     </owl:Class>
     
 
@@ -833,7 +948,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasUnit"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://qudt.org/schema/qudt/Unit"/>
+                <owl:onClass rdf:resource="http://qudt.org/schema/qudt/Unit"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -944,6 +1059,12 @@
         <rdfs:subClassOf rdf:resource="https://greeninfratwins.com/ns/grit#ValueIndicator"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#calculatesForAsset"/>
+                <owl:someValuesFrom rdf:resource="https://greeninfratwins.com/ns/grit#AssetUtilization"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasVariable"/>
                 <owl:someValuesFrom rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorVariable"/>
             </owl:Restriction>
@@ -958,7 +1079,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasUnit"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://qudt.org/schema/qudt/Unit"/>
+                <owl:onClass rdf:resource="http://qudt.org/schema/qudt/Unit"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1002,7 +1123,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasUnit"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://qudt.org/schema/qudt/Unit"/>
+                <owl:onClass rdf:resource="http://qudt.org/schema/qudt/Unit"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1015,13 +1136,6 @@
         <rdfs:label>Value indicator</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://greeninfratwins.com/ns/grit#ConstantValueIndicator"/>
     </owl:Class>
-    
-
-
-    <!-- https://qudt.org/schema/qudt/Unit -->
-
-
-    <owl:Class rdf:about="https://qudt.org/schema/qudt/Unit"/>
     
 
 
@@ -1626,6 +1740,20 @@
     
 
 
+    <!-- https://greeninfratwins.com/ns/grit#IndicatorType_3_1_2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_3_1_2">
+        <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality"/>
+        <hasIndicatorID>3.1.2</hasIndicatorID>
+        <rdfs:comment>Indikator für die Definition der Emissionsbelastung der Baustellenmitarbeitenden und Auswirkung auf die Gesundheit [ppm]</rdfs:comment>
+        <rdfs:label>Emissionsbelastung der Baustellenmitarbeitenden</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://greeninfratwins.com/ns/grit#IndicatorType_3_1_3 -->
 
 
@@ -1662,8 +1790,8 @@
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Reliability"/>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_TechnicalQuality"/>
         <hasIndicatorID>4.1.1</hasIndicatorID>
-        <rdfs:comment>Indikator für Definition von Zuverlässigkeitsindex (β-Wert)</rdfs:comment>
-        <rdfs:label>Zuverlässigkeitsindex (β-Wert)</rdfs:label>
+        <rdfs:comment>Indikator für Definition von Zuverlässigkeitsindex (beta-Wert)</rdfs:comment>
+        <rdfs:label>Zuverlässigkeitsindex (beta-Wert)</rdfs:label>
     </owl:NamedIndividual>
     
 

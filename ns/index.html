@@ -113,6 +113,13 @@ This ontology has the following classes and properties.</span>
       <a href="#Assessment" title="https://greeninfratwins.com/ns/grit#Assessment">Assessment defined by a specified Use Case</a>
    </li>
    <li>
+      <a href="#Asset" title="https://greeninfratwins.com/ns/grit#Asset">Asset</a>
+   </li>
+   <li>
+      <a href="#AssetUtilization"
+         title="https://greeninfratwins.com/ns/grit#AssetUtilization">Asset utilization</a>
+   </li>
+   <li>
       <a href="#ComplexComputedValueIndicator"
          title="https://greeninfratwins.com/ns/grit#ComplexComputedValueIndicator">Complex computed value indicator</a>
    </li>
@@ -128,7 +135,8 @@ This ontology has the following classes and properties.</span>
       <a href="#Indicator" title="https://greeninfratwins.com/ns/grit#Indicator">Indicator</a>
    </li>
    <li>
-      <a href="#IndicatorSet" title="https://greeninfratwins.com/ns/grit#IndicatorSet">Indicator set</a>
+      <a href="#IndicatorSet"
+         title="https://greeninfratwins.com/ns/grit#IndicatorSet">Indicator set</a>
    </li>
    <li>
       <a href="#IndicatorType"
@@ -185,11 +193,22 @@ This ontology has the following classes and properties.</span>
          title="https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators">belongs to predefined set of indicators</a>
    </li>
    <li>
+      <a href="#calculatesForAsset"
+         title="https://greeninfratwins.com/ns/grit#calculatesForAsset">calculates for asset</a>
+   </li>
+   <li>
       <a href="#connectedServices"
          title="https://greeninfratwins.com/ns/grit#connectedServices">connected services</a>
    </li>
    <li>
       <a href="#hasAsessment" title="https://greeninfratwins.com/ns/grit#hasAsessment">has asessment</a>
+   </li>
+   <li>
+      <a href="#hasAsset" title="https://greeninfratwins.com/ns/grit#hasAsset">has asset</a>
+   </li>
+   <li>
+      <a href="#hasAssetUtilization"
+         title="https://greeninfratwins.com/ns/grit#hasAssetUtilization">has asset utilization</a>
    </li>
    <li>
       <a href="#hasExternalCalculationServiceUrl"
@@ -242,6 +261,10 @@ This ontology has the following classes and properties.</span>
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
+      <a href="#executedAtDate"
+         title="https://greeninfratwins.com/ns/grit#executedAtDate">executed at date</a>
+   </li>
+   <li>
       <a href="#frequencyPerYear"
          title="https://greeninfratwins.com/ns/grit#frequencyPerYear">frequency per year</a>
    </li>
@@ -283,6 +306,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#hasValue" title="https://greeninfratwins.com/ns/grit#hasValue">has value</a>
    </li>
+   <li>
+      <a href="#operationTimeInHours"
+         title="https://greeninfratwins.com/ns/grit#operationTimeInHours">operation time in hours</a>
+   </li>
 </ul><h4>Named Individuals</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
@@ -317,6 +344,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#IndicatorType_1_1_4"
          title="https://greeninfratwins.com/ns/grit#IndicatorType_1_1_4">Demontagefähigkeit</a>
+   </li>
+   <li>
+      <a href="#IndicatorType_3_1_2"
+         title="https://greeninfratwins.com/ns/grit#IndicatorType_3_1_2">Emissionsbelastung der Baustellenmitarbeitenden</a>
    </li>
    <li>
       <a href="#IndicatorType_1_5_2"
@@ -472,7 +503,7 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#IndicatorType_4_1_1"
-         title="https://greeninfratwins.com/ns/grit#IndicatorType_4_1_1">Zuverlässigkeitsindex (β-Wert)</a>
+         title="https://greeninfratwins.com/ns/grit#IndicatorType_4_1_1">Zuverlässigkeitsindex (beta-Wert)</a>
    </li>
    <li>
       <a href="#IndicatorSet_Predefined_LifecycleAsessment"
@@ -498,6 +529,8 @@ This section provides details for each class and property defined by GreenInfraT
  <ul class="hlist">
   <li><a href="#Activity" title="https://greeninfratwins.com/ns/grit#Activity">Activity</a></li>
   <li><a href="#Assessment" title="https://greeninfratwins.com/ns/grit#Assessment">Assessment defined by a specified Use Case</a></li>
+  <li><a href="#Asset" title="https://greeninfratwins.com/ns/grit#Asset">Asset</a></li>
+  <li><a href="#AssetUtilization" title="https://greeninfratwins.com/ns/grit#AssetUtilization">Asset utilization</a></li>
   <li><a href="#ComplexComputedValueIndicator" title="https://greeninfratwins.com/ns/grit#ComplexComputedValueIndicator">Complex computed value indicator</a></li>
   <li><a href="#ConstantValueIndicator" title="https://greeninfratwins.com/ns/grit#ConstantValueIndicator">Constant value indicator</a></li>
   <li><a href="#GreenInfraTwin" title="https://greeninfratwins.com/ns/grit#GreenInfraTwin">GreenInfraTwin Demonstrator</a></li>
@@ -532,7 +565,7 @@ This section provides details for each class and property defined by GreenInfraT
     is in domain of
    </dt>
    <dd>
-    <a href="#afterActivity" title="https://greeninfratwins.com/ns/grit#afterActivity">after activity</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasIcddModelID" title="https://greeninfratwins.com/ns/grit#hasIcddModelID">has icdd model id</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIfcGuid" title="https://greeninfratwins.com/ns/grit#hasIfcGuid">has ifc guid</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIndicatorSet" title="https://greeninfratwins.com/ns/grit#hasIndicatorSet">has indicator set</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#afterActivity" title="https://greeninfratwins.com/ns/grit#afterActivity">after activity</a> <sup class="type-op" title="object property">op</sup>, <a href="#executedAtDate" title="https://greeninfratwins.com/ns/grit#executedAtDate">executed at date</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasAssetUtilization" title="https://greeninfratwins.com/ns/grit#hasAssetUtilization">has asset utilization</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasIcddModelID" title="https://greeninfratwins.com/ns/grit#hasIcddModelID">has icdd model id</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIfcGuid" title="https://greeninfratwins.com/ns/grit#hasIfcGuid">has ifc guid</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIndicatorSet" title="https://greeninfratwins.com/ns/grit#hasIndicatorSet">has indicator set</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
@@ -566,6 +599,54 @@ This section provides details for each class and property defined by GreenInfraT
    </dt>
    <dd>
     <a href="#hasAsessment" title="https://greeninfratwins.com/ns/grit#hasAsessment">has asessment</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Asset">
+  <h3>Asset<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#Asset</p>
+  <div class="comment">
+   <span class="markdown">Models an asset that can be used for a measure and provides properties to define indicators per hour operating time.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasAsset" title="https://greeninfratwins.com/ns/grit#hasAsset">has asset</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="AssetUtilization">
+  <h3>Asset utilization<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#AssetUtilization</p>
+  <div class="comment">
+   <span class="markdown">Provides information about the utilization of a particular asset for an activity.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasAsset" title="https://greeninfratwins.com/ns/grit#hasAsset">has asset</a> <sup class="type-op" title="object property">op</sup>, <a href="#operationTimeInHours" title="https://greeninfratwins.com/ns/grit#operationTimeInHours">operation time in hours</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#calculatesForAsset" title="https://greeninfratwins.com/ns/grit#calculatesForAsset">calculates for asset</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasAssetUtilization" title="https://greeninfratwins.com/ns/grit#hasAssetUtilization">has asset utilization</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -733,7 +814,7 @@ This section provides details for each class and property defined by GreenInfraT
     has members
    </dt>
    <dd>
-    <a href="#IndicatorType_4_2_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_4_2_1">Anzahl an Unfällen/Unfallrate im Normalbetrieb (bezogen auf den Zustand)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_3_1_3" title="https://greeninfratwins.com/ns/grit#IndicatorType_3_1_3">Arbeitssicherheit (Anzahl an Unfällen / Unfallrate im Baustellenbereich)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_2_1_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1">Bauwerksbezogene Kosten</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_1_4" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_1_4">Demontagefähigkeit</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_5_2" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_5_2">Eutrophierungspotential (EP)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_2_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_2_1">Fläche des ökologisch gestörten Lebensraums durch Lärmbeeinträchtigung der Fauna</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_3_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1">Flächeninanspruchnahme (gesamt)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_3_1_2" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_2">Flächeninanspruchnahme Bauprozesse (vorübergehend)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_3_1_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_1">Flächeninanspruchnahme Bauwerk (dauerhaft)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_5_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_5_1">Globales Erwärmungspotential (GWP)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_2_2_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_2_2_1">Kosten aufgrund von Zeitverlusten, Umleitungen und erhöhten Fahrzeugbetriebskosten </a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_5_6" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_5_6">Kumulierter Energieaufwand (KEA)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_3_1_1_2" title="https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1_2">Lärmbeeinträchtigung von Menschen (Anzahl vom Lärm betroffene Personen)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_3_1_1_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1_1">Lärmbeeinträchtigung von Menschen (Lärmpegel / Anzahl vom Lärm betroffene Personen)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_3_1_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1">Lärmbeeinträchtigung von Menschen (gesamt)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_1_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_1_1">Materialität des Bauwerks</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_2_1_1_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1_1">Materialkosten</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_1_5" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_1_5">Materlaverwertung - Potentiale Kreislauffähigkeit</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_1_2" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_1_2">Monetärer Materialwert</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_5_5" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_5_5">Ozonbildungspotential (POCP)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_5_3" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_5_3">Ozonschichtabbaupotential (ODP)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_2_1_1_2" title="https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1_2">Prozessbezogene Kosten (Planungs-, Baukosten, Kosten Nutzungsphase etc.)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_3_2_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_3_2_1">Reduktion der zeitbezogenen Kapazität (Zeitverluste der Reisezeit; Veränderung Zuverlässigkeit der Reisezeit)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_1_3" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_1_3">Schad- und Risikostoffe</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_4_1_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_1">Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (CO2)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_4_1_2" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_2">Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (NOx)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_4_1_5" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_5">Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM10)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_4_1_3" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_3">Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM2.5)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_4_1_4" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_4">Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM5)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_4_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1">Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (gesamt)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_5_4" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_5_4">Versauerungspotential (AP)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_4_1_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_4_1_1">Zuverlässigkeitsindex (β-Wert)</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#IndicatorType_4_2_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_4_2_1">Anzahl an Unfällen/Unfallrate im Normalbetrieb (bezogen auf den Zustand)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_3_1_3" title="https://greeninfratwins.com/ns/grit#IndicatorType_3_1_3">Arbeitssicherheit (Anzahl an Unfällen / Unfallrate im Baustellenbereich)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_2_1_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1">Bauwerksbezogene Kosten</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_1_4" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_1_4">Demontagefähigkeit</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_3_1_2" title="https://greeninfratwins.com/ns/grit#IndicatorType_3_1_2">Emissionsbelastung der Baustellenmitarbeitenden</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_5_2" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_5_2">Eutrophierungspotential (EP)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_2_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_2_1">Fläche des ökologisch gestörten Lebensraums durch Lärmbeeinträchtigung der Fauna</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_3_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1">Flächeninanspruchnahme (gesamt)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_3_1_2" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_2">Flächeninanspruchnahme Bauprozesse (vorübergehend)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_3_1_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_1">Flächeninanspruchnahme Bauwerk (dauerhaft)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_5_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_5_1">Globales Erwärmungspotential (GWP)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_2_2_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_2_2_1">Kosten aufgrund von Zeitverlusten, Umleitungen und erhöhten Fahrzeugbetriebskosten </a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_5_6" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_5_6">Kumulierter Energieaufwand (KEA)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_3_1_1_2" title="https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1_2">Lärmbeeinträchtigung von Menschen (Anzahl vom Lärm betroffene Personen)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_3_1_1_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1_1">Lärmbeeinträchtigung von Menschen (Lärmpegel / Anzahl vom Lärm betroffene Personen)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_3_1_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1">Lärmbeeinträchtigung von Menschen (gesamt)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_1_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_1_1">Materialität des Bauwerks</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_2_1_1_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1_1">Materialkosten</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_1_5" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_1_5">Materlaverwertung - Potentiale Kreislauffähigkeit</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_1_2" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_1_2">Monetärer Materialwert</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_5_5" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_5_5">Ozonbildungspotential (POCP)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_5_3" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_5_3">Ozonschichtabbaupotential (ODP)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_2_1_1_2" title="https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1_2">Prozessbezogene Kosten (Planungs-, Baukosten, Kosten Nutzungsphase etc.)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_3_2_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_3_2_1">Reduktion der zeitbezogenen Kapazität (Zeitverluste der Reisezeit; Veränderung Zuverlässigkeit der Reisezeit)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_1_3" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_1_3">Schad- und Risikostoffe</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_4_1_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_1">Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (CO2)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_4_1_2" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_2">Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (NOx)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_4_1_5" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_5">Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM10)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_4_1_3" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_3">Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM2.5)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_4_1_4" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_4">Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM5)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_4_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1">Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (gesamt)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_1_5_4" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_5_4">Versauerungspotential (AP)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IndicatorType_4_1_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_4_1_1">Zuverlässigkeitsindex (beta-Wert)</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
@@ -973,7 +1054,7 @@ This section provides details for each class and property defined by GreenInfraT
     is in domain of
    </dt>
    <dd>
-    <a href="#hasIndicatorResult" title="https://greeninfratwins.com/ns/grit#hasIndicatorResult">has indicator result</a> <sup class="type-dp" title="data property">dp</sup>
+    <a href="#calculatesForAsset" title="https://greeninfratwins.com/ns/grit#calculatesForAsset">calculates for asset</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasIndicatorResult" title="https://greeninfratwins.com/ns/grit#hasIndicatorResult">has indicator result</a> <sup class="type-dp" title="data property">dp</sup>
    </dd>
   </dl>
  </div>
@@ -982,8 +1063,11 @@ This section provides details for each class and property defined by GreenInfraT
  <ul class="hlist">
   <li><a href="#afterActivity" title="https://greeninfratwins.com/ns/grit#afterActivity">after activity</a></li>
   <li><a href="#belongsToPredefinedSetOfIndicators" title="https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators">belongs to predefined set of indicators</a></li>
+  <li><a href="#calculatesForAsset" title="https://greeninfratwins.com/ns/grit#calculatesForAsset">calculates for asset</a></li>
   <li><a href="#connectedServices" title="https://greeninfratwins.com/ns/grit#connectedServices">connected services</a></li>
   <li><a href="#hasAsessment" title="https://greeninfratwins.com/ns/grit#hasAsessment">has asessment</a></li>
+  <li><a href="#hasAsset" title="https://greeninfratwins.com/ns/grit#hasAsset">has asset</a></li>
+  <li><a href="#hasAssetUtilization" title="https://greeninfratwins.com/ns/grit#hasAssetUtilization">has asset utilization</a></li>
   <li><a href="#hasExternalCalculationServiceUrl" title="https://greeninfratwins.com/ns/grit#hasExternalCalculationServiceUrl">has calculation service</a></li>
   <li><a href="#hasExternalCalculationApplication" title="https://greeninfratwins.com/ns/grit#hasExternalCalculationApplication">has external calculation application</a></li>
   <li><a href="#hasIndicator" title="https://greeninfratwins.com/ns/grit#hasIndicator">has indicator</a></li>
@@ -1053,6 +1137,32 @@ This section provides details for each class and property defined by GreenInfraT
    </dl>
   </div>
  </div>
+ <div class="entity" id="calculatesForAsset">
+  <h3>calculates for asset<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#calculatesForAsset</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ValueIndicator" title="https://greeninfratwins.com/ns/grit#ValueIndicator">Value indicator</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#AssetUtilization" title="https://greeninfratwins.com/ns/grit#AssetUtilization">Asset utilization</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
  <div class="entity" id="connectedServices">
   <h3>connected services<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#connectedServices</p>
@@ -1101,6 +1211,58 @@ This section provides details for each class and property defined by GreenInfraT
     </dt>
     <dd>
      <a href="#Assessment" title="https://greeninfratwins.com/ns/grit#Assessment">Assessment defined by a specified Use Case</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasAsset">
+  <h3>has asset<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#hasAsset</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AssetUtilization" title="https://greeninfratwins.com/ns/grit#AssetUtilization">Asset utilization</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Asset" title="https://greeninfratwins.com/ns/grit#Asset">Asset</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasAssetUtilization">
+  <h3>has asset utilization<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#hasAssetUtilization</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Activity" title="https://greeninfratwins.com/ns/grit#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#AssetUtilization" title="https://greeninfratwins.com/ns/grit#AssetUtilization">Asset utilization</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -1371,12 +1533,6 @@ This section provides details for each class and property defined by GreenInfraT
     <dd>
      <a href="#IndicatorVariable" title="https://greeninfratwins.com/ns/grit#IndicatorVariable">Indicator variable</a> <sup class="type-c" title="class">c</sup>
     </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="https://qudt.org/schema/qudt/Unit" target="_blank" title="https://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
-    </dd>
    </dl>
   </div>
  </div>
@@ -1473,6 +1629,7 @@ This section provides details for each class and property defined by GreenInfraT
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
  <h3 id="dataproperties-headline" class="list">Data Properties</h3>
  <ul class="hlist">
+  <li><a href="#executedAtDate" title="https://greeninfratwins.com/ns/grit#executedAtDate">executed at date</a></li>
   <li><a href="#frequencyPerYear" title="https://greeninfratwins.com/ns/grit#frequencyPerYear">frequency per year</a></li>
   <li><a href="#hasCountryCode" title="https://greeninfratwins.com/ns/grit#hasCountryCode">has country code</a></li>
   <li><a href="#hasFormula" title="https://greeninfratwins.com/ns/grit#hasFormula">has formula</a></li>
@@ -1484,7 +1641,37 @@ This section provides details for each class and property defined by GreenInfraT
   <li><a href="#hasIndicatorResult" title="https://greeninfratwins.com/ns/grit#hasIndicatorResult">has indicator result</a></li>
   <li><a href="#hasKey" title="https://greeninfratwins.com/ns/grit#hasKey">has key</a></li>
   <li><a href="#hasValue" title="https://greeninfratwins.com/ns/grit#hasValue">has value</a></li>
+  <li><a href="#operationTimeInHours" title="https://greeninfratwins.com/ns/grit#operationTimeInHours">operation time in hours</a></li>
  </ul>
+ <div class="entity" id="executedAtDate">
+  <h3>executed at date<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#executedAtDate</p>
+  <div class="comment">
+   <span class="markdown">The date at which an activity is executed.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Activity" title="https://greeninfratwins.com/ns/grit#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
  <div class="entity" id="frequencyPerYear">
   <h3>frequency per year<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#frequencyPerYear</p>
@@ -1759,6 +1946,32 @@ This section provides details for each class and property defined by GreenInfraT
    </dl>
   </div>
  </div>
+ <div class="entity" id="operationTimeInHours">
+  <h3>operation time in hours<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#operationTimeInHours</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AssetUtilization" title="https://greeninfratwins.com/ns/grit#AssetUtilization">Asset utilization</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
  <h3 id="namedindividuals" class="list">Named Individuals</h3>
  <ul class="hlist">
@@ -1771,6 +1984,7 @@ This section provides details for each class and property defined by GreenInfraT
   <li><a href="#IndicatorType_2_1_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1">Bauwerksbezogene Kosten</a></li>
   <li><a href="#IndicatorSet_Predefined_BuildingRelatedLifecycleCosts" title="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_BuildingRelatedLifecycleCosts">Bauwerksbezogene Lebenszykluskosten</a></li>
   <li><a href="#IndicatorType_1_1_4" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_1_4">Demontagefähigkeit</a></li>
+  <li><a href="#IndicatorType_3_1_2" title="https://greeninfratwins.com/ns/grit#IndicatorType_3_1_2">Emissionsbelastung der Baustellenmitarbeitenden</a></li>
   <li><a href="#IndicatorType_1_5_2" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_5_2">Eutrophierungspotential (EP)</a></li>
   <li><a href="#IndicatorSet_Predefined_ExternalCosts" title="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_ExternalCosts">Externe Kosten (monetarisierte externe Effekte)</a></li>
   <li><a href="#IndicatorSet_Predefined_EnvironmentalEffects" title="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects">Externe Umwelteffekte</a></li>
@@ -1809,7 +2023,7 @@ This section provides details for each class and property defined by GreenInfraT
   <li><a href="#IndicatorType_1_4_1_4" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_4">Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM5)</a></li>
   <li><a href="#IndicatorType_1_5_4" title="https://greeninfratwins.com/ns/grit#IndicatorType_1_5_4">Versauerungspotential (AP)</a></li>
   <li><a href="#IndicatorSet_Predefined_Reliability" title="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Reliability">Zuverlässigkeit</a></li>
-  <li><a href="#IndicatorType_4_1_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_4_1_1">Zuverlässigkeitsindex (β-Wert)</a></li>
+  <li><a href="#IndicatorType_4_1_1" title="https://greeninfratwins.com/ns/grit#IndicatorType_4_1_1">Zuverlässigkeitsindex (beta-Wert)</a></li>
   <li><a href="#IndicatorSet_Predefined_LifecycleAsessment" title="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment">Ökobilanz</a></li>
   <li><a href="#IndicatorSet_Predefined_EcologicalQuality" title="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality">Ökologische Qualität</a></li>
   <li><a href="#IndicatorSet_Predefined_EconomicQuality" title="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality">Ökonomische Qualität</a></li>
@@ -1979,6 +2193,33 @@ This section provides details for each class and property defined by GreenInfraT
    </dd>
    <dd>
     <a href="#hasIndicatorID" title="https://greeninfratwins.com/ns/grit#hasIndicatorID">has Indicator I D</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"1.1.4"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="IndicatorType_3_1_2">
+  <h3>Emissionsbelastung der Baustellenmitarbeitenden<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#IndicatorType_3_1_2</p>
+  <div class="comment">
+   <span class="markdown">Indikator für die Definition der Emissionsbelastung der Baustellenmitarbeitenden und Auswirkung auf die Gesundheit [ppm]</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#IndicatorType" title="https://greeninfratwins.com/ns/grit#IndicatorType">Indicator type</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#belongsToPredefinedSetOfIndicators" title="https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators">belongs to predefined set of indicators</a> <sup class="type-op" title="object property">op</sup> <a href="#IndicatorSet_Predefined_HumanProtection" title="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection">Schutzgut Mensch</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#belongsToPredefinedSetOfIndicators" title="https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators">belongs to predefined set of indicators</a> <sup class="type-op" title="object property">op</sup> <a href="#IndicatorSet_Predefined_SocioCulturalQuality" title="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality">Sozio-kulturelle und funktionale Qualität</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasIndicatorID" title="https://greeninfratwins.com/ns/grit#hasIndicatorID">has Indicator I D</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"3.1.2"</span>
    </dd>
   </dl>
  </div>
@@ -2844,10 +3085,10 @@ This section provides details for each class and property defined by GreenInfraT
   </dl>
  </div>
  <div class="entity" id="IndicatorType_4_1_1">
-  <h3>Zuverlässigkeitsindex (β-Wert)<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Zuverlässigkeitsindex (beta-Wert)<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://greeninfratwins.com/ns/grit#IndicatorType_4_1_1</p>
   <div class="comment">
-   <span class="markdown">Indikator für Definition von Zuverlässigkeitsindex (β-Wert)</span>
+   <span class="markdown">Indikator für Definition von Zuverlässigkeitsindex (beta-Wert)</span>
   </div>
   <dl class="description">
    <dt>
@@ -2915,15 +3156,6 @@ This section provides details for each class and property defined by GreenInfraT
 <sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
 </div>
 </div>
-</div>
-    
-
-<!--REFERENCES SECTION-->
-  <div id="references">
-<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-Add your references here. It is recommended to have them as a list.</span>
-
 </div>
 <div id="acknowledgments">
 <h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>

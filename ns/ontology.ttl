@@ -145,6 +145,14 @@ xsd:date rdf:type rdfs:Datatype .
                                     rdfs:label "belongs to predefined set of indicators" .
 
 
+###  https://greeninfratwins.com/ns/grit#calculatesForAsset
+:calculatesForAsset rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty ;
+                    rdfs:domain :ValueIndicator ;
+                    rdfs:range :AssetUtilization ;
+                    rdfs:label "calculates for asset" .
+
+
 ###  https://greeninfratwins.com/ns/grit#connectedServices
 :connectedServices rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf owl:topObjectProperty ;
@@ -160,6 +168,22 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:range :Assessment ;
               rdfs:comment "The connection beween the DT and the use case / asessment." ;
               rdfs:label "has asessment" .
+
+
+###  https://greeninfratwins.com/ns/grit#hasAsset
+:hasAsset rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain :AssetUtilization ;
+          rdfs:range :Asset ;
+          rdfs:label "has asset" .
+
+
+###  https://greeninfratwins.com/ns/grit#hasAssetUtilization
+:hasAssetUtilization rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     rdfs:domain :Activity ;
+                     rdfs:range :AssetUtilization ;
+                     rdfs:label "has asset utilization" .
 
 
 ###  https://greeninfratwins.com/ns/grit#hasExternalCalculationApplication
@@ -236,7 +260,6 @@ xsd:date rdf:type rdfs:Datatype .
 :hasUnit rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf owl:topObjectProperty ;
          rdfs:domain :IndicatorVariable ;
-         rdfs:range <https://qudt.org/schema/qudt/Unit> ;
          rdfs:comment "The unit that a value refers to." ;
          rdfs:label "has unit" .
 
@@ -280,6 +303,15 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 #    Data properties
 #################################################################
+
+###  https://greeninfratwins.com/ns/grit#executedAtDate
+:executedAtDate rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :Activity ;
+                rdfs:range xsd:dateTime ;
+                rdfs:comment "The date at which an activity is executed." ;
+                rdfs:label "executed at date" .
+
 
 ###  https://greeninfratwins.com/ns/grit#frequencyPerYear
 :frequencyPerYear rdf:type owl:DatatypeProperty ;
@@ -371,9 +403,21 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:label "has value" .
 
 
+###  https://greeninfratwins.com/ns/grit#operationTimeInHours
+:operationTimeInHours rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain :AssetUtilization ;
+                      rdfs:range xsd:decimal ;
+                      rdfs:label "operation time in hours" .
+
+
 #################################################################
 #    Classes
 #################################################################
+
+###  http://qudt.org/schema/qudt/Unit
+<http://qudt.org/schema/qudt/Unit> rdf:type owl:Class .
+
 
 ###  http://www.w3.org/2000/01/rdf-schema#Resource
 rdfs:Resource rdf:type owl:Class .
@@ -387,9 +431,17 @@ rdfs:Resource rdf:type owl:Class .
                             owl:someValuesFrom :Activity
                           ] ,
                           [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasAssetUtilization ;
+                            owl:someValuesFrom :AssetUtilization
+                          ] ,
+                          [ rdf:type owl:Restriction ;
                             owl:onProperty :hasIndicatorSet ;
                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                             owl:onClass :IndicatorSet
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :executedAtDate ;
+                            owl:someValuesFrom xsd:dateTime
                           ] ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty :hasIfcGuid ;
@@ -417,6 +469,30 @@ rdfs:Resource rdf:type owl:Class .
                             ] ;
             rdfs:comment "The use case that is performed in a DT." ;
             rdfs:label "Assessment defined by a specified Use Case" .
+
+
+###  https://greeninfratwins.com/ns/grit#Asset
+:Asset rdf:type owl:Class ;
+       rdfs:subClassOf owl:Thing ;
+       rdfs:comment "Models an asset that can be used for a measure and provides properties to define indicators per hour operating time." ;
+       rdfs:label "Asset" .
+
+
+###  https://greeninfratwins.com/ns/grit#AssetUtilization
+:AssetUtilization rdf:type owl:Class ;
+                  rdfs:subClassOf owl:Thing ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasAsset ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass :Asset
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :operationTimeInHours ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onDataRange xsd:decimal
+                                  ] ;
+                  rdfs:comment "Provides information about the utilization of a particular asset for an activity." ;
+                  rdfs:label "Asset utilization" .
 
 
 ###  https://greeninfratwins.com/ns/grit#ComplexComputedValueIndicator
@@ -537,7 +613,7 @@ rdfs:Resource rdf:type owl:Class .
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty :hasUnit ;
                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                     owl:onClass <https://qudt.org/schema/qudt/Unit>
+                                     owl:onClass <http://qudt.org/schema/qudt/Unit>
                                    ] ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty :mapsToLbdProperty ;
@@ -610,6 +686,10 @@ rdfs:Resource rdf:type owl:Class .
 :SimpleComputedValueIndicator rdf:type owl:Class ;
                               rdfs:subClassOf :ValueIndicator ,
                                               [ rdf:type owl:Restriction ;
+                                                owl:onProperty :calculatesForAsset ;
+                                                owl:someValuesFrom :AssetUtilization
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
                                                 owl:onProperty :hasVariable ;
                                                 owl:someValuesFrom :IndicatorVariable
                                               ] ,
@@ -620,7 +700,7 @@ rdfs:Resource rdf:type owl:Class .
                                               [ rdf:type owl:Restriction ;
                                                 owl:onProperty :hasUnit ;
                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                owl:onClass <https://qudt.org/schema/qudt/Unit>
+                                                owl:onClass <http://qudt.org/schema/qudt/Unit>
                                               ] ,
                                               [ rdf:type owl:Restriction ;
                                                 owl:onProperty :hasIndicatorResult ;
@@ -648,7 +728,7 @@ rdfs:Resource rdf:type owl:Class .
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :hasUnit ;
                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                  owl:onClass <https://qudt.org/schema/qudt/Unit>
+                                  owl:onClass <http://qudt.org/schema/qudt/Unit>
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :hasIndicatorResult ;
@@ -657,10 +737,6 @@ rdfs:Resource rdf:type owl:Class .
                 rdfs:comment "A class for all value indicators and subclasses. Cannot be used for calculating. For constant values see \"git:ConstantValueIndicator\"." ;
                 rdfs:label "Value indicator" ;
                 rdfs:seeAlso :ConstantValueIndicator .
-
-
-###  https://qudt.org/schema/qudt/Unit
-<https://qudt.org/schema/qudt/Unit> rdf:type owl:Class .
 
 
 ###  https://schema.org/Person
@@ -1065,6 +1141,16 @@ rdfs:Resource rdf:type owl:Class .
                        rdfs:label "Lärmbeeinträchtigung von Menschen (Anzahl vom Lärm betroffene Personen)" .
 
 
+###  https://greeninfratwins.com/ns/grit#IndicatorType_3_1_2
+:IndicatorType_3_1_2 rdf:type owl:NamedIndividual ,
+                              :IndicatorType ;
+                     :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_HumanProtection ,
+                                                         :IndicatorSet_Predefined_SocioCulturalQuality ;
+                     :hasIndicatorID "3.1.2" ;
+                     rdfs:comment "Indikator für die Definition der Emissionsbelastung der Baustellenmitarbeitenden und Auswirkung auf die Gesundheit [ppm]" ;
+                     rdfs:label "Emissionsbelastung der Baustellenmitarbeitenden" .
+
+
 ###  https://greeninfratwins.com/ns/grit#IndicatorType_3_1_3
 :IndicatorType_3_1_3 rdf:type owl:NamedIndividual ,
                               :IndicatorType ;
@@ -1091,8 +1177,8 @@ rdfs:Resource rdf:type owl:Class .
                      :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_Reliability ,
                                                          :IndicatorSet_Predefined_TechnicalQuality ;
                      :hasIndicatorID "4.1.1" ;
-                     rdfs:comment "Indikator für Definition von Zuverlässigkeitsindex (β-Wert)" ;
-                     rdfs:label "Zuverlässigkeitsindex (β-Wert)" .
+                     rdfs:comment "Indikator für Definition von Zuverlässigkeitsindex (beta-Wert)" ;
+                     rdfs:label "Zuverlässigkeitsindex (beta-Wert)" .
 
 
 ###  https://greeninfratwins.com/ns/grit#IndicatorType_4_2_1
