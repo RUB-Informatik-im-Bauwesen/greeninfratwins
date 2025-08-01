@@ -161,13 +161,13 @@ xsd:date rdf:type rdfs:Datatype .
                    rdfs:label "connected services" .
 
 
-###  https://greeninfratwins.com/ns/grit#hasAsessment
-:hasAsessment rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf owl:topObjectProperty ;
-              rdfs:domain :GreenInfraTwin ;
-              rdfs:range :Assessment ;
-              rdfs:comment "The connection beween the DT and the use case / asessment." ;
-              rdfs:label "has asessment" .
+###  https://greeninfratwins.com/ns/grit#hasAssessment
+:hasAssessment rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain :GreenInfraTwin ;
+               rdfs:range :Assessment ;
+               rdfs:comment "The connection beween the DT and the use case / assessment." ;
+               rdfs:label "has assessment" .
 
 
 ###  https://greeninfratwins.com/ns/grit#hasAsset
@@ -524,7 +524,7 @@ rdfs:Resource rdf:type owl:Class .
 :GreenInfraTwin rdf:type owl:Class ;
                 rdfs:subClassOf owl:Thing ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty :hasAsessment ;
+                                  owl:onProperty :hasAssessment ;
                                   owl:someValuesFrom :Assessment
                                 ] ,
                                 [ rdf:type owl:Restriction ;
@@ -532,7 +532,7 @@ rdfs:Resource rdf:type owl:Class .
                                   owl:minCardinality "0"^^xsd:nonNegativeInteger
                                 ] ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty :hasAsessment ;
+                                  owl:onProperty :hasAssessment ;
                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                   owl:onClass :Assessment
                                 ] ,
@@ -563,7 +563,7 @@ rdfs:Resource rdf:type owl:Class .
                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                   owl:onDataRange xsd:anyURI
                                 ] ;
-                rdfs:comment "The instance of a DT for sustainability asessment." ;
+                rdfs:comment "The instance of a DT for sustainability assessment." ;
                 rdfs:label "GreenInfraTwin Demonstrator" .
 
 
@@ -653,7 +653,7 @@ rdfs:Resource rdf:type owl:Class .
                   rdfs:subClassOf :Indicator ;
                   owl:disjointWith :ReliabilityIndicator ,
                                    :TechnicalQualityIndicator ;
-                  rdfs:comment "An indicator used for being calculated in a measure for sustainability asessment." ;
+                  rdfs:comment "An indicator used for being calculated in a measure for sustainability assessment." ;
                   rdfs:label "Measure indicator" .
 
 
@@ -825,10 +825,10 @@ rdfs:Resource rdf:type owl:Class .
                                  rdfs:label "Flächeninanspruchnahme" .
 
 
-###  https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment
-:IndicatorSet_Predefined_LifecycleAsessment rdf:type owl:NamedIndividual ,
-                                                     :PredefinedIndicatorSet ;
-                                            rdfs:label "Ökobilanz" .
+###  https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAssessment
+:IndicatorSet_Predefined_LifecycleAssessment rdf:type owl:NamedIndividual ,
+                                                      :PredefinedIndicatorSet ;
+                                             rdfs:label "Ökobilanz" .
 
 
 ###  https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LocalEnvironmentalRisks
@@ -1015,7 +1015,7 @@ rdfs:Resource rdf:type owl:Class .
 :IndicatorType_1_5_1 rdf:type owl:NamedIndividual ,
                               :IndicatorType ;
                      :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_EcologicalQuality ,
-                                                         :IndicatorSet_Predefined_LifecycleAsessment ;
+                                                         :IndicatorSet_Predefined_LifecycleAssessment ;
                      :hasIndicatorID "1.5.1" ;
                      rdfs:comment "Indikator für Definition von Globales Erwärmungspotential (GWP) in kg CO2-Äquiv." ;
                      rdfs:label "Globales Erwärmungspotential (GWP)" .
@@ -1025,7 +1025,7 @@ rdfs:Resource rdf:type owl:Class .
 :IndicatorType_1_5_2 rdf:type owl:NamedIndividual ,
                               :IndicatorType ;
                      :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_EcologicalQuality ,
-                                                         :IndicatorSet_Predefined_LifecycleAsessment ;
+                                                         :IndicatorSet_Predefined_LifecycleAssessment ;
                      :hasIndicatorID "1.5.2" ;
                      rdfs:comment "Indikator für Definition von Eutrophierungspotential (EP) in kg PO43-Äquiv." ;
                      rdfs:label "Eutrophierungspotential (EP)" .
@@ -1035,7 +1035,7 @@ rdfs:Resource rdf:type owl:Class .
 :IndicatorType_1_5_3 rdf:type owl:NamedIndividual ,
                               :IndicatorType ;
                      :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_EcologicalQuality ,
-                                                         :IndicatorSet_Predefined_LifecycleAsessment ;
+                                                         :IndicatorSet_Predefined_LifecycleAssessment ;
                      :hasIndicatorID "1.5.3" ;
                      rdfs:comment "Indikator für Definition von Ozonschichtabbaupotential (ODP) in kg R11-Äquiv." ;
                      rdfs:label "Ozonschichtabbaupotential (ODP)" .
@@ -1045,7 +1045,7 @@ rdfs:Resource rdf:type owl:Class .
 :IndicatorType_1_5_4 rdf:type owl:NamedIndividual ,
                               :IndicatorType ;
                      :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_EcologicalQuality ,
-                                                         :IndicatorSet_Predefined_LifecycleAsessment ;
+                                                         :IndicatorSet_Predefined_LifecycleAssessment ;
                      :hasIndicatorID "1.5.4" ;
                      rdfs:comment "Indikator für Definition von Versauerungspotential (AP) in kg SO2-Äquiv." ;
                      rdfs:label "Versauerungspotential (AP)" .
@@ -1055,7 +1055,7 @@ rdfs:Resource rdf:type owl:Class .
 :IndicatorType_1_5_5 rdf:type owl:NamedIndividual ,
                               :IndicatorType ;
                      :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_EcologicalQuality ,
-                                                         :IndicatorSet_Predefined_LifecycleAsessment ;
+                                                         :IndicatorSet_Predefined_LifecycleAssessment ;
                      :hasIndicatorID "1.5.5" ;
                      rdfs:comment "Indikator für Definition von Ozonbildungspotential (POCP) in kg C2H4-Äquiv." ;
                      rdfs:label "Ozonbildungspotential (POCP)" .
@@ -1065,7 +1065,7 @@ rdfs:Resource rdf:type owl:Class .
 :IndicatorType_1_5_6 rdf:type owl:NamedIndividual ,
                               :IndicatorType ;
                      :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_EcologicalQuality ,
-                                                         :IndicatorSet_Predefined_LifecycleAsessment ;
+                                                         :IndicatorSet_Predefined_LifecycleAssessment ;
                      :hasIndicatorID "1.5.6" ;
                      rdfs:comment "Indikator für Definition von Kumulierter Energieaufwand (KEA) in MJ" ;
                      rdfs:label "Kumulierter Energieaufwand (KEA)" .
@@ -1177,8 +1177,8 @@ rdfs:Resource rdf:type owl:Class .
                      :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_Reliability ,
                                                          :IndicatorSet_Predefined_TechnicalQuality ;
                      :hasIndicatorID "4.1.1" ;
-                     rdfs:comment "Indikator für Definition von Zuverlässigkeitsindex (beta-Wert)" ;
-                     rdfs:label "Zuverlässigkeitsindex (beta-Wert)" .
+                     rdfs:comment "Indikator für Definition von Zuverlässigkeitsindex (β-Wert)" ;
+                     rdfs:label "Zuverlässigkeitsindex (β-Wert)" .
 
 
 ###  https://greeninfratwins.com/ns/grit#IndicatorType_4_2_1

@@ -114,7 +114,7 @@
   "@id" : "_:genid19",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://greeninfratwins.com/ns/grit#hasAsessment"
+    "@id" : "https://greeninfratwins.com/ns/grit#hasAssessment"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://greeninfratwins.com/ns/grit#Assessment"
@@ -148,7 +148,7 @@
     "@id" : "https://greeninfratwins.com/ns/grit#Assessment"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://greeninfratwins.com/ns/grit#hasAsessment"
+    "@id" : "https://greeninfratwins.com/ns/grit#hasAssessment"
   } ]
 }, {
   "@id" : "_:genid22",
@@ -753,7 +753,7 @@
   "@id" : "https://greeninfratwins.com/ns/grit#GreenInfraTwin",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The instance of a DT for sustainability asessment."
+    "@value" : "The instance of a DT for sustainability assessment."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "GreenInfraTwin Demonstrator"
@@ -891,7 +891,7 @@
     "@value" : "Flächeninanspruchnahme"
   } ]
 }, {
-  "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment",
+  "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAssessment",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet"
@@ -1273,7 +1273,7 @@
   "https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators" : [ {
     "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"
   }, {
-    "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment"
+    "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAssessment"
   } ],
   "https://greeninfratwins.com/ns/grit#hasIndicatorID" : [ {
     "@value" : "1.5.1"
@@ -1293,7 +1293,7 @@
   "https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators" : [ {
     "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"
   }, {
-    "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment"
+    "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAssessment"
   } ],
   "https://greeninfratwins.com/ns/grit#hasIndicatorID" : [ {
     "@value" : "1.5.2"
@@ -1313,7 +1313,7 @@
   "https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators" : [ {
     "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"
   }, {
-    "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment"
+    "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAssessment"
   } ],
   "https://greeninfratwins.com/ns/grit#hasIndicatorID" : [ {
     "@value" : "1.5.3"
@@ -1333,7 +1333,7 @@
   "https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators" : [ {
     "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"
   }, {
-    "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment"
+    "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAssessment"
   } ],
   "https://greeninfratwins.com/ns/grit#hasIndicatorID" : [ {
     "@value" : "1.5.4"
@@ -1353,7 +1353,7 @@
   "https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators" : [ {
     "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"
   }, {
-    "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment"
+    "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAssessment"
   } ],
   "https://greeninfratwins.com/ns/grit#hasIndicatorID" : [ {
     "@value" : "1.5.5"
@@ -1373,7 +1373,7 @@
   "https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators" : [ {
     "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"
   }, {
-    "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment"
+    "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAssessment"
   } ],
   "https://greeninfratwins.com/ns/grit#hasIndicatorID" : [ {
     "@value" : "1.5.6"
@@ -1585,10 +1585,10 @@
     "@id" : "https://greeninfratwins.com/ns/grit#IndicatorType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Indikator für Definition von Zuverlässigkeitsindex (beta-Wert)"
+    "@value" : "Indikator für Definition von Zuverlässigkeitsindex (β-Wert)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Zuverlässigkeitsindex (beta-Wert)"
+    "@value" : "Zuverlässigkeitsindex (β-Wert)"
   } ],
   "https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators" : [ {
     "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Reliability"
@@ -1658,7 +1658,7 @@
   "@id" : "https://greeninfratwins.com/ns/grit#MeasureIndicator",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "An indicator used for being calculated in a measure for sustainability asessment."
+    "@value" : "An indicator used for being calculated in a measure for sustainability assessment."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Measure indicator"
@@ -1865,16 +1865,16 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "https://greeninfratwins.com/ns/grit#hasAsessment",
+  "@id" : "https://greeninfratwins.com/ns/grit#hasAssessment",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The connection beween the DT and the use case / asessment."
+    "@value" : "The connection beween the DT and the use case / assessment."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://greeninfratwins.com/ns/grit#GreenInfraTwin"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has asessment"
+    "@value" : "has assessment"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://greeninfratwins.com/ns/grit#Assessment"

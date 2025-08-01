@@ -265,15 +265,15 @@
     
 
 
-    <!-- https://greeninfratwins.com/ns/grit#hasAsessment -->
+    <!-- https://greeninfratwins.com/ns/grit#hasAssessment -->
 
 
-    <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#hasAsessment">
+    <owl:ObjectProperty rdf:about="https://greeninfratwins.com/ns/grit#hasAssessment">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://greeninfratwins.com/ns/grit#GreenInfraTwin"/>
         <rdfs:range rdf:resource="https://greeninfratwins.com/ns/grit#Assessment"/>
-        <rdfs:comment>The connection beween the DT and the use case / asessment.</rdfs:comment>
-        <rdfs:label>has asessment</rdfs:label>
+        <rdfs:comment>The connection beween the DT and the use case / assessment.</rdfs:comment>
+        <rdfs:label>has assessment</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -817,7 +817,7 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasAsessment"/>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasAssessment"/>
                 <owl:someValuesFrom rdf:resource="https://greeninfratwins.com/ns/grit#Assessment"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -829,7 +829,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasAsessment"/>
+                <owl:onProperty rdf:resource="https://greeninfratwins.com/ns/grit#hasAssessment"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
                 <owl:onClass rdf:resource="https://greeninfratwins.com/ns/grit#Assessment"/>
             </owl:Restriction>
@@ -873,7 +873,7 @@
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>The instance of a DT for sustainability asessment.</rdfs:comment>
+        <rdfs:comment>The instance of a DT for sustainability assessment.</rdfs:comment>
         <rdfs:label>GreenInfraTwin Demonstrator</rdfs:label>
     </owl:Class>
     
@@ -1007,7 +1007,7 @@
         <rdfs:subClassOf rdf:resource="https://greeninfratwins.com/ns/grit#Indicator"/>
         <owl:disjointWith rdf:resource="https://greeninfratwins.com/ns/grit#ReliabilityIndicator"/>
         <owl:disjointWith rdf:resource="https://greeninfratwins.com/ns/grit#TechnicalQualityIndicator"/>
-        <rdfs:comment>An indicator used for being calculated in a measure for sustainability asessment.</rdfs:comment>
+        <rdfs:comment>An indicator used for being calculated in a measure for sustainability assessment.</rdfs:comment>
         <rdfs:label>Measure indicator</rdfs:label>
     </owl:Class>
     
@@ -1288,10 +1288,10 @@
     
 
 
-    <!-- https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment -->
+    <!-- https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAssessment -->
 
 
-    <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment">
+    <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAssessment">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet"/>
         <rdfs:label>Ökobilanz</rdfs:label>
     </owl:NamedIndividual>
@@ -1564,7 +1564,7 @@
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_5_1">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAssessment"/>
         <hasIndicatorID>1.5.1</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Globales Erwärmungspotential (GWP) in kg CO2-Äquiv.</rdfs:comment>
         <rdfs:label>Globales Erwärmungspotential (GWP)</rdfs:label>
@@ -1578,7 +1578,7 @@
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_5_2">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAssessment"/>
         <hasIndicatorID>1.5.2</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Eutrophierungspotential (EP) in kg PO43-Äquiv.</rdfs:comment>
         <rdfs:label>Eutrophierungspotential (EP)</rdfs:label>
@@ -1592,7 +1592,7 @@
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_5_3">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAssessment"/>
         <hasIndicatorID>1.5.3</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Ozonschichtabbaupotential (ODP) in kg R11-Äquiv.</rdfs:comment>
         <rdfs:label>Ozonschichtabbaupotential (ODP)</rdfs:label>
@@ -1606,7 +1606,7 @@
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_5_4">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAssessment"/>
         <hasIndicatorID>1.5.4</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Versauerungspotential (AP) in kg SO2-Äquiv.</rdfs:comment>
         <rdfs:label>Versauerungspotential (AP)</rdfs:label>
@@ -1620,7 +1620,7 @@
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_5_5">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAssessment"/>
         <hasIndicatorID>1.5.5</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Ozonbildungspotential (POCP) in kg C2H4-Äquiv.</rdfs:comment>
         <rdfs:label>Ozonbildungspotential (POCP)</rdfs:label>
@@ -1634,7 +1634,7 @@
     <owl:NamedIndividual rdf:about="https://greeninfratwins.com/ns/grit#IndicatorType_1_5_6">
         <rdf:type rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorType"/>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
-        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAsessment"/>
+        <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAssessment"/>
         <hasIndicatorID>1.5.6</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Kumulierter Energieaufwand (KEA) in MJ</rdfs:comment>
         <rdfs:label>Kumulierter Energieaufwand (KEA)</rdfs:label>
@@ -1790,8 +1790,8 @@
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Reliability"/>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_TechnicalQuality"/>
         <hasIndicatorID>4.1.1</hasIndicatorID>
-        <rdfs:comment>Indikator für Definition von Zuverlässigkeitsindex (beta-Wert)</rdfs:comment>
-        <rdfs:label>Zuverlässigkeitsindex (beta-Wert)</rdfs:label>
+        <rdfs:comment>Indikator für Definition von Zuverlässigkeitsindex (β-Wert)</rdfs:comment>
+        <rdfs:label>Zuverlässigkeitsindex (β-Wert)</rdfs:label>
     </owl:NamedIndividual>
     
 
