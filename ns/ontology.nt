@@ -827,7 +827,7 @@ _:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_1_5> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_1_5> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "1.1.5" .
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_1_5> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Materialverwertung zur potentialen Kreislauffaehigkeit in Massen-Prozent" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_1_1_5> <http://www.w3.org/2000/01/rdf-schema#label> "Materlaverwertung - Potentiale Kreislauffähigkeit" .
+<https://greeninfratwins.com/ns/grit#IndicatorType_1_1_5> <http://www.w3.org/2000/01/rdf-schema#label> "Materialverwertung - Potentiale Kreislauffähigkeit" .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_1_2_1
 <https://greeninfratwins.com/ns/grit#IndicatorType_1_2_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1069,8 +1069,8 @@ _:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://greeninfratwins.com/ns/grit#IndicatorType_4_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Reliability> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_4_1_1> <https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators> <https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_TechnicalQuality> .
 <https://greeninfratwins.com/ns/grit#IndicatorType_4_1_1> <https://greeninfratwins.com/ns/grit#hasIndicatorID> "4.1.1" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_4_1_1> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Zuverlässigkeitsindex (β-Wert)" .
-<https://greeninfratwins.com/ns/grit#IndicatorType_4_1_1> <http://www.w3.org/2000/01/rdf-schema#label> "Zuverlässigkeitsindex (β-Wert)" .
+<https://greeninfratwins.com/ns/grit#IndicatorType_4_1_1> <http://www.w3.org/2000/01/rdf-schema#comment> "Indikator für Definition von Zuverlässigkeitsindex (Beta-Wert)" .
+<https://greeninfratwins.com/ns/grit#IndicatorType_4_1_1> <http://www.w3.org/2000/01/rdf-schema#label> "Zuverlässigkeitsindex (Beta-Wert)" .
 # 
 # https://greeninfratwins.com/ns/grit#IndicatorType_4_2_1
 <https://greeninfratwins.com/ns/grit#IndicatorType_4_2_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

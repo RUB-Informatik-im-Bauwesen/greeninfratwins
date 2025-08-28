@@ -5,11 +5,11 @@ Markdown documentation created by [pyLODE](http://github.com/rdflib/pyLODE) 2.4
 ## Metadata
 * **IRI**
   * `https://greeninfratwins.com/ns/grit#`
-* **Creators(s)**
+* **Creator**
   * [Philipp Hagedorn](https://orcid.org/0000-0002-6249-243X)
     [[ORCID]](https://orcid.org/0000-0002-6249-243X)
     (<philipp.hagedorn-n6v@rub.de></a>) of [Ruhr University Bochum](https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/philipp_hagedorn.html.en)
-* **Contributor(s)**
+* **Contributors**
   * [Liu Liu](https://orcid.org/0000-0001-5907-7609)
     [[ORCID]](https://orcid.org/0000-0001-5907-7609)
     (<liu.liu-m6r@rub.de></a>) of [Ruhr University Bochum](https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/liu_liu.html.en)
@@ -79,8 +79,8 @@ Property | Value
 IRI | `https://greeninfratwins.com/ns/grit#Activity`
 Description | <p>The activity that is performed in a particularly sequence within a measure or measure variant.</p>
 Super-classes |[owl:Thing](http://www.w3.org/2002/07/owl#Thing) (c)<br />
-Restrictions |[grit:hasIfcGuid](https://greeninfratwins.com/ns/grit#hasIfcGuid) (dp) **some** [xsd:string](http://www.w3.org/2001/XMLSchema#string) (c)<br />[grit:hasIcddModelID](https://greeninfratwins.com/ns/grit#hasIcddModelID) (dp) **exactly** 1<br />[grit:executedAtDate](https://greeninfratwins.com/ns/grit#executedAtDate) (dp) **some** [xsd:dateTime](http://www.w3.org/2001/XMLSchema#dateTime) (c)<br />[grit:afterActivity](https://greeninfratwins.com/ns/grit#afterActivity) (op) **some** [grit:Activity](https://greeninfratwins.com/ns/grit#Activity) (c)<br />[grit:hasIndicatorSet](https://greeninfratwins.com/ns/grit#hasIndicatorSet) (op) **exactly** 1 [grit:IndicatorSet](https://greeninfratwins.com/ns/grit#IndicatorSet) (c)<br />[grit:hasAssetUtilization](https://greeninfratwins.com/ns/grit#hasAssetUtilization) (op) **some** [grit:AssetUtilization](https://greeninfratwins.com/ns/grit#AssetUtilization) (c)<br />
-In domain of |[grit:hasIndicatorSet](https://greeninfratwins.com/ns/grit#hasIndicatorSet) (op)<br />[grit:executedAtDate](https://greeninfratwins.com/ns/grit#executedAtDate) (dp)<br />[grit:hasAssetUtilization](https://greeninfratwins.com/ns/grit#hasAssetUtilization) (op)<br />[grit:hasIcddModelID](https://greeninfratwins.com/ns/grit#hasIcddModelID) (dp)<br />[grit:afterActivity](https://greeninfratwins.com/ns/grit#afterActivity) (op)<br />[grit:hasIfcGuid](https://greeninfratwins.com/ns/grit#hasIfcGuid) (dp)<br />
+Restrictions |[grit:executedAtDate](https://greeninfratwins.com/ns/grit#executedAtDate) (dp) **some** [xsd:dateTime](http://www.w3.org/2001/XMLSchema#dateTime) (c)<br />[grit:hasIndicatorSet](https://greeninfratwins.com/ns/grit#hasIndicatorSet) (op) **exactly** 1 [grit:IndicatorSet](https://greeninfratwins.com/ns/grit#IndicatorSet) (c)<br />[grit:hasAssetUtilization](https://greeninfratwins.com/ns/grit#hasAssetUtilization) (op) **some** [grit:AssetUtilization](https://greeninfratwins.com/ns/grit#AssetUtilization) (c)<br />[grit:hasIfcGuid](https://greeninfratwins.com/ns/grit#hasIfcGuid) (dp) **some** [xsd:string](http://www.w3.org/2001/XMLSchema#string) (c)<br />[grit:afterActivity](https://greeninfratwins.com/ns/grit#afterActivity) (op) **some** [grit:Activity](https://greeninfratwins.com/ns/grit#Activity) (c)<br />[grit:hasIcddModelID](https://greeninfratwins.com/ns/grit#hasIcddModelID) (dp) **exactly** 1<br />
+In domain of |[grit:executedAtDate](https://greeninfratwins.com/ns/grit#executedAtDate) (dp)<br />[grit:hasAssetUtilization](https://greeninfratwins.com/ns/grit#hasAssetUtilization) (op)<br />[grit:hasIcddModelID](https://greeninfratwins.com/ns/grit#hasIcddModelID) (dp)<br />[grit:hasIfcGuid](https://greeninfratwins.com/ns/grit#hasIfcGuid) (dp)<br />[grit:hasIndicatorSet](https://greeninfratwins.com/ns/grit#hasIndicatorSet) (op)<br />[grit:afterActivity](https://greeninfratwins.com/ns/grit#afterActivity) (op)<br />
 In range of |[grit:afterActivity](https://greeninfratwins.com/ns/grit#afterActivity) (op)<br />[grit:involvesActivities](https://greeninfratwins.com/ns/grit#involvesActivities) (op)<br />
 ### Assessment defined by a specified Use Case
 Property | Value
@@ -104,9 +104,9 @@ Property | Value
 IRI | `https://greeninfratwins.com/ns/grit#AssetUtilization`
 Description | <p>Provides information about the utilization of a particular asset for an activity.</p>
 Super-classes |[owl:Thing](http://www.w3.org/2002/07/owl#Thing) (c)<br />
-Restrictions |[grit:operationTimeInHours](https://greeninfratwins.com/ns/grit#operationTimeInHours) (dp) **exactly** 1<br />[grit:hasAsset](https://greeninfratwins.com/ns/grit#hasAsset) (op) **exactly** 1 [grit:Asset](https://greeninfratwins.com/ns/grit#Asset) (c)<br />
+Restrictions |[grit:hasAsset](https://greeninfratwins.com/ns/grit#hasAsset) (op) **exactly** 1 [grit:Asset](https://greeninfratwins.com/ns/grit#Asset) (c)<br />[grit:operationTimeInHours](https://greeninfratwins.com/ns/grit#operationTimeInHours) (dp) **exactly** 1<br />
 In domain of |[grit:hasAsset](https://greeninfratwins.com/ns/grit#hasAsset) (op)<br />[grit:operationTimeInHours](https://greeninfratwins.com/ns/grit#operationTimeInHours) (dp)<br />
-In range of |[grit:calculatesForAsset](https://greeninfratwins.com/ns/grit#calculatesForAsset) (op)<br />[grit:hasAssetUtilization](https://greeninfratwins.com/ns/grit#hasAssetUtilization) (op)<br />
+In range of |[grit:hasAssetUtilization](https://greeninfratwins.com/ns/grit#hasAssetUtilization) (op)<br />[grit:calculatesForAsset](https://greeninfratwins.com/ns/grit#calculatesForAsset) (op)<br />
 ### Complex computed value indicator
 Property | Value
 --- | ---
@@ -127,8 +127,8 @@ Property | Value
 IRI | `https://greeninfratwins.com/ns/grit#GreenInfraTwin`
 Description | <p>The instance of a DT for sustainability assessment.</p>
 Super-classes |[owl:Thing](http://www.w3.org/2002/07/owl#Thing) (c)<br />
-Restrictions |[grit:connectedServices](https://greeninfratwins.com/ns/grit#connectedServices) (op) **min** 0<br />[grit:hasIcddContainerID](https://greeninfratwins.com/ns/grit#hasIcddContainerID) (dp) **some** [xsd:string](http://www.w3.org/2001/XMLSchema#string) (c)<br />[grit:hasIcddContainerID](https://greeninfratwins.com/ns/grit#hasIcddContainerID) (dp) **exactly** 1<br />[grit:hasIcddProjectID](https://greeninfratwins.com/ns/grit#hasIcddProjectID) (dp) **exactly** 1<br />[grit:hasCountryCode](https://greeninfratwins.com/ns/grit#hasCountryCode) (dp) **some** [xsd:string](http://www.w3.org/2001/XMLSchema#string) (c)<br />[grit:hasIcddProjectID](https://greeninfratwins.com/ns/grit#hasIcddProjectID) (dp) **some** [xsd:string](http://www.w3.org/2001/XMLSchema#string) (c)<br />[grit:hasAssessment](https://greeninfratwins.com/ns/grit#hasAssessment) (op) **some** [grit:Assessment](https://greeninfratwins.com/ns/grit#Assessment) (c)<br />[grit:hasCountryCode](https://greeninfratwins.com/ns/grit#hasCountryCode) (dp) **exactly** 1<br />[grit:hasAssessment](https://greeninfratwins.com/ns/grit#hasAssessment) (op) **min** 1 [grit:Assessment](https://greeninfratwins.com/ns/grit#Assessment) (c)<br />
-In domain of |[grit:hasAssessment](https://greeninfratwins.com/ns/grit#hasAssessment) (op)<br />[grit:connectedServices](https://greeninfratwins.com/ns/grit#connectedServices) (op)<br />[grit:hasCountryCode](https://greeninfratwins.com/ns/grit#hasCountryCode) (dp)<br />[grit:hasIcddProjectID](https://greeninfratwins.com/ns/grit#hasIcddProjectID) (dp)<br />[grit:hasIcddContainerID](https://greeninfratwins.com/ns/grit#hasIcddContainerID) (dp)<br />
+Restrictions |[grit:hasAssessment](https://greeninfratwins.com/ns/grit#hasAssessment) (op) **some** [grit:Assessment](https://greeninfratwins.com/ns/grit#Assessment) (c)<br />[grit:hasIcddProjectID](https://greeninfratwins.com/ns/grit#hasIcddProjectID) (dp) **exactly** 1<br />[grit:hasAssessment](https://greeninfratwins.com/ns/grit#hasAssessment) (op) **min** 1 [grit:Assessment](https://greeninfratwins.com/ns/grit#Assessment) (c)<br />[grit:hasIcddContainerID](https://greeninfratwins.com/ns/grit#hasIcddContainerID) (dp) **some** [xsd:string](http://www.w3.org/2001/XMLSchema#string) (c)<br />[grit:hasCountryCode](https://greeninfratwins.com/ns/grit#hasCountryCode) (dp) **some** [xsd:string](http://www.w3.org/2001/XMLSchema#string) (c)<br />[grit:hasCountryCode](https://greeninfratwins.com/ns/grit#hasCountryCode) (dp) **exactly** 1<br />[grit:hasIcddContainerID](https://greeninfratwins.com/ns/grit#hasIcddContainerID) (dp) **exactly** 1<br />[grit:connectedServices](https://greeninfratwins.com/ns/grit#connectedServices) (op) **min** 0<br />[grit:hasIcddProjectID](https://greeninfratwins.com/ns/grit#hasIcddProjectID) (dp) **some** [xsd:string](http://www.w3.org/2001/XMLSchema#string) (c)<br />
+In domain of |[grit:hasCountryCode](https://greeninfratwins.com/ns/grit#hasCountryCode) (dp)<br />[grit:hasIcddProjectID](https://greeninfratwins.com/ns/grit#hasIcddProjectID) (dp)<br />[grit:connectedServices](https://greeninfratwins.com/ns/grit#connectedServices) (op)<br />[grit:hasIcddContainerID](https://greeninfratwins.com/ns/grit#hasIcddContainerID) (dp)<br />[grit:hasAssessment](https://greeninfratwins.com/ns/grit#hasAssessment) (op)<br />
 ### Indicator
 Property | Value
 --- | ---
@@ -136,7 +136,7 @@ IRI | `https://greeninfratwins.com/ns/grit#Indicator`
 Description | <p>The generic indicator class, can be subtyped regarding their caracteristics and their value calculation methods.</p>
 Super-classes |[owl:Thing](http://www.w3.org/2002/07/owl#Thing) (c)<br />
 Restrictions |[grit:hasIndicatorType](https://greeninfratwins.com/ns/grit#hasIndicatorType) (op) **exactly** 1 [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType) (c)<br />
-Sub-classes |[grit:TechnicalQualityIndicator](https://greeninfratwins.com/ns/grit#TechnicalQualityIndicator) (c)<br />[grit:ValueIndicator](https://greeninfratwins.com/ns/grit#ValueIndicator) (c)<br />[grit:MeasureIndicator](https://greeninfratwins.com/ns/grit#MeasureIndicator) (c)<br />[grit:ReliabilityIndicator](https://greeninfratwins.com/ns/grit#ReliabilityIndicator) (c)<br />
+Sub-classes |[grit:ValueIndicator](https://greeninfratwins.com/ns/grit#ValueIndicator) (c)<br />[grit:MeasureIndicator](https://greeninfratwins.com/ns/grit#MeasureIndicator) (c)<br />[grit:TechnicalQualityIndicator](https://greeninfratwins.com/ns/grit#TechnicalQualityIndicator) (c)<br />[grit:ReliabilityIndicator](https://greeninfratwins.com/ns/grit#ReliabilityIndicator) (c)<br />
 In domain of |[grit:hasIndicatorType](https://greeninfratwins.com/ns/grit#hasIndicatorType) (op)<br />
 In range of |[grit:hasIndicator](https://greeninfratwins.com/ns/grit#hasIndicator) (op)<br />
 ### Indicator set
@@ -145,9 +145,9 @@ Property | Value
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet`
 Description | <p>A set of indicators that is referenced by a specific activity.</p>
 Super-classes |[owl:Thing](http://www.w3.org/2002/07/owl#Thing) (c)<br />
-Restrictions |[grit:hasPredefinedIndicatorSet](https://greeninfratwins.com/ns/grit#hasPredefinedIndicatorSet) (op) **exactly** 1 [grit:PredefinedIndicatorSet](https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet) (c)<br />[grit:hasIndicator](https://greeninfratwins.com/ns/grit#hasIndicator) (op) **some** [grit:Indicator](https://greeninfratwins.com/ns/grit#Indicator) (c)<br />
+Restrictions |[grit:hasIndicator](https://greeninfratwins.com/ns/grit#hasIndicator) (op) **some** [grit:Indicator](https://greeninfratwins.com/ns/grit#Indicator) (c)<br />[grit:hasPredefinedIndicatorSet](https://greeninfratwins.com/ns/grit#hasPredefinedIndicatorSet) (op) **exactly** 1 [grit:PredefinedIndicatorSet](https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet) (c)<br />
 Sub-classes |[grit:PredefinedIndicatorSet](https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet) (c)<br />
-In domain of |[grit:hasPredefinedIndicatorSet](https://greeninfratwins.com/ns/grit#hasPredefinedIndicatorSet) (op)<br />[grit:hasIndicator](https://greeninfratwins.com/ns/grit#hasIndicator) (op)<br />
+In domain of |[grit:hasIndicator](https://greeninfratwins.com/ns/grit#hasIndicator) (op)<br />[grit:hasPredefinedIndicatorSet](https://greeninfratwins.com/ns/grit#hasPredefinedIndicatorSet) (op)<br />
 In range of |[grit:belongsToPredefinedSetOfIndicators](https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators) (op)<br />[grit:hasIndicatorSet](https://greeninfratwins.com/ns/grit#hasIndicatorSet) (op)<br />
 ### Indicator type
 Property | Value
@@ -164,8 +164,8 @@ Property | Value
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorVariable`
 Description | <p>The variable that is used to calculated for an indicator, consists of a key (the variable identified) and a value (the numerical value)</p>
 Super-classes |[owl:Thing](http://www.w3.org/2002/07/owl#Thing) (c)<br />
-Restrictions |[grit:hasUnit](https://greeninfratwins.com/ns/grit#hasUnit) (op) **exactly** 1 [http://qudt.org/schema/qudt/Unit](http://qudt.org/schema/qudt/Unit) (c)<br />[grit:hasKey](https://greeninfratwins.com/ns/grit#hasKey) (dp) **exactly** 1<br />[grit:hasValue](https://greeninfratwins.com/ns/grit#hasValue) (dp) **exactly** 1<br />[grit:mapsToLbdProperty](https://greeninfratwins.com/ns/grit#mapsToLbdProperty) (op) **exactly** 1<br />
-In domain of |[grit:hasKey](https://greeninfratwins.com/ns/grit#hasKey) (dp)<br />[grit:hasUnit](https://greeninfratwins.com/ns/grit#hasUnit) (op)<br />[grit:hasValue](https://greeninfratwins.com/ns/grit#hasValue) (dp)<br />[grit:mapsToLbdProperty](https://greeninfratwins.com/ns/grit#mapsToLbdProperty) (op)<br />
+Restrictions |[grit:hasKey](https://greeninfratwins.com/ns/grit#hasKey) (dp) **exactly** 1<br />[grit:hasUnit](https://greeninfratwins.com/ns/grit#hasUnit) (op) **exactly** 1 [http://qudt.org/schema/qudt/Unit](http://qudt.org/schema/qudt/Unit) (c)<br />[grit:hasValue](https://greeninfratwins.com/ns/grit#hasValue) (dp) **exactly** 1<br />[grit:mapsToLbdProperty](https://greeninfratwins.com/ns/grit#mapsToLbdProperty) (op) **exactly** 1<br />
+In domain of |[grit:hasUnit](https://greeninfratwins.com/ns/grit#hasUnit) (op)<br />[grit:mapsToLbdProperty](https://greeninfratwins.com/ns/grit#mapsToLbdProperty) (op)<br />[grit:hasValue](https://greeninfratwins.com/ns/grit#hasValue) (dp)<br />[grit:hasKey](https://greeninfratwins.com/ns/grit#hasKey) (dp)<br />
 In range of |[grit:hasVariable](https://greeninfratwins.com/ns/grit#hasVariable) (op)<br />
 ### Measure
 Property | Value
@@ -173,8 +173,8 @@ Property | Value
 IRI | `https://greeninfratwins.com/ns/grit#Measure`
 Description | <p>The definition of a measure.</p>
 Super-classes |[owl:Thing](http://www.w3.org/2002/07/owl#Thing) (c)<br />
-Restrictions |[grit:hasMeasureVariant](https://greeninfratwins.com/ns/grit#hasMeasureVariant) (op) **some** [grit:MeasureVariant](https://greeninfratwins.com/ns/grit#MeasureVariant) (c)<br />[grit:involvesActivities](https://greeninfratwins.com/ns/grit#involvesActivities) (op) **some** [grit:Activity](https://greeninfratwins.com/ns/grit#Activity) (c)<br />
-In domain of |[grit:frequencyPerYear](https://greeninfratwins.com/ns/grit#frequencyPerYear) (dp)<br />[grit:involvesActivities](https://greeninfratwins.com/ns/grit#involvesActivities) (op)<br />[grit:hasMeasureVariant](https://greeninfratwins.com/ns/grit#hasMeasureVariant) (op)<br />
+Restrictions |[grit:involvesActivities](https://greeninfratwins.com/ns/grit#involvesActivities) (op) **some** [grit:Activity](https://greeninfratwins.com/ns/grit#Activity) (c)<br />[grit:hasMeasureVariant](https://greeninfratwins.com/ns/grit#hasMeasureVariant) (op) **some** [grit:MeasureVariant](https://greeninfratwins.com/ns/grit#MeasureVariant) (c)<br />
+In domain of |[grit:involvesActivities](https://greeninfratwins.com/ns/grit#involvesActivities) (op)<br />[grit:frequencyPerYear](https://greeninfratwins.com/ns/grit#frequencyPerYear) (dp)<br />[grit:hasMeasureVariant](https://greeninfratwins.com/ns/grit#hasMeasureVariant) (op)<br />
 In range of |[grit:hasMeasure](https://greeninfratwins.com/ns/grit#hasMeasure) (op)<br />
 ### Measure indicator
 Property | Value
@@ -209,8 +209,8 @@ Property | Value
 IRI | `https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator`
 Description | <p>An indicator that can be computed by a service by providing a formular and variables.</p>
 Super-classes |[grit:ValueIndicator](https://greeninfratwins.com/ns/grit#ValueIndicator) (c)<br />
-Restrictions |[grit:hasIndicatorResult](https://greeninfratwins.com/ns/grit#hasIndicatorResult) (dp) **exactly** 1<br />[grit:hasVariable](https://greeninfratwins.com/ns/grit#hasVariable) (op) **some** [grit:IndicatorVariable](https://greeninfratwins.com/ns/grit#IndicatorVariable) (c)<br />[grit:hasExternalCalculationServiceUrl](https://greeninfratwins.com/ns/grit#hasExternalCalculationServiceUrl) (op) **exactly** 1<br />[grit:calculatesForAsset](https://greeninfratwins.com/ns/grit#calculatesForAsset) (op) **some** [grit:AssetUtilization](https://greeninfratwins.com/ns/grit#AssetUtilization) (c)<br />[grit:hasUnit](https://greeninfratwins.com/ns/grit#hasUnit) (op) **exactly** 1 [http://qudt.org/schema/qudt/Unit](http://qudt.org/schema/qudt/Unit) (c)<br />
-In domain of |[grit:hasExternalCalculationServiceUrl](https://greeninfratwins.com/ns/grit#hasExternalCalculationServiceUrl) (op)<br />[grit:hasFormula](https://greeninfratwins.com/ns/grit#hasFormula) (dp)<br />[grit:hasIndicatorResult](https://greeninfratwins.com/ns/grit#hasIndicatorResult) (dp)<br />[grit:hasVariable](https://greeninfratwins.com/ns/grit#hasVariable) (op)<br />
+Restrictions |[grit:hasUnit](https://greeninfratwins.com/ns/grit#hasUnit) (op) **exactly** 1 [http://qudt.org/schema/qudt/Unit](http://qudt.org/schema/qudt/Unit) (c)<br />[grit:hasVariable](https://greeninfratwins.com/ns/grit#hasVariable) (op) **some** [grit:IndicatorVariable](https://greeninfratwins.com/ns/grit#IndicatorVariable) (c)<br />[grit:hasIndicatorResult](https://greeninfratwins.com/ns/grit#hasIndicatorResult) (dp) **exactly** 1<br />[grit:calculatesForAsset](https://greeninfratwins.com/ns/grit#calculatesForAsset) (op) **some** [grit:AssetUtilization](https://greeninfratwins.com/ns/grit#AssetUtilization) (c)<br />[grit:hasExternalCalculationServiceUrl](https://greeninfratwins.com/ns/grit#hasExternalCalculationServiceUrl) (op) **exactly** 1<br />
+In domain of |[grit:hasFormula](https://greeninfratwins.com/ns/grit#hasFormula) (dp)<br />[grit:hasIndicatorResult](https://greeninfratwins.com/ns/grit#hasIndicatorResult) (dp)<br />[grit:hasExternalCalculationServiceUrl](https://greeninfratwins.com/ns/grit#hasExternalCalculationServiceUrl) (op)<br />[grit:hasVariable](https://greeninfratwins.com/ns/grit#hasVariable) (op)<br />
 ### Specified use case
 Property | Value
 --- | ---
@@ -228,9 +228,9 @@ Property | Value
 IRI | `https://greeninfratwins.com/ns/grit#ValueIndicator`
 Description | <p>A class for all value indicators and subclasses. Cannot be used for calculating. For constant values see "git:ConstantValueIndicator".</p>
 Super-classes |[grit:Indicator](https://greeninfratwins.com/ns/grit#Indicator) (c)<br />
-Restrictions |[grit:hasUnit](https://greeninfratwins.com/ns/grit#hasUnit) (op) **exactly** 1 [http://qudt.org/schema/qudt/Unit](http://qudt.org/schema/qudt/Unit) (c)<br />[grit:hasIndicatorResult](https://greeninfratwins.com/ns/grit#hasIndicatorResult) (dp) **exactly** 1<br />
-Sub-classes |[grit:SimpleComputedValueIndicator](https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator) (c)<br />[grit:ComplexComputedValueIndicator](https://greeninfratwins.com/ns/grit#ComplexComputedValueIndicator) (c)<br />[grit:ConstantValueIndicator](https://greeninfratwins.com/ns/grit#ConstantValueIndicator) (c)<br />
-In domain of |[grit:calculatesForAsset](https://greeninfratwins.com/ns/grit#calculatesForAsset) (op)<br />[grit:hasIndicatorResult](https://greeninfratwins.com/ns/grit#hasIndicatorResult) (dp)<br />
+Restrictions |[grit:hasIndicatorResult](https://greeninfratwins.com/ns/grit#hasIndicatorResult) (dp) **exactly** 1<br />[grit:hasUnit](https://greeninfratwins.com/ns/grit#hasUnit) (op) **exactly** 1 [http://qudt.org/schema/qudt/Unit](http://qudt.org/schema/qudt/Unit) (c)<br />
+Sub-classes |[grit:SimpleComputedValueIndicator](https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator) (c)<br />[grit:ConstantValueIndicator](https://greeninfratwins.com/ns/grit#ConstantValueIndicator) (c)<br />[grit:ComplexComputedValueIndicator](https://greeninfratwins.com/ns/grit#ComplexComputedValueIndicator) (c)<br />
+In domain of |[grit:hasIndicatorResult](https://greeninfratwins.com/ns/grit#hasIndicatorResult) (dp)<br />[grit:calculatesForAsset](https://greeninfratwins.com/ns/grit#calculatesForAsset) (op)<br />
 ### Person
 Property | Value
 --- | ---
@@ -409,7 +409,7 @@ Property | Value
 IRI | `https://greeninfratwins.com/ns/grit#involvesActivities`
 Description | The activities that are performed within a measure or a measure variant.
 Super-properties |[owl:topObjectProperty](http://www.w3.org/2002/07/owl#topObjectProperty)<br />
-Domain(s) |[grit:Measure](https://greeninfratwins.com/ns/grit#Measure) (c)<br />[grit:MeasureVariant](https://greeninfratwins.com/ns/grit#MeasureVariant) (c)<br />
+Domain(s) |[grit:MeasureVariant](https://greeninfratwins.com/ns/grit#MeasureVariant) (c)<br />[grit:Measure](https://greeninfratwins.com/ns/grit#Measure) (c)<br />
 Range(s) |[grit:Activity](https://greeninfratwins.com/ns/grit#Activity) (c)<br />
 [](hasspecifiedusecase)
 ### has specified use case
@@ -523,7 +523,7 @@ Property | Value
 IRI | `https://greeninfratwins.com/ns/grit#hasIndicatorResult`
 Description | The calculated or retrieved result of an indicator.
 Super-properties |[owl:topDataProperty](http://www.w3.org/2002/07/owl#topDataProperty)<br />
-Domain(s) |[grit:SimpleComputedValueIndicator](https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator) (c)<br />[grit:ValueIndicator](https://greeninfratwins.com/ns/grit#ValueIndicator) (c)<br />
+Domain(s) |[grit:ValueIndicator](https://greeninfratwins.com/ns/grit#ValueIndicator) (c)<br />[grit:SimpleComputedValueIndicator](https://greeninfratwins.com/ns/grit#SimpleComputedValueIndicator) (c)<br />
 [](haskey)
 ### has key
 Property | Value
@@ -648,403 +648,403 @@ Property | Value
 IRI | `https://schema.org/name`
 
 ## Named Individuals
-[Anzahl an Unf�llen/Unfallrate im Normalbetrieb (bezogen auf den Zustand)](#AnzahlanUnfllen/UnfallrateimNormalbetrieb(bezogenaufdenZustand)),
-[Arbeitssicherheit (Anzahl an Unf�llen / Unfallrate im Baustellenbereich)](#Arbeitssicherheit(AnzahlanUnfllen/UnfallrateimBaustellenbereich)),
+[Anzahl an Unfällen/Unfallrate im Normalbetrieb (bezogen auf den Zustand)](#AnzahlanUnfllen/UnfallrateimNormalbetrieb(bezogenaufdenZustand)),
+[Arbeitssicherheit (Anzahl an Unfällen / Unfallrate im Baustellenbereich)](#Arbeitssicherheit(AnzahlanUnfllen/UnfallrateimBaustellenbereich)),
 [Awf 1](#Awf1),
 [Awf 2](#Awf2),
 [Awf 3](#Awf3),
 [Awf 4](#Awf4),
 [Bauwerksbezogene Kosten](#BauwerksbezogeneKosten),
 [Bauwerksbezogene Lebenszykluskosten](#BauwerksbezogeneLebenszykluskosten),
-[Demontagef�higkeit](#Demontagefhigkeit),
+[Demontagefähigkeit](#Demontagefhigkeit),
 [Emissionsbelastung der Baustellenmitarbeitenden](#EmissionsbelastungderBaustellenmitarbeitenden),
 [Eutrophierungspotential (EP)](#Eutrophierungspotential(EP)),
 [Externe Kosten (monetarisierte externe Effekte)](#ExterneKosten(monetarisierteexterneEffekte)),
 [Externe Umwelteffekte](#ExterneUmwelteffekte),
-[Fl�che des �kologisch gest�rten Lebensraums durch L�rmbeeintr�chtigung der Fauna](#FlchedeskologischgestrtenLebensraumsdurchLrmbeeintrchtigungderFauna),
-[Fl�cheninanspruchnahme](#Flcheninanspruchnahme),
-[Fl�cheninanspruchnahme (gesamt)](#Flcheninanspruchnahme(gesamt)),
-[Fl�cheninanspruchnahme Bauprozesse (vor�bergehend)](#FlcheninanspruchnahmeBauprozesse(vorbergehend)),
-[Fl�cheninanspruchnahme Bauwerk (dauerhaft)](#FlcheninanspruchnahmeBauwerk(dauerhaft)),
-[Globales Erw�rmungspotential (GWP)](#GlobalesErwrmungspotential(GWP)),
-[Kosten aufgrund von Zeitverlusten, Umleitungen und erh�hten Fahrzeugbetriebskosten ](#KostenaufgrundvonZeitverlusten,UmleitungenunderhhtenFahrzeugbetriebskosten),
+[Fläche des ökologisch gestörten Lebensraums durch Lärmbeeinträchtigung der Fauna](#FlchedeskologischgestrtenLebensraumsdurchLrmbeeintrchtigungderFauna),
+[Flächeninanspruchnahme](#Flcheninanspruchnahme),
+[Flächeninanspruchnahme (gesamt)](#Flcheninanspruchnahme(gesamt)),
+[Flächeninanspruchnahme Bauprozesse (vorübergehend)](#FlcheninanspruchnahmeBauprozesse(vorbergehend)),
+[Flächeninanspruchnahme Bauwerk (dauerhaft)](#FlcheninanspruchnahmeBauwerk(dauerhaft)),
+[Globales Erwärmungspotential (GWP)](#GlobalesErwrmungspotential(GWP)),
+[Kosten aufgrund von Zeitverlusten, Umleitungen und erhöhten Fahrzeugbetriebskosten ](#KostenaufgrundvonZeitverlusten,UmleitungenunderhhtenFahrzeugbetriebskosten),
 [Kreislaufwirtschaft / Ressourcen](#Kreislaufwirtschaft/Ressourcen),
 [Kumulierter Energieaufwand (KEA)](#KumulierterEnergieaufwand(KEA)),
-[L�rmbeeintr�chtigung von Menschen (Anzahl vom L�rm betroffene Personen)](#LrmbeeintrchtigungvonMenschen(AnzahlvomLrmbetroffenePersonen)),
-[L�rmbeeintr�chtigung von Menschen (L�rmpegel / Anzahl vom L�rm betroffene Personen)](#LrmbeeintrchtigungvonMenschen(Lrmpegel/AnzahlvomLrmbetroffenePersonen)),
-[L�rmbeeintr�chtigung von Menschen (gesamt)](#LrmbeeintrchtigungvonMenschen(gesamt)),
-[Materialit�t des Bauwerks](#MaterialittdesBauwerks),
+[Lärmbeeinträchtigung von Menschen (Anzahl vom Lärm betroffene Personen)](#LrmbeeintrchtigungvonMenschen(AnzahlvomLrmbetroffenePersonen)),
+[Lärmbeeinträchtigung von Menschen (Lärmpegel / Anzahl vom Lärm betroffene Personen)](#LrmbeeintrchtigungvonMenschen(Lrmpegel/AnzahlvomLrmbetroffenePersonen)),
+[Lärmbeeinträchtigung von Menschen (gesamt)](#LrmbeeintrchtigungvonMenschen(gesamt)),
+[Materialität des Bauwerks](#MaterialittdesBauwerks),
 [Materialkosten](#Materialkosten),
-[Materlaverwertung - Potentiale Kreislauff�higkeit](#Materlaverwertung-PotentialeKreislauffhigkeit),
-[Monet�rer Materialwert](#MonetrerMaterialwert),
+[Materialverwertung - Potentiale Kreislauffähigkeit](#Materialverwertung-PotentialeKreislauffhigkeit),
+[monetärer Materialwert](#MonetrerMaterialwert),
 [Nutzersicherheit](#Nutzersicherheit),
 [Ozonbildungspotential (POCP)](#Ozonbildungspotential(POCP)),
 [Ozonschichtabbaupotential (ODP)](#Ozonschichtabbaupotential(ODP)),
 [Prozessbezogene Kosten (Planungs-, Baukosten, Kosten Nutzungsphase etc.)](#ProzessbezogeneKosten(Planungs-,Baukosten,KostenNutzungsphaseetc.)),
-[Reduktion der zeitbezogenen Kapazit�t (Zeitverluste der Reisezeit; Ver�nderung Zuverl�ssigkeit der Reisezeit)](#ReduktionderzeitbezogenenKapazitt(ZeitverlustederReisezeit;VernderungZuverlssigkeitderReisezeit)),
-[Risiken f�r die lokale Umwelt](#RisikenfrdielokaleUmwelt),
+[Reduktion der zeitbezogenen Kapazität (Zeitverluste der Reisezeit; Veränderung Zuverlässigkeit der Reisezeit)](#ReduktionderzeitbezogenenKapazitt(ZeitverlustederReisezeit;VernderungZuverlssigkeitderReisezeit)),
+[Risiken für die lokale Umwelt](#RisikenfrdielokaleUmwelt),
 [Schad- und Risikostoffe](#Schad-undRisikostoffe),
 [Schutzgut Mensch](#SchutzgutMensch),
-[Sozio-kulturelle und funktionale Qualit�t](#Sozio-kulturelleundfunktionaleQualitt),
-[Technische Qualit�t](#TechnischeQualitt),
-[Verf�gbarkeit](#Verfgbarkeit),
-[Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeintr�chtigungen (CO2)](#VerkehrsbedingteEmissioneninfolgebetrieblicherundbaubedingterVerkehrsbeeintrchtigungen(CO2)),
-[Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeintr�chtigungen (NOx)](#VerkehrsbedingteEmissioneninfolgebetrieblicherundbaubedingterVerkehrsbeeintrchtigungen(NOx)),
-[Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeintr�chtigungen (PM10)](#VerkehrsbedingteEmissioneninfolgebetrieblicherundbaubedingterVerkehrsbeeintrchtigungen(PM10)),
-[Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeintr�chtigungen (PM2.5)](#VerkehrsbedingteEmissioneninfolgebetrieblicherundbaubedingterVerkehrsbeeintrchtigungen(PM2.5)),
-[Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeintr�chtigungen (PM5)](#VerkehrsbedingteEmissioneninfolgebetrieblicherundbaubedingterVerkehrsbeeintrchtigungen(PM5)),
-[Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeintr�chtigungen (gesamt)](#VerkehrsbedingteEmissioneninfolgebetrieblicherundbaubedingterVerkehrsbeeintrchtigungen(gesamt)),
+[Sozio-kulturelle und funktionale Qualität](#Sozio-kulturelleundfunktionaleQualitt),
+[Technische Qualität](#TechnischeQualitt),
+[Verfügbarkeit](#Verfgbarkeit),
+[Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (CO2)](#VerkehrsbedingteEmissioneninfolgebetrieblicherundbaubedingterVerkehrsbeeintrchtigungen(CO2)),
+[Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (NOx)](#VerkehrsbedingteEmissioneninfolgebetrieblicherundbaubedingterVerkehrsbeeintrchtigungen(NOx)),
+[Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM10)](#VerkehrsbedingteEmissioneninfolgebetrieblicherundbaubedingterVerkehrsbeeintrchtigungen(PM10)),
+[Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM2.5)](#VerkehrsbedingteEmissioneninfolgebetrieblicherundbaubedingterVerkehrsbeeintrchtigungen(PM2.5)),
+[Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM5)](#VerkehrsbedingteEmissioneninfolgebetrieblicherundbaubedingterVerkehrsbeeintrchtigungen(PM5)),
+[Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (gesamt)](#VerkehrsbedingteEmissioneninfolgebetrieblicherundbaubedingterVerkehrsbeeintrchtigungen(gesamt)),
 [Versauerungspotential (AP)](#Versauerungspotential(AP)),
-[Zuverl�ssigkeit](#Zuverlssigkeit),
-[Zuverl�ssigkeitsindex (beta-Wert)](#Zuverlssigkeitsindex(beta-Wert)),
-[�kobilanz](#kobilanz),
-[�kologische Qualit�t](#kologischeQualitt),
-[�konomische Qualit�t](#konomischeQualitt),
+[Zuverlässigkeit](#Zuverlssigkeit),
+[Zuverlässigkeitsindex (Beta-Wert)](#Zuverlssigkeitsindex(Beta-Wert)),
+[Ökobilanz](#kobilanz),
+[ökologische Qualität](#kologischeQualitt),
+[ökonomische Qualität](#konomischeQualitt),
 ### Awf 1 <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#Awf_1`
-* **Contributor(s)**
+* **Classes**
   * [grit:SpecifiedUseCase](https://greeninfratwins.com/ns/grit#SpecifiedUseCase)
 ### Awf 2 <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#Awf_2`
-* **Contributor(s)**
+* **Classes**
   * [grit:SpecifiedUseCase](https://greeninfratwins.com/ns/grit#SpecifiedUseCase)
 ### Awf 3 <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#Awf_3`
-* **Contributor(s)**
+* **Classes**
   * [grit:SpecifiedUseCase](https://greeninfratwins.com/ns/grit#SpecifiedUseCase)
 ### Awf 4 <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#Awf_4`
-* **Contributor(s)**
+* **Classes**
   * [grit:SpecifiedUseCase](https://greeninfratwins.com/ns/grit#SpecifiedUseCase)
-### Verf�gbarkeit <sup>c</sup>
+### Verfügbarkeit <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Availability`
-* **Contributor(s)**
+* **Classes**
   * [grit:PredefinedIndicatorSet](https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet)
 ### Bauwerksbezogene Lebenszykluskosten <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_BuildingRelatedLifecycleCosts`
-* **Contributor(s)**
+* **Classes**
   * [grit:PredefinedIndicatorSet](https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet)
 ### Kreislaufwirtschaft / Ressourcen <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources`
-* **Contributor(s)**
+* **Classes**
   * [grit:PredefinedIndicatorSet](https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet)
-### �kologische Qualit�t <sup>c</sup>
+### ökologische Qualität <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality`
-* **Contributor(s)**
+* **Classes**
   * [grit:PredefinedIndicatorSet](https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet)
-### �konomische Qualit�t <sup>c</sup>
+### ökonomische Qualität <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EconomicQuality`
-* **Contributor(s)**
+* **Classes**
   * [grit:PredefinedIndicatorSet](https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet)
 ### Externe Umwelteffekte <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EnvironmentalEffects`
-* **Contributor(s)**
+* **Classes**
   * [grit:PredefinedIndicatorSet](https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet)
 ### Externe Kosten (monetarisierte externe Effekte) <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_ExternalCosts`
-* **Contributor(s)**
+* **Classes**
   * [grit:PredefinedIndicatorSet](https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet)
 ### Schutzgut Mensch <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_HumanProtection`
-* **Contributor(s)**
+* **Classes**
   * [grit:PredefinedIndicatorSet](https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet)
-### Fl�cheninanspruchnahme <sup>c</sup>
+### Flächeninanspruchnahme <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LandUse`
-* **Contributor(s)**
+* **Classes**
   * [grit:PredefinedIndicatorSet](https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet)
-### �kobilanz <sup>c</sup>
+### Ökobilanz <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LifecycleAssessment`
-* **Contributor(s)**
+* **Classes**
   * [grit:PredefinedIndicatorSet](https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet)
-### Risiken f�r die lokale Umwelt <sup>c</sup>
+### Risiken für die lokale Umwelt <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_LocalEnvironmentalRisks`
-* **Contributor(s)**
+* **Classes**
   * [grit:PredefinedIndicatorSet](https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet)
-### Zuverl�ssigkeit <sup>c</sup>
+### Zuverlässigkeit <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Reliability`
-* **Contributor(s)**
+* **Classes**
   * [grit:PredefinedIndicatorSet](https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet)
 ### Nutzersicherheit <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Safety`
-* **Contributor(s)**
+* **Classes**
   * [grit:PredefinedIndicatorSet](https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet)
-### Sozio-kulturelle und funktionale Qualit�t <sup>c</sup>
+### Sozio-kulturelle und funktionale Qualität <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_SocioCulturalQuality`
-* **Contributor(s)**
+* **Classes**
   * [grit:PredefinedIndicatorSet](https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet)
-### Technische Qualit�t <sup>c</sup>
+### Technische Qualität <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_TechnicalQuality`
-* **Contributor(s)**
+* **Classes**
   * [grit:PredefinedIndicatorSet](https://greeninfratwins.com/ns/grit#PredefinedIndicatorSet)
-### Materialit�t des Bauwerks <sup>c</sup>
+### Materialität des Bauwerks <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_1_1_1`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition von Materialit�t eines Bauwerks in Masse-Prozent
-### Monet�rer Materialwert <sup>c</sup>
+Description | Indikator für Definition von Materialität eines Bauwerks in Masse-Prozent
+### monetärer Materialwert <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_1_1_2`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition von monet�rer Materialwert in EUR
+Description | Indikator für Definition von monetärer Materialwert in EUR
 ### Schad- und Risikostoffe <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_1_1_3`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition von Schad- und Risikostoffe in kg
-### Demontagef�higkeit <sup>c</sup>
+Description | Indikator für Definition von Schad- und Risikostoffe in kg
+### Demontagefähigkeit <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_1_1_4`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition von Demontagefaehigkeit mit qualitative Bewertungsergebnis
-### Materlaverwertung - Potentiale Kreislauff�higkeit <sup>c</sup>
+Description | Indikator für Definition von Demontagefähigkeit mit qualitative Bewertungsergebnis
+### Materialverwertung - Potentiale Kreislauffähigkeit <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_1_1_5`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition von Materialverwertung zur potentialen Kreislauffaehigkeit in Massen-Prozent
-### Fl�che des �kologisch gest�rten Lebensraums durch L�rmbeeintr�chtigung der Fauna <sup>c</sup>
+Description | Indikator für Definition von Materialverwertung zur potentialen Kreislauffaehigkeit in Massen-Prozent
+### Fläche des ökologisch gestörten Lebensraums durch Lärmbeeinträchtigung der Fauna <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_1_2_1`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition Fl�che des �kologisch gest�rten Lebensraums durch L�rmbeeintr�chtigung der Fauna in m2
-### Fl�cheninanspruchnahme (gesamt) <sup>c</sup>
+Description | Indikator für Definition Fläche des ökologisch gestörten Lebensraums durch Lärmbeeinträchtigung der Fauna in m2
+### Flächeninanspruchnahme (gesamt) <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition von Fl�cheninanspruchnahme Bauwerk (dauerhaft) und Bauprozesse (vor�bergehend) in gewichtete m2
-### Fl�cheninanspruchnahme Bauwerk (dauerhaft) <sup>c</sup>
+Description | Indikator für Definition von Flächeninanspruchnahme Bauwerk (dauerhaft) und Bauprozesse (vorübergehend) in gewichtete m2
+### Flächeninanspruchnahme Bauwerk (dauerhaft) <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_1`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition von Fl�cheninanspruchnahme Bauwerk (dauerhaft)  in gewichtete m2
-### Fl�cheninanspruchnahme Bauprozesse (vor�bergehend) <sup>c</sup>
+Description | Indikator für Definition von Flächeninanspruchnahme Bauwerk (dauerhaft)  in gewichtete m2
+### Flächeninanspruchnahme Bauprozesse (vorübergehend) <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_1_3_1_2`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition von Fl�cheninanspruchnahme Bauprozesse (vor�bergehend) in gewichtete m2
-### Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeintr�chtigungen (gesamt) <sup>c</sup>
+Description | Indikator für Definition von Flächeninanspruchnahme Bauprozesse (vorübergehend) in gewichtete m2
+### Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (gesamt) <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeintr�chtigungen in Masse
-### Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeintr�chtigungen (CO2) <sup>c</sup>
+Description | Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse
+### Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (CO2) <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_1`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeintr�chtigungen in Masse
-### Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeintr�chtigungen (NOx) <sup>c</sup>
+Description | Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse
+### Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (NOx) <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_2`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeintr�chtigungen in Masse
-### Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeintr�chtigungen (PM2.5) <sup>c</sup>
+Description | Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse
+### Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM2.5) <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_3`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeintr�chtigungen in Masse
-### Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeintr�chtigungen (PM5) <sup>c</sup>
+Description | Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse
+### Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM5) <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_4`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeintr�chtigungen in Masse
-### Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeintr�chtigungen (PM10) <sup>c</sup>
+Description | Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse
+### Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen (PM10) <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_1_4_1_5`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeintr�chtigungen in Masse
-### Globales Erw�rmungspotential (GWP) <sup>c</sup>
+Description | Indikator für Definition von Verkehrsbedingte Emissionen infolge betrieblicher und baubedingter Verkehrsbeeinträchtigungen in Masse
+### Globales Erwärmungspotential (GWP) <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_1_5_1`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition von Globales Erw�rmungspotential (GWP) in kg CO2-�quiv.
+Description | Indikator für Definition von Globales Erwärmungspotential (GWP) in kg CO2-äquiv.
 ### Eutrophierungspotential (EP) <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_1_5_2`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition von Eutrophierungspotential (EP) in kg PO43-�quiv.
+Description | Indikator für Definition von Eutrophierungspotential (EP) in kg PO43-äquiv.
 ### Ozonschichtabbaupotential (ODP) <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_1_5_3`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition von Ozonschichtabbaupotential (ODP) in kg R11-�quiv.
+Description | Indikator für Definition von Ozonschichtabbaupotential (ODP) in kg R11-äquiv.
 ### Versauerungspotential (AP) <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_1_5_4`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition von Versauerungspotential (AP) in kg SO2-�quiv.
+Description | Indikator für Definition von Versauerungspotential (AP) in kg SO2-äquiv.
 ### Ozonbildungspotential (POCP) <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_1_5_5`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition von Ozonbildungspotential (POCP) in kg C2H4-�quiv.
+Description | Indikator für Definition von Ozonbildungspotential (POCP) in kg C2H4-äquiv.
 ### Kumulierter Energieaufwand (KEA) <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_1_5_6`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition von Kumulierter Energieaufwand (KEA) in MJ
+Description | Indikator für Definition von Kumulierter Energieaufwand (KEA) in MJ
 ### Bauwerksbezogene Kosten <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition von Materialkosten, prozessbezogene Kosten (Planungs-, Baukosten, Kosten Nutzungsphase etc.) in EUR
+Description | Indikator für Definition von Materialkosten, prozessbezogene Kosten (Planungs-, Baukosten, Kosten Nutzungsphase etc.) in EUR
 ### Materialkosten <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1_1`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition von Materialkosten - Teilkosten von Material-, prozessbezogene Kosten (Planungs-, Baukosten, Kosten Nutzungsphase etc.) in EUR
+Description | Indikator für Definition von Materialkosten - Teilkosten von Material-, prozessbezogene Kosten (Planungs-, Baukosten, Kosten Nutzungsphase etc.) in EUR
 ### Prozessbezogene Kosten (Planungs-, Baukosten, Kosten Nutzungsphase etc.) <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_2_1_1_2`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition von Prozessbezogenekosten, Teilkosten von Material-, prozessbezogene Kosten (Planungs-, Baukosten, Kosten Nutzungsphase etc.) in EUR
-### Kosten aufgrund von Zeitverlusten, Umleitungen und erh�hten Fahrzeugbetriebskosten  <sup>c</sup>
+Description | Indikator für Definition von Prozessbezogenekosten, Teilkosten von Material-, prozessbezogene Kosten (Planungs-, Baukosten, Kosten Nutzungsphase etc.) in EUR
+### Kosten aufgrund von Zeitverlusten, Umleitungen und erhöhten Fahrzeugbetriebskosten  <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_2_2_1`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition von Kosten aufgrund von Zeitverlusten, Umleitungen und erh�hten Fahrzeugbetriebskosten in EUR
-### L�rmbeeintr�chtigung von Menschen (gesamt) <sup>c</sup>
+Description | Indikator für Definition von Kosten aufgrund von Zeitverlusten, Umleitungen und erhöhten Fahrzeugbetriebskosten in EUR
+### Lärmbeeinträchtigung von Menschen (gesamt) <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition von L�rmbeeintr�chtigung von Menschen (Laermpegel / Anzahl vom L�rm betroffene Personen)
-### L�rmbeeintr�chtigung von Menschen (L�rmpegel / Anzahl vom L�rm betroffene Personen) <sup>c</sup>
+Description | Indikator für Definition von Lärmbeeinträchtigung von Menschen (Laermpegel / Anzahl vom Lärm betroffene Personen)
+### Lärmbeeinträchtigung von Menschen (Lärmpegel / Anzahl vom Lärm betroffene Personen) <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1_1`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition von L�rmbeeintr�chtigung von Menschen (L�rmpegel / Anzahl vom L�rm betroffene Personen) in db/pax
-### L�rmbeeintr�chtigung von Menschen (Anzahl vom L�rm betroffene Personen) <sup>c</sup>
+Description | Indikator für Definition von Lärmbeeinträchtigung von Menschen (Lärmpegel / Anzahl vom Lärm betroffene Personen) in db/pax
+### Lärmbeeinträchtigung von Menschen (Anzahl vom Lärm betroffene Personen) <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_3_1_1_2`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition von L�rmbeeintr�chtigung von Menschen (Anzahl vom L�rm betroffene Personen) in Konzentration Schadstoffe
+Description | Indikator für Definition von Lärmbeeinträchtigung von Menschen (Anzahl vom Lärm betroffene Personen) in Konzentration Schadstoffe
 ### Emissionsbelastung der Baustellenmitarbeitenden <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_3_1_2`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r die Definition der Emissionsbelastung der Baustellenmitarbeitenden und Auswirkung auf die Gesundheit [ppm]
-### Arbeitssicherheit (Anzahl an Unf�llen / Unfallrate im Baustellenbereich) <sup>c</sup>
+Description | Indikator für die Definition der Emissionsbelastung der Baustellenmitarbeitenden und Auswirkung auf die Gesundheit [ppm]
+### Arbeitssicherheit (Anzahl an Unfällen / Unfallrate im Baustellenbereich) <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_3_1_3`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition von Arbeitssicherheit (Anzahl an Unf�llen / Unfallrate im Baustellenbereich) in pax / -
-### Reduktion der zeitbezogenen Kapazit�t (Zeitverluste der Reisezeit; Ver�nderung Zuverl�ssigkeit der Reisezeit) <sup>c</sup>
+Description | Indikator für Definition von Arbeitssicherheit (Anzahl an Unfällen / Unfallrate im Baustellenbereich) in pax / -
+### Reduktion der zeitbezogenen Kapazität (Zeitverluste der Reisezeit; Veränderung Zuverlässigkeit der Reisezeit) <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_3_2_1`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition von Reduktion der zeitbezogenen Kapazit�t (Zeitverluste der Reisezeit; Ver�nderung Zuverl�ssigkeit der Reisezeit) in %
-### Zuverl�ssigkeitsindex (beta-Wert) <sup>c</sup>
+Description | Indikator für Definition von Reduktion der zeitbezogenen Kapazität (Zeitverluste der Reisezeit; Veränderung Zuverlässigkeit der Reisezeit) in %
+### Zuverlässigkeitsindex (Beta-Wert) <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_4_1_1`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition von Zuverl�ssigkeitsindex (beta-Wert)
-### Anzahl an Unf�llen/Unfallrate im Normalbetrieb (bezogen auf den Zustand) <sup>c</sup>
+Description | Indikator für Definition von Zuverlässigkeitsindex (Beta-Wert)
+### Anzahl an Unfällen/Unfallrate im Normalbetrieb (bezogen auf den Zustand) <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://greeninfratwins.com/ns/grit#IndicatorType_4_2_1`
-* **Contributor(s)**
+* **Classes**
   * [grit:IndicatorType](https://greeninfratwins.com/ns/grit#IndicatorType)
-Description | Indikator f�r Definition von Anzahl an Unf�llen/Unfallrate im Normalbetrieb (bezogen auf den Zustand)
+Description | Indikator für Definition von Anzahl an Unfällen/Unfallrate im Normalbetrieb (bezogen auf den Zustand)
 ## Namespaces
 * **dc**
   * `http://purl.org/dc/terms/`

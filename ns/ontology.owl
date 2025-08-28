@@ -1413,7 +1413,7 @@
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_EcologicalQuality"/>
         <hasIndicatorID>1.1.5</hasIndicatorID>
         <rdfs:comment>Indikator für Definition von Materialverwertung zur potentialen Kreislauffaehigkeit in Massen-Prozent</rdfs:comment>
-        <rdfs:label>Materlaverwertung - Potentiale Kreislauffähigkeit</rdfs:label>
+        <rdfs:label>Materialverwertung - Potentiale Kreislauffähigkeit</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1790,8 +1790,8 @@
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Reliability"/>
         <belongsToPredefinedSetOfIndicators rdf:resource="https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_TechnicalQuality"/>
         <hasIndicatorID>4.1.1</hasIndicatorID>
-        <rdfs:comment>Indikator für Definition von Zuverlässigkeitsindex (β-Wert)</rdfs:comment>
-        <rdfs:label>Zuverlässigkeitsindex (β-Wert)</rdfs:label>
+        <rdfs:comment>Indikator für Definition von Zuverlässigkeitsindex (Beta-Wert)</rdfs:comment>
+        <rdfs:label>Zuverlässigkeitsindex (Beta-Wert)</rdfs:label>
     </owl:NamedIndividual>
     
 

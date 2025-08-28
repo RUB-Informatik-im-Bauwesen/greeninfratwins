@@ -1048,7 +1048,7 @@
     "@value" : "Indikator für Definition von Materialverwertung zur potentialen Kreislauffaehigkeit in Massen-Prozent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Materlaverwertung - Potentiale Kreislauffähigkeit"
+    "@value" : "Materialverwertung - Potentiale Kreislauffähigkeit"
   } ],
   "https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators" : [ {
     "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_CircularEconomyResources"
@@ -1585,10 +1585,10 @@
     "@id" : "https://greeninfratwins.com/ns/grit#IndicatorType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Indikator für Definition von Zuverlässigkeitsindex (β-Wert)"
+    "@value" : "Indikator für Definition von Zuverlässigkeitsindex (Beta-Wert)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Zuverlässigkeitsindex (β-Wert)"
+    "@value" : "Zuverlässigkeitsindex (Beta-Wert)"
   } ],
   "https://greeninfratwins.com/ns/grit#belongsToPredefinedSetOfIndicators" : [ {
     "@id" : "https://greeninfratwins.com/ns/grit#IndicatorSet_Predefined_Reliability"

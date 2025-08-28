@@ -908,7 +908,7 @@ rdfs:Resource rdf:type owl:Class .
                                                          :IndicatorSet_Predefined_EcologicalQuality ;
                      :hasIndicatorID "1.1.5" ;
                      rdfs:comment "Indikator für Definition von Materialverwertung zur potentialen Kreislauffaehigkeit in Massen-Prozent" ;
-                     rdfs:label "Materlaverwertung - Potentiale Kreislauffähigkeit" .
+                     rdfs:label "Materialverwertung - Potentiale Kreislauffähigkeit" .
 
 
 ###  https://greeninfratwins.com/ns/grit#IndicatorType_1_2_1
@@ -1177,8 +1177,8 @@ rdfs:Resource rdf:type owl:Class .
                      :belongsToPredefinedSetOfIndicators :IndicatorSet_Predefined_Reliability ,
                                                          :IndicatorSet_Predefined_TechnicalQuality ;
                      :hasIndicatorID "4.1.1" ;
-                     rdfs:comment "Indikator für Definition von Zuverlässigkeitsindex (β-Wert)" ;
-                     rdfs:label "Zuverlässigkeitsindex (β-Wert)" .
+                     rdfs:comment "Indikator für Definition von Zuverlässigkeitsindex (Beta-Wert)" ;
+                     rdfs:label "Zuverlässigkeitsindex (Beta-Wert)" .
 
 
 ###  https://greeninfratwins.com/ns/grit#IndicatorType_4_2_1
