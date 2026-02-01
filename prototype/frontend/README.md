@@ -23,7 +23,7 @@ Es wird eine Verbindung zur ICDD Plattform benötigt. Dafür muss eine Instanz d
  Neben dem Frontend werden weitere services benötigt, die ebenfalls in diesem Repository vorhanden sind und nach Anleitung gestartet werden müssen:
 
  * https://github.com/RUB-Informatik-im-Bauwesen/greeninfratwins/tree/main/prototype/calculation-service
- * 
+ 
 
 # Lizenz
 MIT license
