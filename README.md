@@ -1,12 +1,19 @@
 # GreenInfraTwins
-Ziel des Forschungsprojektes ist es, eine nachhaltigkeitsbezogene Entscheidungsunterstützung durch den Einsatz von Digitalen Zwillingen von Ingenieurbauwerken zu konzeptionieren und zu demonstrieren. Dazu werden Digitale Zwillinge von Ingenieurbauwerken erstellt, mit Daten angereichert und für die Berechnung maßgebender Indikatoren zur Nachhaltigkeitsanalyse verwendet. 
+Ziel des Forschungsprojektes ist es, eine nachhaltigkeitsbezogene Entscheidungsunterstützung durch den Einsatz von Digitalen Zwillingen von Ingenieurbauwerken zu konzeptionieren und zu demonstrieren. Dazu werden Digitale Zwillinge von Ingenieurbauwerken erstellt, mit Daten angereichert und für die Berechnung maßgebender Indikatoren zur Nachhaltigkeitsanalyse verwendet. Die Umsetzung wird prototypisch umgesetzt.
+
+![Screenshot1.png](Screenshot1.png)
+![Screenshot1.png](Screenshot2.png)
 
 Das Projekt ist gefördert durch die österreichische Forschungsförderungsgesellschaft (FFG) im Rahmen der DACH-Verkehrsinfrastrukturforschung des Bundesministeriums für Digitales und Verkehr (DE), des Bundesministeriums für Klimaschutz, Umwelt, Energie, Mobilität, Innovation & Technologie (AT) und des Bundesamts für Strassen ASTRA (CH).
+
+
 
 ## Resourcen
 
 * [GrIT Ontologie](/greeninfratwins/ns/)
 * [LOIN Definitionen für AwFs](/greeninfratwins/ns/)
+* [GreenInfraTwins Prototype](/greeninfratwins/prototype/)
+
 
 ## Partner
 
