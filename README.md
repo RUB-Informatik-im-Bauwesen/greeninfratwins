@@ -11,7 +11,6 @@ Das Projekt ist gefördert durch die österreichische Forschungsförderungsgesel
 ## Resourcen
 
 * [GrIT Ontologie](/greeninfratwins/ns/)
-* [LOIN Definitionen für AwFs](/greeninfratwins/ns/)
 * [GreenInfraTwins Prototype](/greeninfratwins/prototype/)
 
 
