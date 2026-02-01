@@ -14,6 +14,8 @@ Das Projekt ist gefördert durch die österreichische Forschungsförderungsgesel
 * [GreenInfraTwins Prototype](/greeninfratwins/prototype/)
 
 
+## Weitere Informationen
+https://www.greeninfratwins.com
 ## Partner
 
 #### Ruhr-Universität Bochum – Lehrstuhl für Informatik im Bauwesen – Deutschland
