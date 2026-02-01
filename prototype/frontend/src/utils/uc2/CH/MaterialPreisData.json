@@ -1,0 +1,42 @@
+[
+  {
+    "Name": "Beton, Stahlbeton",
+    "Einheitspreis": 35,
+    "Einheit": "EPDQuantity/CHF"
+  },
+  {
+    "Name": "Bewehrung",
+    "Einheitspreis": 100,
+    "Einheit": "EPDQuantity/CHF"
+  },
+  {
+    "Name": "Asphaltbeton",
+    "Einheitspreis": 25,
+    "Einheit": "EPDQuantity/CHF"
+  },
+  {
+    "Name": "Polymergebundenes Material",
+    "Einheitspreis": 85,
+    "Einheit": "EPDQuantity/CHF"
+  },
+  {
+    "Name": "Gussasphalt mit polymermodifizierten Bitumen",
+    "Einheitspreis": 23,
+    "Einheit": "EPDQuantity/CHF"
+  },
+  {
+    "Name": "Baustahl",
+    "Einheitspreis": 100,
+    "Einheit": "EPDQuantity/CHF"
+  },
+  {
+    "Name": "Beton, anderes Baumaterial",
+    "Einheitspreis": 10,
+    "Einheit": "EPDQuantity/CHF"
+  },
+  {
+    "Name": "Hochperformanter Faserbeton",
+    "Einheitspreis": 50,
+    "Einheit": "EPDQuantity/CHF"
+  }
+]

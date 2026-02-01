@@ -1,0 +1,156 @@
+.demonstrator-section,
+.aktualisierung-section {
+  width: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+
+
+.detailansicht,
+.einstellung {
+  width: 10%;
+}
+
+.demonstrator,
+.order-date,
+.benutzer,
+.aktivitaet {
+  width: 25%;
+}
+
+.viewerWrapper1{
+    height: 100%;
+    width: 98%;
+    margin: 0 0 10px 0;
+    padding: 0;
+    border: 2px solid #ccc;
+    bottom: 0;
+  
+  }
+.viewerWrapper2{
+  height: 45vh;
+  width: 98%;
+  margin: 0 0 10px 0;
+  padding: 0;
+  border: 2px solid #ccc;
+  bottom: 0;
+
+}
+
+.indikator-container{
+    position: fixed;
+    height: 35vh;
+    width: 99%;
+    margin: 0 0 10px 0;
+    padding: 0;
+    bottom: 0;
+}
+
+
+
+h3 {
+  margin-bottom: 20px;
+}
+.awf4r .form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.awf4r .form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  transition: background-color 0.3s ease;
+}
+label {
+font-size: 14px;
+color: #333;
+margin-bottom: 5px;
+min-height: 38px;
+display: flex;
+align-items: center;
+}
+
+.AWF4 button.active-button{
+  background-color: #7ac27a;
+  color: white;
+  font-weight: bold;
+}
+
+.container4 {
+  display: flex;
+  height: 100vh;        /* full viewport height */
+  margin: 0;
+  padding: 0;
+  overflow-y: clip; 
+}
+
+.leftColumn4 {  flex: 2;     }
+.rightColumn4  {  flex: 3;     }
+
+.leftColumn4,
+.rightColumn4 {
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;     /* scroll if content overflows */
+}
+
+.rightColumn4 {
+  margin-left: 10px;       /* not needed with flex */
+  padding: 0; 
+  overflow-y: clip;           /* keep your custom padding */
+}
+
+.leftColumn4 button{
+  display:block ; 
+  width: 100%;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  height: 35px;
+  text-decoration: none;
+  background-color:  #dfedd6;  
+}
+
+
+.calculationButton{
+  	display:block ; 
+  width: 100px;
+  height: 35px;
+  background-color:  #dfedd6;  
+  transition: background-color 0.3s ease;
+}
+.calculationButton:focus {
+  background-color: #d7dad5 /*Change color when focusing, 2025-06-15*/
+}
+
+.fullTabColumn {
+  border-radius: 4px;
+  float:left;
+  border: 1px solid #ccc;
+  padding: 20px; 
+  width:1080px; /* change the margin, 2025-06-13*/
+}
+
+.hide-number-arrows::-webkit-inner-spin-button,
+.hide-number-arrows::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+
+}
+.hide-number-arrows {
+  -moz-appearance: textfield; /* Firefox */
+  appearance: none;
+
+}

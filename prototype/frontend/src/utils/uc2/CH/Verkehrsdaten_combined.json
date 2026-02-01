@@ -1,0 +1,133 @@
+{
+  "Variante 1": [
+    {
+      "ActivityType": "Abbruch",
+      "AnzahlBauphase": "2",
+      "zulGeschwindigkeitZone": 60,
+      "AUmV": 0.0002188,
+      "AUoV": 0.0001044
+    },
+    {
+      "ActivityType": "Einbau",
+      "AnzahlBauphase": "2",
+      "zulGeschwindigkeitZone": 60,
+      "AUmV": 0.0001897,
+      "AUoV": 0.0001429
+    },
+    {
+      "ActivityType": "Abbruch",
+      "AnzahlBauphase": "2",
+      "zulGeschwindigkeitZone": 80,
+      "AUmV": 0.0003036,
+      "AUoV": 0.0001008
+    },
+    {
+      "ActivityType": "Einbau",
+      "AnzahlBauphase": "2",
+      "zulGeschwindigkeitZone": 80,
+      "AUmV": 0.0002911,
+      "AUoV": 0.0001152
+    },
+    {
+      "ActivityType": "Abbruch",
+      "AnzahlBauphase": "3",
+      "zulGeschwindigkeitZone": 60,
+      "AUmV": 0.0003122,
+      "AUoV": 0.0001028
+    },
+    {
+      "ActivityType": "Einbau",
+      "AnzahlBauphase": "3",
+      "zulGeschwindigkeitZone": 60,
+      "AUmV": 0.0002885,
+      "AUoV": 0.0001409
+    },
+    {
+      "ActivityType": "Abbruch",
+      "AnzahlBauphase": "3",
+      "zulGeschwindigkeitZone": 80,
+      "AUmV": 0.0003756,
+      "AUoV": 0.000108
+    },
+    {
+      "ActivityType": "Einbau",
+      "AnzahlBauphase": "3",
+      "zulGeschwindigkeitZone": 80,
+      "AUmV": 0.0003839,
+      "AUoV": 0.0001128
+    },
+    {
+      "ActivityType": "undefined",
+      "AnzahlBauphase": "undefined",
+      "zulGeschwindigkeitZone": null,
+      "AUmV": 0,
+      "AUoV": 0
+    }
+  ],
+  "Variante 2": [
+  {
+    "ActivityType": "Abbruch",
+    "AnzahlBauphase": "2",
+    "zulGeschwindigkeitZone": 60,
+    "AUmV": 0.0002188,
+    "AUoV": 0.0001152
+  },
+  {
+    "ActivityType": "Einbau",
+    "AnzahlBauphase": "2",
+    "zulGeschwindigkeitZone": 60,
+    "AUmV": 0.0002136,
+    "AUoV": 0.0000684
+  },
+  {
+    "ActivityType": "Abbruch",
+    "AnzahlBauphase": "2",
+    "zulGeschwindigkeitZone": 80,
+    "AUmV": 0.0003036,
+    "AUoV": 0.0001409
+  },
+  {
+    "ActivityType": "Einbau",
+    "AnzahlBauphase": "2",
+    "zulGeschwindigkeitZone": 80,
+    "AUmV": 0.0002838,
+    "AUoV": 0.0000732
+  },
+  {
+    "ActivityType": "Abbruch",
+    "AnzahlBauphase": "3",
+    "zulGeschwindigkeitZone": 60,
+    "AUmV": 0.0003122,
+    "AUoV": 0.0001128
+  },
+  {
+    "ActivityType": "Einbau",
+    "AnzahlBauphase": "3",
+    "zulGeschwindigkeitZone": 60,
+    "AUmV": 0.0003045,
+    "AUoV": 0.0000700
+  },
+  {
+    "ActivityType": "Abbruch",
+    "AnzahlBauphase": "3",
+    "zulGeschwindigkeitZone": 80,
+    "AUmV": 0.0003756,
+    "AUoV": 0.0000684
+  },
+  {
+    "ActivityType": "Einbau",
+    "AnzahlBauphase": "3",
+    "zulGeschwindigkeitZone": 80,
+    "AUmV": 0.0003807,
+    "AUoV": 0.0000760
+  },
+  {
+    "ActivityType": "undefined",
+    "AnzahlBauphase": "undefined",
+    "zulGeschwindigkeitZone": null,
+    "AUmV": 0,
+    "AUoV": 0
+  }
+]
+
+}

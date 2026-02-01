@@ -1,0 +1,104 @@
+{
+    "UC-DE1": [
+        {
+            "Measure 1": [
+                {
+                    "Date": "03.04.2024",
+                    "Description": "Maßnaheme 1 Grünschnitt",
+                    "AssetTableDate": [
+                        [
+                            "LKW",
+                            "Motorsäge",
+                            "Fräse",
+                            "Stromgenerator"
+                            
+                        ],
+                        [
+                            "8",
+                            "3",
+                            "2",
+                            "5"
+                        ]
+                    ],
+                    "Fixkosten": "5000",
+                    "ExternenKosten": "2000",
+                    "verkehrsbedingteEmissionen": "1500"
+                }
+            ],
+
+          "Measure 2": [
+                {
+                    "Date": "04.04.2024",
+                    "Description": "Maßnaheme 2 Grünschnitt",
+                    "AssetTableDate": [
+[
+                            "LKW",
+                            "Motorsäge",
+                            "Fräse",
+                            "Stromgenerator"
+                            
+                        ],
+                        [
+                            "10",
+                            "4",
+                            "3",
+                            "6"
+                        ]
+                    ],
+                    "Fixkosten": "6000",
+                    "ExternenKosten": "2500",
+                    "verkehrsbedingteEmissionen": "1800"
+                }
+            ],              
+          "Measure 3": [
+                {
+                    "Date": "04.04.2024",
+                    "Description": "Maßnaheme 2 Grünschnitt",
+                    "AssetTableDate": [
+                        [
+                            "LKW",
+                            "Motorsäge",
+                            "Fräse",
+                            "Stromgenerator"
+                            
+                        ],
+                        [
+                            "10",
+                            "4",
+                            "5",
+                            "6"
+                        ]
+                    ],
+                    "Fixkosten": "6000",
+                    "ExternenKosten": "2500",
+                    "verkehrsbedingteEmissionen": "1800"
+                }
+            ],
+             "Measure 4": [
+                {
+                    "Date": "04.04.2024",
+                    "Description": "Maßnaheme 2 Grünschnitt",
+                    "AssetTableDate": [
+[
+                            "LKW",
+                            "Motorsäge",
+                            "Fräse",
+                            "Stromgenerator"
+                            
+                        ],
+                        [
+                            "10",
+                            "4",
+                            "3",
+                            "6"
+                        ]
+                    ],
+                    "Fixkosten": "6000",
+                    "ExternenKosten": "2500",
+                    "verkehrsbedingteEmissionen": "1800"
+                }
+            ]
+        }
+    ]
+    
+}        

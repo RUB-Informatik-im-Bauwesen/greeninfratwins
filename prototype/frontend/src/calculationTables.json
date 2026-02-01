@@ -1,0 +1,593 @@
+{
+    "AT": [
+        {
+            "AWF2": [
+                {
+                    "title": "GWP [kg CO2-Äq]",
+                    "data": [
+                        [
+                            "Activity",
+                            "Variant 1",
+                            "Variant 2"
+                        ],
+                        [
+                            "Einbau",
+                            "80919",
+                            "72885"
+                        ]
+                    ]
+                },
+                {
+                    "title": "Materialkosten [EUR]",
+                    "data": [
+                        [
+                            "Activity",
+                            "Variant 1",
+                            "Variant 2"
+                        ],
+                        [
+                            "Einbau",
+                            "1560000",
+                            "1050000"
+                        ]
+                    ]
+                },
+                {
+                    "title": "Prozessbezogene Kosten [EUR]",
+                    "data": [
+                        [
+                            "Activity",
+                            "Variant 1",
+                            "Variant 2"
+                        ],
+                        [
+                            "Einbau",
+                            "23800",
+                            "22742"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "AWF3": [
+                {
+                    "title": "GWP [kg CO2-Äq]",
+                    "data": [
+                        [
+                            "Activity",
+                            "Variant 1",
+                            "Variant 2"
+                        ],
+                        [
+                            "Einbau",
+                            "16233.39",
+                            "3346.76"
+                        ]
+                    ]
+                },
+                {
+                    "title": "Materialkosten [EUR]",
+                    "data": [
+                        [
+                            "Activity",
+                            "Variant 1",
+                            "Variant 2"
+                        ],
+                        [
+                            "Einbau",
+                            "275968",
+                            "355368.96"
+                        ]
+                    ]
+                },
+                {
+                    "title": "Prozessbezogene Kosten [EUR]",
+                    "data": [
+                        [
+                            "Activity",
+                            "Variant 1",
+                            "Variant 2"
+                        ],
+                        [
+                            "Einbau",
+                            "129088",
+                            "148362.24"
+                        ]
+                    ]
+                },
+                {
+                    "title": "Lärmbelastung [dB/Pax]",
+                    "data": [
+                        [
+                            "Activity",
+                            "Variant 1",
+                            "Variant 2"
+                        ],
+                        [
+                            "Einbau",
+                            "9.5",
+                            "9.8"
+                        ]
+                    ]
+                },
+                {
+                    "title": "Zuverlässigkeit Beta [-]",
+                    "data": [
+                        [
+                            "Activity",
+                            "Variant 1",
+                            "Variant 2"
+                        ],
+                        [
+                            "Einbau",
+                            "5.3",
+                            "5.3"
+                        ]
+                    ]
+                }
+            ]
+        }
+    ],
+    "CH": [
+        {
+            "AWF2": [
+                {
+                    "title": "GWP [kg CO2-Äq]",
+                    "data": [
+                        [
+                            "Activity",
+                            "Variant 1",
+                            "Variant 2"
+                        ],
+                        [
+                            "Abbruch",
+                            "23184.8",
+                            "23184.8"
+                        ],
+                        [
+                            "Einbau",
+                            "537841.3",
+                            "670129.6"
+                        ]
+                    ]
+                },
+                {
+                    "title": "KEA [MJ]",
+                    "data": [
+                        [
+                            "Activity",
+                            "Variant 1",
+                            "Variant 2"
+                        ],
+                        [
+                            "Abbruch",
+                            "-2644475.2",
+                            "-2644475.2"
+                        ],
+                        [
+                            "Einbau",
+                            "8872609.0",
+                            "8600293.4"
+                        ]
+                    ]
+                },
+                {
+                    "title": "Baustoffkosten [EUR]",
+                    "data": [
+                        [
+                            "Activity",
+                            "Variant 1",
+                            "Variant 2"
+                        ],
+                        [
+                            "Abbruch",
+                            "0",
+                            "0"
+                        ],
+                        [
+                            "Einbau",
+                            "24771082.8",
+                            "24610201.3"
+                        ]
+                    ]
+                },
+                {
+                    "title": "Prozessbezogene Kosten [EUR]",
+                    "data": [
+                        [
+                            "Activity",
+                            "Variant 1",
+                            "Variant 2"
+                        ],
+                        [
+                            "Abbruch",
+                            "100000",
+                            "220000"
+                        ],
+                        [
+                            "Einbau",
+                            "100000",
+                            "240000"
+                        ]
+                    ]
+                },
+                {
+                    "title": "Anzahl der Unfälle [-]",
+                    "data": [
+                        [
+                            "Activity",
+                            "Variant 1",
+                            "Variant 2"
+                        ],
+                        [
+                            "Abbruch",
+                            "0.0022",
+                            "0.0017"
+                        ],
+                        [
+                            "Einbau",
+                            "0.003",
+                            "0.0033"
+                        ]
+                    ]
+                },
+                {
+                    "title": "Reisezeitverlust [h]",
+                    "data": [
+                        [
+                            "Activity",
+                            "Variant 1",
+                            "Variant 2"
+                        ],
+                        [
+                            "Abbruch",
+                            "10",
+                            "10"
+                        ],
+                        [
+                            "Einbau",
+                            "30",
+                            "20"
+                        ]
+                    ]
+                }
+            ]
+        }
+    ],
+    "DE": [
+        {
+            "AWF4-Überbau": [
+                {
+                    "title": "Materialität [t]",
+                    "data": [
+                        [
+                            "Material",
+                            "TRA",
+                            "UKO",
+                            "BKA",
+                            "ELT"
+                        ],
+                        [
+                            "Mineralische Baustoffe",
+                            "5600",
+                            "500",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Metalle",
+                            "1000",
+                            "200",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Kunststoffe",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Bituminöse Mischungen",
+                            "",
+                            "",
+                            "1500",
+                            ""
+                        ],
+                        [
+                            "Holz",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Elektrik and Elektornik",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Materialmix",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    ]
+                },
+                {
+                    "title": "Monetärer Materialwert [EUR]",
+                    "data": [
+                        [
+                            "Aktivität",
+                            "Restwert",
+                            "Restwert-% der Bauteilgruppe"
+                        ],
+                        [
+                            "TRA",
+                            "218000",
+                            "85.49%"
+                        ],
+                        [
+                            "UKO",
+                            "25000",
+                            "9.80%"
+                        ],
+                        [
+                            "BKA",
+                            "12000",
+                            "4.71%"
+                        ],
+                        [
+                            "ELT",
+                            "",
+                            ""
+                        ]
+                    ]
+                },
+                {
+                    "title": "Schad- und Risikostoffe [-]",
+                    "data": [
+                        [
+                            "Bauelement (ifcGuid)",
+                            "Schadstoffe Kennzeichnung"
+                        ],
+                        [
+                            "3tKU40Sf5DzPUJ$lkVqwxT",
+                            "Markierungsmaterialien für Fahrbahn"
+                        ]
+                    ]
+                }
+                
+                
+            ]
+        },
+        {
+            "AWF4-Unterbau": [
+{
+                    "title": "Materialität [t]",
+                    "data": [
+                        [
+                            "Material",
+                            "GRU",
+                            "LAG",
+                            "PFE",
+                            "WID"
+                        ],
+                        [
+                            "Mineralische Baustoffe",
+                            "6000",
+                            "",
+                            "4500",
+                            "3000"
+                        ],
+                        [
+                            "Metalle",
+                            "1000",
+                            "200",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Kunststoffe",
+                            "",
+                            "200",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Bituminöse Mischungen",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Holz",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Elektrik and Elektornik",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Materialmix",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    ]
+                },
+                {
+                    "title": "Monetärer Materialwert [EUR]",
+                    "data": [
+                        [
+                            "Aktivität",
+                            "Restwert",
+                            "Restwert-% der Bauteilgruppe"
+                        ],
+                        [
+                            "GRU",
+                            "240000",
+                            "44.28%"
+                        ],
+                        [
+                            "LAG",
+                            "2000",
+                            "0.37%"
+                        ],
+                        [
+                            "PFE",
+                            "180000",
+                            "33.21%"
+                        ],
+                        [
+                            "WID",
+                            "120000",
+                            "22.14%"
+                        ]
+                    ]
+                },
+                {
+                    "title": "Schad- und Risikostoffe [-]",
+                    "data": [
+                        [
+                            "Bauelement (ifcGuid)",
+                            "Schadstoffe Kennzeichnung"
+                        ],
+                        [
+                            "1Mh45jE9B8Q0US45CFpu",
+                            "Rostschutzmittel für Geländer"
+                        ]
+                        ,
+                        [
+                            "1Mh45jE9B8Q0US45CFpy",
+                            "Rostschutzmittel für Geländer"
+                        ],
+                        [
+                            "3kVxvOaKz4CQOWWkReIVa0",
+                            "Rostschutzmittel für Geländer"
+                        ],
+                        [
+                            "3kVxvOaKz4CQOWWkReIVaS",
+                            "Rostschutzmittel für Geländer"
+                        ]
+                    ]
+                }
+                
+                
+            ]
+        }
+        ,
+        {
+            "AWF4-Ausstattung": [
+                {
+                    "title": "Materialität [t]",
+                    "data": [
+                        [
+                            "Material",
+                            "GEL",
+                            "KAP",
+                            "WND"
+                        ],
+                        [
+                            "Mineralische Baustoffe",
+                            "",
+                            "870",
+                            "200"
+                        ],
+                        [
+                            "Metalle",
+                            "300",
+                            "120",
+                            ""
+                        ],
+                        [
+                            "Kunststoffe",
+                            "",
+                            "",
+                            "300"
+                        ],
+                        [
+                            "Bituminöse Mischungen",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Holz",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Elektrik and Elektornik",
+                            "",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Materialmix",
+                            "",
+                            "",
+                            ""
+                        ]
+                    ]
+                },
+                {
+                    "title": "Monetärer Materialwert [EUR]",
+                    "data": [
+                        [
+                            "Aktivität",
+                            "Restwert",
+                            "Restwert-% der Bauteilgruppe"
+                        ],
+                        [
+                            "GEL",
+                            "15000",
+                            "26.74%"
+                        ],
+                        [
+                            "KAP",
+                            "32100",
+                            "57.22%"
+                        ],
+                        [
+                            "WND",
+                            "9000",
+                            "16.04%"
+                        ]
+                    ]
+                },
+                {
+                    "title": "Schad- und Risikostoffe [-]",
+                    "data": [
+                        [
+                            "Bauelement (ifcGuid)",
+                            "Schadstoffe Kennzeichnung"
+                        ],
+                        [
+                            "3Rpboinnz0s8Qo5lpZelqS",
+                            "Rostschutzmittel für Vogeleinflugschutz"
+                        ],
+                        [
+                            "3Rpboinnz0s8Qo5lpZelh8",
+                            "Rostschutzmittel für Vogeleinflugschutz"
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+.projects-dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+  }
+  
+  .projects-dialog {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .projects-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .projects-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .error {
+    color: red;
+  }
+
+  .list-item {
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 2px 0;
+    border-radius: 4px;
+  }
+  
+  .list-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .list-item.selected {
+    background-color: #e0e0e0;
+    font-weight: bold;
+  }

@@ -1,0 +1,62 @@
+[
+    {
+        "Stichtag": "2023-10-01",
+        "Material": [
+            {
+                "Name": "Mineralische Baustoffe",
+                "Restwert": 35,
+                "Einheit": "EPDQuantity/EUR"
+            },
+            {
+                "Name": "Metalle",
+                "Restwert": 100,
+                "Einheit": "EPDQuantity/EUR"
+            },
+            {
+                "Name": "Kunststoffe",
+                "Restwert": 25,
+                "Einheit": "EPDQuantity/EUR"
+            },
+            {
+                "Name": "Bituminöse Mischungen",
+                "Restwert": 85,
+                "Einheit": "EPDQuantity/EUR"
+            },
+            {
+                "Name": "undefined",
+                "Restwert": 0,
+                "Einheit": "EPDQuantity/EUR"
+            }
+        ]
+    },
+    {
+        "Stichtag": "2025-08-19",
+        "Material": [
+            {
+                "Name": "Mineralische Baustoffe",
+                "Restwert": 25,
+                "Einheit": "EPDQuantity/EUR"
+            },
+            {
+                "Name": "Metalle",
+                "Restwert": 99,
+                "Einheit": "EPDQuantity/EUR"
+            },
+            {
+                "Name": "Kunststoffe",
+                "Restwert": 35,
+                "Einheit": "EPDQuantity/EUR"
+            },
+            {
+                "Name": "Bituminöse Mischungen",
+                "Restwert": 85,
+                "Einheit": "EPDQuantity/EUR"
+            },
+            {
+                "Name": "undefined",
+                "Restwert": 0,
+                "Einheit": "EPDQuantity/EUR"
+            }
+        ]
+    }
+]

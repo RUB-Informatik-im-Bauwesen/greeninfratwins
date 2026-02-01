@@ -1,0 +1,34 @@
+{
+  "Variante 1": [
+    {
+      "ActivityType": "Abbruch",
+      "ObjectType": "Bewehrungsstahl",
+      "MaterialName":"Bewehrung",
+      "EPD Verbindung": "https://oekobaudat.de/OEKOBAU.DAT/datasetdetail/process.xhtml?uuid=20c29cbd-f9a2-4518-a1ce-c681246c29c8&version=00.03.000&stock=OBD_2024_I&lang=en",
+      "EPD-bezogene Menge": 9.22
+    },
+    {
+      "ActivityType": "Einbau",
+      "ObjectType": "Bewehrungsstahl",
+      "MaterialName":"Bewehrung",
+      "EPD Verbindung": "https://oekobaudat.de/OEKOBAU.DAT/datasetdetail/process.xhtml?uuid=20c29cbd-f9a2-4518-a1ce-c681246c29c8&version=00.03.000&stock=OBD_2024_I&lang=en",
+      "EPD-bezogene Menge": 152.22
+    }
+  ],
+  "Variante 2": [
+    {
+      "ActivityType": "Abbruch",
+      "ObjectType": "Bewehrungsstahl",
+      "MaterialName":"Bewehrung",
+      "EPD Verbindung": "https://oekobaudat.de/OEKOBAU.DAT/datasetdetail/process.xhtml?uuid=20c29cbd-f9a2-4518-a1ce-c681246c29c8&version=00.03.000&stock=OBD_2024_I&lang=en",
+      "EPD-bezogene Menge": 9.22
+    },
+    {
+      "ActivityType": "Einbau",
+      "ObjectType": "Bewehrungsstahl",
+      "MaterialName":"Bewehrung",
+      "EPD Verbindung": "https://oekobaudat.de/OEKOBAU.DAT/datasetdetail/process.xhtml?uuid=20c29cbd-f9a2-4518-a1ce-c681246c29c8&version=00.03.000&stock=OBD_2024_I&lang=en",
+      "EPD-bezogene Menge": 33.31
+    }
+  ]
+}

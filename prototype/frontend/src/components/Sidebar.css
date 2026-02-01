@@ -1,0 +1,30 @@
+/* Sidebar.css */
+  .button-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    display: flex;
+  }
+  
+  .sidebar-button {
+    background: none;
+    border: none;
+    padding: 15px 20px; /* Increase padding for larger size */
+    width: 64px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    display: flex;
+    border-radius: 5px;
+  }
+  
+  /*.sidebar-button.selected {
+    background-color: white;
+    color: #333;
+  }*/
+  
+  .icon {
+    font-size: 1.5em; /* Increase icon size */
+    margin-right: 15px; /* Adjust spacing if needed */
+  }
