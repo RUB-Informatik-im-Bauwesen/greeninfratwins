@@ -10,8 +10,8 @@ Das Projekt ist gefördert durch die österreichische Forschungsförderungsgesel
 
 ## Resourcen
 
-* [GrIT Ontologie](/greeninfratwins/tree/main/ns/)
-* [GreenInfraTwins Prototype](/greeninfratwinstree/main/ns/prototype/)
+* [GrIT Ontologie](/greeninfratwins/tree/main/ns)
+* [GreenInfraTwins Prototype](/greeninfratwinstree/main/ns/prototype)
 
 
 ## Weitere Informationen
